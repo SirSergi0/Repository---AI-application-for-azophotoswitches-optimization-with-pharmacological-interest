@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{MathematicsForMachineLearningBook}
+Marc~Peter Deisenroth, A.~Aldo Faisal, and Cheng~Soon Ong.
+\newblock {\em Mathematics for Machine Learning}.
+\newblock Cambridge University Press, 2020.
+
 \bibitem{NationalLibraryOfMedicineGeneralArticle}
 Shruti Singh, Rajesh Kumar, Shuvasree Payra, and Sunil~K Singh.
 \newblock Artificial intelligence and machine learning in pharmacological

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  10 SEP 2024 20:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  11 SEP 2024 00:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -926,25 +926,30 @@ Package hyperref Info: Link coloring OFF on input line 41.
 \@outlinefile=\write4
 \openout4 = `manuscript.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 58.
+<GeneralSources/UABLogo.png, id=11, 392.12303pt x 138.01239pt>
+File: GeneralSources/UABLogo.png Graphic file (type png)
+<use GeneralSources/UABLogo.png>
+Package pdftex.def Info: GeneralSources/UABLogo.png  used on input line 64.
+(pdftex.def)             Requested size: 122.27576pt x 43.0361pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 64.
 
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 58.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 64.
 
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 5
-8.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 6
+4.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 58
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 64
 .
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd
@@ -952,12 +957,13 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Gener
+alSources/UABLogo.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.76 \newpage
+l.82 \newpage
               [1] [2] [3] (./manuscript.bbl) [4]
 
 enddocument/afterlastpage: lastpage setting LastPage.
@@ -966,19 +972,15 @@ enddocument/afterlastpage: lastpage setting LastPage.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 4839371BC5FB2BB2B55506A88FA8C7EF;111.
  ) 
 Here is how much of TeX's memory you used:
- 25067 strings out of 474116
- 455590 string characters out of 5743682
+ 25110 strings out of 474116
+ 456325 string characters out of 5743682
  1940187 words of memory out of 5000000
- 46984 multiletter control sequences out of 15000+600000
- 564896 words of font info for 65 fonts, out of 8000000 for 9000
+ 47018 multiletter control sequences out of 15000+600000
+ 569938 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,93p,547b,663s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
@@ -987,10 +989,10 @@ b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pf
 b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
 usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on manuscript.pdf (5 pages, 85079 bytes).
+Output written on manuscript.pdf (5 pages, 98917 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
