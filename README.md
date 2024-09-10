@@ -1,2 +1,5 @@
 # Repository---AI-application-for-azophotoswitches-optimization-with-pharmacological-interest
-In this work it is proposed to create software specific in artificial intelligence (AI) to apply it to the search for azophotoswitches.
+
+In this work, we propose the development of specialized software in the field of artificial intelligence (AI), designed specifically for the discovery and optimization of azophotoswitches. Azophotoswitches are molecules that can undergo reversible changes in structure and function in response to light, making them valuable in applications ranging from molecular devices to advanced materials and medical therapies.
+
+The proposed AI-driven software will leverage cutting-edge machine learning algorithms and data-driven techniques to facilitate the identification and prediction of new azophotoswitches with desired properties. By analyzing vast datasets of molecular structures, photochemical behaviors, and functional performance, the AI system aims to streamline the traditionally labor-intensive process of discovering these compounds. This approach will not only enhance the efficiency of the research but also expand the possibilities for designing azophotoswitches with novel functionalities, opening up new pathways in materials science and photopharmacology.
