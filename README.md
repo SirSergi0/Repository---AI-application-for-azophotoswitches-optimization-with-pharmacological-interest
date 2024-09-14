@@ -13,6 +13,11 @@ Comments will be added throughout the project's development. This list may not b
 - For any problems or questions, please use the **_Issues_** and **_Discussions_** sections.
 - To maintain order and organization, visitors are requested to locate all requests, inquiries, and issues in the appropriate sections.
 
+### Diary
+
+- The file called `Diary.md` will be the roadmap for the project. This file will keep track of all the main appointments and meetings of the project. Also the key point of each event will be stored there and a little summary of each the discussions.
+- This file will always be on the main repository and will have regular updates.
+
 ### Manuscript
 
 - The manuscript in PDF format will always be placed in the `Manuscript` directory and will be named `manuscript.pdf`.
