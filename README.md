@@ -15,8 +15,8 @@ Comments will be added throughout the project's development. This list may not b
 
 ### Diary
 
-- The file called `Diary.md` will be the roadmap for the project. This file will keep track of all the main appointments and meetings of the project. Also the key point of each event will be stored there within a little summary of each the discussions.
-- This file will always be on the main repository and will have regular updates.
+- The file called `Diary.md` will be the roadmap for the project. This file will keep track of all the main appointments and meetings of the project. Also the key point of each event will be stored there within a little summary of each discussions.
+- This file will always be on the main repository location and will have regular updates.
 
 ### Manuscript
 
