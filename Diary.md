@@ -18,7 +18,7 @@
 
  - 16/09/2024	15:00h
 
-Though the course may be usefull for Students with a TFG development in a lab, it seems pointles in our case.
+Though the course may be usefull for Students with a TFG developed in a lab, it seems pointles in our case.
 
 ## Meetings and appointments
 
