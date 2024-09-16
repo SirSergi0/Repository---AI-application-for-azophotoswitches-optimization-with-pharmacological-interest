@@ -18,9 +18,11 @@
 
  - 16/09/2024	15:00h
 
+Though the course may be usefull for Students with a TFG development in a lab, it seems pointles in our case.
+
 ## Meetings and appointments
 
-### 17/09/2024	Meeting with Dr.Moreno & Dra. González
+### 17/09/2024	15:00h	Meeting with Dr.Moreno & Dra. González
 
  - Presentation
  - Defining the project's methology and work-flow.
