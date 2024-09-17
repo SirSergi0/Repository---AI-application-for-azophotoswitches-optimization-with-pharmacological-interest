@@ -22,7 +22,7 @@ Though the course may be usefull for Students with a TFG developed in a lab, it 
 
 ## Meetings and appointments
 
-### 17/09/2024	15:00h	Meeting with Dr.Moreno & Dra. González
+### 17/09/2024	15:00h	Meeting with Dr.Moreno & Dra.González	C7/137
 
  - Presentation
  - Defining the project's methology and work-flow.
