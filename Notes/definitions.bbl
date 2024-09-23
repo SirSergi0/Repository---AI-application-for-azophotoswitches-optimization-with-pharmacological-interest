@@ -1,0 +1,19 @@
+\begin{thebibliography}{1}
+
+\bibitem{MathematicsForMachineLearningBook}
+Marc~Peter Deisenroth, A.~Aldo Faisal, and Cheng~Soon Ong.
+\newblock {\em Mathematics for Machine Learning}.
+\newblock Cambridge University Press, 2020.
+
+\bibitem{DescriptorsBook}
+J.~Gasteiger and T.~Engel.
+\newblock {\em Molecular Descriptors for Chemoinformatics}.
+\newblock Wiley-VCH, Weinheim, Germany, 2003.
+
+\bibitem{BookIC50}
+David~C. Swinney.
+\newblock Chapter 18 - molecular mechanism of action (mmoa) in drug discovery.
+\newblock volume~46 of {\em Annual Reports in Medicinal Chemistry}, pages
+  301--317. Academic Press, 2011.
+
+\end{thebibliography}

@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: definitions.aux
+The style file: plain.bst
+Database file #1: references.bib
+Warning--empty booktitle in BookIC50
+You've used 3 entries,
+            2118 wiz_defined-function locations,
+            520 strings with 4498 characters,
+and the built_in function-call counts, 987 in all, are:
+= -- 93
+> -- 38
+< -- 2
++ -- 15
+- -- 12
+* -- 58
+:= -- 162
+add.period$ -- 10
+call.type$ -- 3
+change.case$ -- 13
+chr.to.int$ -- 0
+cite$ -- 4
+duplicate$ -- 48
+empty$ -- 85
+format.name$ -- 12
+if$ -- 217
+int.to.chr$ -- 0
+int.to.str$ -- 3
+missing$ -- 5
+newline$ -- 18
+num.names$ -- 6
+pop$ -- 25
+preamble$ -- 1
+purify$ -- 12
+quote$ -- 0
+skip$ -- 31
+stack$ -- 0
+substring$ -- 43
+swap$ -- 13
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 8
+warning$ -- 1
+while$ -- 8
+width$ -- 4
+write$ -- 35
+(There was 1 warning)
