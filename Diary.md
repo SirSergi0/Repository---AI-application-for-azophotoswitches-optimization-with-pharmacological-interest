@@ -2,6 +2,8 @@
 
 ## Seminars of Research Porjects Methology
 
+*Comment*: A course for manegging bibliography and learning writting skills. Irrellevant but it scores a hole point of the project's mark.
+
 ### Group assigment : 1.1
 
 ### Schedule
@@ -18,7 +20,7 @@
 
  - 16/09/2024	15:00h
 
-Though the course may be usefull for Students with a TFG developed in a lab, it seems pointles in our case.
+Although the course may be usefull for Students with a TFG developed in a lab, it seems pointless in our case.
 
 ## Meetings and appointments
 
