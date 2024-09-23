@@ -103,16 +103,16 @@ Then, given a \emph{target} (for instance, a certain concentration), about which
 The \emph{learning} part (the most important part) comes from the fact that the model (the line) learns from the data. As we train our system (i.e., perform linear regression) with increasingly larger datasets, the accuracy of our model's predictions improves. Thus, we can conclude that the system is \emph{learning} from the data, which qualifies it as a Machine Learning model.\par
 \end{observation}
 \begin{observation}
-Since we are working with molecules our Machine Learning model will need from a certain parameters to determine the relationship with the property. \par
-Surely our \emph{property} (i.e., $\{f(x_i)\}_{i=0}^n$) will be the inhibition of a certain protein (COX-2) in this case more accurately will be $IC_{50}$/$IC_{90}$/$IC_{99}$ (\ref{definitionIC50}).\par
-Moreover, our \emph{parameters} (i.e., $\{x_i\}_{i=0}^n$) will be the descriptors of the molecules which must be \textbf{carefully chosen}. This problem has extra difficulties in comparison to the linear regression one. 
+Since we are working with molecules, our Machine Learning model will require certain parameters to determine the relationship with the property.\par
+In this case, our \emph{property} (i.e., $\{f(x_i)\}_{i=0}^n$) will be the inhibition of a specific protein (COX-2), and more specifically, it will be $IC_{50}$, $IC_{90}$, or $IC_{99}$ (\ref{definitionIC50}).\par
+Moreover, our \emph{parameters} (i.e., $\{x_i\}_{i=0}^n$) will be the molecular descriptors, which must be \textbf{carefully chosen}. This problem introduces additional complexities compared to the linear regression case:
 \begin{itemize}
-\item Will be taking about $10^3$ descriptors, then it turns out to a $10^3$ dimension problem.
-\item We want the system to automatically discard non-relevant data since some molecules could be exceptions for external causes.
-\item We do not have linearity. 
-\item All the descriptors do not have the same distancies/weights since we'll want some of them to be more relevant than others.
+    \item We will be working with approximately $10^3$ descriptors, making this a $10^3$-dimensional problem.
+    \item We want the system to automatically discard non-relevant data, as some molecules could be exceptions due to external factors.
+    \item We do not assume linearity.
+    \item Not all descriptors have the same distances or weights, as we will want some of them to be more relevant than others.
 \end{itemize}
-But, fun fact, in some way, we can say that this project will be no different from computing a linear regression...
+Interestingly enough, despite these complexities, in some way, we can say that this project is not entirely different from computing a linear regression...
 \end{observation}
 \end{multicols}
 
