@@ -1,0 +1,255 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{fullpage}
+\usepackage[top=1.5cm, bottom=3.5cm, left=2.2cm, right=2.2cm]{geometry}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd, esint}
+\usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage[english]{babel}
+\usepackage{lipsum}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{natbib}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{chemfig}
+\usepackage{yfonts}
+\usepackage{tikz}
+\usepackage{wrapfig}
+\usepackage[normalem]{ulem}
+\usepackage{multicol}
+\useunder{\uline}{\ul}{}
+
+\newtheorem{definition}{Definition}
+\newtheorem{observation}{Observation}
+\newtheorem{reflection}{Reflection}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+
+% Edit these as appropriate
+\newcommand\course{}
+\newcommand\subject{Final Degree Project}
+\newcommand\degree{Bachelor's Degree in Chemistry}
+\newcommand\documenttitle{Notes: AI application for azophotoswitches' optimization with pharmacological interest}
+\newcommand\NetIDb{Universitat Autònoma de Barcelona}
+
+
+\begin{document}
+\title{\vspace{4cm} \normalsize 
+		\includegraphics[width = 0.25\textwidth]{GeneralSources/UABLogo.png}\\ [0.5cm]
+		\textsc{\NetIDb}\\ [2.0cm]
+		\HRule{0.5pt} \\
+		\LARGE \textbf{\uppercase{\documenttitle}}
+		\HRule{2pt} \\ [1.5cm]
+		\normalsize \begin{tabular}{rcl}  % Create a right-left column alignment
+        \textsc{Author} & : & \textsc{Sergio Castañeiras Morales} \\
+        \textsc{Supervisor} & : & \textsc{Miquel Moreno Ferrer} \\
+        \textsc{Co-Supervisor} & : & \textsc{Àngels Gonzalez Lafont}
+    \end{tabular}
+    \normalsize \vspace*{5\baselineskip}
+		}
+
+\date{2024-2025}
+
+\author{\large \textsc{\subject} \\ \textsc{\degree}}
+
+
+
+\begin{titlepage}
+\clearpage\maketitle
+\thispagestyle{empty}
+\end{titlepage}
+
+
+\newpage
+\pagestyle{fancyplain}
+\headheight 35pt
+\lhead{\NetIDb}    
+\rhead{\subject}
+\cfoot{}
+\rfoot{\small\thepage}
+\headsep 1.5em
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% DEFINITIONS %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{multicols}{2}
+[
+\section{Definitions}
+]
+\begin{definition}\label{definitionIC50}
+$IC_{50}$: Half maximal inhibitory concentration "$IC_{50}$ is the concentration of drug required for $50\%$ inhibition. $IC_{50}$ is an operational term dependent on the assay conditions. $IC_{90}$ or $IC_{99}$ is sometimes used when complete inhibition is required. Calculation of the fractional occupancy shows that $IC_{90}$ concentration is approximately 10-fold greater than the $IC_{50}$ concentration assuming one-site binding at equilibrium with a Hill coefficient of 1."\cite{BookIC50}\\
+ For this project, we aim to identify substances with the lowest possible $IC_{50}$, as our goal is to minimize the presence of foreign substances in the living organism.
+\end{definition}
+
+\begin{definition}
+Molecular descriptor: "A molecular descriptor is the final result of a logical and mathematical procedure which transforms chemical information encoded within a symbolic representation of a molecule into a useful number or the result of some standardized experiment."\cite{DescriptorsBook}
+\end{definition}
+
+\begin{definition}
+Constitutional Indices Descriptors: Kind of descriptor based on the constitutional composure of a molecule. They describe the basic composition of the molecule without considering its geometry or connectivity of it.
+\end{definition}
+
+\begin{definition}
+Ring Descriptors: Kind of descriptor that describes the ring systems of our molecule. Quantifies properties such as the ring connectivity, type of ring (odd/even ring), aromaticy \& saturation.
+\end{definition}
+
+\begin{definition}
+Topological Indices: These descriptors are based on the connectivity of atoms in a molecule without considering three-dimensional coordinates in the context of chemical graph theory. They help to describe the molecular graph (atoms as vertices, bonds as edges) using metrics like the Wiener index or the Zagreb index.
+\end{definition}
+
+\begin{definition}\label{DefinitionWienerIndices}
+Wiener index: Specific topological descriptor based defined as the sum of the lengths of the shortest paths between all possible vertices in the chemical graph. Mathematically speaking, if we have a molecule with a set of $\{A_i\}_{i=0}^n$ atoms and we denote $d_B(A_i,A_j)$ the bond distance between atoms $A_i$ and $A_j$, we define the Wiener index of this molecule as,
+\begin{align}
+Ind_{Wiener}=\sum_{i=0}^n\sum_{j>i}^nd_B(A_i,A_j)
+\end{align}
+\par
+For instance, if we take the n-Butane \& Isobutane  chemical graph from the Figure (\ref{figurenButaneIsobutaneGraph}) the Wiener index would be,
+\begin{align}
+d_B(C_1,C_2)+d_B(C_1,C_3)+d_B(C_1,C_4)\\
++ d_B(C_2,C_3)+d_B(C_2,C_4)+d_B(C_3,C_4)
+\end{align}
+Though this quantity is computed equally for both, n-Butane \& Isobutane, it results different due to their connectivity. For the n-Butane:
+\begin{align}
+1+2+3+1+2+1=10
+\end{align}
+While for the Isobutane:
+\begin{align}
+1+1+1+2+2+2=9 
+\end{align}
+\begin{figure}[H]
+\centering
+\chemfig{C_1-[1]C_2-[-1]C_3-[1]C_4}\hspace{1cm}
+\chemfig{C_2-[1]C_1(-[2]C_3)-[-1]C_4}
+\caption{n-Butane's \& Isobutane's  chemical graphs.}
+\label{figurenButaneIsobutaneGraph}
+\end{figure}
+\end{definition}
+
+\begin{definition}\label{DefinitionZagrebIndices}
+Zagreb index: "For a (molecular) graph, the first Zagreb index $M_1$
+ is equal to the sum of squares of the degrees of vertices, and the second Zagreb index $M_2$
+ is equal to the sum of the products of the degrees of pairs of adjacent vertices." \cite{ZagrebIndicesArticle}
+\end{definition}
+
+\begin{definition}
+Walk and Path Counts Descriptors: Kind of descriptor focused on counting specific paths or walks (connected sequences of atoms) in the molecular graph. For instance we can get a Walk and Path Counts Descriptor quantifying the number of Eulerian paths in a molecule's graph. They give insights into the molecule’s connectivity and complexity.
+\end{definition}
+
+\begin{enumerate}
+    \item Connectivity Indices: These indices quantify the degree of connectivity between atoms based on the topology of the molecule. Popular examples include the Randic index and the Balaban index.
+    \item Information Indices: These are based on the concept of information theory, where the structure is interpreted as a distribution of information (or entropy). They measure molecular complexity and diversity.
+    \item 2D-Matrix Based Descriptors: These descriptors use matrices (such as adjacency or distance matrices) derived from the 2D molecular graph. They help describe relationships between atoms in a molecule.
+    \item 2D Autocorrelations: These descriptors calculate correlations between atomic properties at different distances in the molecular graph. They capture how molecular properties change across the structure.
+    \item Burden Eigenvalues: These descriptors are derived from the eigenvalues of matrices related to the structure, such as the Burden matrix, which takes into account atomic properties like electronegativity and partial charges.
+    \item P\_VSA-like Descriptors: P\_VSA stands for “Property-weighted Van der Waals Surface Area.” These descriptors quantify the surface area of a molecule associated with specific properties like polarizability or charge.
+    \item ETA Indices (Extended Topochemical Atom): ETA indices capture aspects of molecular topology in conjunction with atomic properties. They are often used in the analysis of electronic properties or biological activities.
+    \item Edge Adjacency Indices: These descriptors are derived from the adjacency of bonds (edges) in the molecular graph. They measure the proximity of bonds in the structure and can reflect molecular complexity.
+    \item Fractional Group Counts: These descriptors count specific chemical groups or fragments within the molecule, providing information about the functional groups present.
+    \item Atom-Centered Fragments: These descriptors focus on the environment of individual atoms within a molecule. They describe the types and arrangements of atoms surrounding each atom in the structure.
+    \item Atom-Type E-State Indices: The E-State (Electrotopological State) descriptors combine information about the electronic environment and topology of atoms. They reflect the potential reactivity of atoms in the molecule.
+    \item Pharmacophore Descriptors: These describe the spatial arrangement of features critical for molecular recognition by biological targets, such as hydrogen bond donors/acceptors, hydrophobic regions, or aromatic rings.
+    \item 2D Atom Pairs: These descriptors capture the relationships between pairs of atoms at a specific distance (in terms of bonds) from each other. They describe the distribution of atom pairs within the molecular structure.
+    \item Charge Descriptors: These describe the charge distribution within the molecule, including total charge, partial atomic charges, and the dipole moment.
+    \item Molecular Properties: These include physical and chemical properties of the molecule such as molecular weight, boiling point, or solubility.
+    \item Drug-Like Indices: These descriptors quantify how closely the molecule follows the rules for drug-likeness, such as Lipinski’s Rule of Five, which includes factors like molecular weight, hydrophobicity, and hydrogen bonding.
+    \item MDE Descriptors (Molecular Distance Edge descriptors): These describe the distances between atoms in a molecule based on the molecular graph. They are useful for capturing molecular shape and spatial relationships.
+    \item Chirality Descriptors: These quantify the chirality (handedness) of molecules. They reflect the 3D arrangement of atoms around chiral centers, which can influence how molecules interact with biological systems.
+\end{enumerate}
+
+\begin{definition}
+QSAR: "Quantitative Structure–Activity Relationships are the finnal result of the
+process that starts with a suitable description of molecular structures and ends with
+some inference, hypothesis, and prediction on the behaviour of molecules in environmental, biological, and physico-chemical systems in analysis.\par
+QSARs are based on the assumption that the structure of a molecule (for example,
+its geometric, steric, and electronic properties) must contain features responsible for
+its physical, chemical, and biological properties and on the ability to capture these
+features into one or more numerical descriptors. By QSAR models, the biological
+activity (or property, reactivity, etc.) of a new designed or untested chemical can be
+inferred from the molecular structure of similar compounds whose activities
+(properties, reactivities, etc.) have already been assessed."\cite{DescriptorsBookClassification}
+\end{definition}
+\end{multicols}
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% OSERVATIONS %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{multicols}{2}
+[
+\section{Observations}
+]
+\begin{observation}
+Machine Leaning (ML) and Artificial Intelligence (AI) are not the same concept, in fact, a ML  models are a subset of AIs. The key relies in word \emph{Learning}, generally speaking, an AI does not need to actually learn from a set of data. It can be set up within a decision tree such that logically responses with the proper answer following its criteria. \par
+However a Machine Leaning Method is a kind of AI that \emph{learns} from data and evolves with the provided data.
+\end{observation}
+\begin{observation}
+Mathematically speaking, Machine Learning methods are no different from an optimisation problem \cite{MathematicsForMachineLearningBook}.\par
+Generally speaking, all ML methods seek to find a criterion to determine the quantity of a certain property of some data, which we lack knowledge of and will call the \emph{target}. In order to do so, they rely on a dataset where the sought property is already known and which establishes relationships between this property and other features of the data. Then, based on these relationships and the properties of the \emph{target}, the model searches for the position where the \emph{target} fits within the data and determines the quantity of the property, taking this placement into account within the known data.\par
+For instance, we could think of standard calibration with linear regression as an ultra-simplification of a Machine Learning problem. We have a set of data (such as salt concentration in a solution) $\{x_i\}_{i=0}^n$, we also know the quantity of a certain property (such as the solution's conductivity) for each entry $x_j$, denoted as $\{f(x_i)\}_{i=0}^n$. In this example, our ML method assumes that the data and the property are linearly related and that the distance between data and the property is equivalently defined as $d(x_i, x_j) = \sqrt{x_i^2 + x_j^2}$. Hence, based on the assumption of linearity, the best possible relationship is a straight line, and the method looks for the line that minimises the distance between the line and the data.\par
+Then, given a \emph{target} (for instance, a certain concentration), about which we initially lack knowledge, the method is capable of quantitatively computing the theoretical property (for instance, its conductivity) by using the fitted line representing the relationship. Consequently, this can be helpful in determining the theoretical concentration of salt needed to achieve a certain conductivity without having actual data for that concentration.\par
+The \emph{learning} part (the most important part) comes from the fact that the model (the line) learns from the data. As we train our system (i.e., perform linear regression) with increasingly larger datasets, the accuracy of our model's predictions improves. Thus, we can conclude that the system is \emph{learning} from the data, which qualifies it as a Machine Learning model.\par
+\end{observation}
+\begin{observation}
+Since we are working with molecules, our Machine Learning model will require certain parameters to determine the relationship with the property.\par
+In this case, our \emph{property} (i.e., $\{f(x_i)\}_{i=0}^n$) will be the inhibition of a specific protein (COX-2), and more specifically, it will be $IC_{50}$, $IC_{90}$, or $IC_{99}$ (\ref{definitionIC50}).\par
+Moreover, our \emph{parameters} (i.e., $\{x_i\}_{i=0}^n$) will be the molecular descriptors, which must be \textbf{carefully chosen}. This problem introduces additional complexities compared to the linear regression case:
+\begin{itemize}
+    \item We will be working with approximately $10^3$ descriptors, making this a $10^3$-dimensional problem.
+    \item We want the system to automatically discard non-relevant data, as some molecules could be exceptions due to external factors.
+    \item We do not assume linearity.
+    \item Not all descriptors have the same distances or weights, as we will want some of them to be more relevant than others.
+    \item Some descriptors will be continuous (for instance, bond distances) while others will remain discrete (for instance, topological indexes) by construction  which implies that some dimensions need to be treated differently to others.
+\end{itemize}
+Interestingly enough, despite these complexities, in some way, we can say that this project is not entirely different from computing a linear regression...
+\end{observation}
+\begin{observation}
+Taking into account definitions (\ref{DefinitionWienerIndices}) and (\ref{DefinitionZagrebIndices}), we can also define a norm, denoted by $\mathcal{N}(A,B)$, which refers to the norm between molecules $A$ and $B$. For instance, this can be expressed as $\mathcal{N}(A,B) = |Ind_A - Ind_B|$, where $Ind_A$ and $Ind_B$ represent the respective indices (Wiener, Zagreb, etc.) of the molecules\footnote{Actually, any kind of norm would work, as long as it depends on the indices.}. Using this norm, we can generate a metric space that tells us how close two molecules are, based on the similarity of their indices.
+
+In this way, we can apply the concept of “linear regression” and compute the relationship between the indices and the $IC_{50}$. This refers to one dimension, corresponding to a specific topological index. We can then extend this to consider all remaining indices (approximately $10^3$), and find the optimal position in this $10^3$-dimensional space for our resulting molecule.
+\end{observation}
+\end{multicols}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% REFLECTIONS %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{multicols}{2}
+[
+\section{Reflections}
+]
+\begin{reflection}
+During the first meeting with Dra.González, Dr. Moreno \& Dr. Lluch a certain theme was brought up. "Wouldn't be great to actually have the wave function of the molecules?" This way we could avoid the use of descriptors and QSARs and have more accurate results. \par
+Though it was a joke, it might not be a utopia someday. I believe quantum computers will be capable of this task and maybe a hundred years from today, this project could be doable working directly with the waves functions (not analytically obviously). How knows? Time will tell us.
+\end{reflection}
+\begin{reflection}
+Fun fact, \cite{ZagrebIndicesArticle} is a mathematical article, completely apart from the chemical world but somehow we can manage to use it to describe molecules whatsoever. I believe applying knowledge from other sectors is key to evolve and reach even greater results.
+\end{reflection}
+\end{multicols}
+
+
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% BIBLIOGRAPHY %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{plain}
+\bibliography{references} 
+%%%%%%%%
+
+
+\end{document}

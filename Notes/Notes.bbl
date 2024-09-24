@@ -16,4 +16,14 @@ David~C. Swinney.
 \newblock volume~46 of {\em Annual Reports in Medicinal Chemistry}, pages
   301--317. Academic Press, 2011.
 
+\bibitem{DescriptorsBookClassification}
+Roberto Todeschini and Viviana Consonni.
+\newblock {\em Molecular Descriptors for Chemoinformatics}.
+\newblock Wiley-VCH, Weinheim, Germany, 2nd edition, 2009.
+
+\bibitem{ZagrebIndicesArticle}
+Kexiang Xu.
+\newblock The zagreb indices of graphs with a given clique number.
+\newblock {\em Applied Mathematics Letters}, 24(6):1026--1030, 2011.
+
 \end{thebibliography}
