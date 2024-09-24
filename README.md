@@ -18,7 +18,13 @@ Comments will be added throughout the project's development. This list may not b
 - The file called `Diary.md` will be the roadmap for the project. This file will keep track of all the main appointments and meetings of the project. Also the key point of each event will be stored there within a little summary of each discussion.
 - This file will always be on the main repository location and will have regular updates.
 
+### Notes
+
+- The directory `Notes` will contain all the definitions, observations and reflections uppon the project. 
+- The information is located in the `Notes/notes.pdf` file, which will be some sore of *Wikipedia* for the project, storing all the relevant data.
+- All references are located in the `Notes/references.bib` file. This file will keep track of every single file consultated.
+
 ### Manuscript
 
 - The manuscript in PDF format will always be placed in the `Manuscript` directory and will be named `manuscript.pdf`.
-- All references are located in the `Manuscript/references.bib` file. Although not all references may appear in the final manuscript, they will be stored there to keep track of all consulted files, books, websites, etc.
+- This directory also contains a `references.bib`. Although not all references may appear in the final manuscript, they will be stored there to keep track of all consulted files, books, websites, etc.
