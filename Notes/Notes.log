@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  25 SEP 2024 00:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  25 SEP 2024 13:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -446,25 +446,18 @@ Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
 \minrowclearance=\skip69
 \rownum=\count304
 )
-(/usr/local/texlive/2024/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip70
-\bibsep=\skip71
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count305
-)
 (/usr/local/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip72
+\labelindent=\skip70
 \enit@outerparindent=\dimen174
 \enit@toks=\toks35
 \enit@inbox=\box58
-\enit@count@id=\count306
-\enitdp@description=\count307
+\enit@count@id=\count305
+\enitdp@description=\count306
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count308
+\c@float@type=\count307
 \float@exts=\toks36
 \float@box=\box59
 \@float@everytoks=\toks37
@@ -512,14 +505,14 @@ tered.code.tex
 \pgf@yd=\dimen186
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count309
-\c@pgf@countb=\count310
-\c@pgf@countc=\count311
-\c@pgf@countd=\count312
+\c@pgf@counta=\count308
+\c@pgf@countb=\count309
+\c@pgf@countc=\count310
+\c@pgf@countd=\count311
 \t@pgf@toka=\toks42
 \t@pgf@tokb=\toks43
 \t@pgf@tokc=\toks44
-\pgf@sys@id@count=\count313
+\pgf@sys@id@count=\count312
 
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
@@ -537,8 +530,8 @@ File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count314
-\pgfsyssoftpath@bigbuffer@items=\count315
+\pgfsyssoftpath@smallbuffer@items=\count313
+\pgfsyssoftpath@bigbuffer@items=\count314
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -550,7 +543,7 @@ Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen187
-\pgfmath@count=\count316
+\pgfmath@count=\count315
 \pgfmath@box=\box62
 \pgfmath@toks=\toks45
 \pgfmath@stack@operand=\toks46
@@ -576,7 +569,7 @@ code.tex)
 erarithmetics.code.tex)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count317
+\c@pgfmathroundto@lastzeros=\count316
 )) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
@@ -614,7 +607,7 @@ File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box63
 \pgf@hbox=\box64
 \pgf@layerbox@main=\box65
-\pgf@picture@serial@count=\count318
+\pgf@picture@serial@count=\count317
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
@@ -649,8 +642,8 @@ File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 e.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@max=\dimen267
-\pgf@sys@shading@range@num=\count319
-\pgf@shadingcount=\count320
+\pgf@sys@shading@range@num=\count318
+\pgf@shadingcount=\count319
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -715,7 +708,7 @@ Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count321
+\pgf@plot@mark@count=\count320
 \pgfplotmarksize=\dimen272
 )
 \tikz@lastx=\dimen273
@@ -730,19 +723,19 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@figbox@bg=\box69
 \tikz@tempbox=\box70
 \tikz@tempbox@bg=\box71
-\tikztreelevel=\count322
-\tikznumberofchildren=\count323
-\tikznumberofcurrentchild=\count324
-\tikz@fig@count=\count325
+\tikztreelevel=\count321
+\tikznumberofchildren=\count322
+\tikznumberofcurrentchild=\count323
+\tikz@fig@count=\count324
 
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count326
-\pgfmatrixcurrentcolumn=\count327
-\pgf@matrix@numberofcolumns=\count328
+\pgfmatrixcurrentrow=\count325
+\pgfmatrixcurrentcolumn=\count326
+\pgf@matrix@numberofcolumns=\count327
 )
-\tikz@expandcount=\count329
+\tikz@expandcount=\count328
 
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -760,12 +753,12 @@ File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfarrowwidth=\dimen283
 \pgfarrowlinewidth=\dimen284
 )
-\CF_cnt_atomgroup=\count330
-\CF_cnt_group=\count331
-\CF_cnt_atom=\count332
-\CF_cnt_cycle=\count333
-\CF_cnt_cyclebonds=\count334
-\CF_cnt_compound=\count335
+\CF_cnt_atomgroup=\count329
+\CF_cnt_group=\count330
+\CF_cnt_atom=\count331
+\CF_cnt_cycle=\count332
+\CF_cnt_cyclebonds=\count333
+\CF_cnt_compound=\count334
 \CF_dim=\dimen285
 \CF_turnangle=\dimen286
 \CF_arrowsize=\dimen287
@@ -789,7 +782,7 @@ LaTeX Info: Composite with undeclared \" in encoding LYG on input line 58.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen289
 \WF@size=\dimen290
-\c@WF@wrappedlines=\count336
+\c@WF@wrappedlines=\count335
 \WF@box=\box76
 \WF@everypar=\toks51
 Package: wrapfig 2003/01/31  v 3.6
@@ -797,10 +790,10 @@ Package: wrapfig 2003/01/31  v 3.6
 (/usr/local/texlive/2024/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box77
 \UL@hyphenbox=\box78
-\UL@skip=\skip73
+\UL@skip=\skip71
 \UL@hook=\toks52
 \UL@height=\dimen291
-\UL@pe=\count337
+\UL@pe=\count336
 \UL@pixel=\dimen292
 \ULC@box=\box79
 Package: ulem 2019/11/18
@@ -808,20 +801,20 @@ Package: ulem 2019/11/18
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
-\c@tracingmulticols=\count338
+\c@tracingmulticols=\count337
 \mult@box=\box80
 \multicol@leftmargin=\dimen294
-\c@unbalance=\count339
-\c@collectmore=\count340
-\doublecol@number=\count341
-\multicoltolerance=\count342
-\multicolpretolerance=\count343
+\c@unbalance=\count338
+\c@collectmore=\count339
+\doublecol@number=\count340
+\multicoltolerance=\count341
+\multicolpretolerance=\count342
 \full@width=\dimen295
 \page@free=\dimen296
 \premulticols=\dimen297
 \postmulticols=\dimen298
-\multicolsep=\skip74
-\multicolbaselineskip=\skip75
+\multicolsep=\skip72
+\multicolbaselineskip=\skip73
 \partial@page=\box81
 \last@line=\box82
 \mc@boxedresult=\box83
@@ -866,44 +859,85 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \@tempa=\box121
 \@tempa=\box122
 \@tempa=\box123
-\c@minrows=\count344
-\c@columnbadness=\count345
-\c@finalcolumnbadness=\count346
+\c@minrows=\count343
+\c@columnbadness=\count344
+\c@finalcolumnbadness=\count345
 \last@try=\dimen300
 \multicolovershoot=\dimen301
 \multicolundershoot=\dimen302
 \mult@nat@firstbox=\box124
 \colbreak@box=\box125
-\mc@col@check@num=\count347
+\mc@col@check@num=\count346
 )
-\c@definition=\count348
-\c@observation=\count349
-\c@reflection=\count350
+(/usr/local/texlive/2024/texmf-dist/tex/latex/achemso/achemso.sty
+Package: achemso 2024-01-30 v3.13g Support for ACS journals
+Package achemso Info: When writing a submission to an ACS journal, please
+(achemso)             use the achemso document class on input line 36.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks53
+\XKV@tempa@toks=\toks54
+)
+\XKV@depth=\count347
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\acs@bib@file=\write4
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip74
+\bibsep=\skip75
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count348
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/achemso/natmove.sty
+Package: natmove 2010/01/15 v1.1a Automatic citation moving with natbib
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/mciteplus/mciteplus.sty
+Package: mciteplus 2013/09/13 v1.2 enhanced mcite
+\@mcitetmptoksA=\toks55
+\@mcitetmpdima=\dimen303
+\@mcitetmpdimb=\dimen304
+\@mcitetmpcnta=\count349
+\@mcitetmpcntb=\count350
+\c@mcitebibitemcount=\count351
+\c@mcitesubitemcount=\count352
+
+** mciteplus: Detected natbib.sty. Invoking hooks.
+))
+\c@definition=\count353
+\c@observation=\count354
+\c@reflection=\count355
  (./Notes.aux)
 \openout1 = `Notes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -940,17 +974,17 @@ LaTeX Font Info:    ... okay on input line 45.
 
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count351
-\scratchdimen=\dimen303
+\scratchcounter=\count356
+\scratchdimen=\dimen305
 \scratchbox=\box126
-\nofMPsegments=\count352
-\nofMParguments=\count353
-\everyMPshowfont=\toks53
-\MPscratchCnt=\count354
-\MPscratchDim=\dimen304
-\MPnumerator=\count355
-\makeMPintoPDFobject=\count356
-\everyMPtoPDFconversion=\toks54
+\nofMPsegments=\count357
+\nofMParguments=\count358
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count359
+\MPscratchDim=\dimen306
+\MPnumerator=\count360
+\makeMPintoPDFobject=\count361
+\everyMPtoPDFconversion=\toks57
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -960,37 +994,40 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count357
-Package hyperref Info: Link coloring OFF on input line 45.
+\c@lstlisting=\count362
+Package hyperref Info: Link coloring OFF on input line 47.
 
 (./Notes.out) (./Notes.out)
-\@outlinefile=\write4
-\openout4 = `Notes.out'.
+\@outlinefile=\write5
+\openout5 = `Notes.out'.
 
+\openout4 = `acs-Notes.bib'.
+
+\c@bibnote=\count363
 <GeneralSources/UABLogo.png, id=19, 392.12303pt x 138.01239pt>
 File: GeneralSources/UABLogo.png Graphic file (type png)
 <use GeneralSources/UABLogo.png>
-Package pdftex.def Info: GeneralSources/UABLogo.png  used on input line 68.
+Package pdftex.def Info: GeneralSources/UABLogo.png  used on input line 70.
 (pdftex.def)             Requested size: 122.27576pt x 43.0361pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 68.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 70.
 
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 68.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
 
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 6
-8.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 7
+0.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 68
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 70
 .
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd
@@ -1004,21 +1041,24 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.146 \end{definition}
+l.152 \end{definition}
                        [1
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.146 \end{definition}
-                      ] [2] [3]
-Underfull \hbox (badness 7504) in paragraph at lines 241--242
+l.152 \end{definition}
+                      ] [2] [3] [4]
+Underfull \hbox (badness 7504) in paragraph at lines 256--257
 \OT1/cmr/m/it/12 dis-card non-relevant data, as some
  []
 
-[4{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}] [5] [6] (./Notes.bbl) [7]
+[5{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+}] [6] [7]
 
+Package achemso Warning: \bibliographystyle ignored on input line 296.
+
+(./Notes.bbl) [8] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./Notes.aux)
  ***********
@@ -1029,10 +1069,10 @@ Package rerunfilecheck Info: File `Notes.out' has not changed.
 (rerunfilecheck)             Checksum: 11048165E22F65FFFA037B766E492357;299.
  ) 
 Here is how much of TeX's memory you used:
- 26572 strings out of 474116
- 484275 string characters out of 5743682
- 1952187 words of memory out of 5000000
- 48402 multiletter control sequences out of 15000+600000
+ 27273 strings out of 474116
+ 497331 string characters out of 5743682
+ 1953187 words of memory out of 5000000
+ 49077 multiletter control sequences out of 15000+600000
  571852 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,14n,101p,790b,1072s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1050,10 +1090,10 @@ texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/te
 xlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texl
 ive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Notes.pdf (8 pages, 211245 bytes).
+Output written on Notes.pdf (9 pages, 213357 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
- 63 named destinations out of 1000 (max. 500000)
+ 220 PDF objects out of 1000 (max. 8388607)
+ 177 compressed objects within 2 object streams
+ 66 named destinations out of 1000 (max. 500000)
  42 words of extra memory for PDF output out of 10000 (max. 10000000)
 

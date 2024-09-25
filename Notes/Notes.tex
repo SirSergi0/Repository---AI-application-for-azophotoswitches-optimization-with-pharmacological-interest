@@ -12,7 +12,6 @@
 \usepackage[english]{babel}
 \usepackage{lipsum}
 \usepackage[table,xcdraw]{xcolor}
-\usepackage{natbib}
 \usepackage{enumitem}
 \usepackage{float}
 \usepackage{chemfig}
@@ -22,6 +21,8 @@
 \usepackage[normalem]{ulem}
 \usepackage{multicol}
 \useunder{\uline}{\ul}{}
+
+\usepackage{achemso}
 
 \newtheorem{definition}{Definition}
 \newtheorem{observation}{Observation}
@@ -166,7 +167,7 @@ Information Indices: Kind of descriptor based on the information theory, where t
 \end{definition}
 
 \begin{definition}
-Adjacency Matrix: Matricidal representation of a molecule. If we have $\{x\}_{i=1}^n$ atoms that form our molecule, labeled from 1 to n, the adjacent matrix $A$ will contain as the element $a_{i,j}$ 1 if the atom $i$ and $j$ are connected and 0 otherwise. (We can also naturally add the possibilities of $a_{i,j}=2,3$ for double and triple bonds).\par
+Adjacency Matrix: Specific 2D-Matrix Based Descriptor based on the matricidal representation of a molecule. If we have $\{x\}_{i=1}^n$ atoms that form our molecule, labeled from 1 to n, the adjacent matrix $A$ will contain as the element $a_{i,j}$ the number 1 if the atom $i$ and $j$ are connected and 0 otherwise. (We can also naturally add the possibilities of $a_{i,j}=2,3$ for double and triple bonds).\par
 For instant in the Figure (\ref{figurenButaneIsobutaneGraph}) the adjacent matrix for the n-Butane is
 \begin{align}
 \text{n-Butane AM}=\begin{pmatrix}
@@ -177,6 +178,19 @@ For instant in the Figure (\ref{figurenButaneIsobutaneGraph}) the adjacent matri
 \end{pmatrix}
 \end{align}
 Trivially we observe that the main diagonal will always be filled with 0s and the matrices will also be doubly symmetrical (respect both diagonals) due to the bounds transitivity and reflectivities properties.
+\end{definition}
+
+\begin{definition}
+Distance Matrix: Specific 2D-Matrix Based Descriptor based on the computation of the shortest pathways between atoms. If we have $\{x\}_{i=1}^n$ atoms that form our molecule, labeled from 1 to n, the adjacent matrix $A$ will contain as the element $a_{i,j}$ the shortest bond distance between atom $i$ and atom $j$.\par
+For instant in the Figure (\ref{figurenButaneIsobutaneGraph}) the distance matrix for the n-Butane is
+\begin{align}
+\text{n-Butane DM}=\begin{pmatrix}
+0 & 1 & 2 & 3 \\
+1 & 0 & 1 & 2 \\
+2 & 1 & 0 & 1 \\
+3 & 2 & 1 & 0 
+\end{pmatrix}
+\end{align}
 \end{definition}
 
 \begin{enumerate}
@@ -278,7 +292,7 @@ Fun fact, \cite{ZagrebIndicesArticle} is a mathematical article, completely apar
 %%%%%%%%%%%%%%%% BIBLIOGRAPHY %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\bibliographystyle{plain}
+\bibliographystyle{achemso}
 \bibliography{references} 
 %%%%%%%%
 
