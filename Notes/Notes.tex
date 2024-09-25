@@ -166,7 +166,7 @@ Information Indices: Kind of descriptor based on the information theory, where t
 2D-Matrix Based Descriptors: Kind of descriptor based in the matricidal representation of a molecule\cite{DescriptorsBookClassification}. 
 \end{definition}
 
-\begin{definition}
+\begin{definition}\label{AdjacencyMatrixDefinition}
 Adjacency Matrix: Specific 2D-Matrix Based Descriptor based on the matricidal representation of a molecule. If we have $\{x\}_{i=1}^n$ atoms that form our molecule, labeled from 1 to n, the adjacent matrix $A$ will contain as the element $a_{i,j}$ the number 1 if the atom $i$ and $j$ are connected and 0 otherwise. (We can also naturally add the possibilities of $a_{i,j}=2,3$ for double and triple bonds).\par
 For instant in the Figure (\ref{figurenButaneIsobutaneGraph}) the adjacent matrix for the n-Butane is
 \begin{align}
@@ -193,11 +193,26 @@ For instant in the Figure (\ref{figurenButaneIsobutaneGraph}) the distance matri
 \end{align}
 \end{definition}
 
+\begin{definition}
+2D Autocorrelations: a type of molecular descriptor that quantifies the correlations between properties of atoms within a molecule based on their positions relative to one another in the molecular structure. These descriptors analyse how specific atomic properties are distributed across the molecule, capturing the spatial relationships of these properties. \par
+For a given property and distance $d$, the autocorrelation is calculated by summing the products of the property values for all pairs of atoms that are separated by that distance. Mathematically, the autocorrelation  $A_d(P)$  at distance  $d$  for a property $P$  is given by,
+\begin{align}
+A_d(P)=\sum_{d(i,j)=d}P(i)P(j)
+\end{align}
+\end{definition}
+\begin{definition}
+Burden Eigenvalues: Kind of descriptor extracted from the Burden Matrix of a molecule\cite{BurdenIndicesArticle}, which is a modification of the adjacency matrix from the definition (\ref{AdjacencyMatrixDefinition}). 
+\end{definition}
+
+\begin{definition}
+P\_VSA-like Descriptors: (Property-weighted Van der Waals Surface Area descriptors) descriptors deviated from the computation of the Van der Waals Surface of a molecule. For instance, we could talk about polarity indices, high/low electron density regions...
+\end{definition}
+
+\begin{definition}
+ETA Indices: (Extended Topochemical Atom) kind of indices that capture aspects of molecular topology in conjunction with atomic properties. They are often used in the analysis of electronic properties or biological activities.
+\end{definition}
+
 \begin{enumerate}
-    \item 2D Autocorrelations: These descriptors calculate correlations between atomic properties at different distances in the molecular graph. They capture how molecular properties change across the structure.
-    \item Burden Eigenvalues: These descriptors are derived from the eigenvalues of matrices related to the structure, such as the Burden matrix, which takes into account atomic properties like electronegativity and partial charges.
-    \item P\_VSA-like Descriptors: P\_VSA stands for “Property-weighted Van der Waals Surface Area.” These descriptors quantify the surface area of a molecule associated with specific properties like polarizability or charge.
-    \item ETA Indices (Extended Topochemical Atom): ETA indices capture aspects of molecular topology in conjunction with atomic properties. They are often used in the analysis of electronic properties or biological activities.
     \item Edge Adjacency Indices: These descriptors are derived from the adjacency of bonds (edges) in the molecular graph. They measure the proximity of bonds in the structure and can reflect molecular complexity.
     \item Fractional Group Counts: These descriptors count specific chemical groups or fragments within the molecule, providing information about the functional groups present.
     \item Atom-Centered Fragments: These descriptors focus on the environment of individual atoms within a molecule. They describe the types and arrangements of atoms surrounding each atom in the structure.

@@ -1,41 +1,89 @@
-\begin{thebibliography}{1}
+\providecommand{\latin}[1]{#1}
+\makeatletter
+\providecommand{\doi}
+  {\begingroup\let\do\@makeother\dospecials
+  \catcode`\{=1 \catcode`\}=2 \doi@aux}
+\providecommand{\doi@aux}[1]{\endgroup\texttt{#1}}
+\makeatother
+\providecommand*\mcitethebibliography{\thebibliography}
+\csname @ifundefined\endcsname{endmcitethebibliography}
+  {\let\endmcitethebibliography\endthebibliography}{}
+\begin{mcitethebibliography}{9}
+\providecommand*\natexlab[1]{#1}
+\providecommand*\mciteSetBstSublistMode[1]{}
+\providecommand*\mciteSetBstMaxWidthForm[2]{}
+\providecommand*\mciteBstWouldAddEndPuncttrue
+  {\def\EndOfBibitem{\unskip.}}
+\providecommand*\mciteBstWouldAddEndPunctfalse
+  {\let\EndOfBibitem\relax}
+\providecommand*\mciteSetBstMidEndSepPunct[3]{}
+\providecommand*\mciteSetBstSublistLabelBeginEnd[3]{}
+\providecommand*\EndOfBibitem{}
+\mciteSetBstSublistMode{f}
+\mciteSetBstMaxWidthForm{subitem}{(\alph{mcitesubitemcount})}
+\mciteSetBstSublistLabelBeginEnd
+  {\mcitemaxwidthsubitemform\space}
+  {\relax}
+  {\relax}
 
-\bibitem{MathematicsForMachineLearningBook}
-Marc~Peter Deisenroth, A.~Aldo Faisal, and Cheng~Soon Ong.
-\newblock {\em Mathematics for Machine Learning}.
-\newblock Cambridge University Press, 2020.
-
-\bibitem{DescriptorsBook}
-J.~Gasteiger and T.~Engel.
-\newblock {\em Molecular Descriptors for Chemoinformatics}.
-\newblock Wiley-VCH, Weinheim, Germany, 2003.
-
-\bibitem{RandicIndexArticle}
-Ivan Gutman, Boris Furtula, and Vladimir Katanić.
-\newblock Randić index and information.
-\newblock {\em AKCE International Journal of Graphs and Combinatorics},
-  15(3):307--312, 2018.
-
-\bibitem{connectivityIndicesArticle}
-Milan Randic.
-\newblock Characterization of molecular branching.
-\newblock {\em Journal of the American Chemical Society}, 97(23):6609--6615,
-  1975.
-
-\bibitem{BookIC50}
-David~C. Swinney.
-\newblock Chapter 18 - molecular mechanism of action (mmoa) in drug discovery.
-\newblock volume~46 of {\em Annual Reports in Medicinal Chemistry}, pages
-  301--317. Academic Press, 2011.
-
-\bibitem{DescriptorsBookClassification}
-Roberto Todeschini and Viviana Consonni.
-\newblock {\em Molecular Descriptors for Chemoinformatics}.
-\newblock Wiley-VCH, Weinheim, Germany, 2nd edition, 2009.
-
-\bibitem{ZagrebIndicesArticle}
-Kexiang Xu.
-\newblock The zagreb indices of graphs with a given clique number.
-\newblock {\em Applied Mathematics Letters}, 24(6):1026--1030, 2011.
-
-\end{thebibliography}
+\bibitem[Swinney(2011)]{BookIC50}
+Swinney,~D.~C. In \emph{Chapter 18 - Molecular Mechanism of Action (MMoA) in
+  Drug Discovery}; Macor,~J.~E., Ed.; Annual Reports in Medicinal Chemistry;
+  Academic Press, 2011; Vol.~46; pp 301--317\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Gasteiger and Engel(2003)Gasteiger, and Engel]{DescriptorsBook}
+Gasteiger,~J.; Engel,~T. \emph{Molecular Descriptors for Chemoinformatics};
+  Wiley-VCH: Weinheim, Germany, 2003\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Xu(2011)]{ZagrebIndicesArticle}
+Xu,~K. \emph{Applied Mathematics Letters} \textbf{2011}, \emph{24},
+  1026--1030\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Randic(1975)]{connectivityIndicesArticle}
+Randic,~M. \emph{Journal of the American Chemical Society} \textbf{1975},
+  \emph{97}, 6609--6615\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Gutman \latin{et~al.}(2018)Gutman, Furtula, and
+  Katanić]{RandicIndexArticle}
+Gutman,~I.; Furtula,~B.; Katanić,~V. \emph{AKCE International Journal of
+  Graphs and Combinatorics} \textbf{2018}, \emph{15}, 307--312\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Todeschini and Consonni(2009)Todeschini, and
+  Consonni]{DescriptorsBookClassification}
+Todeschini,~R.; Consonni,~V. \emph{Molecular Descriptors for Chemoinformatics},
+  2nd ed.; Wiley-VCH: Weinheim, Germany, 2009\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Burden and Wilkins(1996)Burden, and Wilkins]{BurdenIndicesArticle}
+Burden,~F.~R.; Wilkins,~D.~C. \emph{Journal of Chemical Information and
+  Computer Sciences} \textbf{1996}, \emph{36}, 1--5\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Deisenroth \latin{et~al.}(2020)Deisenroth, Faisal, and
+  Ong]{MathematicsForMachineLearningBook}
+Deisenroth,~M.~P.; Faisal,~A.~A.; Ong,~C.~S. \emph{Mathematics for Machine
+  Learning}; Cambridge University Press, 2020\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\end{mcitethebibliography}

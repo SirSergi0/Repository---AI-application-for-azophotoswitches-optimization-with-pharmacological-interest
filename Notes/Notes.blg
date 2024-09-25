@@ -1,48 +1,54 @@
 This is BibTeX, Version 0.99d (TeX Live 2024)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Notes.aux
-The style file: plain.bst
-Database file #1: references.bib
-Warning--empty booktitle in BookIC50
-You've used 7 entries,
-            2118 wiz_defined-function locations,
-            551 strings with 5106 characters,
-and the built_in function-call counts, 2226 in all, are:
-= -- 217
-> -- 83
-< -- 2
-+ -- 34
-- -- 26
-* -- 150
-:= -- 369
-add.period$ -- 22
-call.type$ -- 7
-change.case$ -- 32
-chr.to.int$ -- 0
-cite$ -- 8
-duplicate$ -- 93
-empty$ -- 192
-format.name$ -- 26
-if$ -- 476
+The style file: achemso.bst
+Illegal, another \bibstyle command---line 41 of file Notes.aux
+ : \bibstyle
+ :          {achemso}
+I'm skipping whatever remains of this command
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: acs-Notes.bib
+Database file #2: references.bib
+achemso 2024-01-30 v3.13g
+You've used 9 entries,
+            2538 wiz_defined-function locations,
+            816 strings with 8092 characters,
+and the built_in function-call counts, 2654 in all, are:
+= -- 216
+> -- 111
+< -- 14
++ -- 43
+- -- 36
+* -- 241
+:= -- 357
+add.period$ -- 8
+call.type$ -- 9
+change.case$ -- 5
+chr.to.int$ -- 4
+cite$ -- 9
+duplicate$ -- 157
+empty$ -- 232
+format.name$ -- 45
+if$ -- 552
 int.to.chr$ -- 0
-int.to.str$ -- 7
-missing$ -- 10
-newline$ -- 38
-num.names$ -- 14
-pop$ -- 40
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 76
+num.names$ -- 26
+pop$ -- 19
 preamble$ -- 1
-purify$ -- 27
+purify$ -- 0
 quote$ -- 0
-skip$ -- 59
+skip$ -- 9
 stack$ -- 0
-substring$ -- 143
-swap$ -- 17
-text.length$ -- 2
+substring$ -- 133
+swap$ -- 121
+text.length$ -- 18
 text.prefix$ -- 0
-top$ -- 0
-type$ -- 22
-warning$ -- 1
-while$ -- 20
-width$ -- 8
-write$ -- 80
-(There was 1 warning)
+top$ -- 1
+type$ -- 51
+warning$ -- 0
+while$ -- 34
+width$ -- 0
+write$ -- 125
+(There was 1 error message)
