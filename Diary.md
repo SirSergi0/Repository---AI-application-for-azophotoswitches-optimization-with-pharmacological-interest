@@ -26,5 +26,10 @@ Although the course may be usefull for Students with a TFG developed in a lab, i
 
 ### 17/09/2024	15:00h	Meeting with Dr.Moreno & Dra.González	C7/137
 
+Goals:
  - Presentation
  - Defining the project's methology and work-flow.
+
+Outcome:
+ - Presentation of the article "Combined Machine Learning and GRID-Independent Molecular Descriptor (GRIND) Models to Probe the Activity Profiles of 5-Lipoxygenase Activating Protein Inhibitors".
+ - Begining of the research.
