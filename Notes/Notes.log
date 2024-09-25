@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  24 SEP 2024 17:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  25 SEP 2024 00:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1012,7 +1012,7 @@ s been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.146 \end{definition}
                       ] [2] [3]
-Underfull \hbox (badness 7504) in paragraph at lines 210--211
+Underfull \hbox (badness 7504) in paragraph at lines 241--242
 \OT1/cmr/m/it/12 dis-card non-relevant data, as some
  []
 
@@ -1029,13 +1029,13 @@ Package rerunfilecheck Info: File `Notes.out' has not changed.
 (rerunfilecheck)             Checksum: 11048165E22F65FFFA037B766E492357;299.
  ) 
 Here is how much of TeX's memory you used:
- 26553 strings out of 474116
- 483869 string characters out of 5743682
+ 26572 strings out of 474116
+ 484275 string characters out of 5743682
  1952187 words of memory out of 5000000
- 48391 multiletter control sequences out of 15000+600000
- 571151 words of font info for 94 fonts, out of 8000000 for 9000
+ 48402 multiletter control sequences out of 15000+600000
+ 571852 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,101p,790b,1072s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,14n,101p,790b,1072s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pf
 b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pf
@@ -1048,11 +1048,12 @@ local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
 al/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
 texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/te
-xlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Notes.pdf (8 pages, 197363 bytes).
+xlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texl
+ive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on Notes.pdf (8 pages, 211245 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
- 157 compressed objects within 2 object streams
- 57 named destinations out of 1000 (max. 500000)
+ 213 PDF objects out of 1000 (max. 8388607)
+ 171 compressed objects within 2 object streams
+ 63 named destinations out of 1000 (max. 500000)
  42 words of extra memory for PDF output out of 10000 (max. 10000000)
 

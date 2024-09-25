@@ -145,10 +145,41 @@ Zagreb index: "For a (molecular) graph, the first Zagreb index $M_1$
 Walk and Path Counts Descriptors: Kind of descriptor focused on counting specific paths or walks (connected sequences of atoms) in the molecular graph. For instance we can get a Walk and Path Counts Descriptor quantifying the number of Eulerian paths in a molecule's graph. They give insights into the molecule’s connectivity and complexity.
 \end{definition}
 
+\begin{definition}
+Connectivity Indices: Connectivity Indices are a class of molecular descriptors that quantify the connectivity or bonding patterns between atoms in a molecule based on its topology (i.e., the molecular graph). These indices capture the degree to which atoms are connected, considering how atoms are bonded to each other rather than their physical 3D arrangement. They are typically derived from graph theory, where atoms are represented as vertices and bonds as edges.\cite{connectivityIndicesArticle}
+\end{definition}
+
+\begin{definition}
+Randic Index: Specific connectivity index defined as the following,
+\begin{align}
+\sum_{\text{all bonds}}\frac{1}{\sqrt{d_id_j}}
+\end{align}
+where $d_i$ and $d_j$ denote the number of bonds of atoms $i$ and $j$ connected by a bond.\cite{RandicIndexArticle}
+\end{definition}
+
+\begin{definition}
+Information Indices: Kind of descriptor based on the information theory, where the molecular structure is represented as a distribution of information (or entropy). They measure molecular complexity and diversity.
+\end{definition}
+
+\begin{definition}
+2D-Matrix Based Descriptors: Kind of descriptor based in the matricidal representation of a molecule\cite{DescriptorsBookClassification}. 
+\end{definition}
+
+\begin{definition}
+Adjacency Matrix: Matricidal representation of a molecule. If we have $\{x\}_{i=1}^n$ atoms that form our molecule, labeled from 1 to n, the adjacent matrix $A$ will contain as the element $a_{i,j}$ 1 if the atom $i$ and $j$ are connected and 0 otherwise. (We can also naturally add the possibilities of $a_{i,j}=2,3$ for double and triple bonds).\par
+For instant in the Figure (\ref{figurenButaneIsobutaneGraph}) the adjacent matrix for the n-Butane is
+\begin{align}
+\text{n-Butane AM}=\begin{pmatrix}
+0 & 1 & 0 & 0 \\
+1 & 0 & 1 & 0 \\
+0 & 1 & 0 & 1 \\
+0 & 0 & 1 & 0 
+\end{pmatrix}
+\end{align}
+Trivially we observe that the main diagonal will always be filled with 0s and the matrices will also be doubly symmetrical (respect both diagonals) due to the bounds transitivity and reflectivities properties.
+\end{definition}
+
 \begin{enumerate}
-    \item Connectivity Indices: These indices quantify the degree of connectivity between atoms based on the topology of the molecule. Popular examples include the Randic index and the Balaban index.
-    \item Information Indices: These are based on the concept of information theory, where the structure is interpreted as a distribution of information (or entropy). They measure molecular complexity and diversity.
-    \item 2D-Matrix Based Descriptors: These descriptors use matrices (such as adjacency or distance matrices) derived from the 2D molecular graph. They help describe relationships between atoms in a molecule.
     \item 2D Autocorrelations: These descriptors calculate correlations between atomic properties at different distances in the molecular graph. They capture how molecular properties change across the structure.
     \item Burden Eigenvalues: These descriptors are derived from the eigenvalues of matrices related to the structure, such as the Burden matrix, which takes into account atomic properties like electronegativity and partial charges.
     \item P\_VSA-like Descriptors: P\_VSA stands for “Property-weighted Van der Waals Surface Area.” These descriptors quantify the surface area of a molecule associated with specific properties like polarizability or charge.
