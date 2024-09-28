@@ -27,6 +27,7 @@
 \newtheorem{definition}{Definition}
 \newtheorem{observation}{Observation}
 \newtheorem{reflection}{Reflection}
+\newtheorem{book}{Book}
 
 \newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
 \setcounter{tocdepth}{5}
@@ -209,22 +210,58 @@ P\_VSA-like Descriptors: (Property-weighted Van der Waals Surface Area descripto
 \end{definition}
 
 \begin{definition}
-ETA Indices: (Extended Topochemical Atom) kind of indices that capture aspects of molecular topology in conjunction with atomic properties. They are often used in the analysis of electronic properties or biological activities.
+ETA Indices: (Extended Topochemical Atom) kind of indices that capture aspects of molecular topology in conjunction with atomic properties. They are often used in the analysis of electronic properties or biological activities.\cite{DescriptorsBook}
 \end{definition}
 
-\begin{enumerate}
-    \item Edge Adjacency Indices: These descriptors are derived from the adjacency of bonds (edges) in the molecular graph. They measure the proximity of bonds in the structure and can reflect molecular complexity.
-    \item Fractional Group Counts: These descriptors count specific chemical groups or fragments within the molecule, providing information about the functional groups present.
-    \item Atom-Centered Fragments: These descriptors focus on the environment of individual atoms within a molecule. They describe the types and arrangements of atoms surrounding each atom in the structure.
-    \item Atom-Type E-State Indices: The E-State (Electrotopological State) descriptors combine information about the electronic environment and topology of atoms. They reflect the potential reactivity of atoms in the molecule.
-    \item Pharmacophore Descriptors: These describe the spatial arrangement of features critical for molecular recognition by biological targets, such as hydrogen bond donors/acceptors, hydrophobic regions, or aromatic rings.
-    \item 2D Atom Pairs: These descriptors capture the relationships between pairs of atoms at a specific distance (in terms of bonds) from each other. They describe the distribution of atom pairs within the molecular structure.
-    \item Charge Descriptors: These describe the charge distribution within the molecule, including total charge, partial atomic charges, and the dipole moment.
-    \item Molecular Properties: These include physical and chemical properties of the molecule such as molecular weight, boiling point, or solubility.
-    \item Drug-Like Indices: These descriptors quantify how closely the molecule follows the rules for drug-likeness, such as Lipinski’s Rule of Five, which includes factors like molecular weight, hydrophobicity, and hydrogen bonding.
-    \item MDE Descriptors (Molecular Distance Edge descriptors): These describe the distances between atoms in a molecule based on the molecular graph. They are useful for capturing molecular shape and spatial relationships.
-    \item Chirality Descriptors: These quantify the chirality (handedness) of molecules. They reflect the 3D arrangement of atoms around chiral centers, which can influence how molecules interact with biological systems.
-\end{enumerate}
+\begin{definition}
+Edge Adjacency Indices: Kind of descriptor that relies on the chemical graph theory and is related to the number of bonds that each atom generates. This descriptors are tightly related to the molecule's complexity.\cite{DescriptorsBook}
+\end{definition}
+
+\begin{definition}
+Fractional Group Counts (FGC): kind of molecular descriptor related to the chemical functional groups. For instance, in the case of cyclopentanone Figure (\ref{figurenCiclopentanone}), the Ketones Group Counts  is $\frac{1}{6}$, since we have 1 ketone for 6 atoms(we do not typically compute the hydrogen atoms).\cite{DescriptorsBook}
+\begin{figure}[H]
+\centering
+\chemfig{O=*5(-----)}\hspace{1cm}
+\caption{Cycloentanone's chemical graph.}
+\label{figurenCiclopentanone}
+\end{figure}
+\end{definition}
+
+\begin{definition}
+Atom-Centered Fragments (ACF): Kind of molecular descriptor concerned about atoms separately. For a given molecule conformed by $n$ atoms, and a specific Atom-Centered Fragment descriptor, we can compute $n$ descriptors of this kind based one per each atom separately. Each descriptor describes an atom itself, its surroundings and its bounding types.\cite{DescriptorsBook}
+\end{definition}
+
+\begin{definition}
+Atom-Type E-State Indices: Kind of molecular descriptor that describes the electronic state of an individual atom. Some Atom-Type E-State Indices describe the hybridisation state (e.g., $sp^2$, $sp^3$), the local bonding environment (e.g., single, double, or aromatic bonds), the presence of electronegative atoms nearby or the topological distance to other atoms in the molecule. For a given atom, a atom-type e-etate Indiex is the combination of 2 terms. The intrinsic term that depends on the atom hybridization and the perturbation term which is adjusted depending in the atom's surroundings.\cite{DescriptorsBook}
+\end{definition}
+
+\begin{definition}
+Pharmacophore Descriptors: Kind of descriptor refered to the functionals groups of a given molecule and its molecular features. they describe properties such as hydrogen donation (-OH), hydrogen acceptation (C=O), Positive or negative ionizable groups (-COO$^-$)... This kind of descriptor does not worry about the molecular structure rather than the molecular properties as a hole.\cite{PharmacophoreDescriptorsBook}
+\end{definition}
+
+\begin{definition}
+2D Atom Pairs: Kind of descriptor that focuses on pairs of atoms and captures information about the types of atoms involved, as well as the distance between them in a two-dimensional representation of the molecular structure.
+\end{definition}
+
+\begin{definition}
+Charge descriptors: Kind of descriptor that describes a molecular charge, as a complete element as well as the composure of several elements. One of the key features of this kind of descriptors is their high dependency on dipole moment as well as the electronegativity of the atoms that it describes.
+\end{definition}
+
+\begin{definition}
+Molecular Properties: The most intuitive kind of descriptor. These descriptors are the \emph{traditional features} of a substance such as it molecular weight, boiling point, solubility, density...
+\end{definition}
+
+\begin{definition}
+Drug-Like Indices: These descriptors quantify how closely the molecule follows the rules for drug-likeness, such as Lipinski’s Rule of Five, which includes factors like molecular weight, hydrophobicity, and hydrogen bonding.
+\end{definition}
+
+\begin{definition}
+MDE Descriptors (Molecular Distance Edge descriptors): These describe the distances between atoms in a molecule based on the molecular graph. They are useful for capturing molecular shape and spatial relationships.
+\end{definition}
+
+\begin{definition}
+Chirality Descriptors: These quantify the chirality (handedness) of molecules. They reflect the 3D arrangement of atoms around chiral centers, which can influence how molecules interact with biological systems.
+\end{definition}
 
 \begin{definition}
 QSAR: "Quantitative Structure–Activity Relationships are the finnal result of the
@@ -238,14 +275,57 @@ activity (or property, reactivity, etc.) of a new designed or untested chemical 
 inferred from the molecular structure of similar compounds whose activities
 (properties, reactivities, etc.) have already been assessed."\cite{DescriptorsBookClassification}
 \end{definition}
+
+\begin{definition}
+Machine Learning Model: For a given problem, Machine Learning Model is the procedure to resolve the problem in a Machine Learning like format. 
+\end{definition}
+
+\begin{definition}
+The efficiency of a Machine Learning Model relies in the following quantities:
+\begin{itemize}
+\item True Positives (TP): number of true positives results.
+\item False Positives (FP): number of false positives results.
+\item True Negatives (TN): number of true negatives results.
+\item Fales Negatives (FN): number of false negatives results.
+\end{itemize}
+\end{definition}
+
+\begin{definition}
+True Positive Rate: quantity related to a Machine Learning Model's sensitivity defined as:
+\begin{align}
+\frac{TP}{TP+FN}
+\end{align}
+\end{definition}
+
+\begin{definition}
+True Negative Rate: quantity related to a Machine Learning Model's specificity defined as:
+\begin{align}
+\frac{TN}{TN+FN}
+\end{align}
+\end{definition}
+
+\begin{definition}
+Classification Accuracy: quantity related to a Machine Learning Model's efectiveness defined as:
+\begin{align}
+\frac{TP+TN}{TP+FP+TN+FN}
+\end{align}
+\end{definition}
+
+\begin{definition}
+Matthews Correlation Coefficient: quantity related to a Machine Learning Model's prediction capacity defined as:
+{\scriptsize
+\begin{align}
+\frac{(TP\times TN)-(FP\times FN)}{\sqrt{(TP+FP)\times(TP+FN)\times(TN+FP)\times(TN+FN)}}
+\end{align}
+}
+A Matthews Correlation Coefficient equal to 1 stands for a perfect prediction a Matthews Correlation Coefficient equal to 0 indicates that the classifier’s predictions are no better than random guessing, and a Matthews Correlation Coefficient equal to -1 stand for a total disagreement between predictions and actual outcomes.
+\end{definition}
+
 \end{multicols}
-\newpage
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%% OSERVATIONS %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\newpage
 \begin{multicols}{2}
 [
 \section{Observations}
@@ -299,7 +379,34 @@ Fun fact, \cite{ZagrebIndicesArticle} is a mathematical article, completely apar
 \end{reflection}
 \end{multicols}
 
+\newpage
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% CONTACTS %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Contacts}
+IIIA (Institut d'Investigació en Inteligència Artificial): 
+\begin{itemize}
+\item General consultes \href{tel:93 580 9570}{+34 93 580 9570}
+\item \href{https://www.iiia.csic.es/en-us/people/person/?person_id=39}{Pablo Noriega}: \href{mailto:pablo@iiia.csic.es}{pablo@iiia.csic.es}
+\end{itemize}
+Chemistry department - UAB
+\begin{itemize}
+\item General consultes \href{tel:93 580 9570}{+34 93 580 9570}
+\item \href{https://www.iiia.csic.es/en-us/people/person/?person_id=39}{Pablo Noriega}: \href{mailto:pablo@iiia.csic.es}{pablo@iiia.csic.es}
+\end{itemize}
+
+\section{Physical books in the library}
+\begin{book}
+Molecular descriptors for chemoinformatics. Todeschini, Roberto.; Consonni, Viviana. 2009. Volum: 2. 
+
+Localization: Ciència i Tecnologia. 
+
+Signatura: 54:68 Tod. 
+
+Codi de Barres: 1501208901
+\end{book}
 
 \newpage
 
@@ -307,7 +414,7 @@ Fun fact, \cite{ZagrebIndicesArticle} is a mathematical article, completely apar
 %%%%%%%%%%%%%%%% BIBLIOGRAPHY %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\bibliographystyle{achemso}
+% \bibliographystyle{achemso}
 \bibliography{references} 
 %%%%%%%%
 

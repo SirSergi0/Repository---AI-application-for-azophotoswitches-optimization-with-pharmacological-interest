@@ -8,7 +8,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{9}
+\begin{mcitethebibliography}{10}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -74,6 +74,13 @@ Todeschini,~R.; Consonni,~V. \emph{Molecular Descriptors for Chemoinformatics},
 \bibitem[Burden and Wilkins(1996)Burden, and Wilkins]{BurdenIndicesArticle}
 Burden,~F.~R.; Wilkins,~D.~C. \emph{Journal of Chemical Information and
   Computer Sciences} \textbf{1996}, \emph{36}, 1--5\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[G{\"u}ner(2000)]{PharmacophoreDescriptorsBook}
+G{\"u}ner,~O.~F. \emph{Pharmacophore Perception, Development, and Use in Drug
+  Design}; International University Line, 2000\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
