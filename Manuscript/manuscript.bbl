@@ -1,14 +1,45 @@
-\begin{thebibliography}{1}
+\providecommand{\latin}[1]{#1}
+\makeatletter
+\providecommand{\doi}
+  {\begingroup\let\do\@makeother\dospecials
+  \catcode`\{=1 \catcode`\}=2 \doi@aux}
+\providecommand{\doi@aux}[1]{\endgroup\texttt{#1}}
+\makeatother
+\providecommand*\mcitethebibliography{\thebibliography}
+\csname @ifundefined\endcsname{endmcitethebibliography}
+  {\let\endmcitethebibliography\endthebibliography}{}
+\begin{mcitethebibliography}{3}
+\providecommand*\natexlab[1]{#1}
+\providecommand*\mciteSetBstSublistMode[1]{}
+\providecommand*\mciteSetBstMaxWidthForm[2]{}
+\providecommand*\mciteBstWouldAddEndPuncttrue
+  {\def\EndOfBibitem{\unskip.}}
+\providecommand*\mciteBstWouldAddEndPunctfalse
+  {\let\EndOfBibitem\relax}
+\providecommand*\mciteSetBstMidEndSepPunct[3]{}
+\providecommand*\mciteSetBstSublistLabelBeginEnd[3]{}
+\providecommand*\EndOfBibitem{}
+\mciteSetBstSublistMode{f}
+\mciteSetBstMaxWidthForm{subitem}{(\alph{mcitesubitemcount})}
+\mciteSetBstSublistLabelBeginEnd
+  {\mcitemaxwidthsubitemform\space}
+  {\relax}
+  {\relax}
 
-\bibitem{MathematicsForMachineLearningBook}
-Marc~Peter Deisenroth, A.~Aldo Faisal, and Cheng~Soon Ong.
-\newblock {\em Mathematics for Machine Learning}.
-\newblock Cambridge University Press, 2020.
-
-\bibitem{NationalLibraryOfMedicineGeneralArticle}
-Shruti Singh, Rajesh Kumar, Shuvasree Payra, and Sunil~K Singh.
-\newblock Artificial intelligence and machine learning in pharmacological
-  research: Bridging the gap between data and drug discovery.
-\newblock {\em Cureus}, 15(8):e44359, Aug 2023.
-
-\end{thebibliography}
+\bibitem[Singh \latin{et~al.}(2023)Singh, Kumar, Payra, and
+  Singh]{NationalLibraryOfMedicineGeneralArticle}
+Singh,~S.; Kumar,~R.; Payra,~S.; Singh,~S.~K. \emph{Cureus} \textbf{2023},
+  \emph{15}, e44359\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Deisenroth \latin{et~al.}(2020)Deisenroth, Faisal, and
+  Ong]{MathematicsForMachineLearningBook}
+Deisenroth,~M.~P.; Faisal,~A.~A.; Ong,~C.~S. \emph{Mathematics for Machine
+  Learning}; Cambridge University Press, 2020\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\end{mcitethebibliography}

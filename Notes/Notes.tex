@@ -415,12 +415,19 @@ Fun fact, \cite{ZagrebIndicesArticle} is a mathematical article, completely apar
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%% PACKAGES %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{multicols}{2}
+[
 \section{Packages}
-
+]
 \begin{PyPackage}
 "Requests allows you to send HTTP/1.1 requests extremely easily. There’s no need to manually add query strings to your URLs, or to form-encode your POST data. Keep-alive and HTTP connection pooling are 100\% automatic, thanks to urllib3."
 \cite{PythonPackageRequests}. We will use this package to create requests to the ChEMBL database.
 \end{PyPackage}
+
+\begin{PyPackage}
+"Pandas is a Python package that provides fast, flexible, and expressive data structures designed to make working with "relational" or "labeled" data both easy and intuitive. It aims to be the fundamental high-level building block for doing practical, real world data analysis in Python. Additionally, it has the broader goal of becoming the most powerful and flexible open source data analysis / manipulation tool available in any language. It is already well on its way towards this goal"\cite{PythonPackagePandas}. We will use this package to interact with the data using a built-in Pandas class called \emph{Data Frames}.
+\end{PyPackage}
+\end{multicols}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%% BOOKS %%%%%%%%%%%%%%%%%%%
@@ -440,7 +447,7 @@ Codi de Barres: 1501208901
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%% VARIOUS %%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\newpage
 \section{Various}
 
 \begin{lstlisting}[language=C, caption=Example of a JSON file.]

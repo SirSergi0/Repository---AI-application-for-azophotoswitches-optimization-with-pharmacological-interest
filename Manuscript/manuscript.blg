@@ -1,46 +1,49 @@
 This is BibTeX, Version 0.99d (TeX Live 2024)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: manuscript.aux
-The style file: plain.bst
-Database file #1: references.bib
-You've used 2 entries,
-            2118 wiz_defined-function locations,
-            514 strings with 4813 characters,
-and the built_in function-call counts, 677 in all, are:
-= -- 58
-> -- 41
-< -- 0
-+ -- 16
-- -- 14
-* -- 54
-:= -- 124
-add.period$ -- 6
-call.type$ -- 2
-change.case$ -- 12
-chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 23
-empty$ -- 49
-format.name$ -- 14
-if$ -- 133
+The style file: achemso.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: acs-manuscript.bib
+Database file #2: references.bib
+achemso 2024-01-30 v3.13g
+You've used 3 entries,
+            2538 wiz_defined-function locations,
+            763 strings with 7234 characters,
+and the built_in function-call counts, 820 in all, are:
+= -- 49
+> -- 46
+< -- 4
++ -- 20
+- -- 17
+* -- 70
+:= -- 115
+add.period$ -- 2
+call.type$ -- 3
+change.case$ -- 4
+chr.to.int$ -- 2
+cite$ -- 3
+duplicate$ -- 51
+empty$ -- 61
+format.name$ -- 16
+if$ -- 152
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 3
-newline$ -- 13
-num.names$ -- 4
-pop$ -- 15
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 40
+num.names$ -- 6
+pop$ -- 5
 preamble$ -- 1
-purify$ -- 11
+purify$ -- 0
 quote$ -- 0
-skip$ -- 13
+skip$ -- 3
 stack$ -- 0
-substring$ -- 28
-swap$ -- 2
-text.length$ -- 0
+substring$ -- 24
+swap$ -- 46
+text.length$ -- 4
 text.prefix$ -- 0
-top$ -- 0
-type$ -- 6
+top$ -- 1
+type$ -- 15
 warning$ -- 0
-while$ -- 5
-width$ -- 3
-write$ -- 23
+while$ -- 8
+width$ -- 0
+write$ -- 51

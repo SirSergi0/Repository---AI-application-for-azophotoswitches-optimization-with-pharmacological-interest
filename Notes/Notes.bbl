@@ -8,7 +8,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{11}
+\begin{mcitethebibliography}{12}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -96,6 +96,13 @@ Deisenroth,~M.~P.; Faisal,~A.~A.; Ong,~C.~S. \emph{Mathematics for Machine
 \bibitem[Reitz and Chalasani(2023)Reitz, and Chalasani]{PythonPackageRequests}
 Reitz,~K.; Chalasani,~A. Requests: HTTP for Humans.
   \url{https://pypi.org/project/requests/}, 2023; Python package\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[McKinney(2023)]{PythonPackagePandas}
+McKinney,~W. pandas: A Foundational Python Library for Data Analysis. 2023;
+  \url{https://pandas.pydata.org}, Version 1.5.3\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
