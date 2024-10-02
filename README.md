@@ -28,6 +28,11 @@ Comments will be added throughout the project's development. This list may not b
 - The information is located in the `Notes/notes.pdf` file, which will be some sore of *Wikipedia* for the project, storing all the relevant data.
 - All references are located in the `Notes/references.bib` file. This file will keep track of every single file consultated.
 
+### Scripts
+
+- The directory `Scripts` will contail all the scripts of this project. 
+- Additionally, it will also contain a file `Scripts/READMEScripts.md` where a short description of each script will be stored.
+
 ### Manuscript
 
 - The manuscript in PDF format will always be placed in the `Manuscript` directory and will be named `manuscript.pdf`.
