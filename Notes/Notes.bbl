@@ -8,7 +8,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{10}
+\begin{mcitethebibliography}{11}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -89,6 +89,13 @@ G{\"u}ner,~O.~F. \emph{Pharmacophore Perception, Development, and Use in Drug
   Ong]{MathematicsForMachineLearningBook}
 Deisenroth,~M.~P.; Faisal,~A.~A.; Ong,~C.~S. \emph{Mathematics for Machine
   Learning}; Cambridge University Press, 2020\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Reitz and Chalasani(2023)Reitz, and Chalasani]{PythonPackageRequests}
+Reitz,~K.; Chalasani,~A. Requests: HTTP for Humans.
+  \url{https://pypi.org/project/requests/}, 2023; Python package\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

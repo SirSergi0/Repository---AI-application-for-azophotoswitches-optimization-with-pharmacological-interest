@@ -22,11 +22,44 @@
 \usepackage{multicol}
 \useunder{\uline}{\ul}{}
 
+
+%%%%%%%%%%%%%%% CODELISTINGS %%%%%%%%%%%%%%%%
+\usepackage{listings}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=t,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
 \usepackage{achemso}
+
 
 \newtheorem{definition}{Definition}
 \newtheorem{observation}{Observation}
 \newtheorem{reflection}{Reflection}
+\newtheorem{PyPackage}{Package}
 \newtheorem{book}{Book}
 
 \newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
@@ -379,7 +412,15 @@ Fun fact, \cite{ZagrebIndicesArticle} is a mathematical article, completely apar
 \end{reflection}
 \end{multicols}
 
-\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% PACKAGES %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Packages}
+
+\begin{PyPackage}
+"Requests allows you to send HTTP/1.1 requests extremely easily. There’s no need to manually add query strings to your URLs, or to form-encode your POST data. Keep-alive and HTTP connection pooling are 100\% automatic, thanks to urllib3."
+\cite{PythonPackageRequests}. We will use this package to create requests to the ChEMBL database.
+\end{PyPackage}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%% BOOKS %%%%%%%%%%%%%%%%%%%
@@ -395,6 +436,53 @@ Signatura: 54:68 Tod.
 
 Codi de Barres: 1501208901
 \end{book}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% VARIOUS %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Various}
+
+\begin{lstlisting}[language=C, caption=Example of a JSON file.]
+{
+  "page_meta": {
+    "limit": 1000,
+    "offset": 0,
+    "total_count": 1500,
+    "next": "/chembl/api/data/activity.json?limit=1000&offset=1000&target_chembl_id=CHEMBL372&standard_type=IC50",
+    "previous": null
+  },
+  "activities": [
+    {
+      "activity_id": 123456789,
+      "assay_chembl_id": "CHEMBL123456",
+      "molecule_chembl_id": "CHEMBL25",
+      "canonical_smiles": "CCOCCO",
+      "standard_value": "50",
+      "standard_units": "nM",
+      "standard_type": "IC50",
+      "target_chembl_id": "CHEMBL372",
+      "assay_type": "B",
+      "relation": "=",
+      "document_chembl_id": "CHEMBL12345"
+    },
+    {
+      "activity_id": 987654321,
+      "assay_chembl_id": "CHEMBL654321",
+      "molecule_chembl_id": "CHEMBL1095",
+      "canonical_smiles": "CCCN(CC)CC",
+      "standard_value": "25",
+      "standard_units": "nM",
+      "standard_type": "IC50",
+      "target_chembl_id": "CHEMBL372",
+      "assay_type": "B",
+      "relation": "<",
+      "document_chembl_id": "CHEMBL54321"
+    }
+    // More activity entries...
+  ]
+}
+\end{lstlisting}
 
 \newpage
 

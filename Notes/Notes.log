@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  29 SEP 2024 14:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  2 OCT 2024 22:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -912,32 +912,33 @@ Package: mciteplus 2013/09/13 v1.2 enhanced mcite
 \c@definition=\count353
 \c@observation=\count354
 \c@reflection=\count355
-\c@book=\count356
+\c@PyPackage=\count356
+\c@book=\count357
  (./Notes.aux)
 \openout1 = `Notes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -975,16 +976,16 @@ LaTeX Font Info:    ... okay on input line 47.
 
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count357
+\scratchcounter=\count358
 \scratchdimen=\dimen305
 \scratchbox=\box126
-\nofMPsegments=\count358
-\nofMParguments=\count359
+\nofMPsegments=\count359
+\nofMParguments=\count360
 \everyMPshowfont=\toks56
-\MPscratchCnt=\count360
+\MPscratchCnt=\count361
 \MPscratchDim=\dimen306
-\MPnumerator=\count361
-\makeMPintoPDFobject=\count362
+\MPnumerator=\count362
+\makeMPintoPDFobject=\count363
 \everyMPtoPDFconversion=\toks57
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -995,8 +996,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count363
-Package hyperref Info: Link coloring OFF on input line 47.
+\c@lstlisting=\count364
+Package hyperref Info: Link coloring OFF on input line 80.
 
 (./Notes.out) (./Notes.out)
 \@outlinefile=\write5
@@ -1004,32 +1005,32 @@ Package hyperref Info: Link coloring OFF on input line 47.
 
 \openout4 = `acs-Notes.bib'.
 
-\c@bibnote=\count364
-<GeneralSources/UABLogo.png, id=27, 392.12303pt x 138.01239pt>
+\c@bibnote=\count365
+<GeneralSources/UABLogo.png, id=31, 392.12303pt x 138.01239pt>
 File: GeneralSources/UABLogo.png Graphic file (type png)
 <use GeneralSources/UABLogo.png>
-Package pdftex.def Info: GeneralSources/UABLogo.png  used on input line 70.
+Package pdftex.def Info: GeneralSources/UABLogo.png  used on input line 103.
 (pdftex.def)             Requested size: 122.27576pt x 43.0361pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 70.
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 103
+.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 103
+.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+esint on input line 7
-0.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 1
+03.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 70
-.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 10
+3.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1042,27 +1043,27 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.152 \end{definition}
+l.185 \end{definition}
                        [1
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.152 \end{definition}
+l.185 \end{definition}
                       ]
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
 [][]\OT1/cmr/bx/n/12 Definition 17. []\OT1/cmr/m/it/12 P[]VSA-like De-scrip-tor
 s:
  []
 
 [2]
-Underfull \hbox (badness 5817) in paragraph at lines 221--227
+Underfull \hbox (badness 5817) in paragraph at lines 254--260
 [][]\OT1/cmr/bx/n/12 Definition 20. []\OT1/cmr/m/it/12 Frac-tional Group Counts
 
  []
 
 
-Underfull \hbox (badness 6493) in paragraph at lines 231--232
+Underfull \hbox (badness 6493) in paragraph at lines 264--265
 [][]\OT1/cmr/bx/n/12 Definition 21. []\OT1/cmr/m/it/12 Atom-Centered Frag-ments
 
  []
@@ -1072,9 +1073,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.256 \end{definition}
+l.289 \end{definition}
                       ]
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
 \OT1/cmr/m/it/12 quan-tify the chi-ral-ity (hand-ed-ness) of
  []
 
@@ -1084,63 +1085,60 @@ Overfull \vbox (35.40749pt too high) has occurred while \output is active []
 
 [4{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }] [5]
-Underfull \hbox (badness 7504) in paragraph at lines 350--351
+Underfull \hbox (badness 7504) in paragraph at lines 383--384
 \OT1/cmr/m/it/12 dis-card non-relevant data, as some
  []
 
-[6] [7] [8] [9] (./Notes.bbl) [10]
-
+[6] [7] (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/02/21 1.10 listings language file
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 445.
+ [8]
+[9] (./Notes.bbl) [10] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./Notes.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `Notes.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Notes.out':
-(rerunfilecheck)             Before: EE4DF200CD4C1DB0F40180C7EE98E5DA;582
-(rerunfilecheck)             After:  167CE2B66EDA2C6C08EAE5D24879DFDA;499.
+Package rerunfilecheck Info: File `Notes.out' has not changed.
+(rerunfilecheck)             Checksum: 219ADE4655079542033B0CA8ABD9D581;660.
  ) 
 Here is how much of TeX's memory you used:
- 27504 strings out of 474116
- 501816 string characters out of 5743682
- 1957187 words of memory out of 5000000
- 49289 multiletter control sequences out of 15000+600000
- 571852 words of font info for 96 fonts, out of 8000000 for 9000
+ 27938 strings out of 474116
+ 506363 string characters out of 5743682
+ 2108187 words of memory out of 5000000
+ 49674 multiletter control sequences out of 15000+600000
+ 572189 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,14n,101p,790b,1137s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{section.5} has been referenced but does not exist, 
-replaced by a fixed one
-
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb>
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pf
-b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
-/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
-/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/lo
-cal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
-/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
-texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/te
-xlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/tex
-live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texli
-ve/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Notes.pdf (11 pages, 239849 bytes).
+ 99i,14n,101p,790b,2153s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pf
+b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pf
+b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.
+pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.p
+fb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
+sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/
+local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
+al/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
+texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
+exlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
+live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
+ive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texliv
+e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive
+/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/
+2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on Notes.pdf (11 pages, 278730 bytes).
 PDF statistics:
- 276 PDF objects out of 1000 (max. 8388607)
- 226 compressed objects within 3 object streams
- 85 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 347 PDF objects out of 1000 (max. 8388607)
+ 291 compressed objects within 3 object streams
+ 127 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
