@@ -46,26 +46,33 @@ while queryURL: # Using the loop to send multiple request
 # Printing the amount of data
 print(f"\nEnd of the requesting process, we have downloaded a total of {len(allActivities)} molecule's data.")
 
-# We want to save the data in a proper format
+# We want to save the data in a proper format, a Data Frame
 requestedData = pd.DataFrame(allActivities) # Converting all the extracted data into a DataFrame
 # Listing all the numerical variables
 numericalVariables = ['activity_id','document_year','pchembl_value','record_id','src_id','standard_flag','standard_value','target_tax_id','value']
 for iVariable in numericalVariables: # Converting all the numerical values to actual numbers. (Otherways they would be strings)
     requestedData[iVariable] = pd.to_numeric(requestedData[iVariable], errors='coerce')
 
+# Removing entries with the same canonical smile
+requestedData = requestedData.drop_duplicates(subset=['canonical_smiles'],keep='first')
+# Removing entries with no value in the targetProperty
+requestedData = requestedData.dropna(subset=['standard_value'])
+requestedData = requestedData.reset_index() # Reseting the index of the dataframe...
+print(f"Deleting molecules with the same canonical smile and no targetProperty entries. {len(requestedData)} molecule's data remaining.")
+
 # Finding the minimum and maximum 'standard_value' indices
-minimumTargetProperty = requestedData['standard_value'].idxmin()
-maximumTargetProperty = requestedData['standard_value'].idxmax()
+minimumTargetPropertyID = requestedData['standard_value'].idxmin()
+maximumTargetPropertyID = requestedData['standard_value'].idxmax()
 
 # Printing the minimum and maximum 'standard_value' and their corresponding 'standard_units'
-print(f"The minimum {targetProperty} found value is {requestedData.loc[minimumTargetProperty, 'standard_value']} {requestedData.loc[minimumTargetProperty, 'standard_units']}")
-print(f"The maximum {targetProperty} found value is {requestedData.loc[maximumTargetProperty, 'standard_value']} {requestedData.loc[maximumTargetProperty, 'standard_units']}")
+print(f"The minimum {targetProperty} found value is {requestedData.loc[minimumTargetPropertyID, 'standard_value']} {requestedData.loc[minimumTargetPropertyID, 'standard_units']}")
+print(f"The maximum {targetProperty} found value is {requestedData.loc[maximumTargetPropertyID, 'standard_value']} {requestedData.loc[maximumTargetPropertyID, 'standard_units']}")
 
 # Save the complete dataset in an CSV file (more visual) and a Feather file (fast read/write performace)
-requestedData.to_csv(f"../Data/ChEMBL_ExtractorData{targetIDChEMBL,targetProperty,requestDataLimit}.csv", index=False)
-requestedData.to_feather(f"../Data/ChEMBL_ExtractorData{targetIDChEMBL,targetProperty,requestDataLimit}.feather")
+requestedData.to_csv(f"../Data/ChEMBL_ExtractorData{targetIDChEMBL},{targetProperty},{requestDataLimit}.csv", index=False)
+requestedData.to_feather(f"../Data/ChEMBL_ExtractorData{targetIDChEMBL},{targetProperty},{requestDataLimit}.feather")
 
 # Anouncing the location of the data
 print("\nData saved in the files:")
-print(f"../Data/ChEMBL_ExtractorData{targetIDChEMBL,targetProperty,requestDataLimit}.csv")
-print(f"../Data/ChEMBL_ExtractorData{targetIDChEMBL,targetProperty,requestDataLimit}.feather")
+print(f"../Data/ChEMBL_ExtractorData{targetIDChEMBL},{targetProperty},{requestDataLimit}.csv")
+print(f"../Data/ChEMBL_ExtractorData{targetIDChEMBL},{targetProperty},{requestDataLimit}.feather")
