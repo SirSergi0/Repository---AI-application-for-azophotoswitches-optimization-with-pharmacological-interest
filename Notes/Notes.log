@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  6 OCT 2024 00:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  6 OCT 2024 15:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1090,12 +1090,14 @@ Underfull \hbox (badness 7504) in paragraph at lines 383--384
  []
 
 [6]
-<../Plots/DataRepresentationIC50min_-1max_200.pdf, id=169, 462.52798pt x 346.89
-601pt>
-File: ../Plots/DataRepresentationIC50min_-1max_200.pdf Graphic file (type pdf)
-<use ../Plots/DataRepresentationIC50min_-1max_200.pdf>
-Package pdftex.def Info: ../Plots/DataRepresentationIC50min_-1max_200.pdf  used
- on input line 400.
+<../Plots/DataGapRepresentationIC50percentageEresed20.0Gap_min_17Gap_max_47.pdf
+, id=169, 462.52798pt x 346.89601pt>
+File: ../Plots/DataGapRepresentationIC50percentageEresed20.0Gap_min_17Gap_max_4
+7.pdf Graphic file (type pdf)
+<use ../Plots/DataGapRepresentationIC50percentageEresed20.0Gap_min_17Gap_max_47
+.pdf>
+Package pdftex.def Info: ../Plots/DataGapRepresentationIC50percentageEresed20.0
+Gap_min_17Gap_max_47.pdf  used on input line 400.
 (pdftex.def)             Requested size: 244.55153pt x 183.41467pt.
 
 Overfull \hbox (5.0pt too wide) in paragraph at lines 400--401
@@ -1108,7 +1110,8 @@ s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.406 \newpage
-               <../Plots/DataRepresentationIC50min_-1max_200.pdf>] [8]
+               <../Plots/DataGapRepresentationIC50percentageEresed20.0Gap_min_1
+7Gap_max_47.pdf>] [8]
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 )
@@ -1130,7 +1133,7 @@ Package rerunfilecheck Info: File `Notes.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  27955 strings out of 474116
- 506993 string characters out of 5743682
+ 507203 string characters out of 5743682
  2159187 words of memory out of 5000000
  49686 multiletter control sequences out of 15000+600000
  572189 words of font info for 98 fonts, out of 8000000 for 9000
@@ -1156,9 +1159,9 @@ ve/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive
 /2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/
 2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2
 024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Notes.pdf (11 pages, 304682 bytes).
+Output written on Notes.pdf (11 pages, 309925 bytes).
 PDF statistics:
- 401 PDF objects out of 1000 (max. 8388607)
+ 408 PDF objects out of 1000 (max. 8388607)
  310 compressed objects within 4 object streams
  132 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
