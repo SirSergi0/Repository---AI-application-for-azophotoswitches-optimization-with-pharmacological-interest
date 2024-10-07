@@ -57,7 +57,7 @@ for iVariable in numericalVariables: # Converting all the numerical values to ac
 requestedData = requestedData.drop_duplicates(subset=['canonical_smiles'],keep='first')
 # Removing entries with no value in the targetProperty
 requestedData = requestedData.dropna(subset=['standard_value'])
-requestedData = requestedData.reset_index() # Reseting the index of the dataframe...
+requestedData = requestedData.reset_index(inplace=True) # Reseting the index of the dataframe...
 print(f"Deleting molecules with the same canonical smile and no targetProperty entries. {len(requestedData)} molecule's data remaining.")
 
 # Finding the minimum and maximum 'standard_value' indices

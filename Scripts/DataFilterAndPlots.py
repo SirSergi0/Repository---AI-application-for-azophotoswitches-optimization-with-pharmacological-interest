@@ -10,6 +10,8 @@
 
 import pandas as pd # Importing pandas in order to use DataFrames
 import matplotlib.pyplot as plt # Importing matplotlib for perfoming plots
+from sklearn.model_selection import train_test_split # Importing the funtion "train_test_split" for spliting our data in two 
+# sets. The training set and the testing set.
 
 targetIDChEMBL  	 = "CHEMBL372" # Defining ChEMBL ID for COX-2, our target. 
 targetProperty  	 = "IC50" # Defining our target poperty
@@ -20,6 +22,8 @@ plotingPath			 = "../Plots/" # Defining the path where the plots files are store
 lowerTargetProperty  = -1   # Defining the lowest 'standard_value' (= targetProperty) we want to take into acount
 higherTargetProperty = 200  # Defining the highest 'standard_value' (= targetProperty) we want to take into acount
 percentageEresed	 = 0.2	# Defining the percentage of the data we want to erase (number between 0 and 1)
+testSizeProportion	 = 0.2  # Defining the percentage of the data we want to keep for our training set (number between 0 and 1)
+randomSplitState     = 42	# Defining the randomness for the Train/test splitting (Typically will be around 42)
 unwantedVariables	 = ['index','action_type', 'activity_comment', 'activity_properties', 'assay_type', 'assay_variant_accession', 
 						'assay_variant_mutation', 'bao_endpoint', 'bao_format', 'bao_label', 'ligand_efficiency', 'potential_duplicate',
 						'qudt_units','standard_upper_value','text_value','toid','upper_value']
@@ -103,8 +107,7 @@ maximumGapPropertyID = dataWithGapUpper['standard_value'].idxmin()
 # Anouncing the data gap
 print(f'Minimum {targetProperty} gap:                   {float(dataWithGapUnder.loc[minimumGapPropertyID,'standard_value'])} {dataWithGapUnder.loc[minimumGapPropertyID, 'standard_units']}')
 print(f'Maximum {targetProperty} gap:                   {float(dataWithGapUpper.loc[maximumGapPropertyID,'standard_value'])} {dataWithGapUpper.loc[maximumGapPropertyID, 'standard_units']}')
-dataWithGapAll.reset_index()
-
+dataWithGapAll.reset_index(drop = True, inplace = True)
 
 # Ploting the data
 plt.hist(dataFiltered['standard_value'], bins = higherTargetProperty, label = 'Filtered Data')
@@ -126,6 +129,39 @@ dataWithGapAll.to_feather(f"{dataFilePath}{dataFileName}min_{lowerTargetProperty
 print("\nFiltered data with gap is saved in the files:")
 print(f"{dataFilePath}{dataFileName}min_{lowerTargetProperty}max_{higherTargetProperty}FilteredGap_min_{int(dataWithGapUnder.loc[minimumGapPropertyID,'standard_value'])}Gap_max_{int(dataWithGapUpper.loc[maximumGapPropertyID,'standard_value'])}.csv")
 print(f"{dataFilePath}{dataFileName}min_{lowerTargetProperty}max_{higherTargetProperty}FilteredGap_min_{int(dataWithGapUnder.loc[minimumGapPropertyID,'standard_value'])}Gap_max_{int(dataWithGapUpper.loc[maximumGapPropertyID,'standard_value'])}.feather")
+
+# Anouncing the begining of the splitting proces between train set and test set
+print("\nSplitting the data randomly and generating the Training/Test sets.")
+# Since we want to use the function train_test_split in order to create the training/test sets we need to generate two arrays (the function 'train_test_split' takes 2 arrays as arguments)
+dataWithGapAllFeatures = dataWithGapAll.drop('activity_label', axis = 1)
+dataWithGapAllLabels   = dataWithGapAll['activity_label']
+
+# Creating the training/testing sets
+dataWithGapAllFeaturesTrain, dataWithGapAllFeaturesTest, dataWithGapAllLabelsTrain, dataWithGapAllLabelsTest = train_test_split(dataWithGapAllFeatures, dataWithGapAllLabels, test_size=testSizeProportion, random_state=randomSplitState, stratify=dataWithGapAllLabels)
+
+# Gathering up all the data (Features+Labels) and reseting the indexs
+dataWithGapAllTrain 				  = dataWithGapAllFeaturesTrain
+dataWithGapAllTrain['activity_label'] = dataWithGapAllLabelsTrain
+dataWithGapAllTrain.reset_index(drop = True, inplace = True)
+dataWithGapAllTest 				      = dataWithGapAllFeaturesTest
+dataWithGapAllTest['activity_label']  = dataWithGapAllLabelsTest
+dataWithGapAllTest.reset_index(drop = True, inplace = True)
+
+# Saving the data
+dataWithGapAllTrain.to_csv(f"{dataFilePath}{dataFileName}min_{lowerTargetProperty}max_{higherTargetProperty}FilteredGap_min_{int(dataWithGapUnder.loc[minimumGapPropertyID,'standard_value'])}Gap_max_{int(dataWithGapUpper.loc[maximumGapPropertyID,'standard_value'])}Train.csv", index=False)
+dataWithGapAllTrain.to_feather(f"{dataFilePath}{dataFileName}min_{lowerTargetProperty}max_{higherTargetProperty}FilteredGap_min_{int(dataWithGapUnder.loc[minimumGapPropertyID,'standard_value'])}Gap_max_{int(dataWithGapUpper.loc[maximumGapPropertyID,'standard_value'])}Train.feather")
+dataWithGapAllTest.to_csv(f"{dataFilePath}{dataFileName}min_{lowerTargetProperty}max_{higherTargetProperty}FilteredGap_min_{int(dataWithGapUnder.loc[minimumGapPropertyID,'standard_value'])}Gap_max_{int(dataWithGapUpper.loc[maximumGapPropertyID,'standard_value'])}Test.csv", index=False)
+dataWithGapAllTest.to_feather(f"{dataFilePath}{dataFileName}min_{lowerTargetProperty}max_{higherTargetProperty}FilteredGap_min_{int(dataWithGapUnder.loc[minimumGapPropertyID,'standard_value'])}Gap_max_{int(dataWithGapUpper.loc[maximumGapPropertyID,'standard_value'])}Test.feather")
+
+# Anouncing the location of the data gap
+print("\nSplitted data is saved in the files:")
+print(f"{dataFilePath}{dataFileName}min_{lowerTargetProperty}max_{higherTargetProperty}FilteredGap_min_{int(dataWithGapUnder.loc[minimumGapPropertyID,'standard_value'])}Gap_max_{int(dataWithGapUpper.loc[maximumGapPropertyID,'standard_value'])}Train.csv")
+print(f"{dataFilePath}{dataFileName}min_{lowerTargetProperty}max_{higherTargetProperty}FilteredGap_min_{int(dataWithGapUnder.loc[minimumGapPropertyID,'standard_value'])}Gap_max_{int(dataWithGapUpper.loc[maximumGapPropertyID,'standard_value'])}Train.feather")
+print(f"{dataFilePath}{dataFileName}min_{lowerTargetProperty}max_{higherTargetProperty}FilteredGap_min_{int(dataWithGapUnder.loc[minimumGapPropertyID,'standard_value'])}Gap_max_{int(dataWithGapUpper.loc[maximumGapPropertyID,'standard_value'])}Test.csv")
+print(f"{dataFilePath}{dataFileName}min_{lowerTargetProperty}max_{higherTargetProperty}FilteredGap_min_{int(dataWithGapUnder.loc[minimumGapPropertyID,'standard_value'])}Gap_max_{int(dataWithGapUpper.loc[maximumGapPropertyID,'standard_value'])}Test.feather")
+
+
+
 
 
 
