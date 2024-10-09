@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  6 OCT 2024 15:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  9 OCT 2024 23:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -917,28 +917,28 @@ Package: mciteplus 2013/09/13 v1.2 enhanced mcite
  (./Notes.aux)
 \openout1 = `Notes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -997,7 +997,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \c@lstlisting=\count364
-Package hyperref Info: Link coloring OFF on input line 80.
+Package hyperref Info: Link coloring OFF on input line 81.
 
 (./Notes.out) (./Notes.out)
 \@outlinefile=\write5
@@ -1009,28 +1009,28 @@ Package hyperref Info: Link coloring OFF on input line 80.
 <GeneralSources/UABLogo.png, id=31, 392.12303pt x 138.01239pt>
 File: GeneralSources/UABLogo.png Graphic file (type png)
 <use GeneralSources/UABLogo.png>
-Package pdftex.def Info: GeneralSources/UABLogo.png  used on input line 103.
+Package pdftex.def Info: GeneralSources/UABLogo.png  used on input line 104.
 (pdftex.def)             Requested size: 122.27576pt x 43.0361pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 103
+LaTeX Font Info:    Trying to load font information for U+msa on input line 104
 .
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 103
+LaTeX Font Info:    Trying to load font information for U+msb on input line 104
 .
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+esint on input line 1
-03.
+04.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 10
-3.
+4.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1043,27 +1043,27 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.185 \end{definition}
+l.186 \end{definition}
                        [1
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.185 \end{definition}
+l.186 \end{definition}
                       ]
-Underfull \hbox (badness 10000) in paragraph at lines 242--243
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
 [][]\OT1/cmr/bx/n/12 Definition 17. []\OT1/cmr/m/it/12 P[]VSA-like De-scrip-tor
 s:
  []
 
 [2]
-Underfull \hbox (badness 5817) in paragraph at lines 254--260
+Underfull \hbox (badness 5817) in paragraph at lines 255--261
 [][]\OT1/cmr/bx/n/12 Definition 20. []\OT1/cmr/m/it/12 Frac-tional Group Counts
 
  []
 
 
-Underfull \hbox (badness 6493) in paragraph at lines 264--265
+Underfull \hbox (badness 6493) in paragraph at lines 265--266
 [][]\OT1/cmr/bx/n/12 Definition 21. []\OT1/cmr/m/it/12 Atom-Centered Frag-ments
 
  []
@@ -1073,45 +1073,60 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.289 \end{definition}
+l.290 \end{definition}
                       ]
-Underfull \hbox (badness 10000) in paragraph at lines 296--297
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
 \OT1/cmr/m/it/12 quan-tify the chi-ral-ity (hand-ed-ness) of
  []
 
-
-Overfull \vbox (35.40749pt too high) has occurred while \output is active []
-
-
 [4{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}] [5]
-Underfull \hbox (badness 7504) in paragraph at lines 383--384
+}]
+<GeneralSources/COX-2Image.png, id=148, 192.72pt x 144.0582pt>
+File: GeneralSources/COX-2Image.png Graphic file (type png)
+<use GeneralSources/COX-2Image.png>
+Package pdftex.def Info: GeneralSources/COX-2Image.png  used on input line 383.
+
+(pdftex.def)             Requested size: 489.10307pt x 365.60477pt.
+ [5
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.389 \newpage
+              ] [6
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.389 \newpage
+               <./GeneralSources/COX-2Image.png>]
+Underfull \hbox (badness 7504) in paragraph at lines 411--412
 \OT1/cmr/m/it/12 dis-card non-relevant data, as some
  []
 
-[6]
+[7]
 <../Plots/DataGapRepresentationIC50percentageEresed20.0Gap_min_17Gap_max_47.pdf
-, id=169, 462.52798pt x 346.89601pt>
+, id=183, 462.52798pt x 346.89601pt>
 File: ../Plots/DataGapRepresentationIC50percentageEresed20.0Gap_min_17Gap_max_4
 7.pdf Graphic file (type pdf)
 <use ../Plots/DataGapRepresentationIC50percentageEresed20.0Gap_min_17Gap_max_47
 .pdf>
 Package pdftex.def Info: ../Plots/DataGapRepresentationIC50percentageEresed20.0
-Gap_min_17Gap_max_47.pdf  used on input line 400.
+Gap_min_17Gap_max_47.pdf  used on input line 428.
 (pdftex.def)             Requested size: 244.55153pt x 183.41467pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 400--401
+Overfull \hbox (5.0pt too wide) in paragraph at lines 428--429
  [][] 
  []
 
-[7
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+[8
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.406 \newpage
+l.434 \newpage
                <../Plots/DataGapRepresentationIC50percentageEresed20.0Gap_min_1
-7Gap_max_47.pdf>] [8]
+7Gap_max_47.pdf>] [9]
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 )
@@ -1119,26 +1134,42 @@ File: lstlang1.sty 2024/02/21 1.10 listings language file
 File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 463.
- [9]
-(./Notes.bbl) [10] 
+nput line 491.
+ [10]
+(./Notes.bbl
+Underfull \hbox (badness 4634) in paragraph at lines 98--107
+[]\OT1/cmr/m/n/12 Commons, W. File:6COX.png --- Wiki-me-dia Com-mons, the free 
+me-dia repos-
+ []
+
+
+Underfull \hbox (badness 7595) in paragraph at lines 98--107
+\OT1/cmr/m/n/12 i-tory. 2023; []$\OT1/cmtt/m/n/12 https : / / commons . wikimed
+ia . org / w / index . php ? title = File : 6COX . png &
+ []
+
+) [11] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./Notes.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `Notes.out' has not changed.
 (rerunfilecheck)             Checksum: 219ADE4655079542033B0CA8ABD9D581;660.
  ) 
 Here is how much of TeX's memory you used:
- 27955 strings out of 474116
- 507203 string characters out of 5743682
+ 28775 strings out of 474116
+ 521871 string characters out of 5743682
  2159187 words of memory out of 5000000
- 49686 multiletter control sequences out of 15000+600000
+ 50500 multiletter control sequences out of 15000+600000
  572189 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,14n,101p,790b,1298s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,16n,101p,790b,1632s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pf
 b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pf
@@ -1159,10 +1190,10 @@ ve/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive
 /2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/
 2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2
 024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Notes.pdf (11 pages, 309925 bytes).
+Output written on Notes.pdf (12 pages, 1796768 bytes).
 PDF statistics:
- 408 PDF objects out of 1000 (max. 8388607)
- 310 compressed objects within 4 object streams
- 132 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 426 PDF objects out of 1000 (max. 8388607)
+ 325 compressed objects within 4 object streams
+ 138 named destinations out of 1000 (max. 500000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

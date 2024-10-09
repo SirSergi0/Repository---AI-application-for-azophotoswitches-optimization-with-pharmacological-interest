@@ -18,6 +18,7 @@
 \usepackage{yfonts}
 \usepackage{tikz}
 \usepackage{wrapfig}
+\usepackage{url}
 \usepackage[normalem]{ulem}
 \usepackage{multicol}
 \useunder{\uline}{\ul}{}
@@ -354,7 +355,34 @@ Matthews Correlation Coefficient: quantity related to a Machine Learning Model's
 A Matthews Correlation Coefficient equal to 1 stands for a perfect prediction a Matthews Correlation Coefficient equal to 0 indicates that the classifier’s predictions are no better than random guessing, and a Matthews Correlation Coefficient equal to -1 stand for a total disagreement between predictions and actual outcomes.
 \end{definition}
 
+\begin{definition}
+Cyclooxygenase-2: (COX-2), also known as prostaglandin-endoperoxide synthase 2 is "An enzyme that speeds up the formation of substances that cause inflammation and pain. It may also cause tumor cells to grow. Some tumors have high levels of COX-2 and blocking its activity may reduce tumor growth. Also called cyclooxygenase-2 and prostaglandin-endoperoxide synthase 2."\cite{DefinitionCOX2CancerDictionary} This enzyme will be our main object of study. It is encoded by the PTGS2 gene and its main functionality is converting arachidonic acid to prostaglandin \chemfig{H_2} Figure (\ref{Cox2MainReaction}).
+
+\end{definition}
 \end{multicols}
+\begin{figure}[H]
+\centering
+\schemestart
+\scalebox{0.7}{
+\chemname{\chemfig[angle increment=30, scale=0.1]{
+HO-[1](=[3]O)-[-1]-[1]-[-1]-[1]=[-1]-[-3]-[-1]=[-3]-[7]-[-3]=[7]-[-7]-[7]=[-7]-[3]-[-7]-[7]-[-7]-[7]
+}}{Arachidonic acid}
+}
+\arrow{->}
+\scalebox{0.7}{
+\chemname{\chemfig[angle increment=30]{OH-[5](=[3]O)-[7]-[-3]-[7]-[-3]=[7]-[5]>:[7]*6(-(<[-3.8])-O-O-(<[3.8]C)-(<[-1]=[1]-[-1](<:[-3]OH)-[1]-[-1]-[1]-[-1]-[1])-)
+}}{Prostaglandin \chemfig{H_2}}
+}
+\schemestop
+\caption{Reaction catalysed by the COX-2 between arachidonic acid to prostaglandin H$_2$.}
+\label{Cox2MainReaction}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width = \textwidth]{GeneralSources/COX-2Image.png}
+\caption{Crystal structure of uninhibited cyclooxygenase-2 Molecular graphics images were produced using the UCSF Chimera package\cite{Cox2WikiImage}.}
+\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%% OSERVATIONS %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

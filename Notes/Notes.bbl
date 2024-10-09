@@ -8,7 +8,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{12}
+\begin{mcitethebibliography}{14}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -81,6 +81,24 @@ Burden,~F.~R.; Wilkins,~D.~C. \emph{Journal of Chemical Information and
 \bibitem[G{\"u}ner(2000)]{PharmacophoreDescriptorsBook}
 G{\"u}ner,~O.~F. \emph{Pharmacophore Perception, Development, and Use in Drug
   Design}; International University Line, 2000\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{National Cancer Institute}(2024)]{DefinitionCOX2CancerDictionary}
+{National Cancer Institute} Definition of COX-2 - NCI Dictionary of Cancer
+  Terms. 2024;
+  \url{https://www.cancer.gov/publications/dictionaries/cancer-terms/def/cox-2},
+  Accessed: 2024-10-09\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Commons(2023)]{Cox2WikiImage}
+Commons,~W. File:6COX.png --- Wikimedia Commons{,} the free media repository.
+  2023;
+  \url{https://commons.wikimedia.org/w/index.php?title=File:6COX.png&oldid=770187485},
+  [Online; accessed 9-October-2024]\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
