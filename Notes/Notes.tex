@@ -383,6 +383,73 @@ HO-[1](=[3]O)-[-1]-[1]-[-1]-[1]=[-1]-[-3]-[-1]=[-3]-[7]-[-3]=[7]-[-7]-[7]=[-7]-[
 \includegraphics[width = \textwidth]{GeneralSources/COX-2Image.png}
 \caption{Crystal structure of uninhibited cyclooxygenase-2 Molecular graphics images were produced using the UCSF Chimera package\cite{Cox2WikiImage}.}
 \end{figure}
+
+\begin{multicols}{2}
+\begin{definition}
+Non-steroidal anti-inflammatory drug: (NSAID) kind of drug commonly used for therapeutic purposes that focuses in pain, inflammation and fever reduction and blood clots prevention. They are characterised by inhibiting the activity of enzymes called cyclooxygenase (COX). This drug type is known to produce side-effects such as:
+\begin{itemize}
+\item NSAIDs block COX-1, which helps protect the stomach lining. Long-term use can lead to ulcers and gastrointestinal bleeding. 
+\item Stomach pain, indigestion, heartburn.
+\item Particularly \textbf{COX-2 inhibitors}, may increase the risk of \textbf{heart attack}, stroke, and blood clots.
+\item Increased Blood Pressure.
+\item Allergic Reactions.
+\item Liver Toxicity.
+\item Fluid Retention and Edema.
+\end{itemize}
+Some well-known NSAIDs are Ibuprofen, Aspirin and Celecoxib where the last one is specific a specific inhibitor for the COX-2.\cite{Cox2InhibitorsReview}\par
+In the Figure (\ref{Cox2BondingSiteFigureRef}) we can observe the binding site of COX-2 for the celecoxib.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{GeneralSources/COXII-receptor.png}
+\caption{COX-2 receptor site and its amino acid profile with celecoxib in the binding site.\cite{Cox2BondingSiteFigure}}
+\label{Cox2BondingSiteFigureRef}
+\end{figure}
+\end{definition}
+
+\begin{definition}
+Celecoxib: \footnote{UPAC name: 4-[5-(4-Methylphenyl)-3-(trifluoromethyl)pyrazol-1-yl]benzenesulfonamide} drug known to be a selective COX-2 inhibitor (currently is not \emph{highly selective} respect to newer drugs), see Figure (\ref{CelecoxibFigure}). We will use the chemical descriptors of this molecule to compute its theoretical $IC_{50}$(one that our Machine Learning Model predicts) to have some sore of feed back of the ML reliability.
+\end{definition}
+
+
+\begin{definition}
+Rofecoxib: \footnote{UPAC name: 4-(4-methylsulfonylphenyl)-3-phenyl-5H-furan-2-one} drug known to be a selective COX-2 inhibitor, see Figure (\ref{RofecoxibFigure}). We will use the chemical descriptors of this molecule to compute its theoretical $IC_{50}$(one that our Machine Learning Model predicts) to have some sore of feed back of the ML reliability.
+\end{definition}
+
+\begin{definition}
+Ibuprofen: \footnote{UPAC name: (RS)-2-(4-(2-Methylpropyl)phenyl)propanoic acid} drug known to be a selective COX-1 and COX-2 inhibitor, see Figure (\ref{IbuprofenFigure}). We will use the chemical descriptors of this molecule to compute its theoretical $IC_{50}$(one that our Machine Learning Model predicts) to have some sore of feed back of the ML reliability.
+\end{definition}
+
+\begin{figure}[H]
+\centering
+\scalebox{0.8}{
+\chemfig[angle increment=30]{
+H_2N-[-1]S(=[-4]O)(=[-2]O)-[1]*6(-=-(-[1]N*5(-N=(-[-1](-[-4]F)(-[-2]F)-[1])-=(-[4.5]*6(-=-(-[4.5])=-=))-))=-=)
+}}
+\caption{Chemical graph of Celecoxib.}
+\label{CelecoxibFigure}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\scalebox{0.8}{
+\chemfig[angle increment=30]{
+-[-1]S(=[-4]O)(=[-2]O)-[1]*6(-=-(-[1]*5(--O-(=[2.25]O)-(-[4.5]*6(-=-=-=))=))=-=)
+}}
+\caption{Chemical graph of Rofecoxib.}
+\label{RofecoxibFigure}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\scalebox{0.8}{
+\chemfig[angle increment=30]{
+-[1](-[3])-[-1]-[1]*6(-=-(-[1](-[3])-[-1](=[-3]O)-[1]OH)=-=)
+}}
+\caption{Chemical graph of Ibuprofen.}
+\label{IbuprofenFigure}
+\end{figure}
+
+\end{multicols}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%% OSERVATIONS %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

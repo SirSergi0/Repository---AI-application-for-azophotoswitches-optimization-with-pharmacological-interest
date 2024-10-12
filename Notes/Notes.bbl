@@ -8,7 +8,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{14}
+\begin{mcitethebibliography}{16}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -99,6 +99,22 @@ Commons,~W. File:6COX.png --- Wikimedia Commons{,} the free media repository.
   2023;
   \url{https://commons.wikimedia.org/w/index.php?title=File:6COX.png&oldid=770187485},
   [Online; accessed 9-October-2024]\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Davies and Jamali(2000)Davies, and Jamali]{Cox2InhibitorsReview}
+Davies,~N.~M.; Jamali,~F. \emph{Pharmacology \& Therapeutics} \textbf{2000},
+  \emph{89}, 133--155\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Commons(2024)]{Cox2BondingSiteFigure}
+Commons,~W. COX-2 receptor site and its amino acid profile with celecoxib in
+  the binding site. 2024;
+  \url{https://commons.wikimedia.org/w/index.php?title=File:COXII-receptor.png&oldid=844592069},
+  [Online; accessed 12-October-2024]\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

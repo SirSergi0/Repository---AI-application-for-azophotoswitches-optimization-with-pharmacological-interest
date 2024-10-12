@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  9 OCT 2024 23:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  12 OCT 2024 21:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1092,41 +1092,91 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.389 \newpage
-              ] [6
+l.386 
+      ]
+Overfull \hbox (7.92917pt too wide) in paragraph at lines 389--391
+[][]\OT1/cmr/bx/n/12 Definition 38. []\OT1/cmr/m/it/12 Non-steroidal anti-infla
+mmatory
+ []
+
+<GeneralSources/COXII-receptor.png, id=161, 319.4334pt x 303.7749pt>
+File: GeneralSources/COXII-receptor.png Graphic file (type png)
+<use GeneralSources/COXII-receptor.png>
+Package pdftex.def Info: GeneralSources/COXII-receptor.png  used on input line 
+403.
+(pdftex.def)             Requested size: 244.55153pt x 232.56781pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 403--404
+ [][] 
+ []
+
+[6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.389 \newpage
-               <./GeneralSources/COX-2Image.png>]
-Underfull \hbox (badness 7504) in paragraph at lines 411--412
+l.407 \end{definition}
+                       <./GeneralSources/COX-2Image.png>]
+Overfull \vbox (13.89496pt too high) has occurred while \output is active []
+
+
+[7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.452 \end{multicols}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.452 \end{multicols}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.452 \end{multicols}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.452 \end{multicols}
+                      <./GeneralSources/COXII-receptor.png>]
+Underfull \hbox (badness 7504) in paragraph at lines 478--479
 \OT1/cmr/m/it/12 dis-card non-relevant data, as some
  []
 
-[7]
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 8 might be wrong on input line 481.
+
+
+[8]
 <../Plots/DataGapRepresentationIC50percentageEresed20.0Gap_min_17Gap_max_47.pdf
-, id=183, 462.52798pt x 346.89601pt>
+, id=213, 462.52798pt x 346.89601pt>
 File: ../Plots/DataGapRepresentationIC50percentageEresed20.0Gap_min_17Gap_max_4
 7.pdf Graphic file (type pdf)
 <use ../Plots/DataGapRepresentationIC50percentageEresed20.0Gap_min_17Gap_max_47
 .pdf>
 Package pdftex.def Info: ../Plots/DataGapRepresentationIC50percentageEresed20.0
-Gap_min_17Gap_max_47.pdf  used on input line 428.
+Gap_min_17Gap_max_47.pdf  used on input line 495.
 (pdftex.def)             Requested size: 244.55153pt x 183.41467pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 428--429
+Overfull \hbox (5.0pt too wide) in paragraph at lines 495--496
  [][] 
  []
 
-[8
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
+[9
+pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.434 \newpage
+l.501 \newpage
                <../Plots/DataGapRepresentationIC50percentageEresed20.0Gap_min_1
-7Gap_max_47.pdf>] [9]
+7Gap_max_47.pdf>] [10]
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 )
@@ -1134,39 +1184,47 @@ File: lstlang1.sty 2024/02/21 1.10 listings language file
 File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 491.
- [10]
+nput line 558.
+ [11]
 (./Notes.bbl
-Underfull \hbox (badness 4634) in paragraph at lines 98--107
+Underfull \hbox (badness 4634) in paragraph at lines 98--106
 []\OT1/cmr/m/n/12 Commons, W. File:6COX.png --- Wiki-me-dia Com-mons, the free 
 me-dia repos-
  []
 
 
-Underfull \hbox (badness 7595) in paragraph at lines 98--107
+Underfull \hbox (badness 7595) in paragraph at lines 98--106
 \OT1/cmr/m/n/12 i-tory. 2023; []$\OT1/cmtt/m/n/12 https : / / commons . wikimed
 ia . org / w / index . php ? title = File : 6COX . png &
  []
 
-) [11] 
+
+Underfull \hbox (badness 1584) in paragraph at lines 114--123
+[]\OT1/cmr/m/n/12 Commons, W. COX-2 re-cep-tor site and its amino acid pro-file
+ with cele-coxib in
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 114--123
+\OT1/cmr/m/n/12 the bind-ing site. 2024; []$\OT1/cmtt/m/n/12 https : / / common
+s . wikimedia . org / w / index . php ? title = File :
+ []
+
+) [12] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./Notes.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `Notes.out' has not changed.
 (rerunfilecheck)             Checksum: 219ADE4655079542033B0CA8ABD9D581;660.
  ) 
 Here is how much of TeX's memory you used:
- 28775 strings out of 474116
- 521871 string characters out of 5743682
- 2159187 words of memory out of 5000000
- 50500 multiletter control sequences out of 15000+600000
+ 29030 strings out of 474116
+ 526909 string characters out of 5743682
+ 2160187 words of memory out of 5000000
+ 50741 multiletter control sequences out of 15000+600000
  572189 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,16n,101p,790b,1632s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1190,10 +1248,10 @@ ve/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive
 /2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/
 2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2
 024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Notes.pdf (12 pages, 1796768 bytes).
+Output written on Notes.pdf (13 pages, 2057023 bytes).
 PDF statistics:
- 426 PDF objects out of 1000 (max. 8388607)
- 325 compressed objects within 4 object streams
- 138 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 462 PDF objects out of 1000 (max. 8388607)
+ 357 compressed objects within 4 object streams
+ 152 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
