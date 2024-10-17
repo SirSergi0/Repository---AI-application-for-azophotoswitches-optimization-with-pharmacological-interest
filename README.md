@@ -37,6 +37,3 @@ Comments will be added throughout the project's development. This list may not b
 
 - The manuscript in PDF format will always be placed in the `Manuscript` directory and will be named `manuscript.pdf`.
 - This directory also contains a `references.bib`. Although not all references may appear in the final manuscript, they will be stored there to keep track of all consulted files, books, websites, etc.
-
-
-Hola Geri
