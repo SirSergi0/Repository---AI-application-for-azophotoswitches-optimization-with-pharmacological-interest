@@ -8,6 +8,7 @@
 ########################################################################################################
 
 import pandas as pd
+from tqdm import tqdm
 
 from alvadesccliwrapper.alvadesc import AlvaDesc
 aDesc = AlvaDesc('/Applications/alvaDesc.app/Contents/MacOS/alvaDescCLI') 
@@ -18,13 +19,21 @@ targetProperty       = "IC50"      # Defining our target poperty
 requestDataLimit     = 1000
 dataFileName         = f"ChEMBL_ExtractorData_{targetIDChEMBL}_{targetProperty}_{requestDataLimit}"
 dataFilePath         = "../Data/"
-DataFrame            = pd.read_feather(dataFilePath+dataFileName+".feather")
+inputDataFrame       = pd.read_feather(dataFilePath+dataFileName+".feather")
+outputDataList       = []
 
-for iSmile in DataFrame["canonical_smiles"]:
+
+for iSmile in tqdm(inputDataFrame["canonical_smiles"], desc="Computing molecular descriptors: "):
     aDesc.set_input_SMILES(iSmile)
-    if not aDesc.calculate_descriptors('ALL'):
+    if not aDesc.calculate_descriptors("MW"):
         print('Error: ' + aDesc.get_error())
         pass
-    print(aDesc.get_output_descriptors())
-    print(aDesc.get_output())
+    output_descriptors = aDesc.get_output_descriptors()
+    output_values = aDesc.get_output()
+    descriptor_data = {descriptor: value for descriptor, value in zip(output_descriptors, output_values)}
+    descriptor_data['canonical_smiles'] = iSmile 
+    outputDataList.append(descriptor_data)
 
+outputDataFrame = pd.DataFrame(outputDataList)
+outputDataFrame.to_csv(f"{dataFilePath}{dataFileName}Descriptors.csv", index=False)
+outputDataFrame.to_feather(f"{dataFilePath}{dataFileName}Descriptors.feather")
