@@ -37,3 +37,7 @@ Comments will be added throughout the project's development. This list may not b
 
 - The manuscript in PDF format will always be placed in the `Manuscript` directory and will be named `manuscript.pdf`.
 - This directory also contains a `references.bib`. Although not all references may appear in the final manuscript, they will be stored there to keep track of all consulted files, books, websites, etc.
+
+### Pipfile
+- The only porpuse of this file is pointing out at the dependencies of the project. This information is nicely displaced at the `Insights/Dependency Graph` section. 
+- **It is highly recomended** to consult the dependencies before runing the code. Otherwise, the most probable output will be an error message.
