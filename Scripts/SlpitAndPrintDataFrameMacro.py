@@ -9,8 +9,7 @@
 
 import pandas as pd # Importing pandas in order to use DataFrames
 import matplotlib.pyplot as plt # Importing matplotlib for perfoming plots
-from sklearn.model_selection import train_test_split # Importing the funtion "train_test_split" for spliting our data in two 
-# sets. The training set and the testing set.
+from sklearn.model_selection import train_test_split # Importing the funtion "train_test_split" for spliting our data in two sets. The training set and the testing set.
 
 # Helper function to split the dataframe iteratively
 def splitDataFrameIteration(dataFrame, column, splitValue):

@@ -39,7 +39,7 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
     for iVariable in unwantedVariables:
         dataImported = dataImported.drop(iVariable, axis=1)
 
-    if silentMode != True: print("\nIMPORTED DATA")
+    if not silentMode: print("\nIMPORTED DATA")
     # Printing the rellevant data of the dataImported dataframe
     SlpitAndPrintDataFrameMacro.printDataFrameLenMaxMin(dataImported, targetProperty)
 
@@ -47,7 +47,7 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
     dataFiltered = dataImported[(dataImported['standard_value'] >= lowerTargetProperty) &
                                 (dataImported['standard_value'] <= higherTargetProperty)]
 
-    if silentMode != True: print("FILTERED DATA")
+    if not silentMode: print("FILTERED DATA")
     # Printing the rellevant data of the dataFiltered dataframe
     SlpitAndPrintDataFrameMacro.printDataFrameLenMaxMin(dataFiltered, targetProperty)
 
@@ -65,7 +65,7 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
     # Combining the two datasets into one with the gap
     dataWithGapAll = pd.concat([dataWithGapUnder, dataWithGapUpper], ignore_index=True)
 
-    if silentMode != True: print("GAPED DATA")
+    if not silentMode: print("GAPED DATA")
     # Printing the rellevant data of the dataWithGapAll dataframe
     SlpitAndPrintDataFrameMacro.printDataFrameLenMaxMin(dataWithGapAll, targetProperty)
     # Finding the gap values for 'standard_value' (= targetProperty)
@@ -73,8 +73,8 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
     maximumGapPropertyID = dataWithGapUpper['standard_value'].idxmin()
 
     # Anouncing the data gap
-    if silentMode != True: print(f'Minimum {targetProperty} gap:                   {float(dataWithGapUnder.loc[minimumGapPropertyID,'standard_value'])} {dataWithGapUnder.loc[minimumGapPropertyID, 'standard_units']}')
-    if silentMode != True: print(f'Maximum {targetProperty} gap:                   {float(dataWithGapUpper.loc[maximumGapPropertyID,'standard_value'])} {dataWithGapUpper.loc[maximumGapPropertyID, 'standard_units']}')
+    if not silentMode: print(f'Minimum {targetProperty} gap:                   {float(dataWithGapUnder.loc[minimumGapPropertyID,'standard_value'])} {dataWithGapUnder.loc[minimumGapPropertyID, 'standard_units']}')
+    if not silentMode: print(f'Maximum {targetProperty} gap:                   {float(dataWithGapUpper.loc[maximumGapPropertyID,'standard_value'])} {dataWithGapUpper.loc[maximumGapPropertyID, 'standard_units']}')
 
 
     # Plotting the filtered data and data with gap
@@ -90,18 +90,18 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
     # Saving the histogram
     plotFileName = f'DataGapRepresentation{targetProperty}percentageEresed{percentageEresed*100}Gap_min_{int(dataWithGapUnder.loc[minimumGapPropertyID,'standard_value'])}Gap_max_{int(dataWithGapUpper.loc[maximumGapPropertyID,'standard_value'])}.pdf'
     plt.savefig(f'{plotingPath}{plotFileName}', format='pdf')
-    if silentMode != True: print(f'\nThe plot has been saved as {plotFileName} inside the Plots directory')
+    if not silentMode: print(f'\nThe plot has been saved as {plotFileName} inside the Plots directory')
 
     # Saving the dataWithGapAll dataframe
     dataWithGapAllFileName = f'{dataFilePath}{dataFileName}min_{lowerTargetProperty}max_{higherTargetProperty}FilteredGap_min_{int(dataWithGapUnder.loc[minimumGapPropertyID,'standard_value'])}Gap_max_{int(dataWithGapUpper.loc[maximumGapPropertyID,'standard_value'])}'
     dataWithGapAll.to_csv(f"{dataWithGapAllFileName}.csv", index=False)
     dataWithGapAll.to_feather(f"{dataWithGapAllFileName}.feather")
-    if silentMode != True: print("\nFiltered data with gap is saved in the files:")
-    if silentMode != True: print(f"{dataWithGapAllFileName}.csv")
-    if silentMode != True: print(f"{dataWithGapAllFileName}.feather")
+    if not silentMode: print("\nFiltered data with gap is saved in the files:")
+    if not silentMode: print(f"{dataWithGapAllFileName}.csv")
+    if not silentMode: print(f"{dataWithGapAllFileName}.feather")
 
     # Anouncing the begining of the splitting proces between train set and test set
-    if silentMode != True: print("\nSplitting the data randomly and generating the Training/Test sets.")
+    if not silentMode: print("\nSplitting the data randomly and generating the Training/Test sets.")
     # Splitting data into training and testing sets
     dataWithGapAllFeatures = dataWithGapAll.drop('activity_label', axis=1)
     dataWithGapAllLabels = dataWithGapAll['activity_label']
@@ -123,8 +123,8 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
     dataWithGapAllTrain.to_feather(f"{dataFilePath}{dataWithGapAllFileName}Train.feather")
     dataWithGapAllTest.to_feather(f"{dataFilePath}{dataWithGapAllFileName}Test.feather")
     
-    if silentMode != True: print(f"\nTrain/Test data saved as: ")
-    if silentMode != True: print(f"{dataWithGapAllFileName}Train.csv")
-    if silentMode != True: print(f"{dataWithGapAllFileName}Test.csv")
-    if silentMode != True: print(f"{dataWithGapAllFileName}Train.feather")
-    if silentMode != True: print(f"{dataWithGapAllFileName}Test.feather")
+    if not silentMode: print(f"\nTrain/Test data saved as: ")
+    if not silentMode: print(f"{dataWithGapAllFileName}Train.csv")
+    if not silentMode: print(f"{dataWithGapAllFileName}Test.csv")
+    if not silentMode: print(f"{dataWithGapAllFileName}Train.feather")
+    if not silentMode: print(f"{dataWithGapAllFileName}Test.feather")
