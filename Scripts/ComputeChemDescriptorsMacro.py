@@ -9,31 +9,27 @@
 
 import pandas as pd
 from tqdm import tqdm
-
 from alvadesccliwrapper.alvadesc import AlvaDesc
-aDesc = AlvaDesc('/Applications/alvaDesc.app/Contents/MacOS/alvaDescCLI') 
 
+def ComputeChemDescriptors (dataFilePath):
+    aDesc = AlvaDesc('/Applications/alvaDesc.app/Contents/MacOS/alvaDescCLI') 
+    inputDataFrame       = pd.read_feather(dataFilePath)
+    outputDataList       = []
+    for iSmile in tqdm(inputDataFrame["canonical_smiles"], desc="Computing molecular descriptors: "):
+        aDesc.set_input_SMILES(iSmile)
+        if not aDesc.calculate_descriptors("ALL"):
+            print('Error: ' + aDesc.get_error())
+            pass
+        outputDescriptors = aDesc.get_output_descriptors()
+        outputValues = aDesc.get_output()[0]
+        descriptorsDictionary = {'canonical_smiles' : iSmile} 
+        for iDescriptor in range(len(outputDescriptors)):
+            descriptorsDictionary[outputDescriptors[iDescriptor]] = outputValues[iDescriptor]
+        outputDataList.append(descriptorsDictionary)
 
-targetIDChEMBL       = "CHEMBL372" # Defining ChEMBL ID for COX-2, our target. 
-targetProperty       = "IC50"      # Defining our target poperty
-requestDataLimit     = 1000
-dataFileName         = f"ChEMBL_ExtractorData_{targetIDChEMBL}_{targetProperty}_{requestDataLimit}"
-dataFilePath         = "../Data/"
-inputDataFrame       = pd.read_feather(dataFilePath+dataFileName+".feather")
-outputDataList       = []
+    outputDataFrame = pd.DataFrame(outputDataList)
+    outputDataFrame.to_csv(f"{dataFilePath}Descriptors.csv", index=False)
+    outputDataFrame.to_feather(f"{dataFilePath}Descriptors.feather")
+    print("The chemical descriptors have been computed and saved in" + f"{dataFilePath}Descriptors.feather/csv")
+    print(outputDataFrame)
 
-
-for iSmile in tqdm(inputDataFrame["canonical_smiles"], desc="Computing molecular descriptors: "):
-    aDesc.set_input_SMILES(iSmile)
-    if not aDesc.calculate_descriptors("MW"):
-        print('Error: ' + aDesc.get_error())
-        pass
-    output_descriptors = aDesc.get_output_descriptors()
-    output_values = aDesc.get_output()
-    descriptor_data = {descriptor: value for descriptor, value in zip(output_descriptors, output_values)}
-    descriptor_data['canonical_smiles'] = iSmile 
-    outputDataList.append(descriptor_data)
-
-outputDataFrame = pd.DataFrame(outputDataList)
-outputDataFrame.to_csv(f"{dataFilePath}{dataFileName}Descriptors.csv", index=False)
-outputDataFrame.to_feather(f"{dataFilePath}{dataFileName}Descriptors.feather")

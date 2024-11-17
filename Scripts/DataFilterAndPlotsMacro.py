@@ -40,7 +40,7 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
         dataImported = dataImported.drop(iVariable, axis=1)
 
     if not silentMode: print("\nIMPORTED DATA")
-    # Printing the rellevant data of the dataImported dataframe
+    # Printing the rellevant data from the dataImported dataframe
     SlpitAndPrintDataFrameMacro.printDataFrameLenMaxMin(dataImported, targetProperty)
 
     # Filtering the dataset based on the target property range
@@ -50,6 +50,10 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
     if not silentMode: print("FILTERED DATA")
     # Printing the rellevant data of the dataFiltered dataframe
     SlpitAndPrintDataFrameMacro.printDataFrameLenMaxMin(dataFiltered, targetProperty)
+
+    # Rewritting the raw data with the filtered data
+    dataFiltered.to_csv(dataFilePath + dataFileName + ".csv", index = False)
+    dataFiltered.to_feather(dataFilePath + dataFileName + ".feather")
 
     # Computing gaps for data removal based on percentageEresed
     iSplitValueUnder, iSplitValueUpper = SlpitAndPrintDataFrameMacro.findSplitDataFrame(dataFiltered, 'standard_value', percentageEresed)
@@ -128,3 +132,9 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
     if not silentMode: print(f"{dataWithGapAllFileName}Test.csv")
     if not silentMode: print(f"{dataWithGapAllFileName}Train.feather")
     if not silentMode: print(f"{dataWithGapAllFileName}Test.feather")
+
+    return{"dataFileName"                : dataFilePath + dataFileName + ".feather",
+           "dataWithGapAllFileName"      : f"{dataWithGapAllFileName}.feather",
+           "dataWithGapAllTrainFileName" : f"{dataWithGapAllFileName}Train.feather",
+           "dataWithGapAllTestFileName"  : f"{dataWithGapAllFileName}Test.feather"}
+

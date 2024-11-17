@@ -8,11 +8,12 @@
 ########################################################################################################
 
 
-import requests     # Package used for generating the database requests
-import pandas as pd # Importing pandas in order to use DataFrames
+import requests                    # Package used for generating the database requests
+import pandas as pd                # Importing pandas in order to use DataFrames
 
-import ChEMBLDataExtractorMacro # Importing the macro called "ChEMBLDataExtractorMacro.py"
-import DataFilterAndPlotsMacro  # Importing the macro called "DataFilterAndPlotsMacro.py"
+import ChEMBLDataExtractorMacro    # Importing the macro called "ChEMBLDataExtractorMacro.py"
+import DataFilterAndPlotsMacro     # Importing the macro called "DataFilterAndPlotsMacro.py"
+import ComputeChemDescriptorsMacro # Importing the macro called "ComputeChemDescriptorsMacro.py"
 
 targetIDChEMBL       = "CHEMBL372" # Defining ChEMBL ID for COX-2, our target. 
 targetProperty       = "IC50"      # Defining our target poperty
@@ -23,5 +24,6 @@ testSizeProportion	 = 0.2         # Defining the percentage of the data we want 
 randomSplitState     = 42	       # Defining the randomness for the Train/test splitting (Typically will be around 42)
 
 ChEMBLDataExtractorMacro.ChEMBLExtractData(targetIDChEMBL, targetProperty)
-DataFilterAndPlotsMacro.ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty,lowerTargetProperty,higherTargetProperty,
+dataFiles = DataFilterAndPlotsMacro.ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty,lowerTargetProperty,higherTargetProperty,
 												  percentageEresed,testSizeProportion,randomSplitState)
+for iFile in dataFiles : ComputeChemDescriptorsMacro.ComputeChemDescriptors(dataFiles[iFile])
