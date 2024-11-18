@@ -10,9 +10,15 @@
 
 import requests # Package used for generating the database requests
 import pandas as pd # Importing pandas in order to use DataFrames
+import os
 
 # Defining the funtion responsable of extracting the data
 def ChEMBLExtractData(targetIDChEMBL, targetProperty, requestDataLimit=1000, saveDir="../Data", silentMode = False): 
+    # Checks if the target data is already downloaded, if it is the case, do not download again
+    if os.path.exists(f"{saveDir}/ChEMBL_ExtractorData_{targetIDChEMBL}_{targetProperty}_{requestDataLimit}.feather"): 
+        print("The data is already downloaded!")
+        return 
+
     dataBaseBaseURL = "https://www.ebi.ac.uk"  # Defining the ChEMBL API web
     
     # Setting up the query URL with the provided parameters
@@ -67,7 +73,7 @@ def ChEMBLExtractData(targetIDChEMBL, targetProperty, requestDataLimit=1000, sav
     if silentMode != True: print(f"The maximum {targetProperty} found value is {requestedData.loc[maximumTargetPropertyID, 'standard_value']} {requestedData.loc[maximumTargetPropertyID, 'standard_units']}")
 
     # Save the complete dataset in a CSV file (more visual) and a Feather file (fast read/write performance)
-    csvFile = f"{saveDir}/ChEMBL_ExtractorData_{targetIDChEMBL}_{targetProperty}_{requestDataLimit}.csv"
+    csvFile     = f"{saveDir}/ChEMBL_ExtractorData_{targetIDChEMBL}_{targetProperty}_{requestDataLimit}.csv"
     featherFile = f"{saveDir}/ChEMBL_ExtractorData_{targetIDChEMBL}_{targetProperty}_{requestDataLimit}.feather"
     
     requestedData.to_csv(csvFile, index=False)

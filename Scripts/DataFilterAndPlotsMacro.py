@@ -12,7 +12,7 @@ import pandas as pd # Importing pandas in order to use DataFrames
 import matplotlib.pyplot as plt # Importing matplotlib for perfoming plots
 from sklearn.model_selection import train_test_split # Importing the funtion "train_test_split" for spliting our data in two sets. The training set and the testing set.
 
-import SlpitAndPrintDataFrameMacro # Importing the macro called "SlpitAndPrintDataFrameMacro.py"
+import SplitAndPrintDataFrameMacro # Importing the macro called "SplitAndPrintDataFrameMacro.py"
 
 def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetProperty, higherTargetProperty,
                               percentageEresed, testSizeProportion, randomSplitState,
@@ -37,11 +37,11 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
 
     # Removing unwanted variables
     for iVariable in unwantedVariables:
-        dataImported = dataImported.drop(iVariable, axis=1)
+        if iVariable in dataImported.columns: dataImported = dataImported.drop(iVariable, axis=1)
 
     if not silentMode: print("\nIMPORTED DATA")
     # Printing the rellevant data from the dataImported dataframe
-    SlpitAndPrintDataFrameMacro.printDataFrameLenMaxMin(dataImported, targetProperty)
+    SplitAndPrintDataFrameMacro.printDataFrameLenMaxMin(dataImported, targetProperty)
 
     # Filtering the dataset based on the target property range
     dataFiltered = dataImported[(dataImported['standard_value'] >= lowerTargetProperty) &
@@ -49,14 +49,14 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
 
     if not silentMode: print("FILTERED DATA")
     # Printing the rellevant data of the dataFiltered dataframe
-    SlpitAndPrintDataFrameMacro.printDataFrameLenMaxMin(dataFiltered, targetProperty)
+    SplitAndPrintDataFrameMacro.printDataFrameLenMaxMin(dataFiltered, targetProperty)
 
     # Rewritting the raw data with the filtered data
     dataFiltered.to_csv(dataFilePath + dataFileName + ".csv", index = False)
     dataFiltered.to_feather(dataFilePath + dataFileName + ".feather")
 
     # Computing gaps for data removal based on percentageEresed
-    iSplitValueUnder, iSplitValueUpper = SlpitAndPrintDataFrameMacro.findSplitDataFrame(dataFiltered, 'standard_value', percentageEresed)
+    iSplitValueUnder, iSplitValueUpper = SplitAndPrintDataFrameMacro.findSplitDataFrame(dataFiltered, 'standard_value', percentageEresed)
 
     # Creating datasets for low and high activity
     dataWithGapUnder = dataFiltered[dataFiltered['standard_value'] <= iSplitValueUnder].copy()
@@ -71,7 +71,7 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
 
     if not silentMode: print("GAPED DATA")
     # Printing the rellevant data of the dataWithGapAll dataframe
-    SlpitAndPrintDataFrameMacro.printDataFrameLenMaxMin(dataWithGapAll, targetProperty)
+    SplitAndPrintDataFrameMacro.printDataFrameLenMaxMin(dataWithGapAll, targetProperty)
     # Finding the gap values for 'standard_value' (= targetProperty)
     minimumGapPropertyID = dataWithGapUnder['standard_value'].idxmax()
     maximumGapPropertyID = dataWithGapUpper['standard_value'].idxmin()

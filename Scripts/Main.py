@@ -7,13 +7,15 @@
 #                                                                                                      #
 ########################################################################################################
 
-
+from art import text2art		   # Package used for prining the logo
 import requests                    # Package used for generating the database requests
 import pandas as pd                # Importing pandas in order to use DataFrames
 
 import ChEMBLDataExtractorMacro    # Importing the macro called "ChEMBLDataExtractorMacro.py"
 import DataFilterAndPlotsMacro     # Importing the macro called "DataFilterAndPlotsMacro.py"
 import ComputeChemDescriptorsMacro # Importing the macro called "ComputeChemDescriptorsMacro.py"
+
+print(text2art("AI meets Azophotoswitches")) # printing the logo
 
 targetIDChEMBL       = "CHEMBL372" # Defining ChEMBL ID for COX-2, our target. 
 targetProperty       = "IC50"      # Defining our target poperty
@@ -23,7 +25,10 @@ percentageEresed	 = 0.2	       # Defining the percentage of the data we want to 
 testSizeProportion	 = 0.2         # Defining the percentage of the data we want to keep for our training set (number between 0 and 1)
 randomSplitState     = 42	       # Defining the randomness for the Train/test splitting (Typically will be around 42)
 
+# Pointing at the directori of the AlvaDesc instalation
+AlvaDescPath		 = '/Applications/alvaDesc.app/Contents/MacOS/alvaDescCLI'
+
 ChEMBLDataExtractorMacro.ChEMBLExtractData(targetIDChEMBL, targetProperty)
 dataFiles = DataFilterAndPlotsMacro.ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty,lowerTargetProperty,higherTargetProperty,
-												  percentageEresed,testSizeProportion,randomSplitState)
-for iFile in dataFiles : ComputeChemDescriptorsMacro.ComputeChemDescriptors(dataFiles[iFile])
+												              percentageEresed,testSizeProportion,randomSplitState)
+for iFile in dataFiles : ComputeChemDescriptorsMacro.ComputeChemDescriptors(dataFiles[iFile],AlvaDescPath)
