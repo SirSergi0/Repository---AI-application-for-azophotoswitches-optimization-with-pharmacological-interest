@@ -7,15 +7,12 @@
 #                                                                                                      #
 ########################################################################################################
 
-from art import text2art		   # Package used for prining the logo
 import requests                    # Package used for generating the database requests
 import pandas as pd                # Importing pandas in order to use DataFrames
 
 import ChEMBLDataExtractorMacro    # Importing the macro called "ChEMBLDataExtractorMacro.py"
 import DataFilterAndPlotsMacro     # Importing the macro called "DataFilterAndPlotsMacro.py"
 import ComputeChemDescriptorsMacro # Importing the macro called "ComputeChemDescriptorsMacro.py"
-
-print(text2art("AI meets Azophotoswitches")) # printing the logo
 
 targetIDChEMBL       = "CHEMBL372" # Defining ChEMBL ID for COX-2, our target. 
 targetProperty       = "IC50"      # Defining our target poperty

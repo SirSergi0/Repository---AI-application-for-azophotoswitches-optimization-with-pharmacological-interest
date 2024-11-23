@@ -16,7 +16,8 @@ def ComputeChemDescriptors (dataFilePath, AlvaDescPath):
     inputDataFrame  = pd.read_feather(dataFilePath)          # Reading the dataframe
     dataFilePath    = dataFilePath.removesuffix(".feather")  # Deleting the suffix ".feather" for later porpuses
     outputDataList  = []                                     # Generating an empty list
-    for iSmile in tqdm(inputDataFrame["canonical_smiles"], desc=f"Computing molecular descriptors for {dataFilePath}:"):
+    print("\n")
+    for iSmile in tqdm(inputDataFrame["canonical_smiles"], desc=f"Computing molecular descriptors for {dataFilePath}"):
         aDesc.set_input_SMILES(iSmile)                       # Computing the descriptors
         if not aDesc.calculate_descriptors("ALL"):
             print('Error: ' + aDesc.get_error())
@@ -29,9 +30,15 @@ def ComputeChemDescriptors (dataFilePath, AlvaDescPath):
         outputDataList.append(descriptorsDictionary)          # Adding the desciptors' dictionary to the list
 
     outputDataFrame = pd.DataFrame(outputDataList)            # Generating the output dataframe
+
+    outputDataFrame.fillna(0,inplace = True)                  # Getting rid off the NaN values
+    print("Total of computated desciptors for each particle = ", outputDataFrame.shape[1]-1,"\n")
+    print("Deleting descriptors with null values...")
+    outputDataFrame = outputDataFrame.loc[:, ~(outputDataFrame == 0).all()]
+    print("Number of remaining chemical desciptors =          ", outputDataFrame.shape[1]-1,"\n")
+
     outputDataFrame.to_csv(f"{dataFilePath}Descriptors.csv", index=False) # Saving the data
     outputDataFrame.to_feather(f"{dataFilePath}Descriptors.feather")
     print("The chemical descriptors have been computed and saved in" + f"{dataFilePath}Descriptors.csv")
-    print("The chemical descriptors have been computed and saved in" + f"{dataFilePath}Descriptors.feather")
-    print(outputDataFrame)
+    print("The chemical descriptors have been computed and saved in" + f"{dataFilePath}Descriptors.feather\n")
 

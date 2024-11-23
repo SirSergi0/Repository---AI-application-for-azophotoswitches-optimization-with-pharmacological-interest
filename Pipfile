@@ -12,7 +12,6 @@ pyarrow = "==18.0.0"
 requests = "==2.32.3"
 scikit-learn = "==1.5.2"
 tqdm = "==4.67.0"
-art = "6.3"
 
 [dev-packages]
 
