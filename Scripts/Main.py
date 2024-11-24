@@ -25,7 +25,12 @@ randomSplitState     = 42	       # Defining the randomness for the Train/test sp
 # Pointing at the directori of the AlvaDesc instalation
 AlvaDescPath		 = '/Applications/alvaDesc.app/Contents/MacOS/alvaDescCLI'
 
+correlationMethod    = 'pearson'   # Setting up the computing correlation method to distinguish between related/non-relatied data
+                                   # the accepted values are: 'pearson', 'kendall' and 'spearman'
+correlationLimitValue= 0.7         # Setting up the (absolute) value upon (under) which the chemical descriptors will be considered to 
+                                   # have a relation with the protein inhibition
+
 ChEMBLDataExtractorMacro.ChEMBLExtractData(targetIDChEMBL, targetProperty)
 dataFiles = DataFilterAndPlotsMacro.ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty,lowerTargetProperty,higherTargetProperty,
 												              percentageEresed,testSizeProportion,randomSplitState)
-for iFile in dataFiles : ComputeChemDescriptorsMacro.ComputeChemDescriptors(dataFiles[iFile],AlvaDescPath)
+for iFile in dataFiles : ComputeChemDescriptorsMacro.ComputeChemDescriptors(dataFiles[iFile], AlvaDescPath, correlationMethod, correlationLimitValue)
