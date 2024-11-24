@@ -94,6 +94,7 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
     # Saving the histogram
     plotFileName = f'DataGapRepresentation{targetProperty}percentageEresed{percentageEresed*100}Gap_min_{int(dataWithGapUnder.loc[minimumGapPropertyID,'standard_value'])}Gap_max_{int(dataWithGapUpper.loc[maximumGapPropertyID,'standard_value'])}.pdf'
     plt.savefig(f'{plotingPath}{plotFileName}', format='pdf')
+    plt.close() # Closing the plot
     if not silentMode: print(f'\nThe plot has been saved as {plotFileName} inside the Plots directory')
 
     # Saving the dataWithGapAll dataframe

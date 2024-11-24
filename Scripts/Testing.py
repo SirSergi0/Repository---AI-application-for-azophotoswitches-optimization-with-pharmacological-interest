@@ -1,19 +1,15 @@
-import pandas as pd 
+import pandas as pd
+import matplotlib.pyplot as plt
 
-descriptorsDataFrame = pd.read_feather("../Data/ChEMBL_ExtractorData_CHEMBL372_IC50_1000Descriptors.feather")
-
-
-# Specify the target column for correlation
-target_column = 'standard_value'
-
-# Exclude the first column
-columns_to_consider = descriptorsDataFrame.columns[1:]  # Skip the first column
-subset_df = descriptorsDataFrame[columns_to_consider]
-
-subset_df = descriptorsDataFrame.drop('canonical_smiles', axis = 1)
-correlation = subset_df.corr(method = 'pearson')[target_column]
+# Example Series: Correlation values between -1 and 1
+correlationDataFrame = pd.Series([0.85, -0.75, 0.4, -0.1, 0.3, -0.5, 0.95, -0.95, 0.0])
 
 
-print(subset_df)
-print(correlation)
-print(descriptorsDataFrame)
+# ploting the correlation factors histogram
+plt.hist(correlationDataFrame, bins=40, color='purple', range = (-1,1), label=f"Number of descriptors {2*4}")
+plt.title('Correlation factors of the computed chemical descriptors')
+plt.xlabel('Correlation Values')
+plt.ylabel('Frequency')
+plt.legend()
+# Display the plot
+plt.savefig('../Plots/CorrelationFactors2.pdf', format = 'pdf')

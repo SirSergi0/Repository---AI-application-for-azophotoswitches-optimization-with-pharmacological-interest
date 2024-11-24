@@ -8,6 +8,7 @@
 ########################################################################################################
 
 import pandas as pd
+import matplotlib.pyplot as plt
 from tqdm import tqdm
 from alvadesccliwrapper.alvadesc import AlvaDesc
 
@@ -16,7 +17,6 @@ def ComputeChemDescriptors (dataFilePath, AlvaDescPath, correlationMethod, corre
     inputDataFrame  = pd.read_feather(dataFilePath)          # Reading the dataframe
     dataFilePath    = dataFilePath.removesuffix(".feather")  # Deleting the suffix ".feather" for later porpuses
     outputDataList  = []                                     # Generating an empty list
-    counter = 0
     print("\n")
     for iSmile in tqdm(inputDataFrame["canonical_smiles"], desc=f"Computing molecular descriptors for {dataFilePath}"):
         aDesc.set_input_SMILES(iSmile)                       # Computing the descriptors
@@ -31,22 +31,37 @@ def ComputeChemDescriptors (dataFilePath, AlvaDescPath, correlationMethod, corre
         for iDescriptor in range(len(outputDescriptors)):
             descriptorsDictionary[outputDescriptors[iDescriptor]] = outputValues[iDescriptor]
         outputDataList.append(descriptorsDictionary)          # Adding the desciptors' dictionary to the list
-        counter += 1
-        if counter == 5: break
+
     outputDataFrame = pd.DataFrame(outputDataList)            # Generating the output dataframe
 
     outputDataFrame.fillna(0,inplace = True)                  # Getting rid off the NaN values
-    print("Total of computated desciptors for each particle = ", outputDataFrame.shape[1]-1,"\n")
+    print("Total of computated desciptors for each particle =  ", outputDataFrame.shape[1]-1,"\n")
     print("Deleting descriptors with null values...")
     outputDataFrame = outputDataFrame.loc[:, ~(outputDataFrame == 0).all()]
-    print("Number of remaining chemical desciptors =          ", outputDataFrame.shape[1]-1,"\n")
+    print("Number of remaining chemical desciptors =           ", outputDataFrame.shape[1]-1,"\n")
 
-    # Computing the correlation coefficients with the given method
+    # Computing the correlation coefficients with the selected method
     print("Computing the correlation coefficients using", correlationMethod, "method")
     correlationDataFrame = (outputDataFrame.drop('canonical_smiles', axis = 1)).corr(method = correlationMethod)['standard_value']
-    print(correlationDataFrame)
+    print("Deleting descriptors with correlation factors below ", correlationLimitValue)
+       
+    # ploting the correlation factors histogram
+    print("Ploting the correlation factors in ../Plots/CorrelationFactors.pdf")
+    plt.hist(correlationDataFrame, bins=40, color='purple', range = (-1,1), label=f"Number of descriptors {outputDataFrame.shape[1]-1}")
+    plt.title('Correlation factors of the computed chemical descriptors')
+    plt.xlabel('Correlation Values')
+    plt.ylabel('Frequency')
+    plt.legend()
+    plt.savefig(f"../Plots/CorrelationFactors.pdf", format = 'pdf')
+    plt.close()
 
-    outputDataFrame.to_csv(f"{dataFilePath}Descriptors.csv", index=False) # Saving the data
+
+    # Deleting chemical descriptors with low correlating values
+    for iDescriptor, iCorrelationValue in correlationDataFrame.items():
+        if (abs(iCorrelationValue) < correlationLimitValue): outputDataFrame = outputDataFrame.drop(iDescriptor, axis = 1) 
+    print("Number of remaining chemical desciptors =           ", outputDataFrame.shape[1]-1,"\n")
+    outputDataFrame.to_csv(f"{dataFilePath}Descriptors.csv", index = False) # Saving the data
+
     outputDataFrame.to_feather(f"{dataFilePath}Descriptors.feather")
     print("The chemical descriptors have been computed and saved in" + f"{dataFilePath}Descriptors.csv")
     print("The chemical descriptors have been computed and saved in" + f"{dataFilePath}Descriptors.feather\n")
