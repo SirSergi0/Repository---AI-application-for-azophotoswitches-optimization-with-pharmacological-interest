@@ -39,9 +39,9 @@ def findSplitDataFrame(dataFrame, column, percentageEresed):
 
     return iSplitValueUnder, iSplitValueUpper
 
-def printDataFrameLenMaxMin(dataFrame, targetProperty, standardValue = 'standard_value', standardUnits = 'standard_units', silentMode = False):
+def printDataFrameLenMaxMin(dataFrame, targetProperty, standardValue = 'standard_value', standardUnits = 'nM', silentMode = False):
     if silentMode != True: print(f'Number of entries:                  {len(dataFrame)}')
     minimum = dataFrame[standardValue].idxmin()
     maximum = dataFrame[standardValue].idxmax()
-    if silentMode != True: print(f'Minimum {targetProperty}:                       {float(dataFrame.loc[minimum,standardValue])} {dataFrame.loc[minimum, standardUnits]}')
-    if silentMode != True: print(f'Maximum {targetProperty}:                       {float(dataFrame.loc[maximum,standardValue])} {dataFrame.loc[maximum, standardUnits]}\n')
+    if silentMode != True: print(f'Minimum {targetProperty}:                       {float(dataFrame.loc[minimum,standardValue])} {standardUnits}')
+    if silentMode != True: print(f'Maximum {targetProperty}:                       {float(dataFrame.loc[maximum,standardValue])} {standardUnits}\n')

@@ -11,11 +11,14 @@
 import pandas as pd # Importing pandas in order to use DataFrames
 import matplotlib.pyplot as plt # Importing matplotlib for perfoming plots
 from sklearn.model_selection import train_test_split # Importing the funtion "train_test_split" for spliting our data in two sets. The training set and the testing set.
+import os # Importing os to check whether the computed descriptors file already exists or not.
 
 import SplitAndPrintDataFrameMacro # Importing the macro called "SplitAndPrintDataFrameMacro.py"
+from ComputeChemDescriptorsMacro import ComputeChemDescriptors # Importing the modulus for computing chemical descriptors 
 
 def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetProperty, higherTargetProperty,
-                              percentageEresed, testSizeProportion, randomSplitState,
+                              percentageEresed, testSizeProportion, randomSplitState, AlvaDescPath,
+                              correlationMethod, correlationLimitValue,
                               requestDataLimit = "1000", dataFilePath = "../Data/", plotingPath = "../Plots/", 
                               silentMode = False):
 
@@ -32,29 +35,42 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
     if not (0 <= percentageEresed <= 1):
         raise ValueError("The 'percentageEresed' variable must be between 0 and 1.")
 
-    # Reading data from the feather file
-    dataImported = pd.read_feather(dataFilePath + dataFileName + ".feather")
+    # Checking weather the descriptors have already been computed or not 
+    if not os.path.exists(dataFilePath + dataFileName + "Descriptors.feather"): 
+        # Reading data from the feather file
+        dataImported = pd.read_feather(dataFilePath + dataFileName + ".feather")
 
-    # Removing unwanted variables
-    for iVariable in unwantedVariables:
-        if iVariable in dataImported.columns: dataImported = dataImported.drop(iVariable, axis=1)
+        # Removing unwanted variables
+        for iVariable in unwantedVariables:
+            if iVariable in dataImported.columns: dataImported = dataImported.drop(iVariable, axis=1)
 
-    if not silentMode: print("\nIMPORTED DATA")
-    # Printing the rellevant data from the dataImported dataframe
-    SplitAndPrintDataFrameMacro.printDataFrameLenMaxMin(dataImported, targetProperty)
+        if not silentMode: print("\nIMPORTED DATA")
+        # Printing the rellevant data from the dataImported dataframe
+        SplitAndPrintDataFrameMacro.printDataFrameLenMaxMin(dataImported, targetProperty)
 
-    # Filtering the dataset based on the target property range
-    dataFiltered = dataImported[(dataImported['standard_value'] >= lowerTargetProperty) &
-                                (dataImported['standard_value'] <= higherTargetProperty)]
+        # Filtering the dataset based on the target property range
+        dataFiltered = dataImported[(dataImported['standard_value'] >= lowerTargetProperty) &
+                                    (dataImported['standard_value'] <= higherTargetProperty)]
 
-    if not silentMode: print("FILTERED DATA")
-    # Printing the rellevant data of the dataFiltered dataframe
-    SplitAndPrintDataFrameMacro.printDataFrameLenMaxMin(dataFiltered, targetProperty)
+        if not silentMode: print("FILTERED DATA")
+        # Printing the rellevant data of the dataFiltered dataframe
+        SplitAndPrintDataFrameMacro.printDataFrameLenMaxMin(dataFiltered, targetProperty)
+        
+        # Saving the units we are working with for later porpuses
+        standardUnits = dataFiltered['standard_units'].iloc[0]
 
-    # Rewritting the raw data with the filtered data
-    dataFiltered.to_csv(dataFilePath + dataFileName + ".csv", index = False)
-    dataFiltered.to_feather(dataFilePath + dataFileName + ".feather")
-
+        # Rewritting the raw data with the filtered data
+        dataFiltered.to_csv(dataFilePath + dataFileName + ".csv", index = False)
+        dataFiltered.to_feather(dataFilePath + dataFileName + ".feather")
+        
+        # Computing the chemical descriptors and saving the data
+        dataFiltered = ComputeChemDescriptors(dataFilePath + dataFileName + ".feather",AlvaDescPath, correlationMethod, 
+                                              correlationLimitValue, silentMode = silentMode) 
+    else:
+        if not silentMode: print("The chemical descriptors have already been computed!")
+        dataFiltered  = pd.read_feather(dataFilePath + dataFileName + "Descriptors.feather")
+        dataImported  = pd.read_feather(dataFilePath + dataFileName + ".feather")
+        standardUnits = dataImported['standard_units'].iloc[0]
     # Computing gaps for data removal based on percentageEresed
     iSplitValueUnder, iSplitValueUpper = SplitAndPrintDataFrameMacro.findSplitDataFrame(dataFiltered, 'standard_value', percentageEresed)
 
@@ -77,16 +93,15 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
     maximumGapPropertyID = dataWithGapUpper['standard_value'].idxmin()
 
     # Anouncing the data gap
-    if not silentMode: print(f'Minimum {targetProperty} gap:                   {float(dataWithGapUnder.loc[minimumGapPropertyID,'standard_value'])} {dataWithGapUnder.loc[minimumGapPropertyID, 'standard_units']}')
-    if not silentMode: print(f'Maximum {targetProperty} gap:                   {float(dataWithGapUpper.loc[maximumGapPropertyID,'standard_value'])} {dataWithGapUpper.loc[maximumGapPropertyID, 'standard_units']}')
-
+    if not silentMode: print(f'Minimum {targetProperty} gap:                   {float(dataWithGapUnder.loc[minimumGapPropertyID,'standard_value'])} {standardUnits}')
+    if not silentMode: print(f'Maximum {targetProperty} gap:                   {float(dataWithGapUpper.loc[maximumGapPropertyID,'standard_value'])} {standardUnits}')
 
     # Plotting the filtered data and data with gap
     plt.hist(dataFiltered['standard_value'], bins=higherTargetProperty, label='Filtered Data')
     plt.hist(dataWithGapAll['standard_value'], bins=higherTargetProperty, label='Filtered Data With Gap')
 
     # Adding labels, title and legend
-    plt.xlabel(f'{targetProperty} ({dataWithGapAll.loc[iSplitValueUpper, "standard_units"]})')
+    plt.xlabel(f'{targetProperty} ({standardUnits})')
     plt.ylabel('Number of entries')
     plt.title(f'Data Gap Representation for {targetProperty}')
     plt.legend()
@@ -133,9 +148,3 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
     if not silentMode: print(f"{dataWithGapAllFileName}Test.csv")
     if not silentMode: print(f"{dataWithGapAllFileName}Train.feather")
     if not silentMode: print(f"{dataWithGapAllFileName}Test.feather")
-
-    return{"dataFileName"                : dataFilePath + dataFileName + ".feather",
-           "dataWithGapAllFileName"      : f"{dataWithGapAllFileName}.feather",
-           "dataWithGapAllTrainFileName" : f"{dataWithGapAllFileName}Train.feather",
-           "dataWithGapAllTestFileName"  : f"{dataWithGapAllFileName}Test.feather"}
-

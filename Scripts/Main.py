@@ -7,12 +7,8 @@
 #                                                                                                      #
 ########################################################################################################
 
-import requests                    # Package used for generating the database requests
-import pandas as pd                # Importing pandas in order to use DataFrames
-
 import ChEMBLDataExtractorMacro    # Importing the macro called "ChEMBLDataExtractorMacro.py"
 import DataFilterAndPlotsMacro     # Importing the macro called "DataFilterAndPlotsMacro.py"
-import ComputeChemDescriptorsMacro # Importing the macro called "ComputeChemDescriptorsMacro.py"
 
 targetIDChEMBL       = "CHEMBL372" # Defining ChEMBL ID for COX-2, our target. 
 targetProperty       = "IC50"      # Defining our target poperty
@@ -27,12 +23,10 @@ AlvaDescPath		 = '/Applications/alvaDesc.app/Contents/MacOS/alvaDescCLI'
 
 correlationMethod    = 'pearson'   # Setting up the computing correlation method to distinguish between related/non-relatied data
                                    # the accepted values are: 'pearson', 'kendall' and 'spearman'
-correlationLimitValue= 0.1         # Setting up the (absolute) value upon (under) which the chemical descriptors will be considered to 
+correlationLimitValue= 0           # Setting up the (absolute) value upon (under) which the chemical descriptors will be considered to 
                                    # have a relation with the protein inhibition
 
 ChEMBLDataExtractorMacro.ChEMBLExtractData(targetIDChEMBL, targetProperty)
-dataFiles = DataFilterAndPlotsMacro.ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty,lowerTargetProperty,higherTargetProperty,
-												              percentageEresed,testSizeProportion,randomSplitState)
-for iFile in dataFiles : 
-    ComputeChemDescriptorsMacro.ComputeChemDescriptors(dataFiles[iFile], AlvaDescPath, correlationMethod, correlationLimitValue)
-    break # Temporal
+DataFilterAndPlotsMacro.ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty,lowerTargetProperty,higherTargetProperty,
+                                                  percentageEresed,testSizeProportion,randomSplitState, AlvaDescPath, 
+                                                  correlationMethod, correlationLimitValue)
