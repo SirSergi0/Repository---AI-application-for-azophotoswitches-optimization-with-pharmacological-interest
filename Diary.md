@@ -34,9 +34,9 @@ Outcome:
  - Presentation of the article "Combined Machine Learning and GRID-Independent Molecular Descriptor (GRIND) Models to Probe the Activity Profiles of 5-Lipoxygenase Activating Protein Inhibitors".
  - Begining of the research.
 
- ### 17/09/2024	15:00h	Dr.Moreno	C7/135
+### 17/09/2024	15:00h	Dr.Moreno	C7/135
 
- Update of the project's direction and introduction to the project's fucntionalities.
+Update of the project's direction and introduction to the project's fucntionalities.
 
 ### 08/10/2024 Stand by of the project
 
@@ -45,3 +45,7 @@ For those how might concern, the project (script) will remain in stand by until 
 ### 14/11/2024 End of the stand by period
 
 End of the stand by period. We have access to AlvaDesc and it seems to work.
+
+### 03/12/2024 11:00h Dr.Moreno   C7/135
+
+Update of the project's state and accourding a meeting for next week with bouth supervisors.
