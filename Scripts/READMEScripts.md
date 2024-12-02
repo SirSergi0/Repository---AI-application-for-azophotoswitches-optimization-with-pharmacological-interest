@@ -10,3 +10,6 @@ Analyse the extracted data by ChEMBLDataExtractorMacro.py in order to filter out
 
 ## SlpitAndPrintDataFrameMacro.py
 Spliting data frames evenly and printing their rellevant information
+
+## ComputeChemicalDescriptorsMacro.py
+Computing and extracting all the chemical descriptors using AlvaDesc software

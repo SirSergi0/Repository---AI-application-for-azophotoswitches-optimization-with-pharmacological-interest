@@ -447,8 +447,15 @@ H_2N-[-1]S(=[-4]O)(=[-2]O)-[1]*6(-=-(-[1]N*5(-N=(-[-1](-[-4]F)(-[-2]F)-[1])-=(-[
 }}
 \caption{Chemical graph of Ibuprofen.}
 \label{IbuprofenFigure}
-\end{figure}
 
+\end{figure}
+\begin{definition}\label{definitionPersonCoefficient}
+Pearson correlation coefficient: Given set of pairs of data $\{(x_i,y_i)\}_{i=1}^n$ the pearson correlation factor $r_{xy}$ is defined as,
+\begin{align}
+r_{xy}=\frac{\sum_{i=1}^n(x_i-\bar{x})(y_i-\bar{y})}{\sqrt{\sum_{i=1}^n(x_i-\bar{x}^2)}\sqrt{\sum_{i=1}^n(y_i-\bar{y}^2)}},
+\end{align}
+where $\bar{x}$ and $\bar{y}$ stand for the average value of ${x_i}_{i=1}^n$ and ${y_i}_{i=1}^n$ respectively. Note that $r_{xy}\in[-1,1]$. Therefore the sign of $r_{xy}$ is tightly related to the sign of alinear regression, more precisely if $x>0$, "$y$" generally\footnote{We would like to remark that the word "generally" stands for "the majority of the cases", since "generally" is commonly interpreted as a non-scientific/non-objective word} increases when "$x$" increases, as well as if $x<0$, "$y$" decreases when "$x$" increases.
+\end{definition}
 \end{multicols}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%% OSERVATIONS %%%%%%%%%%%%%%%%%
@@ -496,6 +503,23 @@ We have extracted all the aviable data from the \emph{ChEMBL} database with a kn
 \caption{Data representation after the filtering.}
 \label{figDataRepresentationFiltering}
 \end{figure}
+\end{observation}
+
+\begin{observation}
+Figure (\ref{figDataRepresentationFiltering}) clearly shows that multiples of 10 are significantly overrepresented compared to other values. Additionally, analyzing data from other proteins confirms that this is not an exception but rather a common pattern. It appears that experimental chemists have a preference for multiples of 10, often rounding their results to the nearest value in this category. Consequently, an inherent error associated with these values will always be present, and it will not be possible to completely eliminate it.
+\end{observation}
+
+\begin{observation}
+Once the chemical descriptors are computed, we proceed to calculate the Pearson correlation coefficients as defined in Definition (\ref{definitionPersonCoefficient}). The results are subsequently plotted in Figure (\ref{figPersonCorrelationFactors}). From the plot, we observe a “Gaussian bell” shape centered around zero, which aligns with our expectations. This suggests that there is no inherently preferred set of chemical descriptors for the protein, a finding that may initially seem at odds with the project’s goals.
+
+However, our hypothesis states that \emph{there exists a combination (or combinations) of chemical descriptors that are directly correlated with the inhibition of the protein}. This observation does not contradict that statement. Intuitively, we believe that filtering out descriptors with the lowest  $r^2$  values might lead to improved results. This possibility will be explored in subsequent discussions.
+\begin{figure}[H]
+\centering
+\includegraphics[width = 0.5\textwidth]{../Plots/CorrelationFactors.pdf}
+\caption{Representation of the Pearson correlation factors.}
+\label{figPersonCorrelationFactors}
+\end{figure}
+
 \end{observation}
 \end{multicols}
 \newpage
