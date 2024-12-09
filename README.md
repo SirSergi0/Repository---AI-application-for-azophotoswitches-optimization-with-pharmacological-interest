@@ -43,4 +43,3 @@ Comments will be added throughout the project's development. This list may not b
 - **It is highly recomended** to consult the dependencies before runing the code. Otherwise, the most probable output will be an error message.
 
 
-Hola
