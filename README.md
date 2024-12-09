@@ -41,3 +41,6 @@ Comments will be added throughout the project's development. This list may not b
 ### Pipfile
 - The only porpuse of this file is pointing out at the dependencies of the project. This information is nicely displaced at the `Insights/Dependency Graph` section. 
 - **It is highly recomended** to consult the dependencies before runing the code. Otherwise, the most probable output will be an error message.
+
+
+Hola
