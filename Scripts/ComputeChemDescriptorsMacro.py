@@ -51,9 +51,8 @@ def ComputeChemDescriptors (dataFilePath, AlvaDescPath, correlationMethod, corre
     plt.xlabel('Correlation Values')
     plt.ylabel('Frequency')
     plt.legend()
-    plt.savefig(f"../Plots/CorrelationFactors.pdf", format = 'pdf')
+    plt.savefig(f"../Plots/{dataFilePath.removeprefix("../Data/")}CorrelationFactors.pdf", format = 'pdf')
     plt.close()
-
 
     # Deleting chemical descriptors with low correlating values
     for iDescriptor, iCorrelationValue in correlationDataFrame.items():

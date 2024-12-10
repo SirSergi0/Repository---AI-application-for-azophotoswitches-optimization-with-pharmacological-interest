@@ -1,6 +1,9 @@
 # Scripts functionalities
+## config.ini
+File that contains all the variables of the code, must be changed to fit the porpuses.
+
 ## Main.py
-Link all the files and store the hole Machine Learning Process. This will be the main script file.
+It links all the files and store the hole Machine Learning Process. This will be the main script file.
 
 ## ChEMBLDataExtractorMacro.py
 Import all molecule's data with a known IC50 activity respect a certain protein (i.e, COX-2) from the ChEMBL database. This info will be stored into the `Data` directory.

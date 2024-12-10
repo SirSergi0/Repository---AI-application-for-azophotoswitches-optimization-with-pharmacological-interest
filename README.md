@@ -8,6 +8,10 @@ The proposed AI-driven software will leverage cutting-edge machine learning algo
 
 Comments will be added throughout the project's development. This list may not be updated regularly.
 
+### UserGuide.md 
+- File containing a User-Guide for helping with the implementation of the repository to a device.
+- It is hardly recommended to consult this text at least once.
+
 ### General Guidelines
 
 - For any problems or questions, please use the **_Issues_** and **_Discussions_** sections.
