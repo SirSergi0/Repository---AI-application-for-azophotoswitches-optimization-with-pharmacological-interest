@@ -38,28 +38,9 @@ def ComputeChemDescriptors (dataFilePath, AlvaDescPath, correlationMethod, corre
     if not silentMode: print("Deleting descriptors with null values...")
     outputDataFrame = outputDataFrame.loc[:, ~(outputDataFrame == 0).all()]
     if not silentMode: print("Number of remaining chemical desciptors =           ", outputDataFrame.shape[1]-1,"\n")
-
-    # Computing the correlation coefficients with the selected method
-    if not silentMode: print("Computing the correlation coefficients using", correlationMethod, "method")
-    correlationDataFrame = (outputDataFrame.drop('canonical_smiles', axis = 1)).corr(method = correlationMethod)['standard_value']
-    if not silentMode: print("Deleting descriptors with correlation factors below ", correlationLimitValue)
-       
-    # ploting the correlation factors histogram
-    if not silentMode: print("Ploting the correlation factors in ../Plots/CorrelationFactors.pdf")
-    plt.hist(correlationDataFrame, bins=40, color='purple', range = (-1,1), label=f"Number of descriptors {outputDataFrame.shape[1]-1}")
-    plt.title('Correlation factors of the computed chemical descriptors')
-    plt.xlabel('Correlation Values')
-    plt.ylabel('Frequency')
-    plt.legend()
-    plt.savefig(f"../Plots/{dataFilePath.removeprefix("../Data/")}CorrelationFactors.pdf", format = 'pdf')
-    plt.close()
-
-    # Deleting chemical descriptors with low correlating values
-    for iDescriptor, iCorrelationValue in correlationDataFrame.items():
-        if (abs(iCorrelationValue) < correlationLimitValue): outputDataFrame = outputDataFrame.drop(iDescriptor, axis = 1) 
-    if not silentMode: print("Number of remaining chemical desciptors =           ", outputDataFrame.shape[1]-1,"\n")
-    outputDataFrame.to_csv(f"{dataFilePath}Descriptors.csv", index = False) # Saving the data
-
+    
+    # Saving the data
+    outputDataFrame.to_csv(f"{dataFilePath}Descriptors.csv", index = False)
     outputDataFrame.to_feather(f"{dataFilePath}Descriptors.feather")
     if not silentMode: print("The chemical descriptors have been computed and saved in" + f"{dataFilePath}Descriptors.csv")
     if not silentMode: print("The chemical descriptors have been computed and saved in" + f"{dataFilePath}Descriptors.feather\n")
