@@ -47,7 +47,7 @@ Comments will be added throughout the project's development. This list may not b
 - **It is highly recomended** to consult the dependencies before runing the code. Otherwise, the most probable output will be an error message.
 
 ### Data 
-- Directory incharged of storing all the data (eather raw data extracted from a dataBase or computed data with chemical Descriptors values).
+- Directory incharged of storing all the data (eather raw data extracted from a database or computed data with chemical descriptors as well).
 
 ### Predictions
-- Directory that will contain all the predictions of the AI.
+- Directory that will contain all the predictions provided by the AI.
