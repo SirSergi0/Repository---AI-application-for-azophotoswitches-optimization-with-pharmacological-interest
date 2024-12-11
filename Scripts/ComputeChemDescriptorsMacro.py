@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 from tqdm import tqdm
 from alvadesccliwrapper.alvadesc import AlvaDesc
 
-def ComputeChemDescriptors (dataFilePath, AlvaDescPath, correlationMethod, correlationLimitValue, silentMode = False):
+def ComputeChemDescriptors (dataFilePath, AlvaDescPath, silentMode = False):
     aDesc           = AlvaDesc(AlvaDescPath)                 # Importing the AlvaDesc aplication
     inputDataFrame  = pd.read_feather(dataFilePath)          # Reading the dataframe
     dataFilePath    = dataFilePath.removesuffix(".feather")  # Deleting the suffix ".feather" for later porpuses

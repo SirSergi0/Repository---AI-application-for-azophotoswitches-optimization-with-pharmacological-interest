@@ -46,4 +46,8 @@ Comments will be added throughout the project's development. This list may not b
 - The only porpuse of this file is pointing out at the dependencies of the project. This information is nicely displaced at the `Insights/Dependency Graph` section. 
 - **It is highly recomended** to consult the dependencies before runing the code. Otherwise, the most probable output will be an error message.
 
+### Data 
+- Directory incharged of storing all the data (eather raw data extracted from a dataBase or computed data with chemical Descriptors values).
 
+### Predictions
+- Directory that will contain all the predictions of the AI.

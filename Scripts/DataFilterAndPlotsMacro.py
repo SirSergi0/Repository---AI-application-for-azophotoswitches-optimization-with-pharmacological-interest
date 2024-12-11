@@ -64,8 +64,7 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
         dataFiltered.to_feather(dataFilePath + dataFileName + ".feather")
         
         # Computing the chemical descriptors and saving the data
-        dataFiltered = ComputeChemDescriptors(dataFilePath + dataFileName + ".feather",AlvaDescPath, correlationMethod, 
-                                              correlationLimitValue, silentMode = silentMode) 
+        dataFiltered = ComputeChemDescriptors(dataFilePath + dataFileName + ".feather",AlvaDescPath, silentMode = silentMode) 
     else:
         if not silentMode: print("The chemical descriptors have already been computed!")
         dataFiltered  = pd.read_feather(dataFilePath + dataFileName + "Descriptors.feather")
@@ -158,7 +157,8 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
     dataWithGapAllTest                    = dataWithGapAllFeaturesTest
     dataWithGapAllTest['activity_label']  = dataWithGapAllLabelsTest
     dataWithGapAllTest.reset_index(drop = True, inplace = True)
-
+    
+    # Saving the train and test data
     dataWithGapAllTrain.to_csv(f"{dataFilePath}{dataWithGapAllFileName}Train.csv", index=False)
     dataWithGapAllTest.to_csv(f"{dataFilePath}{dataWithGapAllFileName}Test.csv", index=False)
     dataWithGapAllTrain.to_feather(f"{dataFilePath}{dataWithGapAllFileName}Train.feather")
@@ -169,3 +169,5 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
     if not silentMode: print(f"{dataWithGapAllFileName}Test.csv")
     if not silentMode: print(f"{dataWithGapAllFileName}Train.feather")
     if not silentMode: print(f"{dataWithGapAllFileName}Test.feather")
+    
+    return dataWithGapAllFileName
