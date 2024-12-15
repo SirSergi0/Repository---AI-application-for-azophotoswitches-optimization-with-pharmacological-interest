@@ -68,6 +68,8 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
     else:
         if not silentMode: print("The chemical descriptors have already been computed!")
         dataFiltered  = pd.read_feather(dataFilePath + dataFileName + "Descriptors.feather")
+        dataFiltered  = dataFiltered[(dataFiltered['standard_value'] >= lowerTargetProperty) &
+                                     (dataFiltered['standard_value'] <= higherTargetProperty)]
         dataImported  = pd.read_feather(dataFilePath + dataFileName + ".feather")
         standardUnits = dataImported['standard_units'].iloc[0]
     

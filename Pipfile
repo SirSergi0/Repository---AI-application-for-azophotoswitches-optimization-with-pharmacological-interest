@@ -13,6 +13,7 @@ requests           = "==2.32.3"
 scikit-learn       = "==1.5.2"
 tqdm               = "==4.67.0"
 configparser       = "==7.1.0"
+pickle			   = "==1.0.0"
 
 [dev-packages]
 

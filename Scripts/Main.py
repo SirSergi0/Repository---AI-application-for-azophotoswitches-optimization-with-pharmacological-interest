@@ -23,4 +23,5 @@ dataFile = DataFilterAndPlotsMacro.ChEMBLDataProcessingMacro(config[mode]['targe
                                                              int(config[mode]['randomSplitState']), config[mode]['AlvaDescPath'], 
                                                              config[mode]['correlationMethod'], float(config[mode]['correlationLimitValue']))
 
-RandomForest.RandomForest(dataFile, int(config[mode]['numberOfTrees']))
+RandomForest.RandomForest(dataFile, int(config[mode]['numberOfTrees']), float(config[mode]['percentageErased']), 
+                          float(config[mode]['testSizeProportion']), float(config[mode]['correlationLimitValue']))

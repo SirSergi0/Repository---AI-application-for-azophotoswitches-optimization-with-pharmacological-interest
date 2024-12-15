@@ -11,9 +11,10 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
+import pickle
 
 # Importing the desired files
-def RandomForest(dataFileName, NumberOfTrees, silentMode = False):
+def RandomForest(dataFileName, NumberOfTrees, percentatgeErased, splitPercentatge, minimumCorrelationFactor, silentMode = False):
     # Importing the data 
     TrainingDataFrame = pd.read_feather(f"{dataFileName}Train.feather")
     TestingDataFrame  = pd.read_feather(f"{dataFileName}Train.feather")
@@ -41,12 +42,31 @@ def RandomForest(dataFileName, NumberOfTrees, silentMode = False):
     PredictedDataFrame["PredictedValues"] = InhibitionPotentialPredicted
 
     # Printing some results data
-    if not silentMode: print(f"iNumberOfTrees    : {NumberOfTrees}")
-    if not silentMode: print(f"Mean Squared Error: {mean_squared_error(InhibitionPotentialTesting, InhibitionPotentialPredicted)}")
-    if not silentMode: print(f"R-squared         : {r2_score(InhibitionPotentialTesting, InhibitionPotentialPredicted)}")
+    if not silentMode: print(f"NumberOfTrees            : {NumberOfTrees}")
+    if not silentMode: print(f"Erased Percentatge       : {percentatgeErased*100}%")
+    if not silentMode: print(f"Splitting proportion     : {splitPercentatge*100}% is for testing")
+    if not silentMode: print(f"minimumCorrelationFactor : {minimumCorrelationFactor}")
+    if not silentMode: print(f"Number of descriptors    : {ChemDescriptorsTraining.shape[1]}")
+    if not silentMode: print(f"Mean Squared Error       : {mean_squared_error(InhibitionPotentialTesting, InhibitionPotentialPredicted)}")
+    if not silentMode: print(f"R-squared                : {r2_score(InhibitionPotentialTesting, InhibitionPotentialPredicted)}\n")
     
     # Saving the PredictedDataFrame into the 'Predictions' directory 
-    if not silentMode: print(f"Saving the prediction values into the ../Predictions/{dataFileName.removeprefix("../Data/")}RandomForest.feather file")
-    if not silentMode: print(f"Saving the prediction values into the ../Predictions/{dataFileName.removeprefix("../Data/")}RandomForest.csv file")
-    PredictedDataFrame.to_feather(f"../Predictions/{dataFileName.removeprefix("../Data/")}RandomForest.feather")
-    PredictedDataFrame.to_csv(f"../Predictions/{dataFileName.removeprefix("../Data/")}RandomForest.csv", index=False)
+    if not silentMode: print(f"Saving the prediction values into the ../Predictions/{dataFileName.removeprefix("../Data/")}RandomForest{NumberOfTrees}.feather file")
+    if not silentMode: print(f"Saving the prediction values into the ../Predictions/{dataFileName.removeprefix("../Data/")}RandomForest{NumberOfTrees}.csv file\n")
+    PredictedDataFrame.to_feather(f"../Predictions/{dataFileName.removeprefix("../Data/")}RandomForest{NumberOfTrees}.feather")
+    PredictedDataFrame.to_csv(f"../Predictions/{dataFileName.removeprefix("../Data/")}RandomForest{NumberOfTrees}.csv", index=False)
+    
+    # Saving the regression into a binary file using pickle
+    with open(f"../MachineLearningModels/RandomForest{dataFileName.removeprefix("../Data/")}_Trees{NumberOfTrees}.pkl", 'wb') as RandomForestFile:
+        if not silentMode: print(f"Saving the model into ../MachineLearningModels/RandomForest{dataFileName.removeprefix("../Data/")}_Trees{NumberOfTrees}.pkl")
+        pickle.dump(RandomForest, RandomForestFile)
+
+    with open(f"../MachineLearningModels/RandomForestStats{dataFileName.removeprefix("../Data/")}_Trees{NumberOfTrees}.txt", 'w') as RandomForestFile:
+        if not silentMode: print(f"Saving the statistics into ../MachineLearningModels/RandomForestStats{dataFileName.removeprefix("../Data/")}_Trees{NumberOfTrees}.txt")
+        RandomForestFile.write(f"NumberOfTrees            : {NumberOfTrees}\n")
+        RandomForestFile.write(f"Erased Percentatge       : {percentatgeErased*100}%\n")
+        RandomForestFile.write(f"Splitting proportion     : {splitPercentatge*100}% is for testing\n")
+        RandomForestFile.write(f"minimumCorrelationFactor : {minimumCorrelationFactor}\n")
+        RandomForestFile.write(f"Number of descriptors    : {ChemDescriptorsTraining.shape[1]}\n")
+        RandomForestFile.write(f"Mean Squared Error       : {mean_squared_error(InhibitionPotentialTesting, InhibitionPotentialPredicted)}\n")
+        RandomForestFile.write(f"R-squared                : {r2_score(InhibitionPotentialTesting, InhibitionPotentialPredicted)}\n")
