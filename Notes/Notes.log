@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  2 DEC 2024 15:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  19 DEC 2024 18:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -779,71 +779,203 @@ Now handling font encoding LYG ...
 ... no UTF-8 mapping file for font encoding LYG
 LaTeX Info: Composite with undeclared \" in encoding LYG on input line 58.
 )
+(/usr/local/texlive/2024/texmf-dist/tex/latex/forest/forest.sty
+Package: forest 2017/07/14 v2.1.5 Drawing (linguistic) trees
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.callouts.code.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.callouts.code.tex))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodepartlowerbox=\box76
+\pgfnodeparttwobox=\box77
+\pgfnodepartthreebox=\box78
+\pgfnodepartfourbox=\box79
+\pgfnodeparttwentybox=\box80
+\pgfnodepartnineteenbox=\box81
+\pgfnodeparteighteenbox=\box82
+\pgfnodepartseventeenbox=\box83
+\pgfnodepartsixteenbox=\box84
+\pgfnodepartfifteenbox=\box85
+\pgfnodepartfourteenbox=\box86
+\pgfnodepartthirteenbox=\box87
+\pgfnodeparttwelvebox=\box88
+\pgfnodepartelevenbox=\box89
+\pgfnodeparttenbox=\box90
+\pgfnodepartninebox=\box91
+\pgfnodeparteightbox=\box92
+\pgfnodepartsevenbox=\box93
+\pgfnodepartsixbox=\box94
+\pgfnodepartfivebox=\box95
+)))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryinterse
+ctions.code.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.cod
+e.tex)
+\pgf@intersect@solutions=\count335
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks51
+\pgfopts@list@add@b@toks=\toks52
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/elocalloc/elocalloc.sty
+Package: elocalloc 2016/12/15 v0.03 local allocation for LaTeX 2015+ (DPC)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2024-02-18 L3 Experimental document command parser
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/inlinedef/inlinedef.sty
+Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
+\ID@toks=\toks53
+\ID@count=\count336
+)
+\ID@usercommands=\toks54
+\safeloop@depth=\count337
+\safeRKloop@depth=\count338
+\forest@temp@dimen=\dimen289
+\forest@temp@count=\count339
+\forest@n=\count340
+\forest@temp@global@count=\count341
+\forest@temp@toks=\toks55
+\forest@temparray@M=\count342
+\forest@temparray@N=\count343
+\forest@global@temparray@M=\count344
+\forest@global@temparray@N=\count345
+\forest@isnum@count=\count346
+\forest@isdim@nonintpart=\count347
+\forest@isdim@dimen=\dimen290
+\forest@sort@m=\count348
+\forest@sort@k=\count349
+\forest@sort@p=\count350
+\bracket@content=\toks56
+\bracket@afterthought=\toks57
+\forest@node@maxid=\count351
+\forest@process@left@M=\count352
+\forest@process@left@N=\count353
+\forest@process@right@M=\count354
+\forest@process@right@N=\count355
+\forest@process@saved@M=\count356
+\forest@process@saved@N=\count357
+\forest@process@result@M=\count358
+\forest@process@result@N=\count359
+\forest@process@n=\count360
+\forest@nodewalk@branch@toks=\toks58
+\forest@nodewalk@shortsteps@resolution=\toks59
+\forest@do@dynamics=\toks60
+\forest@box=\box96
+\forest@xg=\dimen291
+\forest@yg=\dimen292
+\forest@xs=\dimen293
+\forest@ys=\dimen294
+\forest@pi@toks=\toks61
+\forest@segment@toks=\toks62
+\forest@PIi@toks=\toks63
+\forest@PIii@toks=\toks64
+\forest@copy@in=\read4
+\forest@copy@out=\write4
+\forest@externalize@max@outer@n=\count361
+\forest@externalize@inner@n=\count362
+)
 (/usr/local/texlive/2024/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen289
-\WF@size=\dimen290
-\c@WF@wrappedlines=\count335
-\WF@box=\box76
-\WF@everypar=\toks51
+\wrapoverhang=\dimen295
+\WF@size=\dimen296
+\c@WF@wrappedlines=\count363
+\WF@box=\box97
+\WF@everypar=\toks65
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box77
-\UL@hyphenbox=\box78
+\UL@box=\box98
+\UL@hyphenbox=\box99
 \UL@skip=\skip71
-\UL@hook=\toks52
-\UL@height=\dimen291
-\UL@pe=\count336
-\UL@pixel=\dimen292
-\ULC@box=\box79
+\UL@hook=\toks66
+\UL@height=\dimen297
+\UL@pe=\count364
+\UL@pixel=\dimen298
+\ULC@box=\box100
 Package: ulem 2019/11/18
-\ULdepth=\dimen293
+\ULdepth=\dimen299
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
-\c@tracingmulticols=\count337
-\mult@box=\box80
-\multicol@leftmargin=\dimen294
-\c@unbalance=\count338
-\c@collectmore=\count339
-\doublecol@number=\count340
-\multicoltolerance=\count341
-\multicolpretolerance=\count342
-\full@width=\dimen295
-\page@free=\dimen296
-\premulticols=\dimen297
-\postmulticols=\dimen298
+\c@tracingmulticols=\count365
+\mult@box=\box101
+\multicol@leftmargin=\dimen300
+\c@unbalance=\count366
+\c@collectmore=\count367
+\doublecol@number=\count368
+\multicoltolerance=\count369
+\multicolpretolerance=\count370
+\full@width=\dimen301
+\page@free=\dimen302
+\premulticols=\dimen303
+\postmulticols=\dimen304
 \multicolsep=\skip72
 \multicolbaselineskip=\skip73
-\partial@page=\box81
-\last@line=\box82
-\mc@boxedresult=\box83
-\maxbalancingoverflow=\dimen299
-\mult@rightbox=\box84
-\mult@grightbox=\box85
-\mult@firstbox=\box86
-\mult@gfirstbox=\box87
-\@tempa=\box88
-\@tempa=\box89
-\@tempa=\box90
-\@tempa=\box91
-\@tempa=\box92
-\@tempa=\box93
-\@tempa=\box94
-\@tempa=\box95
-\@tempa=\box96
-\@tempa=\box97
-\@tempa=\box98
-\@tempa=\box99
-\@tempa=\box100
-\@tempa=\box101
-\@tempa=\box102
-\@tempa=\box103
-\@tempa=\box104
-\@tempa=\box105
-\@tempa=\box106
-\@tempa=\box107
-\@tempa=\box108
+\partial@page=\box102
+\last@line=\box103
+\mc@boxedresult=\box104
+\maxbalancingoverflow=\dimen305
+\mult@rightbox=\box105
+\mult@grightbox=\box106
+\mult@firstbox=\box107
+\mult@gfirstbox=\box108
 \@tempa=\box109
 \@tempa=\box110
 \@tempa=\box111
@@ -859,15 +991,36 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \@tempa=\box121
 \@tempa=\box122
 \@tempa=\box123
-\c@minrows=\count343
-\c@columnbadness=\count344
-\c@finalcolumnbadness=\count345
-\last@try=\dimen300
-\multicolovershoot=\dimen301
-\multicolundershoot=\dimen302
-\mult@nat@firstbox=\box124
-\colbreak@box=\box125
-\mc@col@check@num=\count346
+\@tempa=\box124
+\@tempa=\box125
+\@tempa=\box126
+\@tempa=\box127
+\@tempa=\box128
+\@tempa=\box129
+\@tempa=\box130
+\@tempa=\box131
+\@tempa=\box132
+\@tempa=\box133
+\@tempa=\box134
+\@tempa=\box135
+\@tempa=\box136
+\@tempa=\box137
+\@tempa=\box138
+\@tempa=\box139
+\@tempa=\box140
+\@tempa=\box141
+\@tempa=\box142
+\@tempa=\box143
+\@tempa=\box144
+\c@minrows=\count371
+\c@columnbadness=\count372
+\c@finalcolumnbadness=\count373
+\last@try=\dimen306
+\multicolovershoot=\dimen307
+\multicolundershoot=\dimen308
+\mult@nat@firstbox=\box145
+\colbreak@box=\box146
+\mc@col@check@num=\count374
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/achemso/achemso.sty
 Package: achemso 2024-01-30 v3.13g Support for ACS journals
@@ -879,66 +1032,66 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
 (/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks53
-\XKV@tempa@toks=\toks54
+\XKV@toks=\toks67
+\XKV@tempa@toks=\toks68
 )
-\XKV@depth=\count347
+\XKV@depth=\count375
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-\acs@bib@file=\write4
+\acs@bib@file=\write5
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip74
 \bibsep=\skip75
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count348
+\c@NAT@ctr=\count376
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/achemso/natmove.sty
 Package: natmove 2010/01/15 v1.1a Automatic citation moving with natbib
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/mciteplus/mciteplus.sty
 Package: mciteplus 2013/09/13 v1.2 enhanced mcite
-\@mcitetmptoksA=\toks55
-\@mcitetmpdima=\dimen303
-\@mcitetmpdimb=\dimen304
-\@mcitetmpcnta=\count349
-\@mcitetmpcntb=\count350
-\c@mcitebibitemcount=\count351
-\c@mcitesubitemcount=\count352
+\@mcitetmptoksA=\toks69
+\@mcitetmpdima=\dimen309
+\@mcitetmpdimb=\dimen310
+\@mcitetmpcnta=\count377
+\@mcitetmpcntb=\count378
+\c@mcitebibitemcount=\count379
+\c@mcitesubitemcount=\count380
 
 ** mciteplus: Detected natbib.sty. Invoking hooks.
 ))
-\c@definition=\count353
-\c@observation=\count354
-\c@reflection=\count355
-\c@PyPackage=\count356
-\c@book=\count357
+\c@definition=\count381
+\c@observation=\count382
+\c@reflection=\count383
+\c@PyPackage=\count384
+\c@book=\count385
  (./Notes.aux)
 \openout1 = `Notes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -976,17 +1129,17 @@ LaTeX Font Info:    ... okay on input line 81.
 
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count358
-\scratchdimen=\dimen305
-\scratchbox=\box126
-\nofMPsegments=\count359
-\nofMParguments=\count360
-\everyMPshowfont=\toks56
-\MPscratchCnt=\count361
-\MPscratchDim=\dimen306
-\MPnumerator=\count362
-\makeMPintoPDFobject=\count363
-\everyMPtoPDFconversion=\toks57
+\scratchcounter=\count386
+\scratchdimen=\dimen311
+\scratchbox=\box147
+\nofMPsegments=\count387
+\nofMParguments=\count388
+\everyMPshowfont=\toks70
+\MPscratchCnt=\count389
+\MPscratchDim=\dimen312
+\MPnumerator=\count390
+\makeMPintoPDFobject=\count391
+\everyMPtoPDFconversion=\toks71
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -996,41 +1149,41 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count364
-Package hyperref Info: Link coloring OFF on input line 81.
+\c@lstlisting=\count392
+Package hyperref Info: Link coloring OFF on input line 82.
 
 (./Notes.out) (./Notes.out)
-\@outlinefile=\write5
-\openout5 = `Notes.out'.
+\@outlinefile=\write6
+\openout6 = `Notes.out'.
 
-\openout4 = `acs-Notes.bib'.
+\openout5 = `acs-Notes.bib'.
 
-\c@bibnote=\count365
+\c@bibnote=\count393
 <GeneralSources/UABLogo.png, id=31, 392.12303pt x 138.01239pt>
 File: GeneralSources/UABLogo.png Graphic file (type png)
 <use GeneralSources/UABLogo.png>
-Package pdftex.def Info: GeneralSources/UABLogo.png  used on input line 104.
+Package pdftex.def Info: GeneralSources/UABLogo.png  used on input line 105.
 (pdftex.def)             Requested size: 122.27576pt x 43.0361pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 104
+LaTeX Font Info:    Trying to load font information for U+msa on input line 105
 .
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 104
+LaTeX Font Info:    Trying to load font information for U+msb on input line 105
 .
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+esint on input line 1
-04.
+05.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 10
-4.
+5.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1043,27 +1196,27 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.186 \end{definition}
+l.187 \end{definition}
                        [1
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.186 \end{definition}
+l.187 \end{definition}
                       ]
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
 [][]\OT1/cmr/bx/n/12 Definition 17. []\OT1/cmr/m/it/12 P[]VSA-like De-scrip-tor
 s:
  []
 
 [2]
-Underfull \hbox (badness 5817) in paragraph at lines 255--261
+Underfull \hbox (badness 5817) in paragraph at lines 256--262
 [][]\OT1/cmr/bx/n/12 Definition 20. []\OT1/cmr/m/it/12 Frac-tional Group Counts
 
  []
 
 
-Underfull \hbox (badness 6493) in paragraph at lines 265--266
+Underfull \hbox (badness 6493) in paragraph at lines 266--267
 [][]\OT1/cmr/bx/n/12 Definition 21. []\OT1/cmr/m/it/12 Atom-Centered Frag-ments
 
  []
@@ -1073,9 +1226,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.290 \end{definition}
+l.291 \end{definition}
                       ]
-Underfull \hbox (badness 10000) in paragraph at lines 297--298
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
 \OT1/cmr/m/it/12 quan-tify the chi-ral-ity (hand-ed-ness) of
  []
 
@@ -1084,7 +1237,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 297--298
 <GeneralSources/COX-2Image.png, id=148, 192.72pt x 144.0582pt>
 File: GeneralSources/COX-2Image.png Graphic file (type png)
 <use GeneralSources/COX-2Image.png>
-Package pdftex.def Info: GeneralSources/COX-2Image.png  used on input line 383.
+Package pdftex.def Info: GeneralSources/COX-2Image.png  used on input line 384.
 
 (pdftex.def)             Requested size: 489.10307pt x 365.60477pt.
  [5
@@ -1092,9 +1245,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.386 
+l.387 
       ]
-Overfull \hbox (7.92917pt too wide) in paragraph at lines 389--391
+Overfull \hbox (7.92917pt too wide) in paragraph at lines 390--392
 [][]\OT1/cmr/bx/n/12 Definition 38. []\OT1/cmr/m/it/12 Non-steroidal anti-infla
 mmatory
  []
@@ -1103,10 +1256,10 @@ mmatory
 File: GeneralSources/COXII-receptor.png Graphic file (type png)
 <use GeneralSources/COXII-receptor.png>
 Package pdftex.def Info: GeneralSources/COXII-receptor.png  used on input line 
-403.
+404.
 (pdftex.def)             Requested size: 244.55153pt x 232.56781pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 403--404
+Overfull \hbox (5.0pt too wide) in paragraph at lines 404--405
  [][] 
  []
 
@@ -1115,11 +1268,11 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.407 \end{definition}
+l.408 \end{definition}
                        <./GeneralSources/COX-2Image.png>]
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 7 might be wrong on input line 454.
+(multicol)                Footnotes on page 7 might be wrong on input line 455.
 
 
 [7
@@ -1127,75 +1280,119 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.454 \begin{align}
+l.455 \begin{align}
                    
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.454 \begin{align}
+l.455 \begin{align}
                    
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.454 \begin{align}
-                    <./GeneralSources/COXII-receptor.png>] [8
+l.455 \begin{align}
+                    <./GeneralSources/COXII-receptor.png>]
+Overfull \hbox (58.04532pt too wide) in paragraph at lines 480--481
+[][]
+ []
+
+<GeneralSources/Point_group_determination_flowchart_v2.png, id=200, 641.39626pt
+ x 901.86937pt>
+File: GeneralSources/Point_group_determination_flowchart_v2.png Graphic file (t
+ype png)
+<use GeneralSources/Point_group_determination_flowchart_v2.png>
+Package pdftex.def Info: GeneralSources/Point_group_determination_flowchart_v2.
+png  used on input line 488.
+(pdftex.def)             Requested size: 244.55153pt x 343.85612pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 488--489
+ [][] 
+ []
+
+[8
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.463 \newpage
-              ]
-Underfull \hbox (badness 7504) in paragraph at lines 485--486
+l.492 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.492 
+      ] [9
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.498 \newpage
+               <./GeneralSources/Point_group_determination_flowchart_v2.png>]
+Underfull \hbox (badness 7504) in paragraph at lines 520--521
 \OT1/cmr/m/it/12 dis-card non-relevant data, as some
  []
 
-[9]
-<../Plots/DataGapRepresentationIC50percentageEresed20.0Gap_min_17Gap_max_47.pdf
-, id=221, 462.52798pt x 346.89601pt>
-File: ../Plots/DataGapRepresentationIC50percentageEresed20.0Gap_min_17Gap_max_4
-7.pdf Graphic file (type pdf)
-<use ../Plots/DataGapRepresentationIC50percentageEresed20.0Gap_min_17Gap_max_47
+[10]
+<../Plots/DataGapRepresentationIC50percentageEresed25.0Gap_min_15Gap_max_50.pdf
+, id=233, 462.52798pt x 346.89601pt>
+File: ../Plots/DataGapRepresentationIC50percentageEresed25.0Gap_min_15Gap_max_5
+0.pdf Graphic file (type pdf)
+<use ../Plots/DataGapRepresentationIC50percentageEresed25.0Gap_min_15Gap_max_50
 .pdf>
-Package pdftex.def Info: ../Plots/DataGapRepresentationIC50percentageEresed20.0
-Gap_min_17Gap_max_47.pdf  used on input line 502.
+Package pdftex.def Info: ../Plots/DataGapRepresentationIC50percentageEresed25.0
+Gap_min_15Gap_max_50.pdf  used on input line 537.
 (pdftex.def)             Requested size: 244.55153pt x 183.41467pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 502--503
+Overfull \hbox (5.0pt too wide) in paragraph at lines 537--538
  [][] 
  []
 
-<../Plots/CorrelationFactors.pdf, id=225, 462.52798pt x 346.89601pt>
-File: ../Plots/CorrelationFactors.pdf Graphic file (type pdf)
-<use ../Plots/CorrelationFactors.pdf>
-Package pdftex.def Info: ../Plots/CorrelationFactors.pdf  used on input line 51
-8.
+<../Plots/ChEMBL_ExtractorData_CHEMBL372_IC50_1000CorrelationFactors.pdf, id=23
+7, 462.52798pt x 346.89601pt>
+File: ../Plots/ChEMBL_ExtractorData_CHEMBL372_IC50_1000CorrelationFactors.pdf G
+raphic file (type pdf)
+<use ../Plots/ChEMBL_ExtractorData_CHEMBL372_IC50_1000CorrelationFactors.pdf>
+Package pdftex.def Info: ../Plots/ChEMBL_ExtractorData_CHEMBL372_IC50_1000Corre
+lationFactors.pdf  used on input line 553.
 (pdftex.def)             Requested size: 244.55153pt x 183.41467pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 518--519
+Overfull \hbox (5.0pt too wide) in paragraph at lines 553--554
  [][] 
  []
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 10 might be wrong on input line 521
+(multicol)                Footnotes on page 11 might be wrong on input line 556
 .
 
-[10
-pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.521 \end{figure}
-                   <../Plots/DataGapRepresentationIC50percentageEresed20.0Gap_m
-in_17Gap_max_47.pdf>] [11
-pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
+[11
+pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.525 \newpage
-               <../Plots/CorrelationFactors.pdf>] [12]
+l.556 \end{figure}
+                   <../Plots/DataGapRepresentationIC50percentageEresed25.0Gap_m
+in_15Gap_max_50.pdf>]
+Overfull \hbox (99.20256pt too wide) in paragraph at lines 580--586
+ [][] 
+ []
+
+[12
+pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.587 \newpage
+               <../Plots/ChEMBL_ExtractorData_CHEMBL372_IC50_1000CorrelationFac
+tors.pdf>] [13
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.587 \newpage
+              ] [14]
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 )
@@ -1203,8 +1400,8 @@ File: lstlang1.sty 2024/02/21 1.10 listings language file
 File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 582.
- [13]
+nput line 644.
+ [15]
 (./Notes.bbl
 Underfull \hbox (badness 4634) in paragraph at lines 98--106
 []\OT1/cmr/m/n/12 Commons, W. File:6COX.png --- Wiki-me-dia Com-mons, the free 
@@ -1229,7 +1426,7 @@ Underfull \hbox (badness 1072) in paragraph at lines 114--123
 s . wikimedia . org / w / index . php ? title = File :
  []
 
-) [14] 
+) [16] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./Notes.aux)
  ***********
@@ -1240,13 +1437,13 @@ Package rerunfilecheck Info: File `Notes.out' has not changed.
 (rerunfilecheck)             Checksum: 219ADE4655079542033B0CA8ABD9D581;660.
  ) 
 Here is how much of TeX's memory you used:
- 29047 strings out of 474116
- 527342 string characters out of 5743682
+ 40183 strings out of 474116
+ 840112 string characters out of 5743682
  2160187 words of memory out of 5000000
- 50750 multiletter control sequences out of 15000+600000
+ 61798 multiletter control sequences out of 15000+600000
  572189 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,16n,101p,790b,1632s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 130i,20n,124p,1601b,1876s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pf
 b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pf
@@ -1266,11 +1463,12 @@ ive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
 ve/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive
 /2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/
 2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2
-024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Notes.pdf (15 pages, 2074958 bytes).
+024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texli
+ve/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on Notes.pdf (17 pages, 2197989 bytes).
 PDF statistics:
- 518 PDF objects out of 1000 (max. 8388607)
- 379 compressed objects within 4 object streams
- 160 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 545 PDF objects out of 1000 (max. 8388607)
+ 400 compressed objects within 4 object streams
+ 168 named destinations out of 1000 (max. 500000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

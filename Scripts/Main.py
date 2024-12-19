@@ -17,11 +17,16 @@ config.read('config.ini')
 mode = 'DEFAULT'
 
 ChEMBLDataExtractorMacro.ChEMBLExtractData(config[mode]['targetIDChEMBL'], config[mode]['targetProperty'])
-dataFile = DataFilterAndPlotsMacro.ChEMBLDataProcessingMacro(config[mode]['targetIDChEMBL'], config[mode]['targetProperty'],
-                                                             int(config[mode]['lowerTargetProperty']), int(config[mode]['higherTargetProperty']), 
-                                                             float(config[mode]['percentageErased']), float(config[mode]['testSizeProportion']),
-                                                             int(config[mode]['randomSplitState']), config[mode]['AlvaDescPath'], 
-                                                             config[mode]['correlationMethod'], float(config[mode]['correlationLimitValue']))
+dataFile = DataFilterAndPlotsMacro.ChEMBLDataProcessingMacro(config[mode]['targetIDChEMBL'], 
+                                                             config[mode]['targetProperty'],
+                                                             int(config[mode]['lowerTargetProperty']), 
+                                                             int(config[mode]['higherTargetProperty']), 
+                                                             float(config[mode]['percentageErased']), 
+                                                             float(config[mode]['testSizeProportion']),
+                                                             int(config[mode]['randomSplitState']), 
+                                                             config[mode]['AlvaDescPath'], 
+                                                             config[mode]['correlationMethod'], 
+                                                             float(config[mode]['correlationLimitValue']))
 
 RandomForest.RandomForest(dataFile, int(config[mode]['numberOfTrees']), float(config[mode]['percentageErased']), 
                           float(config[mode]['testSizeProportion']), float(config[mode]['correlationLimitValue']))
