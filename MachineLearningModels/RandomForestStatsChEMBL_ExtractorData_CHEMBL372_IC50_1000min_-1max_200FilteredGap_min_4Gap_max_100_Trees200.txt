@@ -1,0 +1,7 @@
+NumberOfTrees            : 200
+Erased Percentatge       : 60.0%
+Splitting proportion     : 20.0% is for testing
+minimumCorrelationFactor : 0.0
+Number of descriptors    : 2911
+Mean Squared Error       : 85.87640609411348
+R-squared                : 0.9858128266667714

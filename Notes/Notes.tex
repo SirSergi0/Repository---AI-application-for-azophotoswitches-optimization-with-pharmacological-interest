@@ -13,11 +13,13 @@
 \usepackage{lipsum}
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{enumitem}
+\usepackage{pgfplots}
 \usepackage{float}
 \usepackage{chemfig}
 \usepackage{yfonts}
 \usepackage{tikz}
 \usepackage{forest}
+\usepackage{pdflscape}
 \usepackage{wrapfig}
 \usepackage{url}
 \usepackage[normalem]{ulem}
@@ -564,26 +566,79 @@ As described in Definition (\ref{definitionDecisionTree}), the Random Forest alg
 One notable characteristic of this method is its inherent randomness. Each Random Forest model is unique, even if configured with the same parameters and initialized under identical conditions. However, experimental evidence suggests that this randomness does not significantly impact the results. If two Random Forest algorithms are trained on the same dataset using identical parameters, their outputs will converge, even if the internal structures of their decision trees differ.
 \end{observation}
 
-\begin{observation}
+\begin{observation}\label{ObsDescriptorsCorrelationFactor}
 From Observation (\ref{observationCorrelationFactor}), one might hypothesize that training with chemical descriptors that have higher correlation factors, or discarding those with low correlation factors, would lead to better predictions. Numerically, however, this hypothesis is contradicted, as shown in Table (\ref{tableCorrelationFactorVariation}). Despite this, the result remains consistent with our core hypothesis: the correlation factor of a chemical descriptor does not necessarily indicate its relevance in protein inhibition. Our key assertion is that \emph{there exists a combination (or combinations) of chemical descriptors that are directly correlated with the inhibition of the protein}. \par
 
 This suggests that the specific combinations of descriptors correlated with protein inhibition are not dependent on the individual correlation factor values. At first glance, a lack of correlation does not imply a lack of relationship to the inhibition!
 
 \end{observation}
 
+\begin{observation}
+The dependency on the gap generations seems much relevant than the dependency on the descriptors' correlation factor (Observation (\ref{ObsDescriptorsCorrelationFactor})). By changing the erased percentage (i.e. the fraction of data discarded in the gap generation) we can compute $r^2$ and the Mean Square Error (i.e. the statistical deviation) which provides the results depicted in Figure (\ref{FigPlotErasedPercentageVSRSquare}) and Figure (\ref{FigPlotErasedPercentageVSMeanSquaredError}) respectively.  
+\end{observation}
+
+
+
+\begin{figure}[H]
+\caption{Plot of $\%_{\text{Erased}}$ vs $r^2$.For: maximum $IC_{50}$ = 200 nM,  taking into account all the chemical descriptors, the 20.0\% of the remaining data is saved for testing and the  80.0\% for training. The training is done with 200 trees.}
+\label{FigPlotErasedPercentageVSRSquare}
+\begin{tikzpicture}
+\begin{axis}[
+    width=0.5\textwidth,
+    height=8cm,
+    xlabel={$\%_{\text{Erased}}$},
+    ylabel={$r^2$},
+    xmin=0, xmax=100,
+    ymin=0.94, ymax=1.0,
+    xtick={0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100},
+    ytick={0.9, 0.92, 0.94, 0.96, 0.98, 1.0},
+    legend pos=south east,
+    legend style={font=\small},
+    tick label style={font=\small},
+    label style={font=\small},
+]
+
+\addplot[
+    color=magenta,
+    mark=diamond*,
+    thick
+] table[x index=0, y index=1, col sep=space] {GeneralSources/ErasedPercentageVSRSquare.txt};
+
+\end{axis}
+\end{tikzpicture}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Plot of $\%_{\text{Erased}}$ vs $Mean Squared Error$.For: maximum $IC_{50}$ = 200 nM,  taking into account all the chemical descriptors, the 20.0\% of the remaining data is saved for testing and the  80.0\% for training. The training is done with 200 trees.}
+\label{FigPlotErasedPercentageVSMeanSquaredError}
+\begin{tikzpicture}
+\begin{axis}[
+    width=0.5\textwidth,
+    height=8cm,
+    xlabel={$\%_{\text{Erased}}$},
+    ylabel={Mean Squared Error},
+    xmin=0, xmax=100,
+    ymin=0, ymax=200,
+    xtick={0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100},
+    legend pos=north east,
+    legend style={font=\small},
+    tick label style={font=\small},
+    label style={font=\small}
+]
+
+\addplot[
+    color=magenta,
+    mark=diamond*,
+    thick
+] table[x index=0, y index=1, col sep=space] {GeneralSources/ErasedPercentageVSMeanSquaredError.txt};
+
+\legend{Mean Squared Error}
+\end{axis}
+\end{tikzpicture}
+\end{figure}
 
 \end{multicols}
-\begin{table}[H]
-\centering
-\caption{Results for; Maximum $IC_{50}$ = 200 nM, Gap of the 25.0\% of the set, the 20.0\% of the remaining data is saved for testing and the  80.0\% for training. The training is done with 200 trees.}
-\label{tableCorrelationFactorVariation}
-\begin{tabular}{c||c|c|c|c}
-          &$\sigma\leq0$ & $\sigma\leq0.05$ & $\sigma\leq0.075$  & $\sigma\leq0.10$ \\\hline\hline
-$r^2$ & 0.9607020297015885 & 0.9608545198149474 & 0.9605224652065423 & 0.9599158186858139 \\\hline
-Mean Squared Error & 162.70220420738363 & 162.0708617391865 & 163.4456405456867 & 165.9572900112382 \\\hline
-number of descriptors & 2911 & 1485 & 1001 & 568
-\end{tabular}
-\end{table}
+
 \newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -634,6 +689,60 @@ Signatura: 54:68 Tod.
 
 Codi de Barres: 1501208901
 \end{book}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% RESULTS %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\begin{landscape}
+\section{Results}
+\begin{table}[H]
+\centering
+\caption{Results for; Maximum $IC_{50}$ = 200 nM, Gap of the 25.0\% of the set, the 20.0\% of the remaining data is saved for testing and the  80.0\% for training. The training is done with 200 trees.}
+\label{tableCorrelationFactorVariation}
+\begin{tabular}{c||c|c|c|c}
+          &$\sigma\leq0$ & $\sigma\leq0.05$ & $\sigma\leq0.075$  & $\sigma\leq0.10$ \\\hline\hline
+$r^2$ & 0.9607020297015885 & 0.9608545198149474 & 0.9605224652065423 & 0.9599158186858139 \\\hline
+Mean Squared Error & 162.70220420738363 & 162.0708617391865 & 163.4456405456867 & 165.9572900112382 \\\hline
+number of descriptors & 2911 & 1485 & 1001 & 568
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Results for; Maximum $IC_{50}$ = 200 nM,  taking into account all the chemical descriptors, the 20.0\% of the remaining data is saved for testing and the  80.0\% for training. The training is done with 200 trees.}
+
+\begin{tabular}{c||c|c|c|c}
+$\%_{\text{Erased}}$  	& 0\% & 5\% & 10\%  & 15\% \\\hline\hline
+$r^2$ 				& 0.9410691012016194 & 0.9450975181635125 & 0.9492662637374885 & 0.954840165823525 \\\hline
+Mean Squared Error 		& 195.50415499282306 & 187.34588735050227 & 189.17427179281864 & 167.5904134577239 
+\end{tabular}
+\begin{tabular}{c||c|c|c|c} 
+$\%_{\text{Erased}}$  	&  20\%  & 25\% & 30\% & 35\% \\\hline\hline
+$r^2$ 				& 0.960093147530398 & 0.9607020297015885 & 0.9659474255238565 & 0.970950038525679 \\\hline
+Mean Squared Error 		& 159.86610568752263 & 162.70220420738363 & 150.60605102824292 & 132.53106869928666
+\end{tabular}
+\begin{tabular}{c||c|c|c|c}
+$\%_{\text{Erased}}$         & 40\%  & 45\% & 50\% & 55\% \\\hline\hline
+$r^2$ 				& 0.9735150867866535 & 0.9761682347024537 & 0.9794766777874534 & 0.9836139552920377 \\\hline
+Mean Squared Error 		& 130.3450775382814 &  124.45078192954777 & 112.31398471818515 & 94.8719409443141
+\end{tabular}
+\begin{tabular}{c||c|c|c|c}
+$\%_{\text{Erased}}$  	&60\%  & 65\% & 70\% & 75\%  \\\hline\hline
+$r^2$ 				&0.9858128266667714 & 0.9920845685273683 & 0.9950402754045806 & 0.9960292052079258\\\hline
+Mean Squared Error 		&85.87640609411348 &  53.48552498895907 & 35.71100434005104 & 30.45304023300008
+\end{tabular}
+
+\begin{tabular}{c||c|c|c|c}
+$\%_{\text{Erased}}$  	&80\%  & 85\% & 90\% & 95\% \\\hline\hline
+$r^2$ 				&0.9971354719623441 & 0.9993589449322425 & 0.9996146336878613 & 0.9999982353685487\\\hline
+Mean Squared Error 		&22.873087477997174 &  5.275980426255672 & 3.083365552988717 & 0.010325883398321972
+\end{tabular}
+
+\end{table}
+
+\end{landscape}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%% VARIOUS %%%%%%%%%%%%%%%%%%
