@@ -107,6 +107,14 @@
 \thispagestyle{empty}
 \end{titlepage}
 
+\newpage
+\thispagestyle{empty}
+\vspace*{\fill} % Push content to vertical center
+\begin{flushright}
+    \emph{“The dumbest people I know are those who know it all.”}\\[1em]
+    \textbf{Malcolm S. Forbes}
+\end{flushright}
+\vspace*{\fill} % Balance vertical spacing
 
 \newpage
 \pagestyle{fancyplain}
@@ -533,7 +541,7 @@ In this way, we can apply the concept of “linear regression” and compute the
 \end{observation}
 
 \begin{observation}
-We have extracted all the aviable data from the \emph{ChEMBL} database with a known $IC_{50}$ value for the COX-2. After deleting  entries with the same canonical smile we remain with 4827 entries. We filter, keeping just those with a $IC_{50}\in [-1,200]$\footnote{Note that the lower constrain won't be ever surpassed by the $IC_{50}$ defintion \ref{definitionIC50}. This is equivalent to avoid constraining the data.}. Then we obtain a remaining set of 1518 entries represented in the Figure (\ref{figDataRepresentationFiltering}).
+We have extracted all the aviable data from the \emph{ChEMBL} database with a known $IC_{50}$ value for the COX-2. After deleting  entries with the same canonical smile 4827 entries remain. By keeping just those with a $IC_{50}\in [-1,200]$\footnote{Note that the lower constrain won't be ever surpassed by the $IC_{50}$ defintion \ref{definitionIC50}. This is equivalent to avoid constraining the data.}, we obtain a remaining set of 1518 entries represented in the Figure (\ref{figDataRepresentationFiltering}).
 \begin{figure}[H]
 \centering
 \includegraphics[width = 0.5\textwidth]{../Plots/DataGapRepresentationIC50percentageEresed25.0Gap_min_15Gap_max_50.pdf}
@@ -542,8 +550,8 @@ We have extracted all the aviable data from the \emph{ChEMBL} database with a kn
 \end{figure}
 \end{observation}
 
-\begin{observation}
-Figure (\ref{figDataRepresentationFiltering}) clearly shows that multiples of 10 are significantly overrepresented compared to other values. Additionally, analyzing data from other proteins confirms that this is not an exception but rather a common pattern. It appears that experimental chemists have a preference for multiples of 10, often rounding their results to the nearest value in this category. Consequently, an inherent error associated with these values will always be present, and it will not be possible to completely eliminate it.
+\begin{observation}\label{ObsDataInherentError}
+Figure (\ref{figDataRepresentationFiltering}) clearly shows multiples of 10 are significantly overrepresented respect to other values. Additionally, by analyzing data from other proteins we can confirm this is not an exception but rather the norm. It looks like experimental chemists have a preference for multiples of 10, often rounding their results to the nearest value in this category. Consequently, an inherent error associated with these values will always be present, and we will have to deal with it.
 \end{observation}
 
 \begin{observation}\label{observationCorrelationFactor}
@@ -636,6 +644,21 @@ The dependency on the gap generations seems much relevant than the dependency on
 \end{axis}
 \end{tikzpicture}
 \end{figure}
+
+\begin{observation}
+From Observation (\ref{ObsDataInherentError}), we know the data has an inherent precision problem, especially when approaching higher  $IC_{50}$  values, additionally we do not now the precision of some measurements. Since our working models do not account for the lack of precision in each molecule’s data, the values of  $r^2$  and mean squared error are not expected to be exactly 1 and 0, respectively. In fact, some variance and uncertainty are inevitable. Therefore, discarding more than 50\% of our data would be a critical mistake, even if statistical measures suggest otherwise.
+
+For example, suppose we aim to build a table. We have an arbitrarily large number of table legs, each varying slightly in length. On one hand, if we choose to build a three-legged table, we would obtain a rigid structure with no variance (i.e. statistically, this would be considered the “best” table). However, it would be steeply inclined and therefore useless, as any object placed on it would slide off. On the other hand, if we use as many legs as possible, the table may initially be unstable due to variations in leg length. Nevertheless, as more legs are added, the instability decreases, eventually allowing us to place objects on it and even have a meal.
+
+This example highlights the fact that an  $r^2$  value of 1 and a mean squared error of 0 are not absolute requirements in this case, due to Observation (\ref{ObsDataInherentError}). However, these values still serve as a good reflection of our method’s reliability up to a certain threshold.
+
+In this work, we will arbitrarily set this threshold at  $r^2 = 0.96$ . This hard-coded decision is purely conventional, as we need to establish a point beyond which  $r^2$  values become meaningless (i.e., obtaining  $r^2$  values above 0.96 is unnecessary, given that such variance is inherent to our data). The justification for this choice is that, in some areas of chemistry\footnote{Particularly in analytical chemistry} two data sets are generally considered correlated if their  $r^2$  value exceeds 0.96.
+
+However, it is important to emphasize that this convention is purely subjective and should not be regarded as an inviolable rule.
+
+
+\end{observation}
+
 
 \end{multicols}
 
