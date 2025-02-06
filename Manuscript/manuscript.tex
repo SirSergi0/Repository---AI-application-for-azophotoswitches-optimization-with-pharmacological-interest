@@ -12,16 +12,62 @@
 \usepackage[english]{babel}
 \usepackage{lipsum}
 \usepackage[table,xcdraw]{xcolor}
-\usepackage{achemso}
 \usepackage{enumitem}
+\usepackage{pgfplots}
+\usepackage{float}
+\usepackage{chemfig}
 \usepackage{yfonts}
 \usepackage{tikz}
+\usepackage{forest}
+\usepackage{pdflscape}
 \usepackage{wrapfig}
+\usepackage{url}
 \usepackage[normalem]{ulem}
 \usepackage{multicol}
 \useunder{\uline}{\ul}{}
 
 
+%%%%%%%%%%%%%%% CODELISTINGS %%%%%%%%%%%%%%%%
+\usepackage{listings}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=t,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\usepackage{achemso}
+
+\usepackage{titlesec}
+\titleformat{\section}[block]{\normalfont\large\bfseries\centering}{\thesection}{1em}{} % changing the "section" fontsize and centering it
+\renewcommand{\thesection}{\Roman{section}}  % Roman numerals for section numbers
+
+\newtheorem{definition}{Definition}
+\newtheorem{observation}{Observation}
+\newtheorem{reflection}{Reflection}
+\newtheorem{PyPackage}{Package}
+\newtheorem{book}{Book}
 
 \newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
 \setcounter{tocdepth}{5}
@@ -34,7 +80,7 @@
 \newcommand\course{}
 \newcommand\subject{Final Degree Project}
 \newcommand\degree{Bachelor's Degree in Chemistry}
-\newcommand\documenttitle{AI application for azophotoswitches' optimization with pharmacological interest}
+\newcommand\documenttitle{Notes: AI application for azophotoswitches' optimization with pharmacological interest}
 \newcommand\NetIDb{Universitat Autònoma de Barcelona}
 
 
@@ -46,7 +92,7 @@
 		\LARGE \textbf{\uppercase{\documenttitle}}
 		\HRule{2pt} \\ [1.5cm]
 		\normalsize \begin{tabular}{rcl}  % Create a right-left column alignment
-        \textsc{Author} & : & \texts{Sergio Castañeiras Morales} \\
+        \textsc{Author} & : & \textsc{Sergio Castañeiras Morales} \\
         \textsc{Supervisor} & : & \textsc{Miquel Moreno Ferrer} \\
         \textsc{Co-Supervisor} & : & \textsc{Àngels Gonzalez Lafont}
     \end{tabular}
@@ -64,35 +110,50 @@
 \thispagestyle{empty}
 \end{titlepage}
 
-
+\newpage
+\thispagestyle{empty}
+\mbox{} 
+\newpage
+\thispagestyle{empty}
+\vspace*{\fill} % Push content to vertical center
+\begin{flushright}
+    \emph{“The dumbest people I know are those who know it all.”}\\[1em]
+    \textbf{Malcolm S. Forbes}
+\end{flushright}
+\vspace*{\fill} % Balance vertical spacing
 \newpage
 \pagestyle{fancyplain}
 \headheight 35pt
 \lhead{\NetIDb}    
 \rhead{\subject}
-\cfoot{}
-\rfoot{\small\thepage}
+\cfoot{\small\thepage}
+\rfoot{}
 \headsep 1.5em
 
-\textbf{The current manuscript's format is temporal!!!}\par
-\textbf{As I strongly believe: \emph{You must learn to read before learning to write}. Hence, for the time being, this will remain as a template for the actual manuscript!!}\par
-\textbf{Also, the actual manuscript won't be written until the very end of the project, so this document won't have any major update for a long time.}\par\vspace{5cm}
-Testing cites: \cite{NationalLibraryOfMedicineGeneralArticle}, \cite{MathematicsForMachineLearningBook}\par
-
 \newpage
-\begin{multicols}{2}
-[
-\section{First Section}
-All human things are subject to decay. And when fate summons, Monarchs must obey.
+\begin{multicols}{2}[\begin{center}
+\begin{abstract}
+Insert abstract
+\end{abstract}
+\end{center}
 ]
-\lipsum
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%&%%%%%%%% INTRODUCTION %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+The impact of Artificial Intelligence on science has being nothing but an outstanding breakthrough without many comparable predecessors. This projects aims to develop an implementation of artificial intelligence in computational chemistry, more concretely we aim to use artificial intelligence - based algorithms to predict the inhibition potential of a molecules for a certain protein. \par
+
+Now a days one of the main goals of computational chemistry is the capability of predicting certain properties of unstudied substances without the experimental costs.
+Moreover we do focus on the \emph{cyclooxygenase-2} (COX-2) since is well known to be related to cancer development. 
+
+
 \end{multicols}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% BIBLIOGRAPHY %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-
-\newpage
-%Bibliography %
+% \bibliographystyle{achemso}
 \bibliography{references} 
 %%%%%%%%
 
