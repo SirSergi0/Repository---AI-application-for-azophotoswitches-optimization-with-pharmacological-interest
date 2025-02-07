@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  7 FEB 2025 01:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  7 FEB 2025 01:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1386,7 +1386,7 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
 r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
 ocal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on manuscript.pdf (5 pages, 118636 bytes).
+Output written on manuscript.pdf (5 pages, 118295 bytes).
 PDF statistics:
  72 PDF objects out of 1000 (max. 8388607)
  48 compressed objects within 1 object stream
