@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  6 FEB 2025 19:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  7 FEB 2025 01:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1348,7 +1348,19 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.116 \newpage
-               [1] [2] (./manuscript.bbl) [3]
+               [1] [2]
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.152 ...hanisms governing COX-2 interactions.\par
+                                                   [1] (./manuscript.bbl)
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.171 \end{document}
+                     [2]
 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./manuscript.aux)
@@ -1360,23 +1372,24 @@ Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 9814C2D956916ADB9290ECA4E25C967A;103.
  ) 
 Here is how much of TeX's memory you used:
- 46690 strings out of 474116
- 1116927 string characters out of 5743682
- 1931187 words of memory out of 5000000
- 68334 multiletter control sequences out of 15000+600000
- 569588 words of font info for 87 fonts, out of 8000000 for 9000
+ 46688 strings out of 474116
+ 1116904 string characters out of 5743682
+ 1940187 words of memory out of 5000000
+ 68333 multiletter control sequences out of 15000+600000
+ 569281 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,101p,1608b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,101p,1608b,624s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
 usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on manuscript.pdf (4 pages, 95687 bytes).
+r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
+ocal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on manuscript.pdf (5 pages, 118636 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
+ 72 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
+ 4 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
