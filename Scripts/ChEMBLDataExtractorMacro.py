@@ -18,11 +18,12 @@ def ChEMBLExtractData(targetIDChEMBL, targetProperty, requestDataLimit=1000, sav
     if os.path.exists(f"{saveDir}/ChEMBL_ExtractorData_{targetIDChEMBL}_{targetProperty}_{requestDataLimit}.feather"): 
         print("The data is already downloaded!")
         return 
-
     dataBaseBaseURL = "https://www.ebi.ac.uk"  # Defining the ChEMBL API web
     
     # Setting up the query URL with the provided parameters
     queryURL = f"{dataBaseBaseURL}/chembl/api/data/activity.json?target_chembl_id={targetIDChEMBL}&standard_type={targetProperty}&limit={requestDataLimit}"
+    
+    print(queryURL)
 
     allActivities = []
 

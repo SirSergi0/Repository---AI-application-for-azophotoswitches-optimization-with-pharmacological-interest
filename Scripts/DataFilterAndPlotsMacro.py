@@ -79,7 +79,7 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
     if not silentMode: print("Deleting descriptors with correlation factors below ", correlationLimitValue)
     
     # ploting the correlation factors histogram
-    if not silentMode: print(f"Ploting the correlation factors in ../Plots/{dataFileName}CorrelationFactors.pdf")
+    if not silentMode: print(f"Ploting the correlation factors in ../Plots/{targetIDChEMBL}{dataFileName}CorrelationFactors.pdf")
     plt.hist(correlationDataFrame, bins=40, color='purple', range = (-1,1), label=f"Number of descriptors {dataFiltered.shape[1]-1}")
     plt.title('Correlation factors of the computed chemical descriptors')
     plt.xlabel('Correlation Values')

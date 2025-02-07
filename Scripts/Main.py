@@ -17,6 +17,7 @@ config.read('config.ini')
 mode = 'DEFAULT'
 
 ChEMBLDataExtractorMacro.ChEMBLExtractData(config[mode]['targetIDChEMBL'], config[mode]['targetProperty'])
+
 dataFile = DataFilterAndPlotsMacro.ChEMBLDataProcessingMacro(config[mode]['targetIDChEMBL'], 
                                                              config[mode]['targetProperty'],
                                                              int(config[mode]['lowerTargetProperty']), 
