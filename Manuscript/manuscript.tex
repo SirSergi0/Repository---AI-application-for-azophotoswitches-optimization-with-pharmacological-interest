@@ -125,7 +125,7 @@
 \vspace*{\fill} % Balance vertical spacing
 \newpage
 
-\setcounter{page}{1}
+
 \pagestyle{fancyplain}
 \headheight 35pt
 \lhead{\NetIDb}    
@@ -133,8 +133,7 @@
 \cfoot{\small\thepage}
 \rfoot{}
 \headsep 1.5em
-
-
+\setcounter{page}{1}
 \begin{multicols}{2}[\begin{center}
 \begin{abstract}
 We explore AI-based algorithms capabilities, specifically the Random Forest model, to predict a drug’s inhibition potential for cyclooxygenase-2 (COX-2), a key protein linked to cancer. Using molecular descriptors extracted from the ChEMBL database, AI models are trained to identify patterns correlating with inhibition potential. The study validates AI’s effectiveness in drug discovery and molecular analysis, proving its potential as a powerful tool in computational chemistry research.
@@ -152,7 +151,7 @@ This project aims to implement artificial intelligence in computational chemistr
 
 It is important to emphasise the central hypothesis of this project: \emph{There exists a combination (or combinations) of chemical descriptors that are directly correlated with the inhibition of the protein}. While this idea may seem fundamental, it remains unproven due to the complexity of molecular interactions and the vast number of possible descriptor combinations. Despite significant progress in computational chemistry, identifying the exact descriptors that govern inhibition potential has been a persistent challenge. The lack of an ultimate proof underscores the need for advanced computational techniques. By analysing large datasets, AI can detect hidden correlations that may not be immediately apparent through traditional statistical methods.\par
 
-At this stage, we focus on cyclooxygenase-2 (COX-2), a protein well known for its strong association with cancer development and inflammatory diseases\cite{DefinitionCOX2CancerDictionary}. COX-2 plays a crucial role in the biosynthesis of prostaglandins, which mediate inflammation and pain. Overexpression of COX-2 has been linked to various types of cancer, making it a prime target for drug development. COX-2 inhibitors, such as celecoxib and rofecoxib, have been widely studied for their therapeutic potential. The scientific community has devoted an extensive research to COX-2, even before the rise of AI, due to its biomedical significance\cite{Cox2InhibitorsReview}. By applying AI models to COX-2, we assess their compatibility with the latest research findings, demonstrating AI’s potential as a powerful tool in computational chemistry research. Our approach not only validates AI’s effectiveness in predicting inhibition potential but also provides insights into the underlying molecular mechanisms governing COX-2 interactions.\par
+At this stage, we focus on cyclooxygenase-2 (COX-2), a protein well known for its strong association with cancer development and inflammatory diseases\cite{DefinitionCOX2CancerDictionary}. COX-2 plays a crucial role in the biosynthesis of prostaglandins, which mediate inflammation and pain. Overexpression of COX-2 has been linked to various types of cancer, making it a prime target for drug development. COX-2 inhibitors, such as Celecoxib (Def. \ref{definitionCelecoxib}) and Rofecoxib (Def. \ref{definitionRofecoxib}), have been widely studied for their therapeutic potential. The scientific community has devoted an extensive research to COX-2, even before the rise of AI, due to its biomedical significance\cite{Cox2InhibitorsReview}. By applying AI models to COX-2, we assess their compatibility with the latest research findings, demonstrating AI’s potential as a powerful tool in computational chemistry research. Our approach not only validates AI’s effectiveness in predicting inhibition potential but also provides insights into the underlying molecular mechanisms governing COX-2 interactions.\par
 
 The AI algorithm used in this study is the Random Forest algorithm\cite{MachineLearningRandomForest}, a powerful ensemble learning method that generates multiple decision trees and combines their outputs to improve prediction accuracy. This approach is particularly well-suited for computational chemistry due to its ability to handle large datasets, manage complex relationships between variables, and reduce overfitting. The Random Forest algorithm operates by constructing numerous random decision trees, each trained on different subsets of the dataset. The final prediction is obtained by averaging the outputs of all trees, ensuring robust and reliable results.
 
@@ -161,7 +160,23 @@ Moreover, the choice of the Random Forest algorithm is motivated by the presence
 This study aims to bridge the gap between artificial intelligence and computational chemistry, proving AI’s potential to revolutionise drug discovery and molecular research. The ability to predict inhibition potential with high accuracy can accelerate the development of new pharmaceuticals, reduce reliance on costly laboratory experiments, and contribute to a more efficient drug screening process. Furthermore, identifying key molecular descriptors correlated with inhibition could lead to a deeper understanding of chemical interactions, opening new avenues for research in medicinal chemistry and bioinformatics.
 
 \section{Methodology}
-The target protein's ID is set at \emph{CHEMBL230} corresponding to the COX-2 ID in the ChEMBL database. Utilising \emph{requests} python package\cite{PythonPackageRequests} a query URL is sent asking for all molecules with a know $IC_{50}$ value (Def. \ref{definitionIC50}) with a limit of 1000 entries per request. The process is iterated until all data is extracted leading a total of 7979 molecules. By removing entries with the same canonical smiles a total of 5112 molecules remain. Among this entries well known drugs such as Celecoxib (Def. \ref{definitionCelecoxib}), Rofecoxib (Def. \ref{definitionRofecoxib}) or even Ibuprofen can be found. However the $IC_{50}$ molecules range is comprehended from $10^{-3}$ to $10^{8}$ nM, a counterproductive range for the AI training procedure. A hard-coded range is filtered discarding all molecules outside the given range, for the most part of the analysis this range is set at $[0,200]$ nM \footnote{Similar $IC_{50}$ working range have also been used in similar studies \cite{MachineLearningPaper5Lipoxygenase}.} which reduces the dataset to 1438 entries (i.e. molecules). 
+The source code is all stored in the \href{https://github.com/SirSergi0/Repository---AI-application-for-azophotoswitches-optimization-with-pharmacological-interest}{\emph{AI application for azophotoswitches optimization with pharmacological interest} GitHub repository}\cite{GitHub}.
+
+The target protein's ID is set at \emph{CHEMBL230} corresponding to the COX-2 ID in the ChEMBL database. Utilising \emph{requests} python package\cite{PythonPackageRequests} a query URL is sent asking for all molecules with a know $IC_{50}$ value (Def. \ref{definitionIC50}) with a limit of 1000 entries per request. The process is iterated until all data is extracted leading a total of 7979 molecules. Hence the datasheet is processed in pandas dataframes\cite{PythonPackagePandas} and encrypted into binary feather files to optimise reading-writting speed. By removing entries with the same canonical smiles a total of 5112 molecules remain. Among this entries well known drugs such as Celecoxib (Def. \ref{definitionCelecoxib}), Rofecoxib (Def. \ref{definitionRofecoxib}) or even Ibuprofen can be found. However the $IC_{50}$ molecules range is comprehended from $10^{-3}$ to $10^{8}$ nM, a counterproductive range for the AI training procedure. A hard-coded range is filtered discarding all molecules outside the given range, for the most part of the analysis this range is set at $[0,200]$ nM \footnote{this $IC_{50}$ working range is the standard in this kind of studies \cite{MachineLearningPaper5Lipoxygenase}.} which reduces the dataset to 1438 entries (i.e. molecules). \par 
+With the AlvaDesk-python \cite{AlvaDescSecondPaper} facility, the chemical descriptors (i.e., the chemical fingerprint) of each molecule are computed, providing a total of $10^4$ descriptors per molecule. Here, the Pearson correlation coefficient between each chemical descriptor and the $IC_{50}$ value is computed, providing insight into the direct relationship between $IC_{50}$ and the descriptors.
+
+At this stage, the average $IC_{50}$ is calculated, and the neighborhood size corresponding to the percentage defined by the hard-coded variable \emph{percentageErased} is removed. This allows us to distinguish between \emph{highly active molecules} and \emph{least active molecules}—those with lower and higher $IC_{50}$ values, respectively. Subsequently, each set of substances is randomly divided into two datasets: a \emph{training set} and a \emph{testing set}, following the proportion specified by the hard-coded variable \emph{testSizeProportion}. This procedure is illustrated in Figure (\ref{FigureDataSplittingDiagram}).
+\end{multicols}
+\begin{figure}[H]
+\centering
+\includegraphics[width = \textwidth]{GeneralSources/DataSplittingDiagram.pdf}
+\caption{Scheme of the splitting procedure.}
+\label{FigureDataSplittingDiagram}
+\end{figure}
+\begin{multicols}{2}
+Afterward, a Random Forest algorithm is trained using the Sticky Learn \cite{PythonPackageStickitLearn} Python package, which is supported by Microsoft and Google. This algorithm generates a large number of random decision trees (determined by the hard-coded variable \emph{numberOfTrees}), which are trained with the training sets. Later, these models are evaluated by predicting the $IC_{50}$ values of the \emph{testing sets}.
+
+Using the results, the \emph{True Positive Rate} (Def. \ref{definitionTruePositiveRate}), \emph{True Negative Rate} (Def. \ref{definitionTrueNegativeRate}), \emph{Classification Accuracy} (Def. \ref{definitionClassificationAccuracy}), and \emph{Matthews Correlation Coefficient} (Def. \ref{definitionMatthewsCorrelationCoeficient}) are computed. Based on these computational results, the variables \emph{percentageErased}, \emph{testSizeProportion}, and \emph{numberOfTrees} are manually adjusted to obtain the best results.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%% BIBLIOGRAPHY %%%%%%%%%%%%%%%%%
@@ -170,10 +185,23 @@ The target protein's ID is set at \emph{CHEMBL230} corresponding to the COX-2 ID
 
 \bibliography{references} 
 %%%%%%%%
+\section{Abbreviation index}
+COX-2 : cyclooxygenase-2\par
+AI : Artificial Intelligence\par
+ML : Machine Learning\par
+RD : Random Forest\par
+ID : Identification\par
+$IC_{50}$: Half maximal inhibitory concentration \par
+$IC_{90}$: 90 percent inhibitory concentration \par
+$IC_{99}$: 99 percent inhibitory concentration \par
+TP: True Positive\par
+FP: False Positive\par
+TN: True Negative\par
+FN: False Negative
 \appendix
 \section{Relevant definitions}
 \begin{definition}\label{definitionIC50}
-$IC_{50}$: Half maximal inhibitory concentration assigned to the drug concentration required for a $50\%$ inhibition a protein. Other quantities such as $IC_{90}$ or $IC_{99}$ are also commonly used. However, $IC_{90}$ is generally approximated as 10 times the $IC_{50}$ concentration in virtue of oexperimental observations\cite{BookIC50}. For this project, we aim to identify substances with the lowest possible $IC_{50}$, as our goal is to minimize the presence of foreign substances in the living organism.
+$IC_{50}$: Half maximal inhibitory concentration assigned to the drug concentration required for a $50\%$ inhibition a protein. Other quantities such as $IC_{90}$ or $IC_{99}$ are also commonly used. However, $IC_{90}$ is generally approximated as 10 times the $IC_{50}$ concentration in virtue of experimental observations\cite{BookIC50}. For this project, we aim to identify substances with the lowest possible $IC_{50}$, as our goal is to minimize the presence of foreign substances in the living organism.
 \end{definition}
 
 \begin{definition}\label{definitionCelecoxib}
@@ -203,9 +231,45 @@ H_2N-[-1]S(=[-4]O)(=[-2]O)-[1]*6(-=-(-[1]N*5(-N=(-[-1](-[-4]F)(-[-2]F)-[1])-=(-[
 \caption{Chemical graph of Rofecoxib.}
 \label{RofecoxibFigure}
 \end{figure}
+\begin{definition}\label{definitionPersonCoefficient}
+Pearson correlation coefficient: Given set of pairs of data $\{(x_i,y_i)\}_{i=1}^n$ the pearson correlation factor $r_{xy}$ is defined as,
+\begin{align}
+r_{xy}=\frac{\sum_{i=1}^n(x_i-\bar{x})(y_i-\bar{y})}{\sqrt{\sum_{i=1}^n(x_i-\bar{x}^2)}\sqrt{\sum_{i=1}^n(y_i-\bar{y}^2)}},
+\end{align}
+where $\bar{x}$ and $\bar{y}$ stand for the average value of ${x_i}_{i=1}^n$ and ${y_i}_{i=1}^n$ respectively. Note that $r_{xy}\in[-1,1]$. Therefore the sign of $r_{xy}$ is tightly related to the sign of alinear regression, more precisely if $x>0$, "$y$" generally\footnote{We would like to remark that the word "generally" stands for "the majority of the cases", since "generally" is commonly interpreted as a non-scientific/non-objective word} increases when "$x$" increases, as well as if $x<0$, "$y$" decreases when "$x$" increases.
+\end{definition}
+\begin{definition}\label{definitionTruePositiveRate}
+True Positive Rate: quantity related to a Machine Learning Model's sensitivity defined as:
+\begin{align}
+\frac{TP}{TP+FN}
+\end{align}
+where $TP,FP,TN,FN$ stands for "True Positive", "False Positive", "True Negative" \& "False Negative" respectively.
+\end{definition}
+
+\begin{definition}\label{definitionTrueNegativeRate}
+True Negative Rate: quantity related to a Machine Learning Model's specificity defined as:
+\begin{align}
+\frac{TN}{TN+FN}
+\end{align}
+where $TP,FP,TN,FN$ stands for "True Positive", "False Positive", "True Negative" \& "False Negative" respectively.
+\end{definition}
+
+\begin{definition}\label{definitionClassificationAccuracy}
+Classification Accuracy: quantity related to a Machine Learning Model's efectiveness defined as:
+\begin{align}
+\frac{TP+TN}{TP+FP+TN+FN}
+\end{align}
+where $TP,FP,TN,FN$ stands for "True Positive", "False Positive", "True Negative" \& "False Negative" respectively.
+\end{definition}
+
+\begin{definition}\label{definitionMatthewsCorrelationCoeficient}
+Matthews Correlation Coefficient: quantity related to a Machine Learning Model's prediction capacity defined as:
+{\scriptsize
+\begin{align}
+\frac{(TP\times TN)-(FP\times FN)}{\sqrt{(TP+FP)\times(TP+FN)\times(TN+FP)\times(TN+FN)}}
+\end{align}
+}where $TP,FP,TN,FN$ stands for "True Positive", "False Positive", "True Negative" \& "False Negative" respectively.
+A Matthews Correlation Coefficient equal to 1 stands for a perfect prediction a Matthews Correlation Coefficient equal to 0 indicates that the classifier’s predictions are no better than random guessing, and a Matthews Correlation Coefficient equal to -1 stand for a total disagreement between predictions and actual outcomes.
+\end{definition}
 \end{multicols}
-
-
-
-
 \end{document}

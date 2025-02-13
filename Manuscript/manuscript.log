@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  8 FEB 2025 00:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  13 FEB 2025 16:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1311,7 +1311,7 @@ your preamble.
 \openout5 = `acs-manuscript.bib'.
 
 \c@bibnote=\count400
-<GeneralSources/UABLogo.png, id=19, 392.12303pt x 138.01239pt>
+<GeneralSources/UABLogo.png, id=23, 392.12303pt x 138.01239pt>
 File: GeneralSources/UABLogo.png Graphic file (type png)
 <use GeneralSources/UABLogo.png>
 Package pdftex.def Info: GeneralSources/UABLogo.png  used on input line 112.
@@ -1353,36 +1353,82 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.155 ...hanisms governing COX-2 interactions.\par
-                                                   [1] (./manuscript.bbl
-Underfull \hbox (badness 7814) in paragraph at lines 38--45
-[]\OT1/cmr/m/n/12 Singh, S.; Ku-mar, R.; Payra, S.;
- []
+l.154 ...hanisms governing COX-2 interactions.\par
+                                                   [1]
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 2 might be wrong on input line 167.
+
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.53   et~al.]{AlphaFold2CommumityAssesment}
-                                             [2]
-Underfull \hbox (badness 10000) in paragraph at lines 101--109
+l.167 
+       [2]
+<GeneralSources/DataSplittingDiagram.pdf, id=100, 692.59853pt x 355.3797pt>
+File: GeneralSources/DataSplittingDiagram.pdf Graphic file (type pdf)
+<use GeneralSources/DataSplittingDiagram.pdf>
+Package pdftex.def Info: GeneralSources/DataSplittingDiagram.pdf  used on input
+ line 172.
+(pdftex.def)             Requested size: 489.10307pt x 250.96025pt.
+ (./manuscript.bbl
+Underfull \hbox (badness 7814) in paragraph at lines 38--45
+[]\OT1/cmr/m/n/12 Singh, S.; Ku-mar, R.; Payra, S.;
+ []
+
+[3
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.52 \bibitem[Swinney(2011)]{BookIC50}
+                                       <./GeneralSources/DataSplittingDiagram.p
+df>]
+Underfull \hbox (badness 10000) in paragraph at lines 93--101
 []\OT1/cmr/m/n/12 National Can-cer In-sti-tute Def-i-ni-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--109
+Underfull \hbox (badness 10000) in paragraph at lines 93--101
 \OT1/cmr/m/n/12 Terms. 2024; []$\OT1/cmtt/m/n/12 https : / / www . cancer .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--109
+Underfull \hbox (badness 10000) in paragraph at lines 93--101
 \OT1/cmtt/m/n/12 gov / publications / dictionaries /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--109
+Underfull \hbox (badness 10000) in paragraph at lines 93--101
 \OT1/cmtt/m/n/12 cancer-[]terms / def / cox-[]2$[]\OT1/cmr/m/n/12 , Ac-cessed:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--122
+[]\OT1/cmr/m/n/12 Morales, S. C. AI Ap-pli-ca-tion for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--122
+\OT1/cmr/m/n/12 Azopho-to-switches Op-ti-miza-tion with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--122
+\OT1/cmr/m/n/12 Phar-ma-co-log-i-cal In-ter-est. 2025;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--122
+[]$\OT1/cmtt/m/n/12 https : / / github . com / SirSergi0 /
+ []
+
+
+Overfull \hbox (354.79013pt too wide) in paragraph at lines 115--122
+\OT1/cmtt/m/n/12 Repository-[]-[]-[]AI-[]application-[]for-[]azophotoswitches-[
+]optimization-[]with-[]pharmacological-[]interest$[]\OT1/cmr/m/n/12 . 
  []
 
 
@@ -1390,19 +1436,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--129
 []\OT1/cmr/m/n/12 Reitz, K.; Cha-lasani, A. Re-
  []
 
-) [3
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.206 \end{multicols}
-                     ] [4
+
+Underfull \hbox (badness 5817) in paragraph at lines 130--137
+[]\OT1/cmr/m/n/12 McKinney, W. pan-das: A Foun-da-
+ []
+
+) [4]
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 5 might be wrong on input line 270.
+
+
+[5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.211 \end{document}
-                    ] 
+l.270 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.270 \end{align}
+                 ] [6] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./manuscript.aux)
  ***********
@@ -1410,33 +1467,37 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: B0534259884EA7AECB0A67AF9A8CF6E8;348.
+(rerunfilecheck)             Checksum: 692F42A7A660767C1FBFEDA98F5A2CC0;484.
  ) 
 Here is how much of TeX's memory you used:
- 48047 strings out of 474116
- 1142748 string characters out of 5743682
- 1980187 words of memory out of 5000000
- 69663 multiletter control sequences out of 15000+600000
+ 48093 strings out of 474116
+ 1143912 string characters out of 5743682
+ 1994187 words of memory out of 5000000
+ 69691 multiletter control sequences out of 15000+600000
  570678 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,13n,101p,1608b,1691s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,13n,101p,1608b,1641s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pf
+b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
 usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
 r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
 local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
 al/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
-texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/te
-xlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/tex
-live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texli
-ve/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on manuscript.pdf (7 pages, 194098 bytes).
+texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
+exlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
+live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
+ive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texliv
+e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on manuscript.pdf (9 pages, 249566 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
- 135 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 500000)
- 42 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 262 PDF objects out of 1000 (max. 8388607)
+ 208 compressed objects within 3 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 55 words of extra memory for PDF output out of 10000 (max. 10000000)
 

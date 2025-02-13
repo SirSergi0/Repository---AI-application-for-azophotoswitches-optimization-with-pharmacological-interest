@@ -8,7 +8,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{14}
+\begin{mcitethebibliography}{17}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -37,14 +37,6 @@ Baek,~M.; et~al. \emph{Signal Transduction and Targeted Therapy} \textbf{2023},
   Singh]{NationalLibraryOfMedicineGeneralArticle}
 Singh,~S.; Kumar,~R.; Payra,~S.; Singh,~S.~K. \emph{Cureus} \textbf{2023},
   \emph{15}, e44359\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
-\bibitem[Khan and Jabeen(2022)Khan, and
-  Jabeen]{MachineLearningPaper5Lipoxygenase}
-Khan,~H.~A.; Jabeen,~I. \emph{Frontiers in Pharmacology} \textbf{2022},
-  \emph{13}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -119,9 +111,41 @@ Breiman,~L. \emph{Machine Learning} \textbf{2001}, \emph{45}, 5--32\relax
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem[Morales(2025)]{GitHub}
+Morales,~S.~C. AI Application for Azophotoswitches Optimization with
+  Pharmacological Interest. 2025;
+  \url{https://github.com/SirSergi0/Repository---AI-application-for-azophotoswitches-optimization-with-pharmacological-interest}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem[Reitz and Chalasani(2023)Reitz, and Chalasani]{PythonPackageRequests}
 Reitz,~K.; Chalasani,~A. Requests: HTTP for Humans.
   \url{https://pypi.org/project/requests/}, 2023; Python package\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[McKinney(2023)]{PythonPackagePandas}
+McKinney,~W. pandas: A Foundational Python Library for Data Analysis. 2023;
+  \url{https://pandas.pydata.org}, Version 1.5.3\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Khan and Jabeen(2022)Khan, and
+  Jabeen]{MachineLearningPaper5Lipoxygenase}
+Khan,~H.~A.; Jabeen,~I. \emph{Frontiers in Pharmacology} \textbf{2022},
+  \emph{13}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Pedregosa \latin{et~al.}(2011)Pedregosa, Varoquaux, Gramfort, Michel,
+  Thirion, Grisel, Blondel, Prettenhofer, Weiss, Dubourg, Vanderplas, Passos,
+  Cournapeau, Brucher, Perrot, and Duchesnay]{PythonPackageStickitLearn}
+Pedregosa,~F. \latin{et~al.}  \emph{Journal of Machine Learning Research}
+  \textbf{2011}, \emph{12}, 2825--2830\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
