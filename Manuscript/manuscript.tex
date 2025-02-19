@@ -36,7 +36,7 @@
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 
 \lstdefinestyle{mystyle}{
-    backgroundcolor=\color{backcolour},   
+    backgroundcolor=\color{backcolour}, 
     commentstyle=\color{codegreen},
     keywordstyle=\color{magenta},
     numberstyle=\tiny\color{codegray},
@@ -163,9 +163,9 @@ This study aims to bridge the gap between artificial intelligence and computatio
 The source code is all stored in the \href{https://github.com/SirSergi0/Repository---AI-application-for-azophotoswitches-optimization-with-pharmacological-interest}{\emph{AI application for azophotoswitches optimization with pharmacological interest} GitHub repository}\cite{GitHub}.
 
 The target protein's ID is set at \emph{CHEMBL230} corresponding to the COX-2 ID in the ChEMBL database. Utilising \emph{requests} python package\cite{PythonPackageRequests} a query URL is sent asking for all molecules with a know $IC_{50}$ value (Def. \ref{definitionIC50}) with a limit of 1000 entries per request. The process is iterated until all data is extracted leading a total of 7979 molecules. Hence the datasheet is processed in pandas dataframes\cite{PythonPackagePandas} and encrypted into binary feather files to optimise reading-writting speed. By removing entries with the same canonical smiles a total of 5112 molecules remain. Among this entries well known drugs such as Celecoxib (Def. \ref{definitionCelecoxib}), Rofecoxib (Def. \ref{definitionRofecoxib}) or even Ibuprofen can be found. However the $IC_{50}$ molecules range is comprehended from $10^{-3}$ to $10^{8}$ nM, a counterproductive range for the AI training procedure. A hard-coded range is filtered discarding all molecules outside the given range, for the most part of the analysis this range is set at $[0,200]$ nM \footnote{this $IC_{50}$ working range is the standard in this kind of studies \cite{MachineLearningPaper5Lipoxygenase}.} which reduces the dataset to 1438 entries (i.e. molecules). \par 
-With the AlvaDesk-python \cite{AlvaDescSecondPaper} facility, the chemical descriptors (i.e., the chemical fingerprint) of each molecule are computed, providing a total of $10^4$ descriptors per molecule. Here, the Pearson correlation coefficient between each chemical descriptor and the $IC_{50}$ value is computed, providing insight into the direct relationship between $IC_{50}$ and the descriptors.
+With the AlvaDesk-python \cite{AlvaDescSecondPaper} facility, the chemical descriptors (i.e., the chemical fingerprint) of each molecule are computed, providing a total of $5800$ descriptors per molecule. Still, by deleting molecular descriptors with null values 2917 remain. Here, the Pearson correlation coefficient between each chemical descriptor and the $IC_{50}$ value is computed, providing insight into the direct relationship between $IC_{50}$ and the descriptors.
 
-At this stage, the average $IC_{50}$ is calculated, and the neighborhood size corresponding to the percentage defined by the hard-coded variable \emph{percentageErased} is removed. This allows us to distinguish between \emph{highly active molecules} and \emph{least active molecules}—those with lower and higher $IC_{50}$ values, respectively. Subsequently, each set of substances is randomly divided into two datasets: a \emph{training set} and a \emph{testing set}, following the proportion specified by the hard-coded variable \emph{testSizeProportion}. This procedure is illustrated in Figure (\ref{FigureDataSplittingDiagram}).
+At this stage, the average $IC_{50}$ is calculated, and the neighborhood size corresponding to the percentage defined by the hard-coded variable \emph{percentageErased} is removed. This allows us to distinguish between \emph{highly active molecules} and \emph{least active molecules}, those with lower and higher $IC_{50}$ values, respectively. Subsequently, each set of substances is randomly divided into two datasets: a \emph{training set} and a \emph{testing set}, following the proportion specified by the hard-coded variable \emph{testSizeProportion}. This procedure is illustrated in Figure (\ref{FigureDataSplittingDiagram}).
 \end{multicols}
 \begin{figure}[H]
 \centering
@@ -174,7 +174,7 @@ At this stage, the average $IC_{50}$ is calculated, and the neighborhood size co
 \label{FigureDataSplittingDiagram}
 \end{figure}
 \begin{multicols}{2}
-Afterward, a Random Forest algorithm is trained using the Sticky Learn \cite{PythonPackageStickitLearn} Python package, which is supported by Microsoft and Google. This algorithm generates a large number of random decision trees (determined by the hard-coded variable \emph{numberOfTrees}), which are trained with the training sets. Later, these models are evaluated by predicting the $IC_{50}$ values of the \emph{testing sets}.
+Afterward, a Random Forest algorithm is trained using the Sticky Learn \cite{PythonPackageStickitLearn} Python package, which is supported by Microsoft and Google among others. This algorithm generates a large number of random decision trees (determined by the hard-coded variable \emph{numberOfTrees}), which are trained with the training sets. Later, these models are evaluated by predicting the $IC_{50}$ values of the \emph{testing sets}.
 
 Using the results, the \emph{True Positive Rate} (Def. \ref{definitionTruePositiveRate}), \emph{True Negative Rate} (Def. \ref{definitionTrueNegativeRate}), \emph{Classification Accuracy} (Def. \ref{definitionClassificationAccuracy}), and \emph{Matthews Correlation Coefficient} (Def. \ref{definitionMatthewsCorrelationCoeficient}) are computed. Based on these computational results, the variables \emph{percentageErased}, \emph{testSizeProportion}, and \emph{numberOfTrees} are manually adjusted to obtain the best results.
 

@@ -80,7 +80,7 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
     
     # ploting the correlation factors histogram
     if not silentMode: print(f"Ploting the correlation factors in ../Plots/{targetIDChEMBL}{dataFileName}CorrelationFactors.pdf")
-    plt.hist(correlationDataFrame, bins=40, color='purple', range = (-1,1), label=f"Number of descriptors {dataFiltered.shape[1]-1}")
+    plt.hist(correlationDataFrame, bins=100, color='purple', range = (-1,1), label=f"Number of descriptors {dataFiltered.shape[1]-1}")
     plt.title('Correlation factors of the computed chemical descriptors')
     plt.xlabel('Correlation Values')
     plt.ylabel('Frequency')
@@ -101,8 +101,8 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
     dataWithGapUpper = dataFiltered[dataFiltered['standard_value'] >= iSplitValueUpper].copy()
 
     # Assigning activity labels: low = 0, high = 1
-    dataWithGapUnder['activity_label'] = 0
-    dataWithGapUpper['activity_label'] = 1
+    dataWithGapUnder.insert(1,'activity_label', 0)
+    dataWithGapUpper.insert(1,'activity_label',1)
 
     # Combining the two datasets into one with the gap
     dataWithGapAll = pd.concat([dataWithGapUnder, dataWithGapUpper], ignore_index=True)
@@ -154,10 +154,10 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
 
     # Gathering up all the data (Features+Labels) and reseting the indexs
     dataWithGapAllTrain                   = dataWithGapAllFeaturesTrain
-    dataWithGapAllTrain['activity_label'] = dataWithGapAllLabelsTrain
+    dataWithGapAllTrain.insert(1,'activity_label', dataWithGapAllLabelsTrain)
     dataWithGapAllTrain.reset_index(drop = True, inplace = True)
     dataWithGapAllTest                    = dataWithGapAllFeaturesTest
-    dataWithGapAllTest['activity_label']  = dataWithGapAllLabelsTest
+    dataWithGapAllTest.insert(1,'activity_label', dataWithGapAllLabelsTest)
     dataWithGapAllTest.reset_index(drop = True, inplace = True)
     
     # Saving the train and test data
@@ -172,4 +172,4 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
     if not silentMode: print(f"{dataWithGapAllFileName}Train.feather")
     if not silentMode: print(f"{dataWithGapAllFileName}Test.feather")
     
-    return dataWithGapAllFileName
+    return dataWithGapAllFileName, (iSplitValueUnder+iSplitValueUpper)/2

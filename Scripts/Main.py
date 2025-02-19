@@ -18,7 +18,7 @@ mode = 'DEFAULT'
 
 ChEMBLDataExtractorMacro.ChEMBLExtractData(config[mode]['targetIDChEMBL'], config[mode]['targetProperty'])
 
-dataFile = DataFilterAndPlotsMacro.ChEMBLDataProcessingMacro(config[mode]['targetIDChEMBL'], 
+dataFile, meanStandardValue = DataFilterAndPlotsMacro.ChEMBLDataProcessingMacro(config[mode]['targetIDChEMBL'], 
                                                              config[mode]['targetProperty'],
                                                              int(config[mode]['lowerTargetProperty']), 
                                                              int(config[mode]['higherTargetProperty']), 
@@ -30,4 +30,4 @@ dataFile = DataFilterAndPlotsMacro.ChEMBLDataProcessingMacro(config[mode]['targe
                                                              float(config[mode]['correlationLimitValue']))
 
 RandomForest.RandomForest(dataFile, int(config[mode]['numberOfTrees']), float(config[mode]['percentageErased']), 
-                          float(config[mode]['testSizeProportion']), float(config[mode]['correlationLimitValue']))
+                          float(config[mode]['testSizeProportion']), float(config[mode]['correlationLimitValue']), meanStandardValue)
