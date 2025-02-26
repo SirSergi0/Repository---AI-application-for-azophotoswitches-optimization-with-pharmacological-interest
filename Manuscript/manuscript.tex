@@ -19,6 +19,7 @@
 \usepackage{chemfig}
 \usepackage{yfonts}
 \usepackage{tikz}
+\usepackage{chemformula}
 \usepackage{forest}
 \usepackage{pdflscape}
 \usepackage{wrapfig}
@@ -216,7 +217,7 @@ Rofecoxib: \footnote{UPAC name: 4-(4-methylsulfonylphenyl)-3-phenyl-5H-furan-2-o
 \centering
 \scalebox{0.8}{
 \chemfig[angle increment=30]{
-H_2N-[-1]S(=[-4]O)(=[-2]O)-[1]*6(-=-(-[1]N*5(-N=(-[-1](-[-4]F)(-[-2]F)-[1])-=(-[4.5]*6(-=-(-[4.5])=-=))-))=-=)
+H_2N-[1]S(=[4]O)(=[-2]O)-[1]*6(-=-(-[1]N*5(-N=(-[-1](-[-4]F)(-[-2]F)-[1])-=(-[4.5]*6(-=-(-[4.5])=-=))-))=-=)
 }}
 \caption{Chemical graph of Celecoxib.}
 \label{CelecoxibFigure}
@@ -271,5 +272,214 @@ Matthews Correlation Coefficient: quantity related to a Machine Learning Model's
 }where $TP,FP,TN,FN$ stands for "True Positive", "False Positive", "True Negative" \& "False Negative" respectively.
 A Matthews Correlation Coefficient equal to 1 stands for a perfect prediction a Matthews Correlation Coefficient equal to 0 indicates that the classifier’s predictions are no better than random guessing, and a Matthews Correlation Coefficient equal to -1 stand for a total disagreement between predictions and actual outcomes.
 \end{definition}
+
+\section{Tables of molecules}
+\begin{figure}[H]
+\centering
+\scalebox{0.8}{
+\chemfig[angle increment=30]{
+NH_2-S(=[3]O)(=[9]O)-*6(-=-(-N*5(-N=(-R_1)-(-[:45]N=[3]N-[:135]*6(-=-(-R_2)=(-R_3)-=))=-))=-=)
+}}
+\caption{Template for Celecoxib's azo-derivates with pyrazole as heterocycle.}
+\label{figureCelecoxibPyrazole}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{Table of potential photoswitches derivated from Celecoxib's azo-derivates with pyrazole as heterocycle}
+\label{tableCelecoxibPyrazole}
+\begin{tabular}{c||c|c|c}
+Identifier & \ch{R_1} & \ch{R_2} & \ch{R_3} \\\hline\hline
+\ref{figureCelecoxibPyrazole}.1 & \ch{CF_3} & \ch{CH_2CH_3}  & \ch{H}\\\hline
+\ref{figureCelecoxibPyrazole}.2 & \ch{CF_3} & \ch{CH_2CH_3}  & \ch{F}\\\hline
+\ref{figureCelecoxibPyrazole}.3 & \ch{CF_3} & \ch{CH_3}  & \ch{F}\\\hline
+\ref{figureCelecoxibPyrazole}.4 & \ch{CF_3} & \ch{OCH_3}  & \ch{H}\\\hline
+\ref{figureCelecoxibPyrazole}.5 & \ch{CF_3} & \ch{OCH_3}  & \ch{F}\\\hline
+\ref{figureCelecoxibPyrazole}.6 & \ch{CF_3} & \ch{CH_3}  & \ch{H}\\\hline
+\ref{figureCelecoxibPyrazole}.7 & \ch{H} & \ch{CH_3}  & \ch{H}\\\hline
+\ref{figureCelecoxibPyrazole}.8 & \ch{F} & \ch{CH_3}  & \ch{H}\\\hline
+\ref{figureCelecoxibPyrazole}.9 & \ch{Cl} & \ch{CH_3}  & \ch{H}\\\hline
+\ref{figureCelecoxibPyrazole}.10 & \ch{Br} & \ch{CH_3}  & \ch{H}\\\hline
+\ref{figureCelecoxibPyrazole}.11 & \ch{CH_3} & \ch{CH_3}  & \ch{H}\\\hline
+\ref{figureCelecoxibPyrazole}.12 & \ch{H} & \ch{CH_3}  & \ch{F}\\\hline
+\ref{figureCelecoxibPyrazole}.13 & \ch{F} & \ch{CH_3}  & \ch{F}\\\hline
+\ref{figureCelecoxibPyrazole}.14 & \ch{Cl} & \ch{CH_3}  & \ch{F}\\\hline
+\ref{figureCelecoxibPyrazole}.15 & \ch{Br} & \ch{CH_3}  & \ch{F}\\\hline
+\ref{figureCelecoxibPyrazole}.16 & \ch{CH_3} & \ch{CH_3}  & \ch{F}
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+\centering
+\scalebox{0.8}{
+\chemname{\chemfig[angle increment=30]{
+NH_2-S(=[3]O)(=[9]O)-*6(-=-(-N*5(-N=(-CF_3)-(-[:45]N=[3]N-[:135]*6(-=-(--[3])=N-=))=-))=-=)
+}}{Pyridine derivative}}
+\par
+\vspace{0.5cm}
+\scalebox{0.8}{
+\chemname{\chemfig[angle increment=30]{
+NH_2-S(=[3]O)(=[9]O)-*6(-=-(-N*5(-N=(-CF_3)-(-[:45]N=[3]N-[:135]*6(-=-(-)=N-=))=-))=-=)
+}}{\ch{SO_2CH_3} group derivative}}
+\caption{Scheme for Celecoxib azo-derivatives based on pyridine and \ch{SO_2CH_3} groups.}
+\label{tableCelecoxibPyridine}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\scalebox{0.8}{
+\chemfig[angle increment=30]{
+NH_2-S(=[3]O)(=[9]O)-*6(-=-(-*5(-O-(-R_1)=(-[:45]N=[3]N-[:135]*6(-=-(-R_2)=(-)-=))-=))=-=)
+}}
+\caption{Template for Celecoxib azo-derivatives with furan as a heterocycle.}
+\label{figureCelecoxibFuran}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{Table of potential photoswitches derivated from Celecoxib's azo-derivates with furan as heterocycle.}
+\label{tableCelecoxibFuran}
+\begin{tabular}{c||c|c}
+Identifier & \ch{R_1} & \ch{R_2} \\\hline\hline
+\ref{figureCelecoxibFuran}.1 & \ch{CF_3} & \ch{H} \\\hline
+\ref{figureCelecoxibFuran}.2 & \ch{H} & \ch{H} \\\hline
+\ref{figureCelecoxibFuran}.3 & \ch{F} & \ch{H} \\\hline
+\ref{figureCelecoxibFuran}.4 & \ch{Cl} & \ch{H} \\\hline
+\ref{figureCelecoxibFuran}.5 & \ch{Br} & \ch{H} \\\hline
+\ref{figureCelecoxibFuran}.6 & \ch{CH_3} & \ch{H} \\\hline
+\ref{figureCelecoxibFuran}.7 & \ch{CF_3} & \ch{F} \\\hline
+\ref{figureCelecoxibFuran}.8 & \ch{H} & \ch{F} \\\hline
+\ref{figureCelecoxibFuran}.9 & \ch{F} & \ch{F} \\\hline
+\ref{figureCelecoxibFuran}.10 & \ch{Cl} & \ch{F} \\\hline
+\ref{figureCelecoxibFuran}.11 & \ch{Br} & \ch{F} \\\hline
+\ref{figureCelecoxibFuran}.12 & \ch{CH_3} & \ch{F}
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\scalebox{0.8}{
+\chemfig[angle increment=30]{
+NH_2-S(=[3]O)(=[9]O)-*6(-=-(-*5(-S-(-R_1)=(-[:45]N=[3]N-[:135]*6(-=-(-R_2)=(-)-=))-=))=-=)
+}}
+\caption{Template for Celecoxib azo-derivatives with thiophene as a heterocycle.}
+\label{figureCelecoxibThiophene}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{Table of potential photoswitches derivated from Celecoxib's azo-derivates with thiophene as heterocycle.}
+\label{tableCelecoxibFuran}
+\begin{tabular}{c||c|c}
+Identifier & \ch{R_1} & \ch{R_2} \\\hline\hline
+\ref{figureCelecoxibThiophene}.1 & \ch{F} & \ch{H} \\\hline
+\ref{figureCelecoxibThiophene}.2 & \ch{H} & \ch{F} \\\hline
+\ref{figureCelecoxibThiophene}.3 & \ch{Cl} & \ch{F} 
+\end{tabular}
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\scalebox{0.8}{
+\chemfig[angle increment=30]{
+NH_2-S(=[3]O)(=[9]O)-*6(-=-(-*5(-\chembelow{N}{H}-(-R_1)=(-[:45]N=[3]N-[:135]*6(-=-(-R_2)=(-R_3)-=))-=))=-=)
+}}
+\caption{Template for Celecoxib azo-derivatives with pyrrole as a heterocycle.}
+\label{figureCelecoxibPyrrole}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{Table of potential photoswitches derivated from Celecoxib's azo-derivates with pyrrole as heterocycle.}
+\label{tableCelecoxibPyrrole}
+\begin{tabular}{c||c|c|c}
+Identifier & \ch{R_1} & \ch{R_2} & \ch{R_3} \\\hline\hline
+\ref{figureCelecoxibPyrrole}.1 & \ch{CF_3} & \ch{CH_3} & \ch{H} \\\hline
+\ref{figureCelecoxibPyrrole}.2 & \ch{Cl} & \ch{CH_3} & \ch{F} 
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\scalebox{0.8}{
+\chemfig[angle increment=30]{
+NH_2-S(=[3]O)(=[9]O)-*6(-=-(-*6(-=(-R_1)-(-N=[2]N-[4]*6(-=-(-R_2)=-=))=-=))=-=)
+}}
+\caption{Template for Celecoxib azo-derivatives with benzene in place of the original heterocycle.}
+\label{figureCelecoxibBenzene}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{Table of potential photoswitches derivated from Celecoxib azo-derivatives with benzene in place of the original heterocycle.}
+\label{tableCelecoxibBenzene}
+\begin{tabular}{c||c|c}
+Identifier & \ch{R_1} & \ch{R_2} \\\hline\hline
+\ref{figureCelecoxibBenzene}.1 & \ch{CF_3} & \ch{CH_2CH_3} \\\hline
+\ref{figureCelecoxibBenzene}.2 & \ch{CF_3} & \ch{NCH_3COCH_3} \\\hline
+\ref{figureCelecoxibBenzene}.3 & \ch{CF_3} & \ch{NHCH_3} \\\hline
+\ref{figureCelecoxibBenzene}.4 & \ch{CF_3} & \ch{OCH_3} \\\hline
+\ref{figureCelecoxibBenzene}.5 & \ch{Cl} & \ch{CH_3} 
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\scalebox{0.8}{
+\chemfig[angle increment=30]{
+NH_2-S(=[3]O)(=[9]O)-*6(-=-(-*5(-\chembelow{N}{H}-*6(-=-(-)=(-[3]N=[4.5]N-[6]*6(-=-(-R_1)=-=))-=)--=))=-=)
+}}
+\caption{Template for Celecoxib azo-derivatives with indole ring as a heterocycle.}
+\label{figureCelecoxibIndole}
+\end{figure}
+
+
+\begin{table}[H]
+\centering
+\caption{Table of potential photoswitches derivated from Celecoxib azo-derivatives with indole ring as a heterocycle.}
+\label{tableCelecoxibIndole}
+\begin{tabular}{c||c}
+Identifier & \ch{R_1}  \\\hline\hline
+\ref{figureCelecoxibIndole}.1 & \ch{H} \\\hline
+\ref{figureCelecoxibIndole}.1 & \ch{F} 
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\scalebox{0.7}{
+\chemfig[angle increment=30]{
+NH_2-S(=[3]O)(=[9]O)-*6(-=-(-N=[-1.5]N-[-3]*5(=-\chembelow{N}{H}-*6(-=-(-)=(-*6(-=-(-)=-=))-=)--))=-=)
+}}
+\caption{Template for Celecoxib azo-derivatives with indole ring as a heterocycle.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\scalebox{0.7}{
+\chemfig[angle increment=30]{
+NH_2-S(=[3]O)(=[9]O)-*6(-=-(-N=[-1.5]N-[-3]*5(=-R_1-*5(-R_2-(-)=(-*6(-=-(-)=-=))-=)--))=-=)
+}}
+\caption{Template for Celecoxib azo-derivatives with two rings of five members joint as a heterocycle.}
+\label{figureCelecoxibTwoRings}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{Table of potential photoswitches derivated from Celecoxib azo-derivatives with indole ring as a heterocycle.}
+\label{tableCelecoxibTwoRings}
+\begin{tabular}{c||c|c|c}
+Identifier & \ch{R_1} & \ch{R_2} & \ch{R_3} \\\hline\hline
+\ref{figureCelecoxibTwoRings}.1 & \ch{NH} & \ch{NH} & \ch{H} \\\hline
+\ref{figureCelecoxibTwoRings}.2 & \ch{NH} & \ch{O} & \ch{H} \\\hline
+\ref{figureCelecoxibTwoRings}.3 & \ch{O} & \ch{NH} & \ch{H} \\\hline
+\ref{figureCelecoxibTwoRings}.4 & \ch{O} & \ch{O} & \ch{H} \\\hline
+\ref{figureCelecoxibTwoRings}.5 & \ch{NH} & \ch{NH} & \ch{CH_3} \\\hline
+\ref{figureCelecoxibTwoRings}.6 & \ch{NH} & \ch{O} & \ch{CH_3} \\\hline
+\ref{figureCelecoxibTwoRings}.7 & \ch{O} & \ch{NH} & \ch{CH_3} \\\hline
+\ref{figureCelecoxibTwoRings}.8 & \ch{O} & \ch{O} & \ch{CH_3}
+\end{tabular}
+\end{table}
+
 \end{multicols}
 \end{document}

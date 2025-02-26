@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  17 FEB 2025 14:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  26 FEB 2025 22:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -901,6 +901,93 @@ Now handling font encoding LYG ...
 ... no UTF-8 mapping file for font encoding LYG
 LaTeX Info: Composite with undeclared \" in encoding LYG on input line 58.
 )
+(/usr/local/texlive/2024/texmf-dist/tex/latex/chemformula/chemformula.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/xfrac/xfrac.sty
+Package: xfrac 2024-02-13 Split-level fractions
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.st
+y
+(/usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate-20
+23-10-10.sty
+Package: xtemplate 2023-10-10 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen303
+\l__xtemplate_tmp_int=\count342
+\l__xtemplate_tmp_muskip=\muskip18
+\l__xtemplate_tmp_skip=\skip71
+))
+\l__xfrac_slash_box=\box77
+\l__xfrac_tmp_box=\box78
+\l__xfrac_denominator_bot_sep_dim=\dimen304
+\l__xfrac_numerator_bot_sep_dim=\dimen305
+\l__xfrac_numerator_top_sep_dim=\dimen306
+\l__xfrac_slash_left_sep_dim=\dimen307
+\l__xfrac_slash_right_sep_dim=\dimen308
+\l__xfrac_slash_left_muskip=\muskip19
+\l__xfrac_slash_right_muskip=\muskip20
+
+Package xtemplate Info: Declaring object type 'xfrac' taking 3 argument(s) on
+(xtemplate)             line 98.
+
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/units/nicefrac.sty
+Package: nicefrac 1998/08/04 v0.9b Nice fractions
+\L@UnitsRaiseDisplaystyle=\skip72
+\L@UnitsRaiseTextstyle=\skip73
+\L@UnitsRaiseScriptstyle=\skip74
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+))
+Package: chemformula 2022/01/23 v4.17 typeset chemical compounds and reactions 
+(CN)
+\l__chemformula_tmpa_dim=\dimen309
+\l__chemformula_tmpb_dim=\dimen310
+\l__chemformula_tmpc_dim=\dimen311
+\l__chemformula_tmpa_int=\count343
+\l__chemformula_tmpb_int=\count344
+\l__chemformula_tmpc_int=\count345
+\l__chemformula_tmpa_box=\box79
+\l__chemformula_tmpb_box=\box80
+\l__chemformula_arrow_length_dim=\dimen312
+\l__chemformula_arrow_label_height_dim=\dimen313
+\l__chemformula_arrow_label_offset_dim=\dimen314
+\l__chemformula_arrow_minimum_length_dim=\dimen315
+\l__chemformula_arrow_shortage_dim=\dimen316
+\l__chemformula_arrow_offset_dim=\dimen317
+\l__chemformula_arrow_yshift_dim=\dimen318
+\l__chemformula_radical_radius_dim=\dimen319
+\l__chemformula_radical_hshift_dim=\dimen320
+\l__chemformula_radical_vshift_dim=\dimen321
+\l__chemformula_radical_space_dim=\dimen322
+\l__chemformula_arrow_head_dim=\dimen323
+\l__chemformula_name_dim=\dimen324
+\l__chemformula_adduct_space_dim=\dimen325
+\l__chemformula_charge_shift_dim=\dimen326
+\l__chemformula_subscript_shift_dim=\dimen327
+\l__chemformula_superscript_shift_dim=\dimen328
+\l__chemformula_subscript_dim=\dimen329
+\l__chemformula_superscript_dim=\dimen330
+\l__chemformula_bond_dim=\dimen331
+\l__chemformula_bond_space_dim=\dimen332
+\l__chemformula_elspec_pair_distance_dim=\dimen333
+\l__chemformula_elspec_pair_line_length_dim=\dimen334
+\l__chemformula_elspec_pair_width_dim=\dimen335
+\l__chemformula_kroegervink_positive_radius_dim=\dimen336
+\l__chemformula_kroegervink_positive_hshift_dim=\dimen337
+\l__chemformula_kroegervink_positive_vshift_dim=\dimen338
+\l__chemformula_kroegervink_positive_space_dim=\dimen339
+\l__chemformula_stoich_space_skip=\skip75
+\l__chemformula_math_space_skip=\skip76
+\l__chemformula_additions_symbol_space_skip=\skip77
+\l__chemformula_count_tokens_int=\count346
+\g__chemformula_lewis_int=\count347
+\l__chemformula_arrow_arg_i_box=\box81
+\l__chemformula_arrow_arg_ii_box=\box82
+\l__chemformula_superscript_box=\box83
+\l__chemformula_subscript_box=\box84
+\l__chemformula_plus_space_skip=\skip78
+\l__chemformula_minus_space_skip=\skip79
+)
 (/usr/local/texlive/2024/texmf-dist/tex/latex/forest/forest.sty
 Package: forest 2017/07/14 v2.1.5 Drawing (linguistic) trees
 
@@ -951,26 +1038,26 @@ File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
 shapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodepartlowerbox=\box77
-\pgfnodeparttwobox=\box78
-\pgfnodepartthreebox=\box79
-\pgfnodepartfourbox=\box80
-\pgfnodeparttwentybox=\box81
-\pgfnodepartnineteenbox=\box82
-\pgfnodeparteighteenbox=\box83
-\pgfnodepartseventeenbox=\box84
-\pgfnodepartsixteenbox=\box85
-\pgfnodepartfifteenbox=\box86
-\pgfnodepartfourteenbox=\box87
-\pgfnodepartthirteenbox=\box88
-\pgfnodeparttwelvebox=\box89
-\pgfnodepartelevenbox=\box90
-\pgfnodeparttenbox=\box91
-\pgfnodepartninebox=\box92
-\pgfnodeparteightbox=\box93
-\pgfnodepartsevenbox=\box94
-\pgfnodepartsixbox=\box95
-\pgfnodepartfivebox=\box96
+\pgfnodepartlowerbox=\box85
+\pgfnodeparttwobox=\box86
+\pgfnodepartthreebox=\box87
+\pgfnodepartfourbox=\box88
+\pgfnodeparttwentybox=\box89
+\pgfnodepartnineteenbox=\box90
+\pgfnodeparteighteenbox=\box91
+\pgfnodepartseventeenbox=\box92
+\pgfnodepartsixteenbox=\box93
+\pgfnodepartfifteenbox=\box94
+\pgfnodepartfourteenbox=\box95
+\pgfnodepartthirteenbox=\box96
+\pgfnodeparttwelvebox=\box97
+\pgfnodepartelevenbox=\box98
+\pgfnodeparttenbox=\box99
+\pgfnodepartninebox=\box100
+\pgfnodeparteightbox=\box101
+\pgfnodepartsevenbox=\box102
+\pgfnodepartsixbox=\box103
+\pgfnodepartfivebox=\box104
 )))
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryfit.code.tex
@@ -982,7 +1069,7 @@ File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryinterse
 ctions.code.tex
-\pgf@intersect@solutions=\count342
+\pgf@intersect@solutions=\count348
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/pgfopts/pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
@@ -1004,54 +1091,54 @@ Package: xparse 2024-02-18 L3 Experimental document command parser
 (/usr/local/texlive/2024/texmf-dist/tex/latex/inlinedef/inlinedef.sty
 Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 \ID@toks=\toks60
-\ID@count=\count343
+\ID@count=\count349
 )
 \ID@usercommands=\toks61
-\safeloop@depth=\count344
-\safeRKloop@depth=\count345
-\forest@temp@dimen=\dimen303
-\forest@temp@count=\count346
-\forest@n=\count347
-\forest@temp@global@count=\count348
+\safeloop@depth=\count350
+\safeRKloop@depth=\count351
+\forest@temp@dimen=\dimen340
+\forest@temp@count=\count352
+\forest@n=\count353
+\forest@temp@global@count=\count354
 \forest@temp@toks=\toks62
-\forest@temparray@M=\count349
-\forest@temparray@N=\count350
-\forest@global@temparray@M=\count351
-\forest@global@temparray@N=\count352
-\forest@isnum@count=\count353
-\forest@isdim@nonintpart=\count354
-\forest@isdim@dimen=\dimen304
-\forest@sort@m=\count355
-\forest@sort@k=\count356
-\forest@sort@p=\count357
+\forest@temparray@M=\count355
+\forest@temparray@N=\count356
+\forest@global@temparray@M=\count357
+\forest@global@temparray@N=\count358
+\forest@isnum@count=\count359
+\forest@isdim@nonintpart=\count360
+\forest@isdim@dimen=\dimen341
+\forest@sort@m=\count361
+\forest@sort@k=\count362
+\forest@sort@p=\count363
 \bracket@content=\toks63
 \bracket@afterthought=\toks64
-\forest@node@maxid=\count358
-\forest@process@left@M=\count359
-\forest@process@left@N=\count360
-\forest@process@right@M=\count361
-\forest@process@right@N=\count362
-\forest@process@saved@M=\count363
-\forest@process@saved@N=\count364
-\forest@process@result@M=\count365
-\forest@process@result@N=\count366
-\forest@process@n=\count367
+\forest@node@maxid=\count364
+\forest@process@left@M=\count365
+\forest@process@left@N=\count366
+\forest@process@right@M=\count367
+\forest@process@right@N=\count368
+\forest@process@saved@M=\count369
+\forest@process@saved@N=\count370
+\forest@process@result@M=\count371
+\forest@process@result@N=\count372
+\forest@process@n=\count373
 \forest@nodewalk@branch@toks=\toks65
 \forest@nodewalk@shortsteps@resolution=\toks66
 \forest@do@dynamics=\toks67
-\forest@box=\box97
-\forest@xg=\dimen305
-\forest@yg=\dimen306
-\forest@xs=\dimen307
-\forest@ys=\dimen308
+\forest@box=\box105
+\forest@xg=\dimen342
+\forest@yg=\dimen343
+\forest@xs=\dimen344
+\forest@ys=\dimen345
 \forest@pi@toks=\toks68
 \forest@segment@toks=\toks69
 \forest@PIi@toks=\toks70
 \forest@PIii@toks=\toks71
 \forest@copy@in=\read4
 \forest@copy@out=\write4
-\forest@externalize@max@outer@n=\count368
-\forest@externalize@inner@n=\count369
+\forest@externalize@max@outer@n=\count374
+\forest@externalize@inner@n=\count375
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
@@ -1066,57 +1153,49 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
 (/usr/local/texlive/2024/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen309
-\WF@size=\dimen310
-\c@WF@wrappedlines=\count370
-\WF@box=\box98
+\wrapoverhang=\dimen346
+\WF@size=\dimen347
+\c@WF@wrappedlines=\count376
+\WF@box=\box106
 \WF@everypar=\toks72
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box99
-\UL@hyphenbox=\box100
-\UL@skip=\skip71
+\UL@box=\box107
+\UL@hyphenbox=\box108
+\UL@skip=\skip80
 \UL@hook=\toks73
-\UL@height=\dimen311
-\UL@pe=\count371
-\UL@pixel=\dimen312
-\ULC@box=\box101
+\UL@height=\dimen348
+\UL@pe=\count377
+\UL@pixel=\dimen349
+\ULC@box=\box109
 Package: ulem 2019/11/18
-\ULdepth=\dimen313
+\ULdepth=\dimen350
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
-\c@tracingmulticols=\count372
-\mult@box=\box102
-\multicol@leftmargin=\dimen314
-\c@unbalance=\count373
-\c@collectmore=\count374
-\doublecol@number=\count375
-\multicoltolerance=\count376
-\multicolpretolerance=\count377
-\full@width=\dimen315
-\page@free=\dimen316
-\premulticols=\dimen317
-\postmulticols=\dimen318
-\multicolsep=\skip72
-\multicolbaselineskip=\skip73
-\partial@page=\box103
-\last@line=\box104
-\mc@boxedresult=\box105
-\maxbalancingoverflow=\dimen319
-\mult@rightbox=\box106
-\mult@grightbox=\box107
-\mult@firstbox=\box108
-\mult@gfirstbox=\box109
-\@tempa=\box110
-\@tempa=\box111
-\@tempa=\box112
-\@tempa=\box113
-\@tempa=\box114
-\@tempa=\box115
-\@tempa=\box116
-\@tempa=\box117
+\c@tracingmulticols=\count378
+\mult@box=\box110
+\multicol@leftmargin=\dimen351
+\c@unbalance=\count379
+\c@collectmore=\count380
+\doublecol@number=\count381
+\multicoltolerance=\count382
+\multicolpretolerance=\count383
+\full@width=\dimen352
+\page@free=\dimen353
+\premulticols=\dimen354
+\postmulticols=\dimen355
+\multicolsep=\skip81
+\multicolbaselineskip=\skip82
+\partial@page=\box111
+\last@line=\box112
+\mc@boxedresult=\box113
+\maxbalancingoverflow=\dimen356
+\mult@rightbox=\box114
+\mult@grightbox=\box115
+\mult@firstbox=\box116
+\mult@gfirstbox=\box117
 \@tempa=\box118
 \@tempa=\box119
 \@tempa=\box120
@@ -1145,15 +1224,23 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \@tempa=\box143
 \@tempa=\box144
 \@tempa=\box145
-\c@minrows=\count378
-\c@columnbadness=\count379
-\c@finalcolumnbadness=\count380
-\last@try=\dimen320
-\multicolovershoot=\dimen321
-\multicolundershoot=\dimen322
-\mult@nat@firstbox=\box146
-\colbreak@box=\box147
-\mc@col@check@num=\count381
+\@tempa=\box146
+\@tempa=\box147
+\@tempa=\box148
+\@tempa=\box149
+\@tempa=\box150
+\@tempa=\box151
+\@tempa=\box152
+\@tempa=\box153
+\c@minrows=\count384
+\c@columnbadness=\count385
+\c@finalcolumnbadness=\count386
+\last@try=\dimen357
+\multicolovershoot=\dimen358
+\multicolundershoot=\dimen359
+\mult@nat@firstbox=\box154
+\colbreak@box=\box155
+\mc@col@check@num=\count387
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/achemso/achemso.sty
 Package: achemso 2024-01-30 v3.13g Support for ACS journals
@@ -1168,17 +1255,17 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 \XKV@toks=\toks74
 \XKV@tempa@toks=\toks75
 )
-\XKV@depth=\count382
+\XKV@depth=\count388
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 \acs@bib@file=\write5
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip74
-\bibsep=\skip75
+\bibhang=\skip83
+\bibsep=\skip84
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count383
+\c@NAT@ctr=\count389
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/achemso/natmove.sty
 Package: natmove 2010/01/15 v1.1a Automatic citation moving with natbib
@@ -1186,57 +1273,61 @@ Package: natmove 2010/01/15 v1.1a Automatic citation moving with natbib
 (/usr/local/texlive/2024/texmf-dist/tex/latex/mciteplus/mciteplus.sty
 Package: mciteplus 2013/09/13 v1.2 enhanced mcite
 \@mcitetmptoksA=\toks76
-\@mcitetmpdima=\dimen323
-\@mcitetmpdimb=\dimen324
-\@mcitetmpcnta=\count384
-\@mcitetmpcntb=\count385
-\c@mcitebibitemcount=\count386
-\c@mcitesubitemcount=\count387
+\@mcitetmpdima=\dimen360
+\@mcitetmpdimb=\dimen361
+\@mcitetmpcnta=\count390
+\@mcitetmpcntb=\count391
+\c@mcitebibitemcount=\count392
+\c@mcitesubitemcount=\count393
 
 ** mciteplus: Detected natbib.sty. Invoking hooks.
 )) (/usr/local/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2023/10/27 v2.16 Sectioning titles
-\ttl@box=\box148
-\beforetitleunit=\skip76
-\aftertitleunit=\skip77
-\ttl@plus=\dimen325
-\ttl@minus=\dimen326
+\ttl@box=\box156
+\beforetitleunit=\skip85
+\aftertitleunit=\skip86
+\ttl@plus=\dimen362
+\ttl@minus=\dimen363
 \ttl@toksa=\toks77
-\titlewidth=\dimen327
-\titlewidthlast=\dimen328
-\titlewidthfirst=\dimen329
+\titlewidth=\dimen364
+\titlewidthlast=\dimen365
+\titlewidthfirst=\dimen366
 )
-\c@definition=\count388
-\c@observation=\count389
-\c@reflection=\count390
-\c@PyPackage=\count391
-\c@book=\count392
+\c@definition=\count394
+\c@observation=\count395
+\c@reflection=\count396
+\c@PyPackage=\count397
+\c@book=\count398
 
-(./manuscript.aux)
+(./manuscript.aux
+
+LaTeX Warning: Label `tableCelecoxibFuran' multiply defined.
+
+)
 \openout1 = `manuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1274,16 +1365,16 @@ LaTeX Font Info:    ... okay on input line 89.
 
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count393
-\scratchdimen=\dimen330
-\scratchbox=\box149
-\nofMPsegments=\count394
-\nofMParguments=\count395
+\scratchcounter=\count399
+\scratchdimen=\dimen367
+\scratchbox=\box157
+\nofMPsegments=\count400
+\nofMParguments=\count401
 \everyMPshowfont=\toks78
-\MPscratchCnt=\count396
-\MPscratchDim=\dimen331
-\MPnumerator=\count397
-\makeMPintoPDFobject=\count398
+\MPscratchCnt=\count402
+\MPscratchDim=\dimen368
+\MPnumerator=\count403
+\makeMPintoPDFobject=\count404
 \everyMPtoPDFconversion=\toks79
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1294,8 +1385,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count399
-Package hyperref Info: Link coloring OFF on input line 89.
+\c@lstlisting=\count405
+Package hyperref Info: Link coloring OFF on input line 90.
 
 (./manuscript.out) (./manuscript.out)
 \@outlinefile=\write6
@@ -1306,35 +1397,35 @@ Package hyperref Info: Link coloring OFF on input line 89.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 89.
+ on input line 90.
 
 \openout5 = `acs-manuscript.bib'.
 
-\c@bibnote=\count400
-<GeneralSources/UABLogo.png, id=23, 392.12303pt x 138.01239pt>
+\c@bibnote=\count406
+<GeneralSources/UABLogo.png, id=27, 392.12303pt x 138.01239pt>
 File: GeneralSources/UABLogo.png Graphic file (type png)
 <use GeneralSources/UABLogo.png>
-Package pdftex.def Info: GeneralSources/UABLogo.png  used on input line 112.
+Package pdftex.def Info: GeneralSources/UABLogo.png  used on input line 113.
 (pdftex.def)             Requested size: 122.27576pt x 43.0361pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 112
+LaTeX Font Info:    Trying to load font information for U+msa on input line 113
 .
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 112
+LaTeX Font Info:    Trying to load font information for U+msb on input line 113
 .
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+esint on input line 1
-12.
+13.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 11
-2.
+3.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1347,17 +1438,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.118 \newpage
+l.119 \newpage
                [1] [2]
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.154 ...hanisms governing COX-2 interactions.\par
+l.155 ...hanisms governing COX-2 interactions.\par
                                                    [1]
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 2 might be wrong on input line 167.
+(multicol)                Footnotes on page 2 might be wrong on input line 168.
 
 
 
@@ -1365,13 +1456,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.167 
+l.168 
        [2]
-<GeneralSources/DataSplittingDiagram.pdf, id=100, 692.59853pt x 355.3797pt>
+<GeneralSources/DataSplittingDiagram.pdf, id=104, 692.59853pt x 355.3797pt>
 File: GeneralSources/DataSplittingDiagram.pdf Graphic file (type pdf)
 <use GeneralSources/DataSplittingDiagram.pdf>
 Package pdftex.def Info: GeneralSources/DataSplittingDiagram.pdf  used on input
- line 172.
+ line 173.
 (pdftex.def)             Requested size: 489.10307pt x 250.96025pt.
  (./manuscript.bbl
 Underfull \hbox (badness 7814) in paragraph at lines 38--45
@@ -1444,7 +1535,7 @@ Underfull \hbox (badness 5817) in paragraph at lines 130--137
 ) [4]
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 5 might be wrong on input line 263.
+(multicol)                Footnotes on page 5 might be wrong on input line 264.
 
 
 [5
@@ -1452,32 +1543,166 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.263 \end{definition}
+l.264 \end{definition}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.263 \end{definition}
-                      ] [6]
+l.264 \end{definition}
+                      ] [6
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.326 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.326 
+      ]
+Underfull \hbox (badness 5431) in paragraph at lines 333--333
+[]\OT1/cmr/m/n/12 Figure 6: []Template for Cele-coxib azo-
+ []
 
+
+Underfull \hbox (badness 5431) in paragraph at lines 364--364
+[]\OT1/cmr/m/n/12 Figure 7: []Template for Cele-coxib azo-
+ []
+
+[7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.379 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.379 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.379 
+      ]
+Underfull \hbox (badness 5431) in paragraph at lines 387--387
+[]\OT1/cmr/m/n/12 Figure 8: []Template for Cele-coxib azo-
+ []
+
+
+Overfull \hbox (19.27345pt too wide) in paragraph at lines 407--408
+ [][] 
+ []
+
+
+Underfull \hbox (badness 5431) in paragraph at lines 408--408
+[]\OT1/cmr/m/n/12 Figure 9: []Template for Cele-coxib azo-
+ []
+
+
+Overfull \hbox (33.8715pt too wide) in paragraph at lines 431--432
+ [][] 
+ []
+
+[8
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.447 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.447 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.447 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.447 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.447 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.447 
+      ]
+Overfull \hbox (17.71233pt too wide) in paragraph at lines 462--463
+ [][] 
+ []
+
+[9
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.485 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.485 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.485 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.485 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{table.7}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.485 \end{document}
+                    ] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./manuscript.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: 692F42A7A660767C1FBFEDA98F5A2CC0;484.
+(rerunfilecheck)             Checksum: CA1CAB0E8FC7CAC473BDCD49A9AAA783;629.
  ) 
 Here is how much of TeX's memory you used:
- 48093 strings out of 474116
- 1143912 string characters out of 5743682
- 1993187 words of memory out of 5000000
- 69691 multiletter control sequences out of 15000+600000
+ 49736 strings out of 474116
+ 1188671 string characters out of 5743682
+ 2083187 words of memory out of 5000000
+ 71292 multiletter control sequences out of 15000+600000
  570678 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,13n,101p,1608b,1641s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,15n,101p,1608b,1768s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
@@ -1495,10 +1720,10 @@ exlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
 live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
 ive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texliv
 e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on manuscript.pdf (9 pages, 249515 bytes).
+Output written on manuscript.pdf (12 pages, 268885 bytes).
 PDF statistics:
- 262 PDF objects out of 1000 (max. 8388607)
- 208 compressed objects within 3 object streams
- 47 named destinations out of 1000 (max. 500000)
- 55 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 346 PDF objects out of 1000 (max. 8388607)
+ 289 compressed objects within 3 object streams
+ 67 named destinations out of 1000 (max. 500000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 

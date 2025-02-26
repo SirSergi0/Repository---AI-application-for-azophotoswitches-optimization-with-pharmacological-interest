@@ -44,7 +44,6 @@ def RandomForest(dataFileName, NumberOfTrees, percentatgeErased, splitPercentatg
     PredictedDataFrame["activity_label"]  = TestingDataFrame['activity_label']
 
     # Computing the average 'predicted_activity_label'
-    MeanStandardValue = PredictedDataFrame["standard_value"].mean()
     PredictedDataFrame['predicted_activity_label'] = (PredictedDataFrame['PredictedValues'] > SplitStandardValue).astype(int)
 
     # Analising some statistics
