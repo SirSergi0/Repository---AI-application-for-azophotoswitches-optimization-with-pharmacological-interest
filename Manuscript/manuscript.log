@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  26 FEB 2025 22:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  1 MAR 2025 19:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1596,7 +1596,7 @@ Underfull \hbox (badness 5431) in paragraph at lines 387--387
  []
 
 
-Overfull \hbox (19.27345pt too wide) in paragraph at lines 407--408
+Overfull \hbox (21.17348pt too wide) in paragraph at lines 407--408
  [][] 
  []
 
@@ -1606,7 +1606,7 @@ Underfull \hbox (badness 5431) in paragraph at lines 408--408
  []
 
 
-Overfull \hbox (33.8715pt too wide) in paragraph at lines 431--432
+Overfull \hbox (35.77153pt too wide) in paragraph at lines 431--432
  [][] 
  []
 
@@ -1647,7 +1647,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has
                                                   \__shipout_drop_firstpage_...
 l.447 
       ]
-Overfull \hbox (17.71233pt too wide) in paragraph at lines 462--463
+Overfull \hbox (1.46825pt too wide) in paragraph at lines 453--454
+ [][] 
+ []
+
+
+Overfull \hbox (19.37485pt too wide) in paragraph at lines 462--463
  [][] 
  []
 
@@ -1698,11 +1703,11 @@ Package rerunfilecheck Info: File `manuscript.out' has not changed.
 Here is how much of TeX's memory you used:
  49736 strings out of 474116
  1188671 string characters out of 5743682
- 2083187 words of memory out of 5000000
+ 2084187 words of memory out of 5000000
  71292 multiletter control sequences out of 15000+600000
  570678 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,15n,101p,1608b,1768s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,15n,101p,1608b,1770s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
@@ -1720,7 +1725,7 @@ exlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
 live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
 ive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texliv
 e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on manuscript.pdf (12 pages, 268885 bytes).
+Output written on manuscript.pdf (12 pages, 269768 bytes).
 PDF statistics:
  346 PDF objects out of 1000 (max. 8388607)
  289 compressed objects within 3 object streams
