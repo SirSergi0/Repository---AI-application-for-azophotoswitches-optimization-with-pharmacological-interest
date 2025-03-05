@@ -73,26 +73,27 @@ def ChEMBLDataProcessingMacro(targetIDChEMBL, targetProperty, lowerTargetPropert
         dataImported  = pd.read_feather(dataFilePath + dataFileName + ".feather")
         standardUnits = dataImported['standard_units'].iloc[0]
     
-    # Computing the correlation coefficients with the selected method
-    if not silentMode: print("Computing the correlation coefficients using", correlationMethod, "method")
-    correlationDataFrame = (dataFiltered.drop('canonical_smiles', axis = 1)).corr(method = correlationMethod)['standard_value']
-    if not silentMode: print("Deleting descriptors with correlation factors below ", correlationLimitValue)
-    
-    # ploting the correlation factors histogram
-    if not silentMode: print(f"Ploting the correlation factors in ../Plots/{targetIDChEMBL}{dataFileName}CorrelationFactors.pdf")
-    plt.hist(correlationDataFrame, bins=100, color='purple', range = (-1,1), label=f"Number of descriptors {dataFiltered.shape[1]-1}")
-    plt.title('Correlation factors of the computed chemical descriptors')
-    plt.xlabel('Correlation Values')
-    plt.ylabel('Frequency')
-    plt.legend()
-    plt.savefig(f"../Plots/{dataFileName}CorrelationFactors.pdf", format = 'pdf')
-    plt.close()
+    if correlationLimitValue != 0:
+        # Computing the correlation coefficients with the selected method
+        if not silentMode: print("Computing the correlation coefficients using", correlationMethod, "method")
+        correlationDataFrame = (dataFiltered.drop('canonical_smiles', axis = 1)).corr(method = correlationMethod)['standard_value']
+        if not silentMode: print("Deleting descriptors with correlation factors below ", correlationLimitValue)
+        
+        # ploting the correlation factors histogram
+        if not silentMode: print(f"Ploting the correlation factors in ../Plots/{targetIDChEMBL}{dataFileName}CorrelationFactors.pdf")
+        plt.hist(correlationDataFrame, bins=100, color='purple', range = (-1,1), label=f"Number of descriptors {dataFiltered.shape[1]-1}")
+        plt.title('Correlation factors of the computed chemical descriptors')
+        plt.xlabel('Correlation Values')
+        plt.ylabel('Frequency')
+        plt.legend()
+        plt.savefig(f"../Plots/{dataFileName}CorrelationFactors.pdf", format = 'pdf')
+        plt.close()
 
-    # Deleting chemical descriptors with low correlating values
-    for iDescriptor, iCorrelationValue in correlationDataFrame.items():
-        if (abs(iCorrelationValue) < correlationLimitValue): dataFiltered = dataFiltered.drop(iDescriptor, axis = 1) 
-    if not silentMode: print("Number of remaining chemical desciptors =           ", dataFiltered.shape[1]-1,"\n")
-
+        # Deleting chemical descriptors with low correlating values
+        for iDescriptor, iCorrelationValue in correlationDataFrame.items():
+            if (abs(iCorrelationValue) < correlationLimitValue): dataFiltered = dataFiltered.drop(iDescriptor, axis = 1) 
+        if not silentMode: print("Number of remaining chemical desciptors =           ", dataFiltered.shape[1]-1,"\n")
+        
     # Computing gaps for data removal based on percentageEresed
     iSplitValueUnder, iSplitValueUpper = SplitAndPrintDataFrameMacro.findSplitDataFrame(dataFiltered, 'standard_value', percentageEresed)
 

@@ -1,0 +1,15 @@
+NumberOfTrees            : 250
+Erased Percentatge       : 0.0%
+Splitting proportion     : 1.0% is for testing
+minimumCorrelationFactor : 0.0
+Number of descriptors    : 3040
+Mean Squared Error       : 1802.7066122387275
+R-squared                : 0.8981647278626157
+True Positive            : 794
+False Positive           : 8
+True Negative            : 965
+False Negative           : 179
+True Positive Rate       : 0.816032887975334
+True Negative Rate       : 0.8435314685314685
+ClassificationAcuracy    : 0.9039054470709147
+MatthewsCorrelationFactor: 0.8205826867536483
