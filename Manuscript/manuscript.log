@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  2 MAR 2025 17:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  8 MAR 2025 16:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1242,6 +1242,49 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \colbreak@box=\box155
 \mc@col@check@num=\count387
 )
+(/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen360
+\captionmargin=\dimen361
+\caption@leftmargin=\dimen362
+\caption@rightmargin=\dimen363
+\caption@width=\dimen364
+\caption@indent=\dimen365
+\caption@parindent=\dimen366
+\caption@hangindent=\dimen367
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count388
+\c@continuedfloat=\count389
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+Package caption Info: Option `declare type' requires the `newfloat' package on 
+input line 32.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/newfloat/newfloat.sty
+Package: newfloat 2023/10/01 v1.2 Defining new floating environments (AR)
+Package newfloat Info: Unsupported document class, or \@chapter 
+(newfloat)             was already redefined by another package.
+Package newfloat Info: \@chapter = macro:->\def \Hy@next {\Hy@MakeCurrentHrefAu
+to {\Hy@chapapp *}\Hy@raisedlink {\hyper@anchorstart {\@currentHref }\hyper@anc
+horend }}\ifnum \c@secnumdepth >\m@ne \@ifundefined {if@mainmatter}\iftrue {\cs
+name if@mainmatter\endcsname }\let \Hy@next \relax \fi \fi \Hy@next \Hy@org@cha
+pter .
+Package newfloat Info: \Hy@org@chapter = macro:[#1]#2->\NR@gettitle {#1}\NR@cha
+pter [{#1}]{#2}.
+Package newfloat Info: \algocf@original@chapter = undefined.
+Package newfloat Info: `wrapfig' package detected.
+)
+Package newfloat Info: New float `scheme' with options `' on input line 32.
+\c@scheme=\count390
+Package newfloat Info: float type `scheme'=4 on input line 32.
+
 (/usr/local/texlive/2024/texmf-dist/tex/latex/achemso/achemso.sty
 Package: achemso 2024-01-30 v3.13g Support for ACS journals
 Package achemso Info: When writing a submission to an ACS journal, please
@@ -1255,7 +1298,7 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 \XKV@toks=\toks74
 \XKV@tempa@toks=\toks75
 )
-\XKV@depth=\count388
+\XKV@depth=\count391
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 \acs@bib@file=\write5
@@ -1265,7 +1308,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip83
 \bibsep=\skip84
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count389
+\c@NAT@ctr=\count392
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/achemso/natmove.sty
 Package: natmove 2010/01/15 v1.1a Automatic citation moving with natbib
@@ -1273,12 +1316,12 @@ Package: natmove 2010/01/15 v1.1a Automatic citation moving with natbib
 (/usr/local/texlive/2024/texmf-dist/tex/latex/mciteplus/mciteplus.sty
 Package: mciteplus 2013/09/13 v1.2 enhanced mcite
 \@mcitetmptoksA=\toks76
-\@mcitetmpdima=\dimen360
-\@mcitetmpdimb=\dimen361
-\@mcitetmpcnta=\count390
-\@mcitetmpcntb=\count391
-\c@mcitebibitemcount=\count392
-\c@mcitesubitemcount=\count393
+\@mcitetmpdima=\dimen368
+\@mcitetmpdimb=\dimen369
+\@mcitetmpcnta=\count393
+\@mcitetmpcntb=\count394
+\c@mcitebibitemcount=\count395
+\c@mcitesubitemcount=\count396
 
 ** mciteplus: Detected natbib.sty. Invoking hooks.
 )) (/usr/local/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
@@ -1286,48 +1329,44 @@ Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \ttl@box=\box156
 \beforetitleunit=\skip85
 \aftertitleunit=\skip86
-\ttl@plus=\dimen362
-\ttl@minus=\dimen363
+\ttl@plus=\dimen370
+\ttl@minus=\dimen371
 \ttl@toksa=\toks77
-\titlewidth=\dimen364
-\titlewidthlast=\dimen365
-\titlewidthfirst=\dimen366
+\titlewidth=\dimen372
+\titlewidthlast=\dimen373
+\titlewidthfirst=\dimen374
 )
-\c@definition=\count394
-\c@observation=\count395
-\c@reflection=\count396
-\c@PyPackage=\count397
-\c@book=\count398
+\c@definition=\count397
+\c@observation=\count398
+\c@reflection=\count399
+\c@PyPackage=\count400
+\c@book=\count401
 
-(./manuscript.aux
-
-LaTeX Warning: Label `tableCelecoxibFuran' multiply defined.
-
-)
+(./manuscript.aux)
 \openout1 = `manuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1365,16 +1404,16 @@ LaTeX Font Info:    ... okay on input line 90.
 
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count399
-\scratchdimen=\dimen367
+\scratchcounter=\count402
+\scratchdimen=\dimen375
 \scratchbox=\box157
-\nofMPsegments=\count400
-\nofMParguments=\count401
+\nofMPsegments=\count403
+\nofMParguments=\count404
 \everyMPshowfont=\toks78
-\MPscratchCnt=\count402
-\MPscratchDim=\dimen368
-\MPnumerator=\count403
-\makeMPintoPDFobject=\count404
+\MPscratchCnt=\count405
+\MPscratchDim=\dimen376
+\MPnumerator=\count406
+\makeMPintoPDFobject=\count407
 \everyMPtoPDFconversion=\toks79
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1385,8 +1424,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count405
-Package hyperref Info: Link coloring OFF on input line 90.
+\c@lstlisting=\count408
+Package hyperref Info: Link coloring OFF on input line 92.
 
 (./manuscript.out) (./manuscript.out)
 \@outlinefile=\write6
@@ -1397,35 +1436,39 @@ Package hyperref Info: Link coloring OFF on input line 90.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 90.
+ on input line 92.
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+Package newfloat Info: Trying Plan B...
+Package newfloat Info: `float' package detected.
 \openout5 = `acs-manuscript.bib'.
 
-\c@bibnote=\count406
+\c@bibnote=\count409
 <GeneralSources/UABLogo.png, id=27, 392.12303pt x 138.01239pt>
 File: GeneralSources/UABLogo.png Graphic file (type png)
 <use GeneralSources/UABLogo.png>
-Package pdftex.def Info: GeneralSources/UABLogo.png  used on input line 113.
+Package pdftex.def Info: GeneralSources/UABLogo.png  used on input line 115.
 (pdftex.def)             Requested size: 122.27576pt x 43.0361pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 113
+LaTeX Font Info:    Trying to load font information for U+msa on input line 115
 .
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 113
+LaTeX Font Info:    Trying to load font information for U+msb on input line 115
 .
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+esint on input line 1
-13.
+15.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 11
-3.
+5.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1438,17 +1481,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.119 \newpage
+l.121 \newpage
                [1] [2]
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.155 ...hanisms governing COX-2 interactions.\par
+l.157 ...hanisms governing COX-2 interactions.\par
                                                    [1]
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 2 might be wrong on input line 168.
+(multicol)                Footnotes on page 2 might be wrong on input line 170.
 
 
 
@@ -1456,27 +1499,20 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.168 
+l.170 
        [2]
 <GeneralSources/DataSplittingDiagram.pdf, id=104, 692.59853pt x 355.3797pt>
 File: GeneralSources/DataSplittingDiagram.pdf Graphic file (type pdf)
 <use GeneralSources/DataSplittingDiagram.pdf>
 Package pdftex.def Info: GeneralSources/DataSplittingDiagram.pdf  used on input
- line 173.
+ line 175.
 (pdftex.def)             Requested size: 489.10307pt x 250.96025pt.
  (./manuscript.bbl
 Underfull \hbox (badness 7814) in paragraph at lines 38--45
 []\OT1/cmr/m/n/12 Singh, S.; Ku-mar, R.; Payra, S.;
  []
 
-[3
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.45   et~al.]{AlphaFold2CommumityAssesment}
-                                             <./GeneralSources/DataSplittingDia
-gram.pdf>]
+[3 <./GeneralSources/DataSplittingDiagram.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 93--101
 []\OT1/cmr/m/n/12 National Can-cer In-sti-tute Def-i-ni-tion
  []
@@ -1533,160 +1569,35 @@ Underfull \hbox (badness 5817) in paragraph at lines 130--137
  []
 
 ) [4]
+Package hyperref Info: bookmark level for unknown scheme defaults to 0 on input
+ line 225.
+
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 5 might be wrong on input line 264.
+(multicol)                Footnotes on page 5 might be wrong on input line 275.
 
 
-[5
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.264 \end{definition}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.264 \end{definition}
-                      ] [6
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.326 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
- been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.326 
-      ]
-Underfull \hbox (badness 5431) in paragraph at lines 333--333
-[]\OT1/cmr/m/n/12 Figure 6: []Template for Cele-coxib azo-
- []
-
-
-Underfull \hbox (badness 5431) in paragraph at lines 364--364
-[]\OT1/cmr/m/n/12 Figure 7: []Template for Cele-coxib azo-
- []
-
-[7
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.379 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.379 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
- been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.379 
-      ]
-Underfull \hbox (badness 5431) in paragraph at lines 387--387
-[]\OT1/cmr/m/n/12 Figure 8: []Template for Cele-coxib azo-
- []
-
-
-Overfull \hbox (21.17348pt too wide) in paragraph at lines 407--408
+[5] [6] [7]
+Overfull \hbox (21.17348pt too wide) in paragraph at lines 417--418
  [][] 
  []
 
 
-Underfull \hbox (badness 5431) in paragraph at lines 408--408
-[]\OT1/cmr/m/n/12 Figure 9: []Template for Cele-coxib azo-
- []
-
-
-Overfull \hbox (35.77153pt too wide) in paragraph at lines 431--432
+Overfull \hbox (35.77153pt too wide) in paragraph at lines 442--443
  [][] 
  []
 
-[8
-pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.447 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has
- been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.447 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.447 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has
- been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.447 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.447 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has
- been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.447 
-      ]
-Overfull \hbox (1.46825pt too wide) in paragraph at lines 453--454
+[8]
+Overfull \hbox (1.46825pt too wide) in paragraph at lines 465--466
  [][] 
  []
 
 
-Overfull \hbox (23.92384pt too wide) in paragraph at lines 462--463
+Overfull \hbox (23.92384pt too wide) in paragraph at lines 475--476
  [][] 
  []
 
-[9
-pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
-as been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.485 \end{document}
-                    
-pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has
- been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.485 \end{document}
-                    
-pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
-as been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.485 \end{document}
-                    
-pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
-as been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.485 \end{document}
-                    
-pdfTeX warning (ext4): destination with the same identifier (name{table.7}) has
- been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.485 \end{document}
-                    ] 
+[9] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./manuscript.aux)
  ***********
@@ -1695,40 +1606,52 @@ L3 programming layer <2024-02-20>
  ***********
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: CA1CAB0E8FC7CAC473BDCD49A9AAA783;629.
  ) 
 Here is how much of TeX's memory you used:
- 49737 strings out of 474116
- 1188693 string characters out of 5743682
+ 51218 strings out of 474116
+ 1217699 string characters out of 5743682
  2084187 words of memory out of 5000000
- 71293 multiletter control sequences out of 15000+600000
+ 72751 multiletter control sequences out of 15000+600000
  570678 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,15n,101p,1608b,1776s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pf
-b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
-usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
-local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
-al/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
-texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
-exlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
-live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
-ive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texliv
-e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on manuscript.pdf (12 pages, 269856 bytes).
+ 99i,15n,101p,1608b,1859s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{scheme.caption.28} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{scheme.caption.23} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{scheme.caption.20} has been referenced but does not
+ exist, replaced by a fixed one
+
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
+usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
+usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb>
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
+usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
+cal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local
+/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
+xlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
+ve/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texliv
+e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/
+2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on manuscript.pdf (12 pages, 270467 bytes).
 PDF statistics:
- 346 PDF objects out of 1000 (max. 8388607)
- 289 compressed objects within 3 object streams
- 67 named destinations out of 1000 (max. 500000)
+ 364 PDF objects out of 1000 (max. 8388607)
+ 306 compressed objects within 4 object streams
+ 81 named destinations out of 1000 (max. 500000)
  63 words of extra memory for PDF output out of 10000 (max. 10000000)
 
