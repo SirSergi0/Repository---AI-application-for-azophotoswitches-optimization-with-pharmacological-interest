@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  13 FEB 2025 16:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  11 MAR 2025 15:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1299,7 +1299,7 @@ your preamble.
 \openout5 = `acs-Notes.bib'.
 
 \c@bibnote=\count400
-<GeneralSources/UABLogo.png, id=35, 392.12303pt x 138.01239pt>
+<GeneralSources/UABLogo.png, id=15, 392.12303pt x 138.01239pt>
 File: GeneralSources/UABLogo.png Graphic file (type png)
 <use GeneralSources/UABLogo.png>
 Package pdftex.def Info: GeneralSources/UABLogo.png  used on input line 107.
@@ -1336,29 +1336,84 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.119 \newpage
-               [1] [2
+               [1]
+
+Package natbib Warning: Citation `BookIC50' on page 2 undefined on input line 1
+37.
+
+
+Package natbib Warning: Citation `DescriptorsBook' on page 2 undefined on input
+ line 142.
+
+
+Package natbib Warning: Citation `ZagrebIndicesArticle' on page 2 undefined on 
+input line 188.
+
+
+Package natbib Warning: Citation `connectivityIndicesArticle' on page 2 undefin
+ed on input line 196.
+
+[2
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.197 \end{definition}
                       ]
+
+Package natbib Warning: Citation `RandicIndexArticle' on page 3 undefined on in
+put line 204.
+
+
+Package natbib Warning: Citation `DescriptorsBookClassification' on page 3 unde
+fined on input line 212.
+
+
+Package natbib Warning: Citation `BurdenIndicesArticle' on page 3 undefined on 
+input line 250.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 254--255
 [][]\OT1/cmr/bx/n/12 Definition 17. []\OT1/cmr/m/it/12 P[]VSA-like De-scrip-tor
 s:
  []
 
 [3]
+
+Package natbib Warning: Citation `DescriptorsBook' on page 4 undefined on input
+ line 258.
+
+
+Package natbib Warning: Citation `DescriptorsBook' on page 4 undefined on input
+ line 262.
+
+
+Package natbib Warning: Citation `DescriptorsBook' on page 4 undefined on input
+ line 266.
+
+
 Underfull \hbox (badness 5817) in paragraph at lines 266--272
 [][]\OT1/cmr/bx/n/12 Definition 20. []\OT1/cmr/m/it/12 Frac-tional Group Counts
 
  []
 
 
+Package natbib Warning: Citation `DescriptorsBook' on page 4 undefined on input
+ line 276.
+
+
 Underfull \hbox (badness 6493) in paragraph at lines 276--277
 [][]\OT1/cmr/bx/n/12 Definition 21. []\OT1/cmr/m/it/12 Atom-Centered Frag-ments
 
  []
+
+
+Package natbib Warning: Citation `DescriptorsBook' on page 4 undefined on input
+ line 280.
+
+
+Package natbib Warning: Citation `PharmacophoreDescriptorsBook' on page 4 undef
+ined on input line 284.
 
 [4
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
@@ -1371,15 +1426,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 308--309
 \OT1/cmr/m/it/12 quan-tify the chi-ral-ity (hand-ed-ness) of
  []
 
+
+Package natbib Warning: Citation `DescriptorsBookClassification' on page 5 unde
+fined on input line 321.
+
+
+Package natbib Warning: Citation `DefinitionCOX2CancerDictionary' on page 5 und
+efined on input line 370.
+
 [5{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }]
-<GeneralSources/COX-2Image.png, id=157, 192.72pt x 144.0582pt>
+<GeneralSources/COX-2Image.png, id=114, 192.72pt x 144.0582pt>
 File: GeneralSources/COX-2Image.png Graphic file (type png)
 <use GeneralSources/COX-2Image.png>
 Package pdftex.def Info: GeneralSources/COX-2Image.png  used on input line 394.
 
 (pdftex.def)             Requested size: 489.10307pt x 365.60477pt.
- [6
+
+
+Package natbib Warning: Citation `Cox2WikiImage' on page 6 undefined on input l
+ine 395.
+
+
+Package natbib Warning: Citation `Cox2WikiImage' on page 6 undefined on input l
+ine 395.
+
+[6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1391,7 +1463,11 @@ Overfull \hbox (7.92917pt too wide) in paragraph at lines 400--402
 mmatory
  []
 
-<GeneralSources/COXII-receptor.png, id=170, 319.4334pt x 303.7749pt>
+
+Package natbib Warning: Citation `Cox2InhibitorsReview' on page 7 undefined on 
+input line 410.
+
+<GeneralSources/COXII-receptor.png, id=123, 319.4334pt x 303.7749pt>
 File: GeneralSources/COXII-receptor.png Graphic file (type png)
 <use GeneralSources/COXII-receptor.png>
 Package pdftex.def Info: GeneralSources/COXII-receptor.png  used on input line 
@@ -1401,6 +1477,14 @@ Package pdftex.def Info: GeneralSources/COXII-receptor.png  used on input line
 Overfull \hbox (5.0pt too wide) in paragraph at lines 414--415
  [][] 
  []
+
+
+Package natbib Warning: Citation `Cox2BondingSiteFigure' on page 7 undefined on
+ input line 415.
+
+
+Package natbib Warning: Citation `Cox2BondingSiteFigure' on page 7 undefined on
+ input line 415.
 
 [7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
@@ -1421,90 +1505,4 @@ s been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.465 \begin{align}
                    
-pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.465 \begin{align}
-                   
-pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.465 \begin{align}
-                    <./GeneralSources/COXII-receptor.png>]
-Overfull \hbox (58.04532pt too wide) in paragraph at lines 490--491
-[][]
- []
-
-<GeneralSources/Point_group_determination_flowchart_v2.png, id=208, 641.39626pt
- x 901.86937pt>
-File: GeneralSources/Point_group_determination_flowchart_v2.png Graphic file (t
-ype png)
-<use GeneralSources/Point_group_determination_flowchart_v2.png>
-Package pdftex.def Info: GeneralSources/Point_group_determination_flowchart_v2.
-png  used on input line 498.
-(pdftex.def)             Requested size: 244.55153pt x 343.85612pt.
-
-Overfull \hbox (5.0pt too wide) in paragraph at lines 498--499
- [][] 
- []
-
-[9
-pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.502 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.502 
-      ] [10
-pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
-as been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.508 \newpage
-               <./GeneralSources/Point_group_determination_flowchart_v2.png>]
-Underfull \hbox (badness 7504) in paragraph at lines 530--531
-\OT1/cmr/m/it/12 dis-card non-relevant data, as some
- []
-
-[11]
-
-LaTeX Warning: File `../Plots/DataGapRepresentationIC50percentageEresed25.0Gap_
-min_15Gap_max_50.pdf' not found on input line 547.
-
-
-./Notes.tex:547: Package pdftex.def Error: File `../Plots/DataGapRepresentation
-IC50percentageEresed25.0Gap_min_15Gap_max_50.pdf' not found: using draft settin
-g.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.547 ...entageEresed25.0Gap_min_15Gap_max_50.pdf}
-                                                  
-? 
-./Notes.tex:547: Emergency stop.
- ...                                              
-                                                  
-l.547 ...entageEresed25.0Gap_min_15Gap_max_50.pdf}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
- 
-Here is how much of TeX's memory you used:
- 49332 strings out of 474116
- 1167805 string characters out of 5743682
- 1994187 words of memory out of 5000000
- 70877 multiletter control sequences out of 15000+600000
- 571852 words of font info for 96 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 130i,20n,124p,1603b,1888s stack positions out of 10000i,1000n,20000p,200000b,200000s
-./Notes.tex:547:  ==> Fatal error occurred, no output PDF file produced!
+pdfTeX warning (ext4): de
