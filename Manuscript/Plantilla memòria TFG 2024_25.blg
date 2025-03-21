@@ -1,0 +1,86 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Plantilla memòria TFG 2024_25.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: Plantilla_memòria_TFG_2024_25-blx.bib
+Database file #2: references.bib
+Biblatex version: 3.19
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Too many commas in name 1 of "Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND." for entry NationalLibraryOfMedicineGeneralArticle
+while executing---line 2815 of file biblatex.bst
+Too many commas in name 1 of "Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND." for entry NationalLibraryOfMedicineGeneralArticle
+while executing---line 2815 of file biblatex.bst
+Too many commas in name 1 of "Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND." for entry NationalLibraryOfMedicineGeneralArticle
+while executing---line 2815 of file biblatex.bst
+Too many commas in name 1 of "Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND." for entry NationalLibraryOfMedicineGeneralArticle
+while executing---line 2815 of file biblatex.bst
+Too many commas in name 1 of "Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND." for entry NationalLibraryOfMedicineGeneralArticle
+while executing---line 2815 of file biblatex.bst
+Too many commas in name 1 of "Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND." for entry NationalLibraryOfMedicineGeneralArticle
+while executing---line 2815 of file biblatex.bst
+Too many commas in name 1 of "Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND." for entry NationalLibraryOfMedicineGeneralArticle
+while executing---line 2815 of file biblatex.bst
+Too many commas in name 1 of "Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND." for entry NationalLibraryOfMedicineGeneralArticle
+while executing---line 2815 of file biblatex.bst
+Too many commas in name 1 of "Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND." for entry NationalLibraryOfMedicineGeneralArticle
+while executing---line 2815 of file biblatex.bst
+Too many commas in name 1 of "Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND." for entry NationalLibraryOfMedicineGeneralArticle
+while executing---line 2815 of file biblatex.bst
+You've used 17 entries,
+            6399 wiz_defined-function locations,
+            1358 strings with 20937 characters,
+and the built_in function-call counts, 180364 in all, are:
+= -- 15776
+> -- 2665
+< -- 712
++ -- 6172
+- -- 1214
+* -- 11765
+:= -- 21510
+add.period$ -- 0
+call.type$ -- 17
+change.case$ -- 524
+chr.to.int$ -- 73
+cite$ -- 32
+duplicate$ -- 18827
+empty$ -- 14799
+format.name$ -- 1397
+if$ -- 35526
+int.to.chr$ -- 0
+int.to.str$ -- 43
+missing$ -- 0
+newline$ -- 728
+num.names$ -- 1026
+pop$ -- 6332
+preamble$ -- 1
+purify$ -- 656
+quote$ -- 0
+skip$ -- 3948
+stack$ -- 0
+substring$ -- 29303
+swap$ -- 3039
+text.length$ -- 403
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 566
+warning$ -- 0
+while$ -- 2597
+width$ -- 0
+write$ -- 712
+(There were 10 error messages)
