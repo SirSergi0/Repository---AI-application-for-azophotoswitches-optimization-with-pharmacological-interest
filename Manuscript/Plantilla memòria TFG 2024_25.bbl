@@ -17,223 +17,102 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
-  \entry{AlphaFold2BiologyAndMedicine}{article}{}
-    \name{author}{2}{}{%
-      {{hash=BM}{%
-         family={Baek},
-         familyi={B\bibinitperiod},
-         given={Minkyung},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=ea}{%
-         prefix={et},
-         prefixi={e\bibinitperiod},
-         family={al.},
-         familyi={a\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BMea1}
-    \strng{fullhash}{BMea1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1038/s41392-023-01381-z
-    \endverb
-    \field{pages}{1–10}
-    \field{title}{AlphaFold2 and Its Applications in the Fields of Biology and
-  Medicine}
-    \field{volume}{8}
-    \field{journaltitle}{Signal Transduction and Targeted Therapy}
-    \field{year}{2023}
-  \endentry
-
-  \entry{NationalLibraryOfMedicineGeneralArticle}{article}{}
+  \entry{Cox2Location}{article}{}
     \name{author}{4}{}{%
-      {{hash=SS}{%
-         family={Singh},
-         familyi={S\bibinitperiod},
-         given={Shruti},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=KR}{%
-         family={Kumar},
+      {{hash=KS}{%
+         family={Kase},
          familyi={K\bibinitperiod},
-         given={Rajesh},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=PS}{%
-         family={Payra},
-         familyi={P\bibinitperiod},
-         given={Shuvasree},
+         given={Satoshi},
          giveni={S\bibinitperiod},
       }}%
-      {{hash=SSK}{%
-         family={Singh},
+      {{hash=SW}{%
+         family={Saito},
          familyi={S\bibinitperiod},
-         given={Sunil\bibnamedelima K},
-         giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+         given={Wataru},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=OS}{%
+         family={Ohno},
+         familyi={O\bibinitperiod},
+         given={Shigeaki},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=IS}{%
+         family={Ishida},
+         familyi={I\bibinitperiod},
+         given={Susumu},
+         giveni={S\bibinitperiod},
       }}%
     }
-    \list{language}{1}{%
-      {eng}%
-    }
-    \keyw{ai ethics; artificial intelligence; convoluted neural networks; drug
-  discovery; machine learning; personalized medicine; pharmacological research}
-    \strng{namehash}{SSKRPSSSK1}
-    \strng{fullhash}{SSKRPSSSK1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Artificial intelligence (AI) has transformed pharmacological research
-  through machine learning, deep learning, and natural language processing.
-  These advancements have greatly influenced drug discovery, development, and
-  precision medicine. AI algorithms analyze vast biomedical data identifying
-  potential drug targets, predicting efficacy, and optimizing lead compounds.
-  AI has diverse applications in pharmacological research, including target
-  identification, drug repurposing, virtual screening, de novo drug design,
-  toxicity prediction, and personalized medicine. AI improves patient
-  selection, trial design, and real-time data analysis in clinical trials,
-  leading to enhanced safety and efficacy outcomes. Post-marketing surveillance
-  utilizes AI-based systems to monitor adverse events, detect drug
-  interactions, and support pharmacovigilance efforts. Machine learning models
-  extract patterns from complex datasets, enabling accurate predictions and
-  informed decision-making, thus accelerating drug discovery. Deep learning,
-  specifically convolutional neural networks (CNN), excels in image analysis,
-  aiding biomarker identification and optimizing drug formulation. Natural
-  language processing facilitates the mining and analysis of scientific
-  literature, unlocking valuable insights and information. However, the
-  adoption of AI in pharmacological research raises ethical considerations.
-  Ensuring data privacy and security, addressing algorithm bias and
-  transparency, obtaining informed consent, and maintaining human oversight in
-  decision-making are crucial ethical concerns. The responsible deployment of
-  AI necessitates robust frameworks and regulations. The future of AI in
-  pharmacological research is promising, with integration with emerging
-  technologies like genomics, proteomics, and metabolomics offering the
-  potential for personalized medicine and targeted therapies. Collaboration
-  among academia, industry, and regulatory bodies is essential for the ethical
-  implementation of AI in drug discovery and development. Continuous research
-  and development in AI techniques and comprehensive training programs will
-  empower scientists and healthcare professionals to fully exploit AI's
-  potential, leading to improved patient outcomes and innovative
-  pharmacological interventions.%
-    }
-    \verb{doi}
-    \verb 10.7759/cureus.44359
-    \endverb
-    \field{issn}{2168-8184 (Print); 2168-8184 (Electronic); 2168-8184
-  (Linking)}
-    \field{number}{8}
-    \field{pages}{e44359}
-    \field{title}{Artificial Intelligence and Machine Learning in
-  Pharmacological Research: Bridging the Gap Between Data and Drug Discovery.}
-    \field{volume}{15}
-    \list{location}{1}{%
-      {Department of Pharmacology, All India Institute of Medical Sciences,
-  Patna, IND.; Department of Pharmacology, All India Institute of Medical
-  Sciences, Patna, IND.; Department of Pharmacology, All India Institute of
-  Medical Sciences, Patna, IND.; Department of Pharmacology, All India
-  Institute of Medical Sciences, Patna, IND.}%
-    }
-    \field{journaltitle}{Cureus}
-    \field{year}{2023}
-    \warn{\item Invalid format of field 'date' \item Invalid format of field
-  'date' \item Invalid format of field 'month'}
-  \endentry
-
-  \entry{AlphaFold2CommumityAssesment}{article}{}
-    \name{author}{2}{}{%
-      {{hash=TK}{%
-         family={Tunyasuvunakool},
-         familyi={T\bibinitperiod},
-         given={Kathryn},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=ea}{%
-         prefix={et},
-         prefixi={e\bibinitperiod},
-         family={al.},
-         familyi={a\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{TKea1}
-    \strng{fullhash}{TKea1}
+    \strng{namehash}{KSSWOSIS1}
+    \strng{fullhash}{KSSWOSIS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \verb{doi}
-    \verb 10.1038/s41594-022-00849-w
+    \verb 10.1097/iae.0b013e3181c59698
     \endverb
-    \field{pages}{1155–1163}
-    \field{title}{A Structural Biology Community Assessment of AlphaFold2
-  Applications}
-    \field{volume}{29}
-    \field{journaltitle}{Nature Structural and Molecular Biology}
-    \field{year}{2022}
+    \field{number}{5}
+    \field{pages}{719\bibrangedash 723}
+    \field{title}{Cyclo-oxygenase-2 expression in human idiopathic epiretinal
+  membrane}
+    \field{volume}{30}
+    \field{journaltitle}{Retina}
+    \field{year}{2010}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{BookIC50}{incollection}{}
+  \entry{DefinitionCOX2CancerDictionary}{misc}{}
     \name{author}{1}{}{%
-      {{hash=SDC}{%
-         family={Swinney},
-         familyi={S\bibinitperiod},
-         given={David\bibnamedelima C.},
-         giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+      {{hash=N}{%
+         family={{National Cancer Institute}},
+         familyi={N\bibinitperiod},
       }}%
     }
-    \name{editor}{1}{}{%
-      {{hash=MJE}{%
-         family={Macor},
-         familyi={M\bibinitperiod},
-         given={John\bibnamedelima E.},
-         giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+    \strng{namehash}{N1}
+    \strng{fullhash}{N1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2024-10-09}
+    \field{title}{Definition of COX-2 - NCI Dictionary of Cancer Terms}
+    \verb{url}
+    \verb https://www.cancer.gov/publications/dictionaries/cancer-terms/def/cox
+    \verb -2
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{Cox2InhibitorsReview}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DNM}{%
+         family={Davies},
+         familyi={D\bibinitperiod},
+         given={Nicholas\bibnamedelima M},
+         giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=JF}{%
+         family={Jamali},
+         familyi={J\bibinitperiod},
+         given={Fakhreddin},
+         giveni={F\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
-      {Academic Press}%
+      {Elsevier}%
     }
-    \keyw{Molecular mechanism of action, Mechanism-based toxicity, Binding
-  kinetics, Agonist, Antagonist}
-    \strng{namehash}{SDC1}
-    \strng{fullhash}{SDC1}
+    \strng{namehash}{DNMJF1}
+    \strng{fullhash}{DNMJF1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Publisher Summary This chapter focuses on the molecular mechanism of action
-  (MMoA) in drug discovery. MMoA of a medicine is the connection of the
-  molecular interactions between the therapeutic treatment and the biological
-  target that yields the physiological response. Mechanism-based toxicity is a
-  potential concern with most human targets. MMoAs provide the means to
-  minimize the mechanism-based toxicity while retaining the desired response.
-  Competition with endogenous effectors, uncompetitive inhibition, partial
-  agonism, functional selectivity, and allosteric partial antagonism are
-  mechanisms in which the physiological environment can help to shape the
-  dose‚Äìresponse curves to minimize mechanism-based toxicity while
-  retaining sufficient drug efficacy. Fast kinetics can minimize
-  mechanism-based toxicity by enabling equilibrium competition that may be
-  advantageous if sufficient efficacy can be maintained. This is exemplified by
-  a number of medicines including atypical antipsychotics working through the
-  D2 receptor, nonsteroidal anti-inflammatory drugs, such as ibuprofen, and
-  N-methyl-D-aspartate antagonists. A challenge for medicinal chemists is that
-  many of the molecular interactions that contribute to binding kinetics and
-  MMoA are dynamic, involving structural movements and conformational
-  rearrangements. Some insights are provided by studies with influenza B
-  neuraminidase, which reveals rotations in residues important for binding, and
-  the enoyl-acyl carrier protein (ACP) reductase of Mycobacterium tuberculosis
-  (InhA), which shows a loop ordering involved in the slow kinetics.%
-    }
     \verb{doi}
-    \verb https://doi.org/10.1016/B978-0-12-386009-5.00009-6
+    \verb 10.1016/S0163-7258(00)00100-0
     \endverb
-    \field{issn}{0065-7743}
-    \field{pages}{301\bibrangedash 317}
-    \field{series}{Annual Reports in Medicinal Chemistry}
-    \field{title}{Chapter 18 - Molecular Mechanism of Action (MMoA) in Drug
-  Discovery}
-    \verb{url}
-    \verb https://www.sciencedirect.com/science/article/pii/B978012386009500009
-    \verb 6
-    \endverb
-    \field{volume}{46}
-    \field{year}{2011}
+    \field{number}{2}
+    \field{pages}{133\bibrangedash 155}
+    \field{title}{COX-2 selective inhibitors: New developments in nonsteroidal
+  anti-inflammatory drugs}
+    \field{volume}{89}
+    \field{journaltitle}{Pharmacology \& Therapeutics}
+    \field{year}{2000}
   \endentry
 
   \entry{ChemblDatabase}{article}{}
@@ -473,6 +352,583 @@
     \field{year}{2022}
   \endentry
 
+  \entry{MachineLearningRandomForest}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BL}{%
+         family={Breiman},
+         familyi={B\bibinitperiod},
+         given={Leo},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{BL1}
+    \strng{fullhash}{BL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1023/A:1010933404324
+    \endverb
+    \field{number}{1}
+    \field{pages}{5\bibrangedash 32}
+    \field{title}{Random Forests}
+    \verb{url}
+    \verb https://link.springer.com/article/10.1023/A%3A1010933404324
+    \endverb
+    \field{volume}{45}
+    \field{journaltitle}{Machine Learning}
+    \field{year}{2001}
+  \endentry
+
+  \entry{UAB_ComputationalChemistry}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=C}{%
+         family={{Computational Chemistry Department}},
+         familyi={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{C1}
+    \strng{fullhash}{C1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{Website of the Computational Chemistry Department,
+  UAB}
+    \field{title}{Computational Chemistry Department, Universitat Autònoma de
+  Barcelona}
+    \verb{url}
+    \verb https://www.uab.cat/
+    \endverb
+    \field{year}{2025}
+  \endentry
+
+  \entry{AlphaFold2BiologyAndMedicine}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BM}{%
+         family={Baek},
+         familyi={B\bibinitperiod},
+         given={Minkyung},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=ea}{%
+         prefix={et},
+         prefixi={e\bibinitperiod},
+         family={al.},
+         familyi={a\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BMea1}
+    \strng{fullhash}{BMea1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1038/s41392-023-01381-z
+    \endverb
+    \field{pages}{1–10}
+    \field{title}{AlphaFold2 and Its Applications in the Fields of Biology and
+  Medicine}
+    \field{volume}{8}
+    \field{journaltitle}{Signal Transduction and Targeted Therapy}
+    \field{year}{2023}
+  \endentry
+
+  \entry{NationalLibraryOfMedicineGeneralArticle}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SS}{%
+         family={Singh},
+         familyi={S\bibinitperiod},
+         given={Shruti},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KR}{%
+         family={Kumar},
+         familyi={K\bibinitperiod},
+         given={Rajesh},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Payra},
+         familyi={P\bibinitperiod},
+         given={Shuvasree},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SSK}{%
+         family={Singh},
+         familyi={S\bibinitperiod},
+         given={Sunil\bibnamedelima K},
+         giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {eng}%
+    }
+    \keyw{ai ethics; artificial intelligence; convoluted neural networks; drug
+  discovery; machine learning; personalized medicine; pharmacological research}
+    \strng{namehash}{SSKRPSSSK1}
+    \strng{fullhash}{SSKRPSSSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Artificial intelligence (AI) has transformed pharmacological research
+  through machine learning, deep learning, and natural language processing.
+  These advancements have greatly influenced drug discovery, development, and
+  precision medicine. AI algorithms analyze vast biomedical data identifying
+  potential drug targets, predicting efficacy, and optimizing lead compounds.
+  AI has diverse applications in pharmacological research, including target
+  identification, drug repurposing, virtual screening, de novo drug design,
+  toxicity prediction, and personalized medicine. AI improves patient
+  selection, trial design, and real-time data analysis in clinical trials,
+  leading to enhanced safety and efficacy outcomes. Post-marketing surveillance
+  utilizes AI-based systems to monitor adverse events, detect drug
+  interactions, and support pharmacovigilance efforts. Machine learning models
+  extract patterns from complex datasets, enabling accurate predictions and
+  informed decision-making, thus accelerating drug discovery. Deep learning,
+  specifically convolutional neural networks (CNN), excels in image analysis,
+  aiding biomarker identification and optimizing drug formulation. Natural
+  language processing facilitates the mining and analysis of scientific
+  literature, unlocking valuable insights and information. However, the
+  adoption of AI in pharmacological research raises ethical considerations.
+  Ensuring data privacy and security, addressing algorithm bias and
+  transparency, obtaining informed consent, and maintaining human oversight in
+  decision-making are crucial ethical concerns. The responsible deployment of
+  AI necessitates robust frameworks and regulations. The future of AI in
+  pharmacological research is promising, with integration with emerging
+  technologies like genomics, proteomics, and metabolomics offering the
+  potential for personalized medicine and targeted therapies. Collaboration
+  among academia, industry, and regulatory bodies is essential for the ethical
+  implementation of AI in drug discovery and development. Continuous research
+  and development in AI techniques and comprehensive training programs will
+  empower scientists and healthcare professionals to fully exploit AI's
+  potential, leading to improved patient outcomes and innovative
+  pharmacological interventions.%
+    }
+    \verb{doi}
+    \verb 10.7759/cureus.44359
+    \endverb
+    \field{issn}{2168-8184 (Print); 2168-8184 (Electronic); 2168-8184
+  (Linking)}
+    \field{number}{8}
+    \field{pages}{e44359}
+    \field{title}{Artificial Intelligence and Machine Learning in
+  Pharmacological Research: Bridging the Gap Between Data and Drug Discovery.}
+    \field{volume}{15}
+    \list{location}{1}{%
+      {Department of Pharmacology, All India Institute of Medical Sciences,
+  Patna, IND.; Department of Pharmacology, All India Institute of Medical
+  Sciences, Patna, IND.; Department of Pharmacology, All India Institute of
+  Medical Sciences, Patna, IND.; Department of Pharmacology, All India
+  Institute of Medical Sciences, Patna, IND.}%
+    }
+    \field{journaltitle}{Cureus}
+    \field{year}{2023}
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date' \item Invalid format of field 'month'}
+  \endentry
+
+  \entry{AlphaFold2CommumityAssesment}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TK}{%
+         family={Tunyasuvunakool},
+         familyi={T\bibinitperiod},
+         given={Kathryn},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=ea}{%
+         prefix={et},
+         prefixi={e\bibinitperiod},
+         family={al.},
+         familyi={a\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TKea1}
+    \strng{fullhash}{TKea1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1038/s41594-022-00849-w
+    \endverb
+    \field{pages}{1155–1163}
+    \field{title}{A Structural Biology Community Assessment of AlphaFold2
+  Applications}
+    \field{volume}{29}
+    \field{journaltitle}{Nature Structural and Molecular Biology}
+    \field{year}{2022}
+  \endentry
+
+  \entry{NobelPrizeBale}{article}{}
+    \name{author}{11}{}{%
+      {{hash=BJB}{%
+         family={Bale},
+         familyi={B\bibinitperiod},
+         given={Jacob\bibnamedelima B.},
+         giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Gonen},
+         familyi={G\bibinitperiod},
+         given={Shane},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Yifan},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=SW}{%
+         family={Sheffler},
+         familyi={S\bibinitperiod},
+         given={William},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=ED}{%
+         family={Ellis},
+         familyi={E\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=TC}{%
+         family={Thomas},
+         familyi={T\bibinitperiod},
+         given={Charles},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=CD}{%
+         family={Cascio},
+         familyi={C\bibinitperiod},
+         given={Duilio},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=YTO}{%
+         family={Yeates},
+         familyi={Y\bibinitperiod},
+         given={Todd\bibnamedelima O.},
+         giveni={T\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Gonen},
+         familyi={G\bibinitperiod},
+         given={Tamir},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KNP}{%
+         family={King},
+         familyi={K\bibinitperiod},
+         given={Neil\bibnamedelima P.},
+         giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Baker},
+         familyi={B\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJB+1}
+    \strng{fullhash}{BJBGSLYSWEDTCCDYTOGTKNPBD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1038/nature18010
+    \endverb
+    \field{number}{7465}
+    \field{pages}{705\bibrangedash 710}
+    \field{title}{Design of a hyperstable 60-subunit protein dodecahedron}
+    \field{volume}{500}
+    \field{journaltitle}{Nature}
+    \field{year}{2016}
+  \endentry
+
+  \entry{NobelPrizeJumper}{article}{}
+    \name{author}{34}{}{%
+      {{hash=JJ}{%
+         family={Jumper},
+         familyi={J\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ER}{%
+         family={Evans},
+         familyi={E\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Pritzel},
+         familyi={P\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Green},
+         familyi={G\bibinitperiod},
+         given={Tim},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Figurnov},
+         familyi={F\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RO}{%
+         family={Ronneberger},
+         familyi={R\bibinitperiod},
+         given={Olaf},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=TK}{%
+         family={Tunyasuvunakool},
+         familyi={T\bibinitperiod},
+         given={Kathryn},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Bates},
+         familyi={B\bibinitperiod},
+         given={Russ},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=ZA}{%
+         family={{\v{Z}}{\'\i}dek},
+         familyi={{\v{Z}}\bibinitperiod},
+         given={Augustin},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Potapenko},
+         familyi={P\bibinitperiod},
+         given={Anna},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Bridgland},
+         familyi={B\bibinitperiod},
+         given={Alex},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={Meyer},
+         familyi={M\bibinitperiod},
+         given={Clemens},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KSAA}{%
+         family={Kohl},
+         familyi={K\bibinitperiod},
+         given={Simon A.\bibnamedelima A.},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  A\bibinitperiod},
+      }}%
+      {{hash=BAJ}{%
+         family={Ballard},
+         familyi={B\bibinitperiod},
+         given={Andrew\bibnamedelima J.},
+         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Cowie},
+         familyi={C\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RPB}{%
+         family={Romera-Paredes},
+         familyi={R\bibinithyphendelim P\bibinitperiod},
+         given={Bernardino},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=NS}{%
+         family={Nikolov},
+         familyi={N\bibinitperiod},
+         given={Stanislav},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={Jain},
+         familyi={J\bibinitperiod},
+         given={Rishub},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=AJ}{%
+         family={Adler},
+         familyi={A\bibinitperiod},
+         given={Jonas},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BT}{%
+         family={Back},
+         familyi={B\bibinitperiod},
+         given={Trevor},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Petersen},
+         familyi={P\bibinitperiod},
+         given={Stig},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=RD}{%
+         family={Reiman},
+         familyi={R\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CE}{%
+         family={Clancy},
+         familyi={C\bibinitperiod},
+         given={Ellen},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=ZM}{%
+         family={Zielinski},
+         familyi={Z\bibinitperiod},
+         given={Michal},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Steinegger},
+         familyi={S\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Pacholska},
+         familyi={P\bibinitperiod},
+         given={Michalina},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BT}{%
+         family={Berghammer},
+         familyi={B\bibinitperiod},
+         given={Tamas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bodenstein},
+         familyi={B\bibinitperiod},
+         given={Sebastian},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Silver},
+         familyi={S\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=VO}{%
+         family={Vinyals},
+         familyi={V\bibinitperiod},
+         given={Oriol},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=SAW}{%
+         family={Senior},
+         familyi={S\bibinitperiod},
+         given={Andrew\bibnamedelima W.},
+         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kavukcuoglu},
+         familyi={K\bibinitperiod},
+         given={Koray},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=KP}{%
+         family={Kohli},
+         familyi={K\bibinitperiod},
+         given={Pushmeet},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Hassabis},
+         familyi={H\bibinitperiod},
+         given={Demis},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JJ+1}
+  \strng{fullhash}{JJERPAGTFMROTKBRZAPABAMCKSAABAJCARPBNSJRAJBTPSRDCEZMSMPMBTBSSDVOSAWKKKPHD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1038/s41586-021-03819-2
+    \endverb
+    \field{number}{7873}
+    \field{pages}{583\bibrangedash 589}
+    \field{title}{Highly accurate protein structure prediction with AlphaFold}
+    \field{volume}{596}
+    \field{journaltitle}{Nature}
+    \field{year}{2021}
+  \endentry
+
+  \entry{BookIC50}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=SDC}{%
+         family={Swinney},
+         familyi={S\bibinitperiod},
+         given={David\bibnamedelima C.},
+         giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=MJE}{%
+         family={Macor},
+         familyi={M\bibinitperiod},
+         given={John\bibnamedelima E.},
+         giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Academic Press}%
+    }
+    \keyw{Molecular mechanism of action, Mechanism-based toxicity, Binding
+  kinetics, Agonist, Antagonist}
+    \strng{namehash}{SDC1}
+    \strng{fullhash}{SDC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Publisher Summary This chapter focuses on the molecular mechanism of action
+  (MMoA) in drug discovery. MMoA of a medicine is the connection of the
+  molecular interactions between the therapeutic treatment and the biological
+  target that yields the physiological response. Mechanism-based toxicity is a
+  potential concern with most human targets. MMoAs provide the means to
+  minimize the mechanism-based toxicity while retaining the desired response.
+  Competition with endogenous effectors, uncompetitive inhibition, partial
+  agonism, functional selectivity, and allosteric partial antagonism are
+  mechanisms in which the physiological environment can help to shape the
+  dose‚Äìresponse curves to minimize mechanism-based toxicity while
+  retaining sufficient drug efficacy. Fast kinetics can minimize
+  mechanism-based toxicity by enabling equilibrium competition that may be
+  advantageous if sufficient efficacy can be maintained. This is exemplified by
+  a number of medicines including atypical antipsychotics working through the
+  D2 receptor, nonsteroidal anti-inflammatory drugs, such as ibuprofen, and
+  N-methyl-D-aspartate antagonists. A challenge for medicinal chemists is that
+  many of the molecular interactions that contribute to binding kinetics and
+  MMoA are dynamic, involving structural movements and conformational
+  rearrangements. Some insights are provided by studies with influenza B
+  neuraminidase, which reveals rotations in residues important for binding, and
+  the enoyl-acyl carrier protein (ACP) reductase of Mycobacterium tuberculosis
+  (InhA), which shows a loop ordering involved in the slow kinetics.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/B978-0-12-386009-5.00009-6
+    \endverb
+    \field{issn}{0065-7743}
+    \field{pages}{301\bibrangedash 317}
+    \field{series}{Annual Reports in Medicinal Chemistry}
+    \field{title}{Chapter 18 - Molecular Mechanism of Action (MMoA) in Drug
+  Discovery}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/B978012386009500009
+    \verb 6
+    \endverb
+    \field{volume}{46}
+    \field{year}{2011}
+  \endentry
+
   \entry{DescriptorsBookClassification}{book}{}
     \name{author}{2}{}{%
       {{hash=TR}{%
@@ -505,90 +961,6 @@
       {Weinheim, Germany}%
     }
     \field{year}{2009}
-  \endentry
-
-  \entry{DefinitionCOX2CancerDictionary}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=N}{%
-         family={{National Cancer Institute}},
-         familyi={N\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{N1}
-    \strng{fullhash}{N1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{note}{Accessed: 2024-10-09}
-    \field{title}{Definition of COX-2 - NCI Dictionary of Cancer Terms}
-    \verb{url}
-    \verb https://www.cancer.gov/publications/dictionaries/cancer-terms/def/cox
-    \verb -2
-    \endverb
-    \field{year}{2024}
-  \endentry
-
-  \entry{Cox2InhibitorsReview}{article}{}
-    \name{author}{2}{}{%
-      {{hash=DNM}{%
-         family={Davies},
-         familyi={D\bibinitperiod},
-         given={Nicholas\bibnamedelima M},
-         giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=JF}{%
-         family={Jamali},
-         familyi={J\bibinitperiod},
-         given={Fakhreddin},
-         giveni={F\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier}%
-    }
-    \strng{namehash}{DNMJF1}
-    \strng{fullhash}{DNMJF1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1016/S0163-7258(00)00100-0
-    \endverb
-    \field{number}{2}
-    \field{pages}{133\bibrangedash 155}
-    \field{title}{COX-2 selective inhibitors: New developments in nonsteroidal
-  anti-inflammatory drugs}
-    \field{volume}{89}
-    \field{journaltitle}{Pharmacology \& Therapeutics}
-    \field{year}{2000}
-  \endentry
-
-  \entry{MachineLearningRandomForest}{article}{}
-    \name{author}{1}{}{%
-      {{hash=BL}{%
-         family={Breiman},
-         familyi={B\bibinitperiod},
-         given={Leo},
-         giveni={L\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Springer}%
-    }
-    \strng{namehash}{BL1}
-    \strng{fullhash}{BL1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1023/A:1010933404324
-    \endverb
-    \field{number}{1}
-    \field{pages}{5\bibrangedash 32}
-    \field{title}{Random Forests}
-    \verb{url}
-    \verb https://link.springer.com/article/10.1023/A%3A1010933404324
-    \endverb
-    \field{volume}{45}
-    \field{journaltitle}{Machine Learning}
-    \field{year}{2001}
   \endentry
 
   \entry{GitHub}{misc}{}

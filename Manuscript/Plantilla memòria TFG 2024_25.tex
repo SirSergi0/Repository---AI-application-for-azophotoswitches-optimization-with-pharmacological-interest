@@ -110,8 +110,8 @@
 
 \makenoidxglossaries
 
-\newacronym{cox1}{COX-1}{Cyclooxygenase-1}
 \newacronym{cox2}{COX-2}{Cyclooxygenase-2}
+\newacronym{ptgs2}{PTGS2}{Prostaglandin-endoperoxide synthase 2}
 \newacronym{ai}{AI}{Artificial intelligence}
 \newacronym{ml}{ML}{Machine Learning}
 \newacronym{rf}{RF}{Random Forest}
@@ -177,7 +177,7 @@ Direcció: & Alumne: \\
 {\Large \Mes \Any}\\[0.5cm] % Date, change the \today to a set date if you want to be precise
 
 %----------------------------------------------------------------------------------------
-Treball de fi de grau realitzat al \NomCentre i presentat a la\\ Facultat de Ciancies\\ de la Universitat Autnoma de Barcelona per a l'obtenció del Grau en \NomGrau
+Treball de fi de grau realitzat al \NomCentre i presentat a la\\ Facultat de Ciancies\\ de la Universitat Autnòma de Barcelona per a l'obtenció del Grau en \NomGrau
 
 %\vfill % Fill the rest of the page with whitespace
 
@@ -186,8 +186,7 @@ Treball de fi de grau realitzat al \NomCentre i presentat a la\\ Facultat de Cia
 \pagenumbering{Roman}
 %\afterpage{\aftergroup\restoregeometry}
 \thispagestyle{empty}
-{\centering \textcolor{white}{This page is left blank intentionally}}
-\setcounter{page}{0}
+\mbox{} 
 \newpage
 \thispagestyle{empty}
 \vspace*{\fill} % Push content to vertical center
@@ -199,20 +198,42 @@ Treball de fi de grau realitzat al \NomCentre i presentat a la\\ Facultat de Cia
 \newpage
 
 \thispagestyle{afteres}
-\section*{Resum analític}
-La intel$\cdot$ligència artificial ha esat seguirà sent una de les majors revolucions del segle fins a l'actualitat. 
+\setcounter{page}{1}
+\section*{Resum analític}\par
+L'intel·ligència artificial es presenta com una de les revolucions del segle XXI. En particular, el sector de la química computacional està sent profundament sacsejat per aquesta revolució. Aprofitant la inèrcia i l'interès creixent en aquest camp, aquest treball pretén aplicar diferents models d'intel·ligència artificial en l'estudi d'una proteïna d'especial interès per a la nostra salut, la Ciclooxigenasa-2 (COX-2).
 
+La \emph{prostaglandin-endoperoxide sinthasa 2} (PTGS2), també coneguda com COX-2, és una proteïna que, en circumstàncies normals, acostuma a romandre inactiva \cite{Cox2Location}, llevat de la seva expressió durant processos inflamatoris. Així mateix, la manca de retorn a nivells baixos d'expressió després de la inflamació ha estat relacionada amb l'aparició de diferents formes de càncer \cite{DefinitionCOX2CancerDictionary}. Aquest fet ha convertit la COX-2 en objecte d'estudi de nombroses investigacions científiques \cite{Cox2InhibitorsReview}, fet que la fa un punt de partida idoni per al desenvolupament d'algoritmes de \emph{Machine Learning}, ja que disposa d'una gran quantitat de dades per entrenar els models i contrastar els resultats.
+
+L'objectiu principal del projecte és el desenvolupament d'un programari generador d'IAs capaces de predir la concentració d'inhibició al 50\% (IC$_{50}$) per a la COX-2\footnote{En realitat, el programari funciona per a qualsevol proteïna amb entrada a la base de dades de ChEMBL \cite{ChemblDatabase}, malgrat que l'objecte d'estudi és la COX-2.} amb la màxima precisió possible. Per fer-ho, s'extreuen totes les dades de molècules conegudes amb un potencial d'inhibició establert per a la COX-2. Després d'un filtratge configurable per l'usuari, es calculen 5.900 descriptors químics per a cadascuna de les entrades amb el programari AlvaDesk \cite{MauriMolecularDescriptorsBook}\cite{AlvaDescSecondPaper}. Seguidament, una part de les dades s'utilitza per entrenar models de \emph{Random Forest} (RF) \cite{MachineLearningRandomForest}, mentre que la resta es reserva per validar la precisió de les prediccions.
+
+Cal remarcar la principal hipòtesi que sustenta aquest procés i el projecte en general: \emph{Existeix una combinació (o diverses combinacions) de descriptors químics directament relacionada amb el potencial d'inhibició de la proteïna}. Malgrat que aquesta afirmació pugui semblar natural, el cost computacional associat és immens. Tot i així, la precisió de les prediccions dels models apunta a la validesa d'aquesta hipòtesi, si bé continua essent una conjectura per manca d'una prova definitiva.
+
+Finalment, els models es fan servir per predir l'IC$_{50}$ de 50 \emph{azophotoswitches} dels quals es tenen dades sobre l'energia lliure d'acoblament proporcionades pel Departament de Química Computacional de la UAB \cite{UAB_ComputationalChemistry}. L'anàlisi estadístic de les prediccions reflecteix una clara correlació entre ambdues quantitats, fet que reforça la hipòtesi del projecte.
 \newpage
 
-\section*{Resumen Analítico}
+\section*{Resumen analítico}
+La inteligencia artificial se presenta como una de las revoluciones del siglo XXI. En particular, el sector de la química computacional está siendo profundamente sacudido por esta revolución. Aprovechando la inercia y el interés creciente en este campo, este trabajo pretende aplicar diferentes modelos de inteligencia artificial en el estudio de una proteína de especial interés para nuestra salud, la Ciclooxigenasa-2 (COX-2).
 
-blebleble
+La \emph{prostaglandin-endoperoxide sinthasa 2} (PTGS2), también conocida como COX-2, es una proteína que, en circunstancias normales, suele permanecer inactiva \cite{Cox2Location}, excepto por su expresión durante procesos inflamatorios. Asimismo, la falta de retorno a niveles bajos de expresión después de la inflamación ha sido relacionada con la aparición de diferentes formas de cáncer \cite{DefinitionCOX2CancerDictionary}. Este hecho ha convertido a la COX-2 en objeto de estudio de numerosas investigaciones científicas \cite{Cox2InhibitorsReview}, lo que la convierte en un punto de partida idóneo para el desarrollo de algoritmos de \emph{Machine Learning}, ya que dispone de una gran cantidad de datos para entrenar los modelos y contrastar los resultados.
+
+El objetivo principal del proyecto es el desarrollo de un software generador de IAs capaces de predecir la concentración de inhibición al 50\% (IC$_{50}$) para la COX-2\footnote{En realidad, el software funciona para cualquier proteína con entrada en la base de datos de ChEMBL \cite{ChemblDatabase}, aunque el objeto de estudio es la COX-2.} con la máxima precisión posible. Para ello, se extraen todos los datos de moléculas conocidas con un potencial de inhibición establecido para la COX-2. Tras un filtrado configurable por el usuario, se calculan 5.900 descriptores químicos para cada una de las entradas con el software AlvaDesk \cite{MauriMolecularDescriptorsBook}\cite{AlvaDescSecondPaper}. Seguidamente, una parte de los datos se utiliza para entrenar modelos de \emph{Random Forest} (RF) \cite{MachineLearningRandomForest}, mientras que el resto se reserva para validar la precisión de las predicciones.
+
+Cabe remarcar la principal hipótesis que sustenta este proceso y el proyecto en general: \emph{Existe una combinación (o varias combinaciones) de descriptores químicos directamente relacionada con el potencial de inhibición de la proteína}. Aunque esta afirmación pueda parecer natural, el coste computacional asociado es inmenso. Aun así, la precisión de las predicciones de los modelos apunta a la validez de esta hipótesis, si bien sigue siendo una conjetura por falta de una prueba definitiva.
+
+Finalmente, los modelos se utilizan para predecir el IC$_{50}$ de 50 \emph{azophotoswitches}, de los cuales se tienen datos sobre la energía libre de acoplamiento proporcionados por el Departamento de Química Computacional de la UAB \cite{UAB_ComputationalChemistry}. El análisis estadístico de las predicciones refleja una clara correlación entre ambas cantidades, lo que refuerza la hipótesis del proyecto.
 
 \newpage
 
 \section*{Analytical abstract}
+Artificial intelligence is emerging as one of the revolutions of the 21st century. In particular, the field of computational chemistry is being profoundly shaken by this revolution. Taking advantage of the momentum and growing interest in this field, this work aims to apply different artificial intelligence models to the study of a protein of special interest to our health, Cyclooxygenase-2 (COX-2).
 
-bliblibli
+The \emph{prostaglandin-endoperoxide synthase 2} (PTGS2), also known as COX-2, is a protein that, under normal circumstances, tends to remain inactive \cite{Cox2Location}, except for its expression during inflammatory processes. Likewise, the failure to return to low expression levels after inflammation has been linked to the onset of various forms of cancer \cite{DefinitionCOX2CancerDictionary}. This fact has made COX-2 the subject of numerous scientific investigations \cite{Cox2InhibitorsReview}, making it an ideal starting point for the development of \emph{Machine Learning} algorithms, as it provides a large amount of data for training models and validating results.
+
+The main objective of the project is to develop software capable of generating AIs that can predict the 50\% inhibition concentration (IC$_{50}$) for COX-2\footnote{In reality, the software works for any protein with an entry in the ChEMBL database \cite{ChemblDatabase}, although the study focuses on COX-2.} with the highest possible accuracy. To achieve this, all known molecular data with an established inhibition potential for COX-2 are extracted. After a user-configurable filtering process, 5,900 chemical descriptors are calculated for each entry using the AlvaDesk software \cite{MauriMolecularDescriptorsBook}\cite{AlvaDescSecondPaper}. Subsequently, part of the data is used to train \emph{Random Forest} (RF) models \cite{MachineLearningRandomForest}, while the rest is reserved to validate the accuracy of the predictions.
+
+It is important to highlight the main hypothesis that underpins this process and the project as a whole: \emph{There exists a combination (or multiple combinations) of chemical descriptors that are directly related to the inhibition potential of the protein}. While this statement may seem intuitive, the computational cost associated with it is immense. Nevertheless, the accuracy of the model predictions supports the validity of this hypothesis, although it remains a conjecture due to the lack of definitive proof.
+
+Finally, the models are used to predict the IC$_{50}$ of 50 \emph{azophotoswitches}, for which data on the free binding energy have been provided by the Department of Computational Chemistry at UAB \cite{UAB_ComputationalChemistry}. The statistical analysis of the predictions shows a clear correlation between both quantities, which supports the project's hypothesis.
 
 \newpage
 \thispagestyle{sumari}
@@ -220,15 +241,27 @@ bliblibli
 \tableofcontents{}
 
 \newpage
-\setcounter{page}{1}
-\pagenumbering{arabic}
 \rhead{\TitolTFG}
 \section{List of abbreviations}
 \renewcommand{\glsnamefont}[1]{\textbf{#1}}
 \printnoidxglossary[type=main, title={\vspace{-1cm}}, nonumberlist, nogroupskip, style=super]%nonumberlist deletes the list of links in the index to every acronym listed. nogroupskip deletes the extra space between letter groups
 \newpage
+\listoffigures{}
+\listoftables{}
+\newpage
 
+\setcounter{page}{1}
+\pagenumbering{arabic}
 \section{Introduction}
+The impact of \gls{ai} on science has been nothing short of a groundbreaking revolution, with few comparable precedents. The rapid advancements in \gls{ai} have transformed numerous scientific fields\cite{AlphaFold2BiologyAndMedicine}\cite{NationalLibraryOfMedicineGeneralArticle}, including computational chemistry. Today, one of the primary goals of computational chemistry is to predict the properties of unstudied substances while minimizing experimental costs. Traditional approaches in chemistry often rely on complex laboratory techniques, which, while effective, can be time-consuming, expensive, and resource-intensive. In contrast, computational chemistry offers a wide range of methods capable of predicting a molecule's properties with reasonable accuracy. However, when \gls{ai} comes into play, predictions have demonstrated an almost surgical precision.
+
+Perhaps one of the most representative events showcasing the enormous impact of \gls{ai} on chemistry is the 2024 Nobel Prize in Chemistry. The winners, David Baker\cite{NobelPrizeBale}, along with Demis Hassabis and John Jumper\cite{NobelPrizeJumper}, were not traditionally trained chemists. Instead, their expertise lies in \gls{ai} algorithms and \gls{ml} methods applied to protein research. This milestone, among others, triggered a surge of chemistry researchers diving into the world of \gls{ai}, seeking applications for their respective fields. Today, the thrilling progress in computational chemistry has been further reinforced by these cutting-edge tools\cite{MachineLearningPaper5Lipoxygenase}, and the rapid pace of development keeps the scientific community eagerly anticipating future applications in fields such as medicine, materials science, and beyond.
+
+In this project we aim to apply the new \gls{ai} and \gls{ml} algorithms to our object of study, the \gls{ptgs2} also known as \gls{cox2}. The \gls{cox2} is a protein 
+
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+
+
 The impact of \gls{ai} on science has been nothing but an outstanding breakthrough, with few comparable predecessors. The rapid advancements in \gls{ai} have transformed numerous scientific fields\cite{AlphaFold2BiologyAndMedicine}\cite{NationalLibraryOfMedicineGeneralArticle}, including computational chemistry. Nowadays, one of the main goals of computational chemistry is to predict certain properties of unstudied substances with minimal experimental costs\cite{AlphaFold2CommumityAssesment}. Traditional approaches in chemistry often rely on complex laboratory techniques, which, while effective, can be time-consuming, expensive and resource-intensive. On the other hand, \gls{ai} algorithms have already proved exceptional predictive capabilities in countless fields, and computational chemistry is no exception. \gls{ai} provides an alternative by offering highly accurate predictions based on existing data, optimising research processes, and accelerating scientific discovery.\par
 
 This project aims to implement artificial intelligence in computational chemistry, concretely, using AI-based algorithms to predict a drug’s inhibition potential\cite{BookIC50} for a given protein. To achieve this, we make use of the ChEMBL database\cite{ChemblDatabase}, a vast repository of bioactive molecules with drug-like properties. We extract all known molecular data with a documented inhibition potential for the target protein, creating a comprehensive dataset. The chemical descriptors of each molecule in the database are then computed using AlvaDesk\cite{MauriMolecularDescriptorsBook}\cite{AlvaDescSecondPaper} software. Around $10^4$ descriptors are calculated\cite{DescriptorsBookClassification}, which comprehend from the elemental molecular weight to the complex equipotential electronic surface, providing critical information about each compound’s behaviour. The resulting dataset is subsequently used to train \gls{ai} models, enabling them to predict the inhibition potential of unknown compounds. Finally, we evaluate the reliability of each model by testing it against real experimental data. \par
@@ -270,7 +303,6 @@ Using the results, the \emph{True Positive Rate} (Def. \ref{definitionTruePositi
 \newpage
 
 \section{Conclusions}
-Hola \cite{BookIC50}
 \newpage
 
 \section{Bibliography}
@@ -299,6 +331,7 @@ Rofecoxib: \footnote{UPAC name: 4-(4-methylsulfonylphenyl)-3-phenyl-5H-furan-2-o
 H_2N-[1]S(=[4]O)(=[-2]O)-[1]*6(-=-(-[1]N*5(-N=(-[-1](-[-4]F)(-[-2]F)-[1])-=(-[4.5]*6(-=-(-[4.5])=-=))-))=-=)
 }}
 \caption{Chemical graph of Celecoxib.}
+\addcontentsline{lof}{figure}{Chemical graph of Celecoxib.}
 \label{CelecoxibFigure}
 \end{figure}
 
@@ -310,6 +343,7 @@ H_2N-[1]S(=[4]O)(=[-2]O)-[1]*6(-=-(-[1]N*5(-N=(-[-1](-[-4]F)(-[-2]F)-[1])-=(-[4.
 -[-1]S(=[-4]O)(=[-2]O)-[1]*6(-=-(-[1]*5(--O-(=[2.25]O)-(-[4.5]*6(-=-=-=))=))=-=)
 }}
 \caption{Chemical graph of Rofecoxib.}
+\addcontentsline{lof}{figure}{Chemical graph of Rofecoxib.}
 \label{RofecoxibFigure}
 \end{figure}
 \begin{definition}\label{definitionPersonCoefficient}
@@ -354,7 +388,7 @@ A Matthews Correlation Coefficient equal to 1 stands for a perfect prediction a 
 \end{definition}
 
 
-\section{Tables of molecules}
+\section{Tables of azophotoswitches}\label{appendixAzophotoshiches}
 \begin{figure}[H]
 \captionsetup{type=scheme}
 \centering

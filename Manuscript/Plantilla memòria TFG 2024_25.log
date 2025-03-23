@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  21 MAR 2025 12:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  23 MAR 2025 13:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1884,6 +1884,11 @@ Package biblatex Info: ... file '"Plantilla memòria TFG 2024_25".bbl' found.
 (./Plantilla memòria TFG 2024_25.bbl
 
 Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Cox2Location':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'NationalLibraryOfMedicineGeneralArticle':
 (biblatex)                - Invalid format of field 'date' 
 (biblatex)                - Invalid format of field 'date' 
@@ -2002,12 +2007,31 @@ Overfull \hbox (7.26625pt too wide) in paragraph at lines 163--171
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc} <./GeneralSources/Logo_
-uab.png>] [0
+uab.png>] [1
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 195.
- [1]
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 194.
+ [2]
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 2
+03.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 8.64006pt on input line 207.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 6.72005pt on input line 207.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 4.80003pt on input line 207.
+LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
+(Font)              scaled to size 8.64006pt on input line 207.
+LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
+(Font)              scaled to size 6.72005pt on input line 207.
+LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
+(Font)              scaled to size 4.80003pt on input line 207.
+
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2016,7 +2040,14 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[2]
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.212 \newpage
+               [1{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/arev/arevo
+t1.enc}]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2025,7 +2056,13 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[3]
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.225 \newpage
+               [2]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2034,7 +2071,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[4] (./Plantilla memòria TFG 2024_25.toc)
+[3] (./Plantilla memòria TFG 2024_25.toc)
 \tf@toc=\write6
 \openout6 = `"Plantilla memòria TFG 2024_25.toc"'.
 
@@ -2047,8 +2084,35 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[5]
+[4]
 Using TeX to sort glossary entries---this may take a while
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[5] (./Plantilla memòria TFG 2024_25.lof)
+\tf@lof=\write7
+\openout7 = `"Plantilla memòria TFG 2024_25.lof"'.
+
+
+(./Plantilla memòria TFG 2024_25.lot)
+\tf@lot=\write8
+\openout8 = `"Plantilla memòria TFG 2024_25.lot"'.
+
+
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[6]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2062,9 +2126,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.229 \newpage
-               [1{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/arev/arevo
-t1.enc}]
+l.267 T
+       his project aims to implement artificial intelligence in computationa...
+[1]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2092,23 +2156,11 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [4]
-LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 254.
-LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 254.
-LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 254.
-LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 8.64006pt on input line 254.
-LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 6.72005pt on input line 254.
-LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 4.80003pt on input line 254.
-<GeneralSources/DataSplittingDiagram.pdf, id=177, 692.59853pt x 355.3797pt>
+<GeneralSources/DataSplittingDiagram.pdf, id=265, 692.59853pt x 355.3797pt>
 File: GeneralSources/DataSplittingDiagram.pdf Graphic file (type pdf)
 <use GeneralSources/DataSplittingDiagram.pdf>
 Package pdftex.def Info: GeneralSources/DataSplittingDiagram.pdf  used on input
- line 260.
+ line 293.
 (pdftex.def)             Requested size: 452.9679pt x 232.42021pt.
 
 
@@ -2120,7 +2172,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [5{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/arev/arevoml.enc}]
-Overfull \hbox (5.4703pt too wide) in paragraph at lines 264--265
+Overfull \hbox (5.4703pt too wide) in paragraph at lines 297--298
 \T1/phv/m/n/10.95 large num-ber of ran-dom de-ci-sion trees (de-ter-mined by th
 e hard-coded vari-able \T1/phv/m/sl/10.95 num-berOfTrees\T1/phv/m/n/10.95 ),
  []
@@ -2143,17 +2195,17 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [7]
-Overfull \hbox (6.97557pt too wide) in paragraph at lines 277--277
+LaTeX Font Info:    Trying to load font information for T1+fvm on input line 30
+9.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/bera/t1fvm.fd
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
+Overfull \hbox (6.97557pt too wide) in paragraph at lines 309--309
 []\T1/phv/m/n/10.95 Tunyasuvunakool, K.; et al. \T1/phv/m/sl/10.95 Na-ture Stru
 c-tural and Molec-u-lar Bi-ol-ogy \T1/phv/b/n/10.95 2022\T1/phv/m/n/10.95 , \T1
 /phv/m/sl/10.95 29\T1/phv/m/n/10.95 , 1155^^U1163. 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+fvm on input line 27
-7.
-(/usr/local/texlive/2024/texmf-dist/tex/latex/bera/t1fvm.fd
-File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
-)
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2163,9 +2215,6 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [8]
-Package hyperref Info: bookmark level for unknown scheme defaults to 0 on input
- line 301.
-
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2175,6 +2224,9 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [9]
+Package hyperref Info: bookmark level for unknown scheme defaults to 0 on input
+ line 333.
+
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2183,19 +2235,19 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[10{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/arev/arevoms.enc}]
+[10]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[11{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/arev/arevoms.enc}]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 348.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 382.
 
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
-
-[11]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2249,7 +2301,16 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[17] 
+[17]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[18] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./Plantilla memòria TFG 2024_25.aux)
  ***********
@@ -2262,7 +2323,7 @@ LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `"Plantilla memòria TFG 2024_25".out' has no
 t changed.
-(rerunfilecheck)             Checksum: FC30A8C4C60AD56E45DBECA53A341485;1100.
+(rerunfilecheck)             Checksum: 52A42A8AB374F334507FED68C9308514;1135.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                "Plantilla memòria TFG 2024_25"
@@ -2274,13 +2335,13 @@ xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43679 strings out of 474116
- 841937 string characters out of 5743682
- 2019187 words of memory out of 5000000
- 65189 multiletter control sequences out of 15000+600000
- 619992 words of font info for 134 fonts, out of 8000000 for 9000
+ 43756 strings out of 474116
+ 843937 string characters out of 5743682
+ 2021187 words of memory out of 5000000
+ 65246 multiletter control sequences out of 15000+600000
+ 620305 words of font info for 135 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,14n,101p,2383b,1823s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,14n,101p,2383b,1822s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/arev/ArevSans-Oblique.
 pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/arev/ArevSans-Roman.
 pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
@@ -2293,11 +2354,11 @@ b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-ch
 r7v.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/
 local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "Plantilla memòria TFG 2024_25.pdf" (24 pages, 213741 bytes)
+Output written on "Plantilla memòria TFG 2024_25.pdf" (27 pages, 228651 bytes)
 .
 PDF statistics:
- 451 PDF objects out of 1000 (max. 8388607)
- 393 compressed objects within 4 object streams
- 116 named destinations out of 1000 (max. 500000)
+ 534 PDF objects out of 1000 (max. 8388607)
+ 472 compressed objects within 5 object streams
+ 126 named destinations out of 1000 (max. 500000)
  95 words of extra memory for PDF output out of 10000 (max. 10000000)
 
