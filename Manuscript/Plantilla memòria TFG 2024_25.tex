@@ -21,14 +21,6 @@
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{hyperref}
-\hypersetup{%
-  colorlinks=false,
-  linkcolor=black,
-  linkbordercolor={1.0 1.0 1.0},
-  breaklinks = true,
-  citebordercolor={1.0 1.0 1.0},
-  hidelinks = true,
-}
 \usepackage{xurl}
 %-----------------FIGURES AND TABLES----------------%
 \usepackage{array}
@@ -78,6 +70,7 @@
 \newcommand\Mes{Juny } %cal espai al final
 \newcommand\Any{2025}
 
+
 \fancypagestyle{sumari}{
 \fancyhf{}
 \rhead{\TitolTFG}
@@ -103,6 +96,21 @@
 \cfoot{\thepage}
 \renewcommand{\headrulewidth}{0pt}%
 \renewcommand{\footrulewidth}{0pt}%
+
+%----------METADATA------------%
+
+\hypersetup{%
+  colorlinks=false,
+  linkcolor=black,
+  linkbordercolor={1.0 1.0 1.0},
+  breaklinks = true,
+  citebordercolor={1.0 1.0 1.0},
+  hidelinks = true,
+  pdftitle  = \TitolTFG,
+  pdfauthor = \NomComplet,
+  pdfsubject= \CodiTFG,
+  pdfcreator= \NomComplet,
+}
 
 %----------ABBREVIATIONS LIST----------%
 \usepackage{glossaries}
@@ -208,7 +216,7 @@ L'objectiu principal del projecte és el desenvolupament d'un programari generad
 
 Cal remarcar la principal hipòtesi que sustenta aquest procés i el projecte en general: \emph{Existeix una combinació (o diverses combinacions) de descriptors químics directament relacionada amb el potencial d'inhibició de la proteïna}. Malgrat que aquesta afirmació pugui semblar natural, el cost computacional associat és immens. Tot i així, la precisió de les prediccions dels models apunta a la validesa d'aquesta hipòtesi, si bé continua essent una conjectura per manca d'una prova definitiva.
 
-Finalment, els models es fan servir per predir l'IC$_{50}$ de 50 \emph{azophotoswitches} dels quals es tenen dades sobre l'energia lliure d'acoblament proporcionades pel Departament de Química Computacional de la UAB \cite{UAB_ComputationalChemistry}. L'anàlisi estadístic de les prediccions reflecteix una clara correlació entre ambdues quantitats, fet que reforça la hipòtesi del projecte.
+Finalment, els models es fan servir per predir l'IC$_{50}$ de 50 \emph{azophotoswitches} dels quals es tenen dades sobre l'energia lliure d'acoblament proporcionades pel Departament de Química Física de la UAB \cite{UAB_ComputationalChemistry}. L'anàlisi estadístic de les prediccions reflecteix una clara correlació entre ambdues quantitats, fet que reforça la hipòtesi del projecte.
 \newpage
 
 \section*{Resumen analítico}
@@ -220,7 +228,7 @@ El objetivo principal del proyecto es el desarrollo de un software generador de 
 
 Cabe remarcar la principal hipótesis que sustenta este proceso y el proyecto en general: \emph{Existe una combinación (o varias combinaciones) de descriptores químicos directamente relacionada con el potencial de inhibición de la proteína}. Aunque esta afirmación pueda parecer natural, el coste computacional asociado es inmenso. Aun así, la precisión de las predicciones de los modelos apunta a la validez de esta hipótesis, si bien sigue siendo una conjetura por falta de una prueba definitiva.
 
-Finalmente, los modelos se utilizan para predecir el IC$_{50}$ de 50 \emph{azophotoswitches}, de los cuales se tienen datos sobre la energía libre de acoplamiento proporcionados por el Departamento de Química Computacional de la UAB \cite{UAB_ComputationalChemistry}. El análisis estadístico de las predicciones refleja una clara correlación entre ambas cantidades, lo que refuerza la hipótesis del proyecto.
+Finalmente, los modelos se utilizan para predecir el IC$_{50}$ de 50 \emph{azophotoswitches}, de los cuales se tienen datos sobre la energía libre de acoplamiento proporcionados por el Departamento de Química Física de la UAB \cite{UAB_ComputationalChemistry}. El análisis estadístico de las predicciones refleja una clara correlación entre ambas cantidades, lo que refuerza la hipótesis del proyecto.
 
 \newpage
 
@@ -233,7 +241,7 @@ The main objective of the project is to develop software capable of generating A
 
 It is important to highlight the main hypothesis that underpins this process and the project as a whole: \emph{There exists a combination (or multiple combinations) of chemical descriptors that are directly related to the inhibition potential of the protein}. While this statement may seem intuitive, the computational cost associated with it is immense. Nevertheless, the accuracy of the model predictions supports the validity of this hypothesis, although it remains a conjecture due to the lack of definitive proof.
 
-Finally, the models are used to predict the IC$_{50}$ of 50 \emph{azophotoswitches}, for which data on the free binding energy have been provided by the Department of Computational Chemistry at UAB \cite{UAB_ComputationalChemistry}. The statistical analysis of the predictions shows a clear correlation between both quantities, which supports the project's hypothesis.
+Finally, the models are used to predict the IC$_{50}$ of 50 \emph{azophotoswitches}, for which data on the free binding energy have been provided by the Physical Chemistry Unit at UAB \cite{UAB_ComputationalChemistry}. The statistical analysis of the predictions shows a clear correlation between both quantities, which supports the project's hypothesis.
 
 \newpage
 \thispagestyle{sumari}
@@ -255,9 +263,21 @@ Finally, the models are used to predict the IC$_{50}$ of 50 \emph{azophotoswitch
 \section{Introduction}
 The impact of \gls{ai} on science has been nothing short of a groundbreaking revolution, with few comparable precedents. The rapid advancements in \gls{ai} have transformed numerous scientific fields\cite{AlphaFold2BiologyAndMedicine}\cite{NationalLibraryOfMedicineGeneralArticle}, including computational chemistry. Today, one of the primary goals of computational chemistry is to predict the properties of unstudied substances while minimizing experimental costs. Traditional approaches in chemistry often rely on complex laboratory techniques, which, while effective, can be time-consuming, expensive, and resource-intensive. In contrast, computational chemistry offers a wide range of methods capable of predicting a molecule's properties with reasonable accuracy. However, when \gls{ai} comes into play, predictions have demonstrated an almost surgical precision.
 
-Perhaps one of the most representative events showcasing the enormous impact of \gls{ai} on chemistry is the 2024 Nobel Prize in Chemistry. The winners, David Baker\cite{NobelPrizeBale}, along with Demis Hassabis and John Jumper\cite{NobelPrizeJumper}, were not traditionally trained chemists. Instead, their expertise lies in \gls{ai} algorithms and \gls{ml} methods applied to protein research. This milestone, among others, triggered a surge of chemistry researchers diving into the world of \gls{ai}, seeking applications for their respective fields. Today, the thrilling progress in computational chemistry has been further reinforced by these cutting-edge tools\cite{MachineLearningPaper5Lipoxygenase}, and the rapid pace of development keeps the scientific community eagerly anticipating future applications in fields such as medicine, materials science, and beyond.
+Perhaps one of the most representative events showcasing the enormous impact of \gls{ai} on chemistry is the 2024 Nobel Prize in Chemistry. The winners, David Baker\cite{NobelPrizeBale}, along with Demis Hassabis and John Jumper\cite{NobelPrizeJumper}, were not traditionally trained chemists. Instead, their expertise lies in \gls{ai} algorithms and \gls{ml} methods applied to protein research. This milestone, among others, triggered a surge of chemistry researchers diving into the world of \gls{ai}, seeking applications for their respective fields. Today, the thrilling progress in computational chemistry has been further reinforced by these cutting-edge tools\cite{MachineLearningPaper5Lipoxygenase}, and the rapid pace of development keeps the scientific community eagerly anticipating future applications in fields such as medicine, materials science, and beyond. In this project we aim to apply the new \gls{ai} and \gls{ml} algorithms to our object of study, the \gls{ptgs2} also known as \gls{cox2}, a protein tightly linked to the onset of numerous cancers forms\cite{Cox2CancerReview}. 
 
-In this project we aim to apply the new \gls{ai} and \gls{ml} algorithms to our object of study, the \gls{ptgs2} also known as \gls{cox2}. The \gls{cox2} is a protein 
+ Although significant advancements have been made, cancer still accounts for over 8 million deaths per year worldwide, and the scientific and medical communities remain far from achieving its complete eradication. Inflammation is one of the hallmarks of carcinogenesis; in fact, various cancer therapies target inflammation as a means of preventing and reducing cancer occurrences. When a tissue is damaged, inflammation protects the organism from infections caused by external pathogens, a key function of the immune system to prevent the presence of invaders in the body. During the inflammatory process, cells proliferate under the command of the immune system to replace the damaged cells of the affected tissue. However, if this cell reproduction continues beyond the healing of the damaged tissue, it can potentially lead to cancer, contradicting the initial healing purpose of the inflammatory process. In some cases, inflammation can become chronic, leading to tumor development and uncontrolled cell proliferation. As a result, a wide range of drug prototypes have been designed to suppress inflammation. However, many of these drugs have been linked to severe side effects, including immunosuppression, cardiovascular risks, and gastrointestinal complications. Consequently, the administration of these drugs is often counterproductive, and the search for a more effective and safer treatment remains ongoing.
+
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+
+\textbf{Dr.Gonzalez and Dr.Lluch project}
+
+The project seeks to advance the understanding and treatment of cancer by approaching it as an inflammation-based disease and developing innovative drug design strategies. Unlike traditional approaches that often rely on broad-spectrum anti-inflammatory drugs, this research aims to create targeted therapies that mitigate or halt the inflammatory processes closely linked to cancer progression. Chronic inflammation is recognized as a key driver of tumor development, promoting immune evasion, genetic mutations, and uncontrolled cell proliferation. However, existing treatments such as nonsteroidal anti-inflammatory drugs (NSAIDs) and COX-2 inhibitors come with significant side effects, including immunosuppression, cardiovascular risks, and gastrointestinal complications, which limit their long-term clinical application.
+
+By adopting an interdisciplinary approach that integrates Theoretical Molecular Biology, Chemistry, Biochemistry, Physics, and Computer Science, this project will explore new molecular strategies for drug design. A major focus will be on targeting key inflammatory enzymes such as COX-2 and lipoxygenases, which are strongly implicated in cancer-related inflammation. Given the research team’s extensive experience in studying these enzymes—demonstrated through 39 published studies—the project aims to leverage Theoretical Chemistry methods, including Quantum Mechanics, Statistical Mechanics, and Biomolecular Simulations, to develop safer and more effective pharmacological interventions.
+
+One of the project’s central hypotheses is that many cancers share a fundamental inflammatory component, making inflammation control a promising therapeutic avenue. The research will investigate novel mechanisms to selectively inhibit or modulate the activity of COX-2 and related enzymes without causing harmful systemic effects. In particular, photopharmacology—using light-activated drug molecules—will be explored as a means of achieving spatial and temporal control over drug activity, potentially reducing off-target effects.
+
+Beyond cancer, the findings from this project could have far-reaching implications for other inflammation-related diseases. Chronic inflammation has been identified as a major underlying factor in conditions such as cardiovascular disease, diabetes, and neurodegenerative disorders like Alzheimer’s. As highlighted by Harvard Medical School, inflammation may be the common link among many of the world’s most prevalent and deadly diseases. By developing new strategies to control inflammation in cancer, this research could also contribute to broader medical advancements, ultimately benefiting patients, healthcare systems, and the pharmaceutical industry.
 
 \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 

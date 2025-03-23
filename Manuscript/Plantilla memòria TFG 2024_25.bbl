@@ -526,36 +526,6 @@
   'date' \item Invalid format of field 'month'}
   \endentry
 
-  \entry{AlphaFold2CommumityAssesment}{article}{}
-    \name{author}{2}{}{%
-      {{hash=TK}{%
-         family={Tunyasuvunakool},
-         familyi={T\bibinitperiod},
-         given={Kathryn},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=ea}{%
-         prefix={et},
-         prefixi={e\bibinitperiod},
-         family={al.},
-         familyi={a\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{TKea1}
-    \strng{fullhash}{TKea1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1038/s41594-022-00849-w
-    \endverb
-    \field{pages}{1155–1163}
-    \field{title}{A Structural Biology Community Assessment of AlphaFold2
-  Applications}
-    \field{volume}{29}
-    \field{journaltitle}{Nature Structural and Molecular Biology}
-    \field{year}{2022}
-  \endentry
-
   \entry{NobelPrizeBale}{article}{}
     \name{author}{11}{}{%
       {{hash=BJB}{%
@@ -863,6 +833,149 @@
     \field{year}{2021}
   \endentry
 
+  \entry{MachineLearningPaper5Lipoxygenase}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KHA}{%
+         family={Khan},
+         familyi={K\bibinitperiod},
+         given={Hafiza\bibnamedelima Aliza},
+         giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=JI}{%
+         family={Jabeen},
+         familyi={J\bibinitperiod},
+         given={Ishrat},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KHAJI1}
+    \strng{fullhash}{KHAJI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    <p>Leukotrienes (LTs) are pro-inflammatory lipid mediators derived from
+  arachidonic acid (AA), and their high production has been reported in
+  multiple allergic, autoimmune, and cardiovascular disorders. The biological
+  synthesis of leukotrienes is instigated by transfer of AA to 5-lipoxygenase
+  (5-LO) <italic>via</italic> the 5-lipoxygenase-activating protein (FLAP).
+  Suppression of FLAP can inhibit LT production at the earliest level,
+  providing relief to patients requiring anti-leukotriene therapy. Over the
+  last 3 decades, several FLAP modulators have been synthesized and
+  pharmacologically tested, but none of them could be able to reach the market.
+  Therefore, it is highly desirable to unveil the structural requirement of
+  FLAP modulators. Here, in this study, supervised machine learning techniques
+  and molecular modeling strategies are adapted to vaticinate the important 2D
+  and 3D anti-inflammatory properties of structurally diverse FLAP inhibitors,
+  respectively. For this purpose, multiple machine learning classification
+  models have been developed to reveal the most relevant 2D features.
+  Furthermore, to probe the 3D molecular basis of interaction of diverse
+  anti-inflammatory compounds with FLAP, molecular docking studies were
+  executed. By using the most probable binding poses from docking studies, the
+  GRIND model was developed, which indicated the positive contribution of four
+  hydrophobic, two hydrogen bond acceptor, and two shape-based features at
+  certain distances from each other towards the inhibitory potency of FLAP
+  modulators. Collectively, this study sheds light on important two-dimensional
+  and three-dimensional structural requirements of FLAP modulators that can
+  potentially guide the development of more potent chemotypes for the treatment
+  of inflammatory disorders.</p>%
+    }
+    \verb{doi}
+    \verb 10.3389/fphar.2022.825741
+    \endverb
+    \field{issn}{1663-9812}
+    \field{title}{Combined Machine Learning and GRID-Independent Molecular
+  Descriptor (GRIND) Models to Probe the Activity Profiles of 5-Lipoxygenase
+  Activating Protein Inhibitors}
+    \verb{url}
+    \verb https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fp
+    \verb har.2022.825741
+    \endverb
+    \field{volume}{13}
+    \field{journaltitle}{Frontiers in Pharmacology}
+    \field{year}{2022}
+  \endentry
+
+  \entry{Cox2CancerReview}{article}{}
+    \name{author}{5}{}{%
+      {{hash=HGN}{%
+         family={Hashemi\bibnamedelima Goradel},
+         familyi={H\bibinitperiod\bibinitdelim G\bibinitperiod},
+         given={Nima},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=NM}{%
+         family={Najafi},
+         familyi={N\bibinitperiod},
+         given={Mohammad},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SE}{%
+         family={Salehi},
+         familyi={S\bibinitperiod},
+         given={Ebrahim},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=FB}{%
+         family={Farhood},
+         familyi={F\bibinitperiod},
+         given={Bagher},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={Mortezaee},
+         familyi={M\bibinitperiod},
+         given={Khatereh},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HGNNMSEFBMK1}
+    \strng{fullhash}{HGNNMSEFBMK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1002/jcp.27411
+    \endverb
+    \field{number}{5}
+    \field{pages}{5683\bibrangedash 5699}
+    \field{title}{Cyclooxygenase-2 in cancer: A review}
+    \verb{url}
+    \verb https://pubmed.ncbi.nlm.nih.gov/30341914/
+    \endverb
+    \field{volume}{234}
+    \field{journaltitle}{Journal of Cellular Physiology}
+    \field{year}{2019}
+  \endentry
+
+  \entry{AlphaFold2CommumityAssesment}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TK}{%
+         family={Tunyasuvunakool},
+         familyi={T\bibinitperiod},
+         given={Kathryn},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=ea}{%
+         prefix={et},
+         prefixi={e\bibinitperiod},
+         family={al.},
+         familyi={a\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TKea1}
+    \strng{fullhash}{TKea1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1038/s41594-022-00849-w
+    \endverb
+    \field{pages}{1155–1163}
+    \field{title}{A Structural Biology Community Assessment of AlphaFold2
+  Applications}
+    \field{volume}{29}
+    \field{journaltitle}{Nature Structural and Molecular Biology}
+    \field{year}{2022}
+  \endentry
+
   \entry{BookIC50}{incollection}{}
     \name{author}{1}{}{%
       {{hash=SDC}{%
@@ -1030,68 +1143,6 @@
     \verb https://pandas.pydata.org
     \endverb
     \field{year}{2023}
-  \endentry
-
-  \entry{MachineLearningPaper5Lipoxygenase}{article}{}
-    \name{author}{2}{}{%
-      {{hash=KHA}{%
-         family={Khan},
-         familyi={K\bibinitperiod},
-         given={Hafiza\bibnamedelima Aliza},
-         giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-      {{hash=JI}{%
-         family={Jabeen},
-         familyi={J\bibinitperiod},
-         given={Ishrat},
-         giveni={I\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{KHAJI1}
-    \strng{fullhash}{KHAJI1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    <p>Leukotrienes (LTs) are pro-inflammatory lipid mediators derived from
-  arachidonic acid (AA), and their high production has been reported in
-  multiple allergic, autoimmune, and cardiovascular disorders. The biological
-  synthesis of leukotrienes is instigated by transfer of AA to 5-lipoxygenase
-  (5-LO) <italic>via</italic> the 5-lipoxygenase-activating protein (FLAP).
-  Suppression of FLAP can inhibit LT production at the earliest level,
-  providing relief to patients requiring anti-leukotriene therapy. Over the
-  last 3 decades, several FLAP modulators have been synthesized and
-  pharmacologically tested, but none of them could be able to reach the market.
-  Therefore, it is highly desirable to unveil the structural requirement of
-  FLAP modulators. Here, in this study, supervised machine learning techniques
-  and molecular modeling strategies are adapted to vaticinate the important 2D
-  and 3D anti-inflammatory properties of structurally diverse FLAP inhibitors,
-  respectively. For this purpose, multiple machine learning classification
-  models have been developed to reveal the most relevant 2D features.
-  Furthermore, to probe the 3D molecular basis of interaction of diverse
-  anti-inflammatory compounds with FLAP, molecular docking studies were
-  executed. By using the most probable binding poses from docking studies, the
-  GRIND model was developed, which indicated the positive contribution of four
-  hydrophobic, two hydrogen bond acceptor, and two shape-based features at
-  certain distances from each other towards the inhibitory potency of FLAP
-  modulators. Collectively, this study sheds light on important two-dimensional
-  and three-dimensional structural requirements of FLAP modulators that can
-  potentially guide the development of more potent chemotypes for the treatment
-  of inflammatory disorders.</p>%
-    }
-    \verb{doi}
-    \verb 10.3389/fphar.2022.825741
-    \endverb
-    \field{issn}{1663-9812}
-    \field{title}{Combined Machine Learning and GRID-Independent Molecular
-  Descriptor (GRIND) Models to Probe the Activity Profiles of 5-Lipoxygenase
-  Activating Protein Inhibitors}
-    \verb{url}
-    \verb https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fp
-    \verb har.2022.825741
-    \endverb
-    \field{volume}{13}
-    \field{journaltitle}{Frontiers in Pharmacology}
-    \field{year}{2022}
   \endentry
 
   \entry{PythonPackageStickitLearn}{article}{}

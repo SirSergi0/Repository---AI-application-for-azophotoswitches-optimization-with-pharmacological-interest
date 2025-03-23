@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  23 MAR 2025 13:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  23 MAR 2025 20:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -642,15 +642,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
 \Hy@SectionHShift=\skip60
-)
-Package hyperref Info: Option `colorlinks' set `false' on input line 31.
-Package hyperref Info: Option `breaklinks' set `true' on input line 31.
-
-
-Package hyperref Warning: Unexpected value for option `hidelinks'
-(hyperref)                is ignored on input line 31.
-
-(/usr/local/texlive/2024/texmf-dist/tex/latex/xurl/xurl.sty
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/xurl/xurl.sty
 Package: xurl 2022/01/09 v 0.10 modify URL breaks
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty
@@ -683,7 +675,7 @@ Package caption Info: Standard document class detected.
 Package caption Info: hyperref package is loaded.
 )
 Package caption Info: Option `declare type' requires the `newfloat' package on 
-input line 37.
+input line 29.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/newfloat/newfloat.sty
 Package: newfloat 2023/10/01 v1.2 Defining new floating environments (AR)
@@ -698,10 +690,10 @@ Package newfloat Info: \Hy@org@chapter = macro:[#1]#2->\NR@gettitle {#1}\NR@cha
 pter [{#1}]{#2}.
 Package newfloat Info: \algocf@original@chapter = undefined.
 )
-Package newfloat Info: New float `scheme' with options `' on input line 37.
+Package newfloat Info: New float `scheme' with options `' on input line 29.
 \c@scheme=\count300
 \newfloat@ftype=\count301
-Package newfloat Info: float type `scheme'=8 on input line 37.
+Package newfloat Info: float type `scheme'=8 on input line 29.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
@@ -1578,6 +1570,13 @@ Package csquotes Info: ... configuration file loaded successfully.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 ))
+Package hyperref Info: Option `colorlinks' set `false' on input line 113.
+Package hyperref Info: Option `breaklinks' set `true' on input line 113.
+
+
+Package hyperref Warning: Unexpected value for option `hidelinks'
+(hyperref)                is ignored on input line 113.
+
 (/usr/local/texlive/2024/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 Package: glossaries 2023/09/29 v4.53 (NLCT)
 
@@ -1756,40 +1755,40 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 13
-4.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 14
+2.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 (./Plantilla memòria TFG 2024_25.aux)
 \openout1 = `"Plantilla memòria TFG 2024_25.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 134.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 142.
 LaTeX Font Info:    Trying to load font information for MDA+cmr on input line 1
-34.
+42.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/mathdesign/mdacmr.fd
 File: mdacmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1847,7 +1846,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 134.
+Package hyperref Info: Link coloring OFF on input line 142.
 
 (./Plantilla memòria TFG 2024_25.out) (./Plantilla memòria TFG 2024_25.out)
 \@outlinefile=\write5
@@ -1895,8 +1894,8 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 134.
-Package biblatex Info: Reference segment=0 on input line 134.
+Package biblatex Info: Reference section=0 on input line 142.
+Package biblatex Info: Reference segment=0 on input line 142.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1932,73 +1931,73 @@ Package biblatex Info: Reference segment=0 on input line 134.
 <GeneralSources/Logo_uab.png, id=43, 932.51613pt x 350.1598pt>
 File: GeneralSources/Logo_uab.png Graphic file (type png)
 <use GeneralSources/Logo_uab.png>
-Package pdftex.def Info: GeneralSources/Logo_uab.png  used on input line 143.
+Package pdftex.def Info: GeneralSources/Logo_uab.png  used on input line 151.
 (pdftex.def)             Requested size: 173.56198pt x 65.16858pt.
 LaTeX Font Info:    Trying to load font information for OT1+zavm on input line 
-151.
+159.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/arev/ot1zavm.fd
 File: ot1zavm.fd 2006/05/30 Fontinst v1.929 font definitions for OT1/zavm.
 )
 LaTeX Font Info:    Trying to load font information for OML+zavm on input line 
-151.
+159.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/arev/omlzavm.fd
 File: omlzavm.fd 2006/05/30 Fontinst v1.929 font definitions for OML/zavm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+zavm on input line 
-151.
+159.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/arev/omszavm.fd
 File: omszavm.fd 2006/05/30 Fontinst v1.929 font definitions for OMS/zavm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+mdbch on input line
- 151.
+ 159.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/mathdesign/mdbch/omxmdbch.fd
 File: omxmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OMX/mdbch.
 )
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 10.51207pt on input line 151.
+(Font)              scaled to size 10.51207pt on input line 159.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 151.
+(Font)              scaled to size 7.68005pt on input line 159.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 151.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 151
+(Font)              scaled to size 5.76004pt on input line 159.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 159
 .
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 151
+LaTeX Font Info:    Trying to load font information for U+msb on input line 159
 .
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for MDA+mdbch on input line
- 151.
+ 159.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/mathdesign/mdbch/mdamdbch.fd
 File: mdamdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDA/mdbch.
 )
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 10.51207pt on input line 151.
+(Font)              scaled to size 10.51207pt on input line 159.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 7.68005pt on input line 151.
+(Font)              scaled to size 7.68005pt on input line 159.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 5.76004pt on input line 151.
+(Font)              scaled to size 5.76004pt on input line 159.
 LaTeX Font Info:    Trying to load font information for U+zavm on input line 15
-1.
+9.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/arev/uzavm.fd
 File: uzavm.fd 2006/05/30 Fontinst v1.929 font definitions for U/zavm.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 \T1/phv/m/n/17.28 to-switches Op-ti-miza-tion
  []
 
 
-Overfull \hbox (7.26625pt too wide) in paragraph at lines 163--171
+Overfull \hbox (7.26625pt too wide) in paragraph at lines 171--179
  [][] 
  []
 
@@ -2011,26 +2010,26 @@ uab.png>] [1
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 194.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 202.
  [2]
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 2
-03.
+11.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 207.
+(Font)              scaled to size 8.64006pt on input line 215.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 207.
+(Font)              scaled to size 6.72005pt on input line 215.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 207.
+(Font)              scaled to size 4.80003pt on input line 215.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 8.64006pt on input line 207.
+(Font)              scaled to size 8.64006pt on input line 215.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 6.72005pt on input line 207.
+(Font)              scaled to size 6.72005pt on input line 215.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 4.80003pt on input line 207.
+(Font)              scaled to size 4.80003pt on input line 215.
 
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2045,7 +2044,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.212 \newpage
+l.220 \newpage
                [1{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/arev/arevo
 t1.enc}]
 
@@ -2061,7 +2060,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.225 \newpage
+l.233 \newpage
                [2]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2126,9 +2125,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.267 T
-       his project aims to implement artificial intelligence in computationa...
-[1]
+l.269 
+       [1]
+Overfull \hbox (6.70786pt too wide) in paragraph at lines 276--277
+\T1/phv/m/n/10.95 tion. Given the re-search team's ex-ten-sive ex-pe-ri-ence in
+ study-ing these en-zymes^^Vdemonstrated
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2156,11 +2159,29 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [4]
-<GeneralSources/DataSplittingDiagram.pdf, id=265, 692.59853pt x 355.3797pt>
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[5]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[6]
+<GeneralSources/DataSplittingDiagram.pdf, id=274, 692.59853pt x 355.3797pt>
 File: GeneralSources/DataSplittingDiagram.pdf Graphic file (type pdf)
 <use GeneralSources/DataSplittingDiagram.pdf>
 Package pdftex.def Info: GeneralSources/DataSplittingDiagram.pdf  used on input
- line 293.
+ line 313.
 (pdftex.def)             Requested size: 452.9679pt x 232.42021pt.
 
 
@@ -2171,8 +2192,8 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[5{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/arev/arevoml.enc}]
-Overfull \hbox (5.4703pt too wide) in paragraph at lines 297--298
+[7{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/arev/arevoml.enc}]
+Overfull \hbox (5.4703pt too wide) in paragraph at lines 317--318
 \T1/phv/m/n/10.95 large num-ber of ran-dom de-ci-sion trees (de-ter-mined by th
 e hard-coded vari-able \T1/phv/m/sl/10.95 num-berOfTrees\T1/phv/m/n/10.95 ),
  []
@@ -2185,36 +2206,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[6 <./GeneralSources/DataSplittingDiagram.pdf>]
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
-
-[7]
-LaTeX Font Info:    Trying to load font information for T1+fvm on input line 30
-9.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/bera/t1fvm.fd
-File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
-)
-Overfull \hbox (6.97557pt too wide) in paragraph at lines 309--309
-[]\T1/phv/m/n/10.95 Tunyasuvunakool, K.; et al. \T1/phv/m/sl/10.95 Na-ture Stru
-c-tural and Molec-u-lar Bi-ol-ogy \T1/phv/b/n/10.95 2022\T1/phv/m/n/10.95 , \T1
-/phv/m/sl/10.95 29\T1/phv/m/n/10.95 , 1155^^U1163. 
- []
-
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
-
-[8]
+[8 <./GeneralSources/DataSplittingDiagram.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2224,8 +2216,16 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [9]
-Package hyperref Info: bookmark level for unknown scheme defaults to 0 on input
- line 333.
+LaTeX Font Info:    Trying to load font information for T1+fvm on input line 32
+9.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/bera/t1fvm.fd
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
+Overfull \hbox (6.97557pt too wide) in paragraph at lines 329--329
+[]\T1/phv/m/n/10.95 Tunyasuvunakool, K.; et al. \T1/phv/m/sl/10.95 Na-ture Stru
+c-tural and Molec-u-lar Bi-ol-ogy \T1/phv/b/n/10.95 2022\T1/phv/m/n/10.95 , \T1
+/phv/m/sl/10.95 29\T1/phv/m/n/10.95 , 1155^^U1163. 
+ []
 
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2244,9 +2244,9 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[11{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/arev/arevoms.enc}]
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 382.
+[11]
+Package hyperref Info: bookmark level for unknown scheme defaults to 0 on input
+ line 353.
 
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2265,7 +2265,10 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[13]
+[13{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/arev/arevoms.enc}]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 402.
+
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2310,7 +2313,25 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[18] 
+[18]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[19]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[20] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./Plantilla memòria TFG 2024_25.aux)
  ***********
@@ -2335,10 +2356,10 @@ xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43756 strings out of 474116
- 843937 string characters out of 5743682
- 2021187 words of memory out of 5000000
- 65246 multiletter control sequences out of 15000+600000
+ 43764 strings out of 474116
+ 844181 string characters out of 5743682
+ 2020187 words of memory out of 5000000
+ 65251 multiletter control sequences out of 15000+600000
  620305 words of font info for 135 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,14n,101p,2383b,1822s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2354,11 +2375,11 @@ b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-ch
 r7v.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/
 local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "Plantilla memòria TFG 2024_25.pdf" (27 pages, 228651 bytes)
+Output written on "Plantilla memòria TFG 2024_25.pdf" (29 pages, 233794 bytes)
 .
 PDF statistics:
- 534 PDF objects out of 1000 (max. 8388607)
- 472 compressed objects within 5 object streams
- 126 named destinations out of 1000 (max. 500000)
+ 544 PDF objects out of 1000 (max. 8388607)
+ 480 compressed objects within 5 object streams
+ 129 named destinations out of 1000 (max. 500000)
  95 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,10 +1,10 @@
 \babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {1}List of abbreviations}{V}{section.1}%
 \contentsline {section}{\numberline {2}Introduction}{1}{section.2}%
-\contentsline {section}{\numberline {3}Objectives}{4}{section.3}%
-\contentsline {section}{\numberline {4}Methodology}{5}{section.4}%
-\contentsline {section}{\numberline {5}Results and Discussion}{6}{section.5}%
-\contentsline {section}{\numberline {6}Conclusions}{7}{section.6}%
-\contentsline {section}{\numberline {7}Bibliography}{8}{section.7}%
-\contentsline {section}{\numberline {A}Relevant definitions}{10}{appendix.A}%
-\contentsline {section}{\numberline {B}Tables of azophotoswitches}{12}{appendix.B}%
+\contentsline {section}{\numberline {3}Objectives}{6}{section.3}%
+\contentsline {section}{\numberline {4}Methodology}{7}{section.4}%
+\contentsline {section}{\numberline {5}Results and Discussion}{8}{section.5}%
+\contentsline {section}{\numberline {6}Conclusions}{9}{section.6}%
+\contentsline {section}{\numberline {7}Bibliography}{10}{section.7}%
+\contentsline {section}{\numberline {A}Relevant definitions}{12}{appendix.A}%
+\contentsline {section}{\numberline {B}Tables of azophotoswitches}{14}{appendix.B}%
