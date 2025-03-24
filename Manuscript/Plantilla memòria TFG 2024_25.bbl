@@ -946,6 +946,27 @@
     \field{year}{2019}
   \endentry
 
+  \entry{nsaidDefinition}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=DOE}{%
+         family={Dictionary},
+         familyi={D\bibinitperiod},
+         given={Oxford\bibnamedelima English},
+         giveni={O\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DOE1}
+    \strng{fullhash}{DOE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{Online}
+    \field{title}{Non-Steroidal Anti-Inflammatory Drug}
+    \verb{url}
+    \verb https://web.archive.org/web/20220205104155/https://www.lexico.com/def
+    \verb inition/non-steroidal_anti-inflammatory_drug
+    \endverb
+  \endentry
+
   \entry{AlphaFold2CommumityAssesment}{article}{}
     \name{author}{2}{}{%
       {{hash=TK}{%
