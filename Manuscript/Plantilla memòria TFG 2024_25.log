@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  24 MAR 2025 15:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  25 MAR 2025 11:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2127,15 +2127,9 @@ been already used, duplicate ignored
                    \relax 
 l.270 
        [1]
-Overfull \hbox (4.65675pt too wide) in paragraph at lines 273--274
+Overfull \hbox (4.65675pt too wide) in paragraph at lines 275--276
 []\T1/phv/m/n/10.95 Currently, the phar-ma-co-log-i-cal ther-a-pies for the [][
 ]COX-2[] in-hi-bi-tion are based on [][]Non-Steroidal
- []
-
-
-Overfull \hbox (6.70786pt too wide) in paragraph at lines 281--282
-\T1/phv/m/n/10.95 tion. Given the re-search team's ex-ten-sive ex-pe-ri-ence in
- study-ing these en-zymes^^Vdemonstrated
  []
 
 
@@ -2147,6 +2141,11 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [2]
+Overfull \hbox (6.70786pt too wide) in paragraph at lines 283--284
+\T1/phv/m/n/10.95 tion. Given the re-search team's ex-ten-sive ex-pe-ri-ence in
+ study-ing these en-zymes^^Vdemonstrated
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2183,11 +2182,11 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [6]
-<GeneralSources/DataSplittingDiagram.pdf, id=285, 692.59853pt x 355.3797pt>
+<GeneralSources/DataSplittingDiagram.pdf, id=296, 692.59853pt x 355.3797pt>
 File: GeneralSources/DataSplittingDiagram.pdf Graphic file (type pdf)
 <use GeneralSources/DataSplittingDiagram.pdf>
 Package pdftex.def Info: GeneralSources/DataSplittingDiagram.pdf  used on input
- line 318.
+ line 320.
 (pdftex.def)             Requested size: 452.9679pt x 232.42021pt.
 
 
@@ -2199,7 +2198,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [7{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/arev/arevoml.enc}]
-Overfull \hbox (5.4703pt too wide) in paragraph at lines 322--323
+Overfull \hbox (5.4703pt too wide) in paragraph at lines 324--325
 \T1/phv/m/n/10.95 large num-ber of ran-dom de-ci-sion trees (de-ter-mined by th
 e hard-coded vari-able \T1/phv/m/sl/10.95 num-berOfTrees\T1/phv/m/n/10.95 ),
  []
@@ -2223,11 +2222,11 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 [9]
 LaTeX Font Info:    Trying to load font information for T1+fvm on input line 33
-4.
+6.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
-Overfull \hbox (6.97557pt too wide) in paragraph at lines 334--334
+Overfull \hbox (6.97557pt too wide) in paragraph at lines 336--336
 []\T1/phv/m/n/10.95 Tunyasuvunakool, K.; et al. \T1/phv/m/sl/10.95 Na-ture Stru
 c-tural and Molec-u-lar Bi-ol-ogy \T1/phv/b/n/10.95 2022\T1/phv/m/n/10.95 , \T1
 /phv/m/sl/10.95 29\T1/phv/m/n/10.95 , 1155^^U1163. 
@@ -2252,7 +2251,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 [11]
 Package hyperref Info: bookmark level for unknown scheme defaults to 0 on input
- line 358.
+ line 360.
 
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2273,7 +2272,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 [13{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/arev/arevoms.enc}]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 407.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 409.
 
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2362,8 +2361,8 @@ xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43801 strings out of 474116
- 844901 string characters out of 5743682
+ 43802 strings out of 474116
+ 844912 string characters out of 5743682
  2020187 words of memory out of 5000000
  65286 multiletter control sequences out of 15000+600000
  620305 words of font info for 135 fonts, out of 8000000 for 9000
@@ -2381,11 +2380,11 @@ b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-ch
 r7v.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/
 local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "Plantilla memòria TFG 2024_25.pdf" (29 pages, 235212 bytes)
+Output written on "Plantilla memòria TFG 2024_25.pdf" (29 pages, 236719 bytes)
 .
 PDF statistics:
- 555 PDF objects out of 1000 (max. 8388607)
- 491 compressed objects within 5 object streams
- 131 named destinations out of 1000 (max. 500000)
+ 566 PDF objects out of 1000 (max. 8388607)
+ 501 compressed objects within 6 object streams
+ 132 named destinations out of 1000 (max. 500000)
  95 words of extra memory for PDF output out of 10000 (max. 10000000)
 
