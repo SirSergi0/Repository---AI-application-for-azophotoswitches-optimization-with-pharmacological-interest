@@ -1,0 +1,61 @@
+import numpy as np
+import pandas as pd
+dictionary = [
+    {'Type': 'Pyrazole', 'Number': 1, 'R_1': 'CF_3', 'R_2': 'CH_2CH_3', 'R_3': 'H', 'canonical_smiles' : 'c1cc(ccc1S(=O)(=O)N)n1nc(c(c1)/N=N/c1ccc(cc1)CC)C(F)(F)F', 'Gbinding': -4.3505},
+    {'Type': 'Pyrazole', 'Number': 2, 'R_1': 'CF_3', 'R_2': 'CH_2CH_3', 'R_3': 'F', 'canonical_smiles' : 'c1cc(ccc1S(=O)(=O)N)n1nc(c(c1)/N=N/c1ccc(c(c1)F)CC)C(F)(F)F', 'Gbinding': -3.6190},
+    {'Type': 'Pyrazole', 'Number': 3, 'R_1': 'CF_3', 'R_2': 'CH_3', 'R_3': 'F', 'canonical_smiles' : 'c1cc(ccc1S(=O)(=O)N)n1nc(c(c1)/N=N/c1ccc(c(c1)F)C)C(F)(F)F',  'Gbinding': -0.5452},
+    {'Type': 'Pyrazole', 'Number': 4, 'R_1': 'CF_3', 'R_2': 'OCH_3', 'R_3': 'H', 'canonical_smiles' : 'c1cc(ccc1S(=O)(=O)N)n1nc(c(c1)/N=N/c1ccc(cc1)OC)C(F)(F)F',  'Gbinding':  9.9793},
+    {'Type': 'Pyrazole', 'Number': 5, 'R_1': 'CF_3', 'R_2': 'OCH_3', 'R_3': 'F', 'canonical_smiles' : 'c1cc(ccc1S(=O)(=O)N)n1nc(c(c1)/N=N/c1ccc(c(c1)F)OC)C(F)(F)F', 'Gbinding':  1.5591},
+    {'Type': 'Pyrazole', 'Number': 6, 'R_1': 'CF_3', 'R_2': 'CH_3', 'R_3': 'H', 'canonical_smiles' : 'c1cc(ccc1S(=O)(=O)N)n1nc(c(c1)/N=N/c1ccc(cc1)C)C(F)(F)F', 'Gbinding':  -5.3292},
+    {'Type': 'Pyrazole', 'Number': 7, 'R_1': 'H', 'R_2': 'CH_3', 'R_3': 'H', 'canonical_smiles' : 'c1cc(ccc1S(=O)(=O)N)n1ncc(c1)/N=N/c1ccc(cc1)C', 'Gbinding': 16.4526}, 
+    {'Type': 'Pyrazole', 'Number': 8, 'R_1': 'F', 'R_2': 'CH_3', 'R_3': 'H', 'canonical_smiles' : 'c1cc(ccc1S(=O)(=O)N)n1nc(c(c1)/N=N/c1ccc(cc1)C)F',  'Gbinding': 5.0694},
+    {'Type': 'Pyrazole', 'Number': 9, 'R_1': 'Cl', 'R_2': 'CH_3', 'R_3': 'H', 'canonical_smiles' : 'c1cc(ccc1S(=O)(=O)N)n1nc(c(c1)/N=N/c1ccc(cc1)C)Cl', 'Gbinding': -1.1579},
+    {'Type': 'Pyrazole', 'Number': 10, 'R_1': 'Br', 'R_2': 'CH_3', 'R_3': 'H', 'canonical_smiles' : 'c1cc(ccc1S(=O)(=O)N)n1nc(c(c1)/N=N/c1ccc(cc1)C)Br', 'Gbinding': 6.3225},
+    {'Type': 'Pyrazole', 'Number': 11, 'R_1': 'CH_3', 'R_2': 'CH_3', 'R_3': 'H', 'canonical_smiles' : 'c1cc(ccc1S(=O)(=O)N)n1nc(c(c1)/N=N/c1ccc(cc1)C)C', 'Gbinding': 3.0677},
+    {'Type': 'Pyrazole', 'Number': 12, 'R_1': 'H', 'R_2': 'CH_3', 'R_3': 'F', 'canonical_smiles' : 'c1cc(ccc1S(=O)(=O)N)n1ncc(c1)/N=N/c1ccc(c(c1)F)C', 'Gbinding':  1.0334},
+    {'Type': 'Pyrazole', 'Number': 13, 'R_1': 'F', 'R_2': 'CH_3', 'R_3': 'F', 'canonical_smiles' : 'c1cc(ccc1S(=O)(=O)N)n1nc(c(c1)/N=N/c1ccc(c(c1)F)C)F', 'Gbinding' : 3.2216},
+    {'Type': 'Pyrazole', 'Number': 14, 'R_1': 'Cl', 'R_2': 'CH_3', 'R_3': 'F', 'canonical_smiles' : 'c1cc(ccc1S(=O)(=O)N)n1nc(c(c1)/N=N/c1ccc(c(c1)F)C)Cl', 'Gbinding': 5.1623},
+    {'Type': 'Pyrazole', 'Number': 15, 'R_1': 'Br', 'R_2': 'CH_3', 'R_3': 'F', 'canonical_smiles' : 'c1cc(ccc1S(=O)(=O)N)n1nc(c(c1)/N=N/c1ccc(c(c1)F)C)Br', 'Gbinding': 5.6163},
+    {'Type': 'Pyrazole', 'Number': 16, 'R_1': 'CH_3', 'R_2': 'CH_3', 'R_3': 'F', 'canonical_smiles' : 'c1cc(ccc1S(=O)(=O)N)n1nc(c(c1)/N=N/c1ccc(c(c1)F)C)C', 'Gbinding': -3.3079},
+    {'Type': 'Pyridine','Number': np.nan, 'R_1': np.nan, 'R_2': np.nan, 'R_3': np.nan, 'canonical_smiles' : 'c1cc(ccc1S(=O)(=O)N)n1nc(c(c1)/N=N/c1cnc(cc1)CC)C(F)(F)F', 'Gbinding': 25.4485},
+    {'Type': 'SO2CH3Group','Number': np.nan, 'R_1': np.nan, 'R_2': np.nan, 'R_3': np.nan, 'canonical_smiles' : 'c1cc(ccc1S(=O)(=O)C)n1nc(c(c1)/N=N/c1cnc(cc1)C)C(F)(F)F', 'Gbinding': np.nan},
+    {'Type': 'Furan', 'Number': 1, 'R_1': 'CF_3', 'R_2': 'H', 'R_3': np.nan, 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)c1cc(/N=N/c2cccc(c2)C)c(C(F)(F)F)o1', 'Gbinding': -0.9611},
+    {'Type': 'Furan', 'Number': 2, 'R_1': 'H', 'R_2': 'H', 'R_3': np.nan, 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)c1occ(c1)/N=N/c1cccc(c1)C', 'Gbinding': 0.1930},
+    {'Type': 'Furan', 'Number': 3, 'R_1': 'F', 'R_2': 'H', 'R_3': np.nan, 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)c1oc(c(c1)/N=N/c1cccc(c1)C)F',  'Gbinding': -4.8383},
+    {'Type': 'Furan', 'Number': 4, 'R_1': 'Cl', 'R_2': 'H', 'R_3': np.nan, 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)c1oc(c(c1)/N=N/c1cccc(c1)C)Cl',  'Gbinding': -2.4267},
+    {'Type': 'Furan', 'Number': 5, 'R_1': 'Br', 'R_2': 'H', 'R_3': np.nan, 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)c1oc(c(c1)/N=N/c1cccc(c1)C)Br',  'Gbinding': -3.4217},
+    {'Type': 'Furan', 'Number': 6, 'R_1': 'CH_3', 'R_2': 'H', 'R_3': np.nan, 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)c1oc(c(c1)/N=N/c1cccc(c1)C)C',  'Gbinding': -3.9711},
+    {'Type': 'Furan', 'Number': 7, 'R_1': 'CF_3', 'R_2': 'F', 'R_3': np.nan, 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)c1oc(c(c1)/N=N/c1ccc(c(c1)C)F)C(F)(F)F', 'Gbinding': -5.4022},
+    {'Type': 'Furan', 'Number': 8, 'R_1': 'H', 'R_2': 'F', 'R_3': np.nan, 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)c1occ(c1)/N=N/c1ccc(c(c1)C)F', 'Gbinding': -6.5500},
+    {'Type': 'Furan', 'Number': 9, 'R_1': 'F', 'R_2': 'F', 'R_3': np.nan, 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)c1oc(c(c1)/N=N/c1ccc(c(c1)C)F)F', 'Gbinding': -0.1311},
+    {'Type': 'Furan', 'Number': 10, 'R_1': 'Cl', 'R_2': 'F', 'R_3': np.nan, 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)c1oc(c(c1)/N=N/c1ccc(c(c1)C)F)Cl', 'Gbinding': -5.8185},
+    {'Type': 'Furan', 'Number': 11, 'R_1': 'Br', 'R_2': 'F', 'R_3': np.nan, 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)c1oc(c(c1)/N=N/c1ccc(c(c1)C)F)Br', 'Gbinding': 6.1474},
+    {'Type': 'Furan', 'Number': 12, 'R_1': 'CH_3', 'R_2': 'F', 'R_3': np.nan, 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)c1oc(c(c1)/N=N/c1ccc(c(c1)C)F)C', 'Gbinding': 5.7552},
+    {'Type': 'Thiophene', 'Number': 1, 'R_1': 'F', 'R_2': 'H', 'R_3': np.nan, 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)c1sc(c(c1)/N=N/c1cccc(c1)C)F', 'Gbinding': 1.2724},
+    {'Type': 'Thiophene', 'Number': 2, 'R_1': 'H', 'R_2': 'F', 'R_3': np.nan, 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)c1scc(c1)/N=N/c1ccc(c(c1)C)F', 'Gbinding': -2.7842},
+    {'Type': 'Thiophene', 'Number': 3, 'R_1': 'Cl', 'R_2': 'F', 'R_3': np.nan, 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)c1sc(c(c1)/N=N/c1ccc(c(c1)C)F)Cl', 'Gbinding': -5.7964},
+    {'Type': 'Pyrrole', 'Number': 1, 'R_1': 'CF_3', 'R_2': 'CH_3', 'R_3': 'H', 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)c1[nH]c(c(c1)/N=N/c1ccc(cc1)C)C(F)(F)F', 'Gbinding': -3.5279},
+    {'Type': 'Pyrrole', 'Number': 2, 'R_1': 'Cl', 'R_2': 'CH_3', 'R_3': 'F', 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)c1[nH]c(c(c1)/N=N/c1cc(c(cc1)C)F)Cl', 'Gbinding': -1.3499},
+    {'Type': 'Benzene', 'Number': 1, 'R_1': 'CF_3', 'R_2': 'CH_2CH_3', 'R_3': np.nan, 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)c1ccc(/N=N/c2ccc(cc2)CC)c(C(F)(F)F)c1', 'Gbinding': -1.3390},
+    {'Type': 'Benzene', 'Number': 2, 'R_1': 'CF_3', 'R_2': 'NCH_3COCH_3', 'R_3': np.nan, 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)c1ccc(/N=N/c2ccc(cc2)N(C)C(=O)C)c(C(F)(F)F)c1', 'Gbinding': -1.9922},
+    {'Type': 'Benzene', 'Number': 3, 'R_1': 'CF_3', 'R_2': 'NHCH_3', 'R_3': np.nan, 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)c1ccc(/N=N/c2ccc(cc2)NC)c(C(F)(F)F)c1', 'Gbinding': 4.8759},
+    {'Type': 'Benzene', 'Number': 4, 'R_1': 'CF_3', 'R_2': 'OCH_3', 'R_3': np.nan, 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)c1ccc(/N=N/c2ccc(cc2)OC)c(C(F)(F)F)c1', 'Gbinding': -3.4432},
+    {'Type': 'Benzene', 'Number': 5, 'R_1': 'Cl', 'R_2': 'CH_3', 'R_3': np.nan, 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)c1cc(c(cc1)/N=N/c1ccc(C)cc1)Cl', 'Gbinding': np.nan},
+    {'Type': 'Indole', 'Number': 1, 'R_1': 'H', 'R_2': np.nan, 'R_3': np.nan, 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)c1[nH]c2c(c1)c(/N=N/c1ccccc1)c(C)cc2', 'Gbinding': -9.7543},
+    {'Type': 'Indole', 'Number': 2, 'R_1': 'F', 'R_2': np.nan, 'R_3': np.nan, 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)c1[nH]c2c(c1)c(/N=N/c1ccccc1)c(C)cc2', 'Gbinding': -6.3397},
+    {'Type': 'Indole', 'Number': 3, 'R_1': np.nan, 'R_2': np.nan, 'R_3': np.nan, 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)/N=N/c1[nH]c2c(c1)c(c1ccc(C)cc1)c(C)cc2', 'Gbinding': -5.5320},
+    {'Type': 'TwoRings', 'Number': 1, 'R_1': 'NH', 'R_2': 'NH', 'R_3': 'H', 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)/N=N/c1[nH]c2c(c1)c(c1ccccc1)c([nH]2)C','Gbinding': np.nan},
+    {'Type': 'TwoRings', 'Number': 2, 'R_1': 'NH', 'R_2': 'O', 'R_3': 'H', 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)/N=N/c1[nH]c2c(c1)c(c1ccccc1)c(o2)C', 'Gbinding': -2.2146},
+    {'Type': 'TwoRings', 'Number': 3, 'R_1': 'O', 'R_2': 'NH', 'R_3': 'H', 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)/N=N/c1oc2c(c1)c(c1ccccc1)c([nH]2)C', 'Gbinding': -0.7334},
+    {'Type': 'TwoRings', 'Number': 4, 'R_1': 'O', 'R_2': 'O', 'R_3': 'H', 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)/N=N/c1oc2c(c1)c(c1ccccc1)c(o2)C', 'Gbinding': np.nan},
+    {'Type': 'TwoRings', 'Number': 5, 'R_1': 'NH', 'R_2': 'NH', 'R_3': 'CH_3', 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)/N=N/c1[nH]c2c(c1)c(c1ccc(cc1)C)c([nH]2)C', 'Gbinding': np.nan},
+    {'Type': 'TwoRings', 'Number': 6, 'R_1': 'NH', 'R_2': 'O', 'R_3': 'CH_3', 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)/N=N/c1[nH]c2c(c1)c(c1ccc(cc1)C)c(o2)C', 'Gbinding': 5.5592},
+    {'Type': 'TwoRings', 'Number': 7, 'R_1': 'O', 'R_2': 'NH', 'R_3': 'CH_3', 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)/N=N/c1oc2c(c1)c(c1ccc(cc1)C)c([nH]2)C', 'Gbinding': -10.6712},
+    {'Type': 'TwoRings', 'Number': 8, 'R_1': 'O', 'R_2': 'O', 'R_3': 'CH_3', 'canonical_smiles': 'c1cc(ccc1S(=O)(=O)N)/N=N/c1oc2c(c1)c(c1ccc(cc1)C)c(o2)C', 'Gbinding': -3.5413}
+]
+dictionaryDataFrame = pd.DataFrame(dictionary)
+print(dictionaryDataFrame['canonical_smiles'])
+dictionaryDataFrame.to_feather('../SmilesFiles/providedSmiles.feather')
+dictionaryDataFrame.to_csv('../SmilesFiles/providedSmiles.csv', index = False)
+dictionaryDataFrame.to_csv('../SmilesFiles/providedSmiles', index = False)
+

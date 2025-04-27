@@ -946,57 +946,6 @@
     \field{year}{2019}
   \endentry
 
-  \entry{nsaidDefinition}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=DOE}{%
-         family={Dictionary},
-         familyi={D\bibinitperiod},
-         given={Oxford\bibnamedelima English},
-         giveni={O\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{DOE1}
-    \strng{fullhash}{DOE1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{howpublished}{Online}
-    \field{title}{Non-Steroidal Anti-Inflammatory Drug}
-    \verb{url}
-    \verb https://web.archive.org/web/20220205104155/https://www.lexico.com/def
-    \verb inition/non-steroidal_anti-inflammatory_drug
-    \endverb
-  \endentry
-
-  \entry{AlphaFold2CommumityAssesment}{article}{}
-    \name{author}{2}{}{%
-      {{hash=TK}{%
-         family={Tunyasuvunakool},
-         familyi={T\bibinitperiod},
-         given={Kathryn},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=ea}{%
-         prefix={et},
-         prefixi={e\bibinitperiod},
-         family={al.},
-         familyi={a\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{TKea1}
-    \strng{fullhash}{TKea1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1038/s41594-022-00849-w
-    \endverb
-    \field{pages}{1155–1163}
-    \field{title}{A Structural Biology Community Assessment of AlphaFold2
-  Applications}
-    \field{volume}{29}
-    \field{journaltitle}{Nature Structural and Molecular Biology}
-    \field{year}{2022}
-  \endentry
-
   \entry{BookIC50}{incollection}{}
     \name{author}{1}{}{%
       {{hash=SDC}{%
@@ -1063,38 +1012,54 @@
     \field{year}{2011}
   \endentry
 
-  \entry{DescriptorsBookClassification}{book}{}
+  \entry{DescriptorsBook}{book}{}
     \name{author}{2}{}{%
-      {{hash=TR}{%
-         family={Todeschini},
-         familyi={T\bibinitperiod},
-         given={Roberto},
-         giveni={R\bibinitperiod},
+      {{hash=GJ}{%
+         family={Gasteiger},
+         familyi={G\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
       }}%
-      {{hash=CV}{%
-         family={Consonni},
-         familyi={C\bibinitperiod},
-         given={Viviana},
-         giveni={V\bibinitperiod},
+      {{hash=ET}{%
+         family={Engel},
+         familyi={E\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
       {Wiley-VCH}%
     }
-    \strng{namehash}{TRCV1}
-    \strng{fullhash}{TRCV1}
+    \strng{namehash}{GJET1}
+    \strng{fullhash}{GJET1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1002/9783527628766
-    \endverb
-    \field{edition}{2nd}
-    \field{isbn}{978-3-527-31852-0}
     \field{title}{Molecular Descriptors for Chemoinformatics}
     \list{location}{1}{%
       {Weinheim, Germany}%
     }
-    \field{year}{2009}
+    \field{year}{2003}
+  \endentry
+
+  \entry{nsaidDefinition}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=DOE}{%
+         family={Dictionary},
+         familyi={D\bibinitperiod},
+         given={Oxford\bibnamedelima English},
+         giveni={O\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DOE1}
+    \strng{fullhash}{DOE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{Online}
+    \field{title}{Non-Steroidal Anti-Inflammatory Drug}
+    \verb{url}
+    \verb https://web.archive.org/web/20220205104155/https://www.lexico.com/def
+    \verb inition/non-steroidal_anti-inflammatory_drug
+    \endverb
   \endentry
 
   \entry{GitHub}{misc}{}
