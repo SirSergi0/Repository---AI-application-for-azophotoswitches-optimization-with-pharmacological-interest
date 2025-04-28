@@ -297,12 +297,41 @@ The \gls{ai} algorithm used is a in this study is a \gls{ml} model known as the 
 
 Moreover, the choice of the Random Forest (\gls{rf}) algorithm is motivated by the presence of decision trees in various chemistry-related fields. In spectroscopy, for instance, decision trees are used in group theory to classify molecular symmetry. Similarly, in analytical chemistry, decision trees assist in substance separation techniques, while in organic chemistry, they are used to model reaction pathways.
 
-By applying \gls{ai} models to \gls{cox2}, we assess their compatibility with the latest research findings\cite{Cox2InhibitorsReview}, demonstrating \gls{ai}’s potential as a powerful tool in computational chemistry research. Our approach not only validates \gls{ai}’s effectiveness in predicting inhibition potential but also provides insights into the underlying molecular mechanisms governing \gls{cox2} interactions.Additionaly, this study aims to bridge the gap between \gls{ai} and computational chemistry, reinforcing the \gls{ai}’s potential to revolutionise drug discovery and molecular research. The ability to predict inhibition potential with high accuracy can accelerate the development of new pharmaceuticals, reduce reliance on costly laboratory experiments, and contribute to a more efficient drug screening process. Furthermore, identifying key molecular descriptors correlated with inhibition could lead to a deeper understanding of chemical interactions, opening new avenues for research in medicinal chemistry and bioinformatics.
+By applying \gls{ai} models to \gls{cox2}, we assess their compatibility with the latest research findings\cite{Cox2InhibitorsReview}, demonstrating \gls{ai}’s potential as a powerful tool in computational chemistry research. Our approach not only validates \gls{ai}’s effectiveness in predicting inhibition potential but also provides insights into the underlying molecular mechanisms governing \gls{cox2} interactions. Additionaly, this study aims to bridge the gap between \gls{ai} and computational chemistry, reinforcing the \gls{ai}’s potential to revolutionise drug discovery and molecular research. The ability to predict inhibition potential with high accuracy can accelerate the development of new pharmaceuticals, reduce reliance on costly laboratory experiments, and contribute to a more efficient drug screening process. Furthermore, identifying key molecular descriptors correlated with inhibition could lead to a deeper understanding of chemical interactions, opening new avenues for research in medicinal chemistry and bioinformatics.
 
-Currently, the pharmacological therapies for the \gls{cox2} inhibition are based on \gls{nsaid}\cite{nsaidDefinition} such as the popular ibuprofen or aspirin. However they have proved to be related to cardiovascular diseases and are contraindicated for people with more than 50 years or people with gastrointestinal problems, among others. One of the best drug candidates is the Celecoxib (Def. (\ref{definitionCelecoxib})) and the Rofecoxib (Def. (\ref{definitionRofecoxib})). The the Physical Chemistry Unit at UAB\cite{UAB_ComputationalChemistry}, is experimenting with azophotoswitches as COX-2 inhibitos.
+Currently, the pharmacological therapies for the \gls{cox2} inhibition are based on \gls{nsaid}\cite{nsaidDefinition} such as the popular ibuprofen or aspirin. However they have proved to be related to cardiovascular diseases and are contraindicated for people with more than 50 years or people with gastrointestinal problems, among others. Still some alternative therapies related with \gls{nsaid}s are being explored, in particular, one of the most revolutionary ideas is the application of azophotoswitches in drug design.
+
+We say a molecule to be an azophotoswitch have an azo-bond (\ch{N=N}) sensitive to configurational transformations via photo-excitation. For instance let us consider the example of \textcolor{blue}{insert molecule's name}.
+\begin{figure}[H]
+\captionsetup{type=scheme}
+\centering
+\schemestart
+\scalebox{0.8}{
+	\chemname{\chemfig[angle increment=30]{
+	*6(-=-(-[1]N=[-1]N-*6(-=-=-=))=-=)
+	}}{trans-}}
+	\arrow{<=>[$h\nu$]}
+\scalebox{0.8}{
+	\chemname{\chemfig[angle increment=30]{
+	N(-[-4]*6(-=-=-=))=[0]N-[-2]*6(-=-=-=)
+	}}{cis-}}
+\schemestop
+\caption{\textcolor{blue}{insert molecule's name} as an example of an azophotoswitch.}
+\label{AzophotoswitchExampleFigure}
+\end{figure}
+the conversion between cis-/trans- configurations with photo-excitation leds to different bioactivities for each isomer. The key difference relies in the high molecules' estereochemical requirements in order to bind with a protein. In other words, given protein, the binding regions typically describe an specific shape such that the possible binding molecules must fit in this region. Then, for an azophotoswitch we might observe one configurational isomer to perfectly fit in de capidity whereas the other does not fit. Subsequently, the conformer that fits the best will interact the most with the protein\footnote{In what this project concerns this interaction will be an inhibition of the protein's activity} and we denote this isomer to be the \emph{active configuration}, similarly, we will refere to the other isomer as the \emph{inactive configuration}.\footnote{Typically, the active configuration is the trans- isomer whereas the inactive configuration referes to the cis- isomer although we still can find some exceptions.}
+
+The main application of azophotoswitches in drug design comes with the idea of the subministration of the inactive configuration, a priori an inocu substance for the organism, to a patient. Afterwards, the interchange of the configurations is archived by photo-excitation of the target area avoiding the presence of the subministred drug in non-wished organs and reducing possible side effects. With this procedure higher dossis can be provided to the patient by focussing the presence of the active configuration in the affected cells/organs. Still this therapies remain in an experimental and I+D mark.
+
+One of the best drug candidates for the \gls{cox2} inhibition is the Celecoxib (Def. (\ref{definitionCelecoxib})) and the Rofecoxib (Def. (\ref{definitionRofecoxib}))\footnote{This drugs are also known as \emph{coxib} drus due to the \emph{-coxib} sufix.}. The the Physical Chemistry Unit at UAB\cite{UAB_ComputationalChemistry}, is experimenting with azophotoswitches as COX-2 inhibitos, the prototypes are molecular structures based on the Celecoxib (Def. (\ref{definitionCelecoxib})) structures. Different computations have been made, in particular we focus on the free binding energy denoted as $\Delta G_{binding}$\footnote{Some of this results are presented in the Appendix \ref{appendixTableOfResults}.}. 
+
+Hence, as an applications for the \gls{ml} trained models we pretend to predeict the \gls{ic50} values for the azophotoswitches prototypes\footnote{This values are predictions per se since we do not dispose from experimental or simulations data.} and compare the results with the $\Delta G_{binding}$ computations since both quantities are related with the inhibition of the \gls{cox2}. Although a linear correlation is not expected, the intuition points that lower values of \gls{ic50} should lead to lower values of $\Delta G_{binding}$ and vice versa. This results will be deeply discussed in Results and Discussion section (\ref{sectionResultsAndDiscussion}).
+
+All in all, this project pretends to show \gls{ai} potential in accelarating drug desing and bridge computational chemistry and Artificial Intelligence, two cutting-edge fields, in order to open the door to new ideas and evolve both disciplines to the next level.
 
 \newpage
 \section{Objectives}
+
 
 \newpage
 \section{Methodology}
@@ -343,7 +372,7 @@ In Figure (\ref{figureGraphicGbindingIC50}) we present the results bla bla bla t
 \newpage
 
 \appendix
-\section{Relevant definitions}
+\section{Rellevant definitions}
 \begin{definition}\label{definitionIC50}
 $IC_{50}$: Half maximal inhibitory concentration assigned to the drug concentration required for a $50\%$ inhibition a protein. Other quantities such as $IC_{90}$ or $IC_{99}$ are also commonly used. However, $IC_{90}$ is generally approximated as 10 times the $IC_{50}$ concentration in virtue of experimental observations\cite{BookIC50}. For this project, we aim to identify substances with the lowest possible $IC_{50}$, as our goal is to minimize the presence of foreign substances in the living organism.
 \end{definition}
@@ -652,32 +681,32 @@ Identifier & \ch{R_1} & \ch{R_2} & \ch{R_3} \\\hline\hline
     \centering
 	\begin{tabular}{c|c|c|c|c|c|c}
 		Type & Identifier & $R_1$ & $R_2$ & $R_3$ & $\Delta$ G$_{binding}$ & \gls{ic50} \\ \hline\hline
-        Pyrazole & 1 & \ch{CF_3} & \ch{CH_2CH_3}& \ch{H} & -4.3505 & 145.893274 \\ \hline
-        Pyrazole & 2 & \ch{CF_3} & \ch{CH_2CH_3}& \ch{F} & -3.619 & 160.715075 \\ \hline
-        Pyrazole & 3 & \ch{CF_3} & \ch{CH_3} & \ch{F} & -0.5452 & 192.302751 \\ \hline
-        Pyrazole & 4 & \ch{CF_3} & O\ch{CH_3} & \ch{H} & 9.9793 & 306.280176 \\ \hline
-        Pyrazole & 5 & \ch{CF_3} & O\ch{CH_3} & \ch{F} & 1.5591 & 238.028688 \\ \hline
-        Pyrazole & 6 & \ch{CF_3} & \ch{CH_3} & \ch{H} & -5.3292 & 142.842111 \\ \hline
-        Pyrazole & 8 & \ch{F} & \ch{CH_3} & \ch{H} & 5.0694 & 240.476605 \\ \hline
-        Pyrazole & 9 & \ch{Cl} & \ch{CH_3} & \ch{H} & -1.1579 & 171.543375 \\ \hline
-        Pyrazole & 10 & \ch{Br} & \ch{CH_3} & \ch{H} & 6.3225 & 247.718353 \\ \hline
-        Pyrazole & 11 & \ch{CH_3} & \ch{CH_3} & \ch{H} & 3.0677 & 215.242455 \\ \hline
-        Pyrazole & 12 & \ch{H} & \ch{CH_3} & \ch{F} & 1.0334 & 196.189309 \\ \hline
-        Pyrazole & 13 & \ch{F} & \ch{CH_3} & \ch{F} & 3.2216 & 220.685948 \\ \hline
-        Pyrazole & 14 & \ch{Cl} & \ch{CH_3} & \ch{F} & 5.1623 & 231.70988 \\ \hline
-        Pyrazole & 15 & \ch{Br} & \ch{CH_3} & \ch{F} & 5.6163 & 235.929591 \\ \hline
-        Pyrazole & 16 & \ch{CH_3} & \ch{CH_3} & \ch{F} & -3.3079 & 149.258659 \\ \hline
-        Furan & 1 & \ch{CF_3} & \ch{H} &  & -0.9611 & 171.3118 \\ \hline
-        Furan & 2 & \ch{H} & \ch{H} &  & 0.193 & 189.723234 \\ \hline
-        Furan & 3 & \ch{F} & \ch{H} &  & -4.8383 & 133.666586 \\ \hline
-        Furan & 4 & \ch{Cl} & \ch{H} &  & -2.4267 & 158.679542 \\ \hline
-        Furan & 5 & \ch{Br} & \ch{H} &  & -3.4217 & 144.849203 \\ \hline
-        Furan & 6 & \ch{CH_3} & \ch{H} &  & -3.9711 & 139.974502 \\ \hline
-        Furan & 7 & \ch{CF_3} & \ch{F} &  & -5.4022 & 148.510406 \\ \hline
-        Furan & 8 & \ch{H} & \ch{F} &  & -6.55 & 122.352426 \\ \hline
-        Furan & 9 & \ch{F} & F &  & -0.1311 & 189.013485 \\ \hline
-        Furan & 10 & \ch{Cl} & \ch{F} &  & -5.8185 & 127.541229 \\ \hline
-        Furan & 11 & \ch{Br} & \ch{F} &  & 6.1474 & 241.164891 
+		Pyrazole & \ref{figureCelecoxibPyrazole}.1 & \ch{CF_3} & \ch{CH_2CH_3}& \ch{H} & -4.3505 & 145.893274 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.2 & \ch{CF_3} & \ch{CH_2CH_3}& \ch{F} & -3.619 & 160.715075 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.3 & \ch{CF_3} & \ch{CH_3} & \ch{F} & -0.5452 & 192.302751 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.4 & \ch{CF_3} & O\ch{CH_3} & \ch{H} & 9.9793 & 306.280176 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.5 & \ch{CF_3} & O\ch{CH_3} & \ch{F} & 1.5591 & 238.028688 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.6 & \ch{CF_3} & \ch{CH_3} & \ch{H} & -5.3292 & 142.842111 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.8 & \ch{F} & \ch{CH_3} & \ch{H} & 5.0694 & 240.476605 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.9 & \ch{Cl} & \ch{CH_3} & \ch{H} & -1.1579 & 171.543375 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.10 & \ch{Br} & \ch{CH_3} & \ch{H} & 6.3225 & 247.718353 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.11 & \ch{CH_3} & \ch{CH_3} & \ch{H} & 3.0677 & 215.242455 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.12 & \ch{H} & \ch{CH_3} & \ch{F} & 1.0334 & 196.189309 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.13 & \ch{F} & \ch{CH_3} & \ch{F} & 3.2216 & 220.685948 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.14 & \ch{Cl} & \ch{CH_3} & \ch{F} & 5.1623 & 231.70988 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.15 & \ch{Br} & \ch{CH_3} & \ch{F} & 5.6163 & 235.929591 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.16 & \ch{CH_3} & \ch{CH_3} & \ch{F} & -3.3079 & 149.258659 \\ \hline
+        Furan & \ref{figureCelecoxibFuran}.1 & \ch{CF_3} & \ch{H} &  & -0.9611 & 171.3118 \\ \hline
+        Furan & \ref{figureCelecoxibFuran}.2 & \ch{H} & \ch{H} &  & 0.193 & 189.723234 \\ \hline
+        Furan & \ref{figureCelecoxibFuran}.3 & \ch{F} & \ch{H} &  & -4.8383 & 133.666586 \\ \hline
+        Furan & \ref{figureCelecoxibFuran}.4 & \ch{Cl} & \ch{H} &  & -2.4267 & 158.679542 \\ \hline
+        Furan & \ref{figureCelecoxibFuran}.5 & \ch{Br} & \ch{H} &  & -3.4217 & 144.849203 \\ \hline
+        Furan & \ref{figureCelecoxibFuran}.6 & \ch{CH_3} & \ch{H} &  & -3.9711 & 139.974502 \\ \hline
+        Furan & \ref{figureCelecoxibFuran}.7 & \ch{CF_3} & \ch{F} &  & -5.4022 & 148.510406 \\ \hline
+        Furan & \ref{figureCelecoxibFuran}.8 & \ch{H} & \ch{F} &  & -6.55 & 122.352426 \\ \hline
+        Furan & \ref{figureCelecoxibFuran}.9 & \ch{F} & F &  & -0.1311 & 189.013485 \\ \hline
+        Furan & \ref{figureCelecoxibFuran}.10 & \ch{Cl} & \ch{F} &  & -5.8185 & 127.541229 \\ \hline
+        Furan & \ref{figureCelecoxibFuran}.11 & \ch{Br} & \ch{F} &  & 6.1474 & 241.164891 
             \end{tabular}
 \end{table}
 
@@ -685,25 +714,23 @@ Identifier & \ch{R_1} & \ch{R_2} & \ch{R_3} \\\hline\hline
     \centering
 	\begin{tabular}{c|c|c|c|c|c|c}
 		Type & Identifier & $R_1$ & $R_2$ & $R_3$ & $\Delta$ G$_{binding}$ & \gls{ic50} \\ \hline\hline
-        Thiophene & 1 & \ch{F} & \ch{H} &  & 1.2724 & 192.519195 \\ \hline
-        Thiophene & 2 & \ch{H} & \ch{F} &  & -2.7842 & 152.750403 \\ \hline
-        Thiophene & 3 & \ch{Cl} & \ch{F} &  & -5.7964 & 120.103107 \\ \hline
-        Pyrrole & 1 & \ch{CF_3} & \ch{CH_3} & \ch{H} & -3.5279 & 151.424098 \\ \hline
-        Pyrrole & 2 & \ch{Cl} & \ch{CH_3} & \ch{F} & -1.3499 & 164.211081 \\ \hline
-        Benzene & 1 & \ch{CF_3} & \ch{CH_2CH_3}&  & -1.339 & 168.708238 \\ \hline
-        Benzene & 2 & \ch{CF_3} & \ch{NCH_3COCH_3} &  & -1.9922 & 208.784609 \\ \hline
-        Benzene & 3 & \ch{CF_3} & \ch{NHCH_3} &  & 4.8759 & 232.955871 \\ \hline
-        Benzene & 4 & \ch{CF_3} & \ch{OCH_3} &  & -3.4432 & 155.416193 \\ \hline
-        Indole & 1 & \ch{H} &  &  & -9.7543 & 74.9840521 \\ \hline
-        Indole & 1 & \ch{H} &  &  & -9.7543 & 74.9840521 \\ \hline
-        Indole & 2 & \ch{F} &  &  & -6.3397 & 108.725159 \\ \hline
-        Indole & 2 & \ch{F} &  &  & -6.3397 & 108.725159 \\ \hline
-        Indole & 3 &  &  &  & -5.532 & 111.153348 \\ \hline
-        TwoRings & 2 & \ch{NH} & O & \ch{H} & -2.2146 & 165.648426 \\ \hline
-        TwoRings & 3 & O & \ch{NH} & \ch{H} & -0.7334 & 178.354687 \\ \hline
-        TwoRings & 6 & \ch{NH} & O & \ch{CH_3} & 5.5592 & 235.15246 \\ \hline
-        TwoRings & 7 & O & \ch{NH} & \ch{CH_3} & -10.6712 & 77.7978863 \\ \hline
-        TwoRings & 8 & O & O & \ch{CH_3} & -3.5413 & 142.268104 
+        Thiophene & \ref{figureCelecoxibThiophene}.1 & \ch{F} & \ch{H} &  & 1.2724 & 192.519195 \\ \hline
+        Thiophene & \ref{figureCelecoxibThiophene}.2 & \ch{H} & \ch{F} &  & -2.7842 & 152.750403 \\ \hline
+        Thiophene & \ref{figureCelecoxibThiophene}.3 & \ch{Cl} & \ch{F} &  & -5.7964 & 120.103107 \\ \hline
+        Pyrrole & \ref{figureCelecoxibPyrrole}.1 & \ch{CF_3} & \ch{CH_3} & \ch{H} & -3.5279 & 151.424098 \\ \hline
+        Pyrrole & \ref{figureCelecoxibPyrrole}.2 & \ch{Cl} & \ch{CH_3} & \ch{F} & -1.3499 & 164.211081 \\ \hline
+        Benzene & \ref{figureCelecoxibBenzene}.1 & \ch{CF_3} & \ch{CH_2CH_3}&  & -1.339 & 168.708238 \\ \hline
+        Benzene & \ref{figureCelecoxibBenzene}.2 & \ch{CF_3} & \ch{NCH_3COCH_3} &  & -1.9922 & 208.784609 \\ \hline
+        Benzene & \ref{figureCelecoxibBenzene}.3 & \ch{CF_3} & \ch{NHCH_3} &  & 4.8759 & 232.955871 \\ \hline
+        Benzene & \ref{figureCelecoxibBenzene}.4 & \ch{CF_3} & \ch{OCH_3} &  & -3.4432 & 155.416193 \\ \hline
+        Indole & \ref{figureCelecoxibIndole}.1 & \ch{H} &  &  & -9.7543 & 74.9840521 \\ \hline
+        Indole & \ref{figureCelecoxibIndole}.2 & \ch{F} &  &  & -6.3397 & 108.725159 \\ \hline
+        Indole & \ref{figureCelecoxibIndole}.3 &  &  &  & -5.532 & 111.153348 \\ \hline
+        TwoRings & \ref{figureCelecoxibTwoRings}.2 & \ch{NH} & O & \ch{H} & -2.2146 & 165.648426 \\ \hline
+        TwoRings & \ref{figureCelecoxibTwoRings}.3 & O & \ch{NH} & \ch{H} & -0.7334 & 178.354687 \\ \hline
+        TwoRings & \ref{figureCelecoxibTwoRings}.6 & \ch{NH} & O & \ch{CH_3} & 5.5592 & 235.15246 \\ \hline
+        TwoRings & \ref{figureCelecoxibTwoRings}.7 & O & \ch{NH} & \ch{CH_3} & -10.6712 & 77.7978863 \\ \hline
+        TwoRings & \ref{figureCelecoxibTwoRings}.8 & O & O & \ch{CH_3} & -3.5413 & 142.268104 
     \end{tabular}
 \end{table}
 

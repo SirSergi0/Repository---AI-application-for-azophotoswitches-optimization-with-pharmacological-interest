@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  27 APR 2025 22:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  28 APR 2025 22:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2162,6 +2162,9 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [4]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 326.
+
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2171,11 +2174,29 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [5]
-<GeneralSources/DataSplittingDiagram.pdf, id=308, 692.59853pt x 355.3797pt>
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[6]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[7]
+<GeneralSources/DataSplittingDiagram.pdf, id=338, 692.59853pt x 355.3797pt>
 File: GeneralSources/DataSplittingDiagram.pdf Graphic file (type pdf)
 <use GeneralSources/DataSplittingDiagram.pdf>
 Package pdftex.def Info: GeneralSources/DataSplittingDiagram.pdf  used on input
- line 317.
+ line 346.
 (pdftex.def)             Requested size: 452.9679pt x 232.42021pt.
 
 
@@ -2186,8 +2207,8 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[6]
-Overfull \hbox (5.4703pt too wide) in paragraph at lines 321--322
+[8]
+Overfull \hbox (5.4703pt too wide) in paragraph at lines 350--351
 \T1/phv/m/n/10.95 large num-ber of ran-dom de-ci-sion trees (de-ter-mined by th
 e hard-coded vari-able \T1/phv/m/sl/10.95 num-berOfTrees\T1/phv/m/n/10.95 ),
  []
@@ -2200,11 +2221,11 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[7 <./GeneralSources/DataSplittingDiagram.pdf>]
-<../Plots/GbindingVSIC50.pdf, id=356, 722.7pt x 505.89pt>
+[9 <./GeneralSources/DataSplittingDiagram.pdf>]
+<../Plots/GbindingVSIC50.pdf, id=386, 722.7pt x 505.89pt>
 File: ../Plots/GbindingVSIC50.pdf Graphic file (type pdf)
 <use ../Plots/GbindingVSIC50.pdf>
-Package pdftex.def Info: ../Plots/GbindingVSIC50.pdf  used on input line 331.
+Package pdftex.def Info: ../Plots/GbindingVSIC50.pdf  used on input line 360.
 (pdftex.def)             Requested size: 452.9679pt x 320.83652pt.
 
 
@@ -2215,31 +2236,13 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[8 <../Plots/GbindingVSIC50.pdf>]
-LaTeX Font Info:    Trying to load font information for T1+fvm on input line 34
-2.
+[10 <../Plots/GbindingVSIC50.pdf>]
+LaTeX Font Info:    Trying to load font information for T1+fvm on input line 37
+1.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
-
-[9]
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
-
-[10]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2257,10 +2260,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[12{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/arev/arevoms.enc}]
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 423.
-
+[12]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2278,7 +2278,10 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[14]
+[14{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/arev/arevoms.enc}]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 452.
+
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2350,7 +2353,25 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[22] 
+[22]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[23]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[24] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./Plantilla memòria TFG 2024_25.aux)
  ***********
@@ -2361,12 +2382,9 @@ L3 programming layer <2024-02-20>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `"Plantilla memòria TFG 2024_25".out' has no
 t changed.
-(rerunfilecheck)             Checksum: C97C30CC2D10FF5176F2F3B7DD0061DE;1266.
+(rerunfilecheck)             Checksum: 88760BE6B83749916FD78ADA1330B1EF;1271.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                "Plantilla memòria TFG 2024_25"
@@ -2378,13 +2396,13 @@ xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43937 strings out of 474116
- 847406 string characters out of 5743682
+ 44053 strings out of 474116
+ 850294 string characters out of 5743682
  2035187 words of memory out of 5000000
- 65409 multiletter control sequences out of 15000+600000
- 620878 words of font info for 137 fonts, out of 8000000 for 9000
+ 65515 multiletter control sequences out of 15000+600000
+ 623894 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,16n,101p,2383b,1994s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,17n,101p,2383b,1994s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/arev/ArevSans-Oblique.
 pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/arev/ArevSans-Roman.
 pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
@@ -2397,11 +2415,11 @@ b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-ch
 r7v.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/
 local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "Plantilla memòria TFG 2024_25.pdf" (31 pages, 254226 bytes)
+Output written on "Plantilla memòria TFG 2024_25.pdf" (33 pages, 262554 bytes)
 .
 PDF statistics:
- 639 PDF objects out of 1000 (max. 8388607)
- 544 compressed objects within 6 object streams
- 142 named destinations out of 1000 (max. 500000)
+ 716 PDF objects out of 1000 (max. 8388607)
+ 618 compressed objects within 7 object streams
+ 151 named destinations out of 1000 (max. 500000)
  114 words of extra memory for PDF output out of 10000 (max. 10000000)
 
