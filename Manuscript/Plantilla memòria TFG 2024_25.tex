@@ -7,6 +7,7 @@
 \usepackage{helvet}
 \renewcommand{\rmdefault}{\sfdefault}
 \usepackage[math]{blindtext}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd, esint}
 %---------SPACING----------%
 \usepackage{setspace}
 \setstretch{1.5}
@@ -301,66 +302,107 @@ By applying \gls{ai} models to \gls{cox2}, we assess their compatibility with th
 
 Currently, the pharmacological therapies for the \gls{cox2} inhibition are based on \gls{nsaid}\cite{nsaidDefinition} such as the popular ibuprofen or aspirin. However they have proved to be related to cardiovascular diseases and are contraindicated for people with more than 50 years or people with gastrointestinal problems, among others. Still some alternative therapies related with \gls{nsaid}s are being explored, in particular, one of the most revolutionary ideas is the application of azophotoswitches in drug design.
 
-We say a molecule to be an azophotoswitch have an azo-bond (\ch{N=N}) sensitive to configurational transformations via photo-excitation. For instance let us consider the example of \textcolor{blue}{insert molecule's name}.
+We define a molecule as an azophotoswitch if it contains an azo bond (\ch{N=N}) that is sensitive to configurational transformations upon photo-excitation. For instance, let us consider the case of (E/Z)-N,1-diphenylmethanimine,
 \begin{figure}[H]
 \captionsetup{type=scheme}
 \centering
 \schemestart
 \scalebox{0.8}{
-	\chemname{\chemfig[angle increment=30]{
-	*6(-=-(-[1]N=[-1]N-*6(-=-=-=))=-=)
-	}}{trans-}}
+	\chemfig[angle increment=30]{*6(-=-(-[1]N=[-1]N-*6(-=-=-=))=-=)}}
 	\arrow{<=>[$h\nu$]}
 \scalebox{0.8}{
-	\chemname{\chemfig[angle increment=30]{
+	\chemfig[angle increment=30]{
 	N(-[-4]*6(-=-=-=))=[0]N-[-2]*6(-=-=-=)
-	}}{cis-}}
+	}}
 \schemestop
-\caption{\textcolor{blue}{insert molecule's name} as an example of an azophotoswitch.}
+	\caption{(E/Z)-N,1-diphenylmethanimine conversion as an example of an azophotoswitch.}
 \label{AzophotoswitchExampleFigure}
 \end{figure}
-the conversion between cis-/trans- configurations with photo-excitation leds to different bioactivities for each isomer. The key difference relies in the high molecules' estereochemical requirements in order to bind with a protein. In other words, given protein, the binding regions typically describe an specific shape such that the possible binding molecules must fit in this region. Then, for an azophotoswitch we might observe one configurational isomer to perfectly fit in de capidity whereas the other does not fit. Subsequently, the conformer that fits the best will interact the most with the protein\footnote{In what this project concerns this interaction will be an inhibition of the protein's activity} and we denote this isomer to be the \emph{active configuration}, similarly, we will refere to the other isomer as the \emph{inactive configuration}.\footnote{Typically, the active configuration is the trans- isomer whereas the inactive configuration referes to the cis- isomer although we still can find some exceptions.}
+The photo-induced E/Z isomerization leads to distinct bioactivities for each configuration. This variation arises from the stereochemical constraints required for a molecule to bind to a target protein. Typically, a protein’s binding site has a specific shape, and only molecules whose conformation matches this shape can interact effectively. In the context of an azophotoswitch, one isomer may fit precisely into the binding pocket, leading to strong interactions, while the other may not. Accordingly, we refer to the isomer that interacts most effectively with the protein as the active configuration, and the other as the inactive configuration.\footnote{In the context of this project, interaction refers to inhibition of the protein’s activity.} \footnote{Generally, the trans-isomer is considered the active configuration, while the cis-isomer is considered inactive. However, exceptions exist.}
 
-The main application of azophotoswitches in drug design comes with the idea of the subministration of the inactive configuration, a priori an inocu substance for the organism, to a patient. Afterwards, the interchange of the configurations is archived by photo-excitation of the target area avoiding the presence of the subministred drug in non-wished organs and reducing possible side effects. With this procedure higher dossis can be provided to the patient by focussing the presence of the active configuration in the affected cells/organs. Still this therapies remain in an experimental and I+D mark.
+The primary application of azophotoswitches in drug design is the administration of the inactive isomer, which is assumed to be non-toxic to the organism. Later, the active configuration is generated through selective photo-excitation at the target site. This strategy minimizes drug activity in unintended tissues, thereby reducing side effects. As a result, higher dosages may be administered safely by localizing the therapeutic effect to the desired area. These therapies are still in the experimental stage and remain primarily within research and development.
 
-One of the best drug candidates for the \gls{cox2} inhibition is the Celecoxib (Def. (\ref{definitionCelecoxib})) and the Rofecoxib (Def. (\ref{definitionRofecoxib}))\footnote{This drugs are also known as \emph{coxib} drus due to the \emph{-coxib} sufix.}. The the Physical Chemistry Unit at UAB\cite{UAB_ComputationalChemistry}, is experimenting with azophotoswitches as COX-2 inhibitos, the prototypes are molecular structures based on the Celecoxib (Def. (\ref{definitionCelecoxib})) structures. Different computations have been made, in particular we focus on the free binding energy denoted as $\Delta G_{binding}$\footnote{Some of this results are presented in the Appendix \ref{appendixTableOfResults}.}. 
+Among the most promising drug candidates for \gls{cox2} inhibition are Celecoxib (Definition \ref{definitionCelecoxib}) and Rofecoxib (Definition \ref{definitionRofecoxib}).\footnote{These compounds are often referred to as coxib drugs due to the common suffix -coxib.} At the Physical Chemistry Unit of the UAB \cite{UAB_ComputationalChemistry}, researchers are investigating azophotoswitches as potential COX-2 inhibitors, using molecular structures inspired by Celecoxib. Various computational analyses have been conducted, with particular attention to the binding free energy ($\Delta G_{\text{binding}}$).\footnote{Additional results are provided in Appendix \ref{appendixTableOfResults}.}
 
-Hence, as an applications for the \gls{ml} trained models we pretend to predeict the \gls{ic50} values for the azophotoswitches prototypes\footnote{This values are predictions per se since we do not dispose from experimental or simulations data.} and compare the results with the $\Delta G_{binding}$ computations since both quantities are related with the inhibition of the \gls{cox2}. Although a linear correlation is not expected, the intuition points that lower values of \gls{ic50} should lead to lower values of $\Delta G_{binding}$ and vice versa. This results will be deeply discussed in Results and Discussion section (\ref{sectionResultsAndDiscussion}).
+As an application of our \gls{ml}-based predictive models, we aim to estimate the \gls{ic50} values of azophotoswitch prototypes.\footnote{These values are predictions, as no experimental or simulated data are currently available.} We will then compare these predictions with the computed $\Delta G_{\text{binding}}$ values, as both metrics are indicative of inhibition efficacy. While a direct linear correlation is not expected, we hypothesize that lower \gls{ic50} values should correspond to lower (more negative) $\Delta G_{\text{binding}}$ values, reflecting stronger binding affinities. These relationships will be explored in detail in Section \ref{sectionResultsAndDiscussion}.
 
-All in all, this project pretends to show \gls{ai} potential in accelarating drug desing and bridge computational chemistry and Artificial Intelligence, two cutting-edge fields, in order to open the door to new ideas and evolve both disciplines to the next level.
-
+In conclusion, this study seeks to bridge the gap between Artificial Intelligence and computational chemistry, demonstrating AI’s potential to revolutionize drug discovery and molecular research. Accurate predictions of inhibition potential could accelerate the development of new pharmaceuticals, reduce the need for costly laboratory experiments, and streamline the drug screening process. Furthermore, identifying key molecular descriptors linked to inhibition may provide valuable insights into chemical interactions, opening new directions for research in medicinal chemistry and bioinformatics.
 \newpage
 \section{Objectives}
 
 
+
 \newpage
-\section{Methodology}
+\section{Methodology}\label{sectionMethodology}
 The source code is all stored in the \href{https://github.com/SirSergi0/Repository---AI-application-for-azophotoswitches-optimization-with-pharmacological-interest}{\emph{AI application for azophotoswitches optimization with pharmacological interest} GitHub repository}\cite{GitHub}.
 
-The target protein's ID is set at \emph{CHEMBL230} corresponding to the COX-2 ID in the ChEMBL database. Utilising \emph{requests} python package\cite{PythonPackageRequests} a query URL is sent asking for all molecules with a know $IC_{50}$ value (Def. \ref{definitionIC50}) with a limit of 1000 entries per request. The process is iterated until all data is extracted leading a total of 7979 molecules. Hence the datasheet is processed in pandas dataframes\cite{PythonPackagePandas} and encrypted into binary feather files to optimise reading-writting speed. By removing entries with the same canonical smiles a total of 5112 molecules remain. Among this entries well known drugs such as Celecoxib (Def. \ref{definitionCelecoxib}), Rofecoxib (Def. \ref{definitionRofecoxib}) or even Ibuprofen can be found. However the $IC_{50}$ molecules range is comprehended from $10^{-3}$ to $10^{8}$ nM, a counterproductive range for the AI training procedure. A hard-coded range is filtered discarding all molecules outside the given range, for the most part of the analysis this range is set at $[0,200]$ nM \footnote{this $IC_{50}$ working range is the standard in this kind of studies \cite{MachineLearningPaper5Lipoxygenase}.} which reduces the dataset to 1438 entries (i.e. molecules). \par 
-With the AlvaDesk-python \cite{AlvaDescSecondPaper} facility, the chemical descriptors (i.e., the chemical fingerprint) of each molecule are computed, providing a total of $5800$ descriptors per molecule. Still, by deleting molecular descriptors with null values 2917 remain. Here, the Pearson correlation coefficient between each chemical descriptor and the $IC_{50}$ value is computed, providing insight into the direct relationship between $IC_{50}$ and the descriptors.
+The target protein's ID is set at \emph{CHEMBL230} corresponding to the COX-2 ID in the ChEMBL database. Utilising \emph{requests} python package\cite{PythonPackageRequests} a query URL is sent asking for all molecules with a know $IC_{50}$ value (Def. \ref{definitionIC50}) with a limit of 1000 entries per request. The process is iterated until all data is extracted leading a total of 7979 molecules. Hence the datasheet is processed in pandas dataframes\cite{PythonPackagePandas} and encrypted into binary feather files to optimise reading-writting speed. By removing entries with the same canonical smiles a total of 5112 molecules remain. Among this entries well known drugs such as Celecoxib (Def. \ref{definitionCelecoxib}), Rofecoxib (Def. \ref{definitionRofecoxib}) or even Ibuprofen can be found. However the $IC_{50}$ molecules range is comprehended from $10^{-3}$ to $10^{8}$ nM, a counterproductive range for the AI training procedure. Since we are interested in testing azophotoswitches with presumably low \gls{ic50}, training \gls{ml} models with data of the order of $10^{8}$ or $10^{3}$ nM can be counterproductive since the model might misinterpret the data.\footnote{Typically the range of the azophotoswitches \gls{ic50} is arround the Celecoxib's \gls{ic50}, i.e. arround $120$ nM}. Consecutivelly, a hard-coded range is filtered discarding all molecules outside the given range, for the most part of the analysis this range is set at $[0,200]$ nM \footnote{this $IC_{50}$ working range is the standard in this kind of studies \cite{MachineLearningPaper5Lipoxygenase}.} which reduces the dataset to 1438 entries (i.e. molecules).
 
-At this stage, the average $IC_{50}$ is calculated, and the neighborhood size corresponding to the percentage defined by the hard-coded variable \emph{percentageErased} is removed. This allows us to distinguish between \emph{highly active molecules} and \emph{least active molecules}, those with lower and higher $IC_{50}$ values, respectively. Subsequently, each set of substances is randomly divided into two datasets: a \emph{training set} and a \emph{testing set}, following the proportion specified by the hard-coded variable \emph{testSizeProportion}. This procedure is illustrated in Figure (\ref{FigureDataSplittingDiagram}).
+With the AlvaDesk-python \cite{AlvaDescSecondPaper} facility, the chemical descriptors (i.e., the chemical fingerprint) of each molecule are computed, providing a total of $5800$ descriptors per molecule. Still, some chemical descriptor need from the presence of a certain atom, for instance a chemical descriptor related to presence of a metal in the molecule, or active gorup, for example chemical descriptor related to the presence of a carboxilic acid, or chemical descriptor related triple bound among other possiblities. The computation of this chemical descriptors appear as \emph{null values}. By deleting molecular descriptors with null values 2917 chemical descriptors remain. Here, the Pearson correlation coefficient (Def. (\ref{definitionPersonCoefficient})) between each chemical descriptor and the $IC_{50}$ value is computed, providing insight into the direct relationship between $IC_{50}$ and the descriptors. This relationship will be discussed in the Results and Discussion Section (\ref{sectionResultsAndDiscussion}).
+
+At this stage, the average $IC_{50}$ is calculated, and the neighborhood size corresponding to the percentage defined by the hard-coded variable \emph{percentageErased} is removed. This allows us to distinguish between \emph{highly active molecules} and \emph{least active molecules}, those with lower and higher $IC_{50}$ values, respectively. By doing so, it is possible to compute the classification accuracy statistics of the model from the cluster association of each prediction. Thus we can compare each prediction of each molecules to experimental data, i.e. the model predicts a molecule to be highly active molecule to a highly active molecule this will be denoted as a \gls{tp}. Similarly we can define a \gls{tn}, \gls{fp} and \gls{fn} . This procedure is an standard for evaluating a \gls{ml} model realiability. 
+
+Subsequently, each set of substances is randomly divided into two datasets: a \emph{training set} for training the \gls{rf} algorithm and a \emph{testing set} for testing the statistics and realiability of the \gls{rf} model, following the proportion specified by the hard-coded variable \emph{testSizeProportion}. This procedure is illustrated in Figure (\ref{FigureDataSplittingDiagram}).
 \begin{figure}[H]
 \centering
 \includegraphics[width = \textwidth]{GeneralSources/DataSplittingDiagram.pdf}
 \caption{Splitting and processing data's scheme.}
 \label{FigureDataSplittingDiagram}
 \end{figure}
-Afterward, a Random Forest algorithm is trained using the Sticky Learn \cite{PythonPackageStickitLearn} Python package, which is supported by Microsoft and Google among others. This algorithm generates a large number of random decision trees (determined by the hard-coded variable \emph{numberOfTrees}), which are trained with the training sets. Later, these models are evaluated by predicting the $IC_{50}$ values of the \emph{testing sets}.
+Afterward, a Random Forest algorithm is trained using the Sticky Learn \cite{PythonPackageStickitLearn} Python package, which is supported by Microsoft and Google among others. This algorithm generates a large number of random decision trees (determined by the hard-coded variable \emph{numberOfTrees}), which are trained with the training sets. Typically the more trees the model is trained with the best accuracy in the predictions, nevertheless the computational cost for each model training also increases with the number of trees. It is key to remark that the predictions' accuracy can not be arbitrarily improved by only increasing the number of trees of the \gls{rf} model. The predictions' accuracy is bonded to the data the model is trained with, thus if the data does not provide enough information about the insight of the protein, more accurate predictions can not be archived independently of the number of trees of the model. As a general criteria we can affirm that,
+\begin{align*}
+	\uparrow\text{Data}\quad+\uparrow\text{Number of trees}\implies\uparrow\text{Predictions' accuracy}\\
+	\downarrow\text{Data}\quad+\downarrow\text{Number of trees}\implies\downarrow\text{Predictions' accuracy}
+\end{align*}
+but more data or more number of trees independently will not lead to better accuracy,
+\begin{align*}
+	\uparrow\text{Number of trees}\nrightarrow\uparrow\text{Predictions' accuracy}\\
+	\uparrow\text{Data}\nRightarrow \uparrow\text{Predictions' accuracy}
+\end{align*}
 
-Using the results, the \emph{True Positive Rate} (Def. \ref{definitionTruePositiveRate}), \emph{True Negative Rate} (Def. \ref{definitionTrueNegativeRate}), \emph{Classification Accuracy} (Def. \ref{definitionClassificationAccuracy}), and \emph{Matthews Correlation Coefficient} (Def. \ref{definitionMatthewsCorrelationCoeficient}) are computed. Based on these computational results, the variables \emph{percentageErased}, \emph{testSizeProportion}, and \emph{numberOfTrees} are manually adjusted to obtain the best results.
+Later, these models are evaluated by predicting the $IC_{50}$ values of the \emph{testing sets}. Using the results, the \emph{True Positive Rate} (Def. \ref{definitionTruePositiveRate}), \emph{True Negative Rate} (Def. \ref{definitionTrueNegativeRate}), \emph{Classification Accuracy} (Def. \ref{definitionClassificationAccuracy}), and \emph{Matthews Correlation Coefficient} (Def. \ref{definitionMatthewsCorrelationCoeficient}) are computed. Based on these computational results, the variables \emph{percentageErased}, \emph{testSizeProportion}, and \emph{numberOfTrees} are manually adjusted to obtain the best results.
+
+Finally, the \gls{rf} algorithm with best statistics\footnote{The ruling criteria used to classify one model to have "better statistics" than other is discussed in section (\ref{sectionResultsAndDiscussion})} are used to predict the \gls{ic50} of the azophotoswitch prototipes classified in Appendix (\ref{appendixAzophotoshiches}). This procedure begins with the computation of the chemical descriptors with AlvaDesk software \cite{MauriMolecularDescriptorsBook}, then the pertinent chemical descriptor are erased in order to match the ones th
 
 \newpage
 \section{Results and Discussion}\label{sectionResultsAndDiscussion}
-In Figure (\ref{figureGraphicGbindingIC50}) we present the results bla bla bla the data is stored in appendix \ref{appendixTableOfResults}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth, trim={0.85cm 0.3cm 1.5cm 1.35cm}, clip]{../Plots/DataGapRepresentationIC50percentageEresed15.0Gap_min_32Gap_max_53.pdf}
+	\caption{\gls{ic50} values }
+	\label{figureGraphicRecurrecyIC50}
+\end{figure}
 
 \begin{figure}[H]
 	\centering
+	\includegraphics[width = \textwidth, trim={0.6cm 0.3cm 1.5cm 1.35cm}, clip]{../Plots/ChEMBL_ExtractorData_CHEMBL230_IC50_1000CorrelationFactors.pdf}
+	\caption{Pearson correlation coefficient for each chemical descriptor.}
+	\label{figureGraphicCorrelationFactor}
+\end{figure}
+
+
+
+
+In Figure (\ref{figureGraphicGbindingIC50}) we present the results for the predicted \gls{ic50} in terms of the $\Delta G_{binding}$ provided by the Physical Chemistry Unit of the UAB. The exact results are stored in Appendix \ref{appendixTableOfResults} in Tables (\ref{TableMainResults1}) and (\ref{TableMainResults2}), additionall the conditions under which the Random Forest (\gls{rf}) algorithm has been trained and the statistics analysis of its predictions is stored in Table (\ref{TableConditionsMainResults}).
+\begin{figure}[H]
+	\centering
 	\includegraphics[width = \textwidth, trim={1.75cm 0.8cm 2.5cm 2cm}, clip]{../Plots/GbindingVSIC50.pdf}
-	\caption{Graphic of the azophotoswitches from appendix \ref{appendixAzophotoshiches} where the x-axis represents the $\Delta G_{binding}$ and the y-axis the computed \gls{ic50}.}
+	\caption{Graphic of the azophotoswitches from Appendix \ref{appendixAzophotoshiches} where the x-axis represents the $\Delta G_{binding}$ and the y-axis the computed \gls{ic50}.}
 	\label{figureGraphicGbindingIC50}
 \end{figure}
+
+Furthermore, we may also show the statistics and reliability of this results in Table (\ref{TableStatisitcsMainResults}).
+\begin{table}[H]
+    \centering	
+	\caption{Statistics for the computation of the results from tables (\ref{TableMainResults1}) and (\ref{TableMainResults2}).}
+	\label{TableStatisitcsMainResults}
+	\begin{tabular}{c|c}
+		Mean Squared Error       & 1202.70\\\hline
+		R-squared                & 0.89\\\hline
+		ClassificationAcuracy    & 0.94\\\hline
+		MatthewsCorrelationFactor& 0.87
+    \end{tabular}
+\end{table}
 
 
 
@@ -676,63 +718,90 @@ Identifier & \ch{R_1} & \ch{R_2} & \ch{R_3} \\\hline\hline
 \end{table}
 
 \section{Table of results}\label{appendixTableOfResults}
-
 \begin{table}[H]
     \centering
+	\caption{Results for the $\Delta$G$_{binding}$ and \gls{ic50}. The conditions and estatistics under which this computations have been done are stored in Table (\ref{TableConditionsMainResults}).}
+	\label{TableMainResults1}
 	\begin{tabular}{c|c|c|c|c|c|c}
-		Type & Identifier & $R_1$ & $R_2$ & $R_3$ & $\Delta$ G$_{binding}$ & \gls{ic50} \\ \hline\hline
-		Pyrazole & \ref{figureCelecoxibPyrazole}.1 & \ch{CF_3} & \ch{CH_2CH_3}& \ch{H} & -4.3505 & 145.893274 \\ \hline
-        Pyrazole & \ref{figureCelecoxibPyrazole}.2 & \ch{CF_3} & \ch{CH_2CH_3}& \ch{F} & -3.619 & 160.715075 \\ \hline
-        Pyrazole & \ref{figureCelecoxibPyrazole}.3 & \ch{CF_3} & \ch{CH_3} & \ch{F} & -0.5452 & 192.302751 \\ \hline
-        Pyrazole & \ref{figureCelecoxibPyrazole}.4 & \ch{CF_3} & O\ch{CH_3} & \ch{H} & 9.9793 & 306.280176 \\ \hline
-        Pyrazole & \ref{figureCelecoxibPyrazole}.5 & \ch{CF_3} & O\ch{CH_3} & \ch{F} & 1.5591 & 238.028688 \\ \hline
-        Pyrazole & \ref{figureCelecoxibPyrazole}.6 & \ch{CF_3} & \ch{CH_3} & \ch{H} & -5.3292 & 142.842111 \\ \hline
-        Pyrazole & \ref{figureCelecoxibPyrazole}.8 & \ch{F} & \ch{CH_3} & \ch{H} & 5.0694 & 240.476605 \\ \hline
-        Pyrazole & \ref{figureCelecoxibPyrazole}.9 & \ch{Cl} & \ch{CH_3} & \ch{H} & -1.1579 & 171.543375 \\ \hline
-        Pyrazole & \ref{figureCelecoxibPyrazole}.10 & \ch{Br} & \ch{CH_3} & \ch{H} & 6.3225 & 247.718353 \\ \hline
-        Pyrazole & \ref{figureCelecoxibPyrazole}.11 & \ch{CH_3} & \ch{CH_3} & \ch{H} & 3.0677 & 215.242455 \\ \hline
-        Pyrazole & \ref{figureCelecoxibPyrazole}.12 & \ch{H} & \ch{CH_3} & \ch{F} & 1.0334 & 196.189309 \\ \hline
-        Pyrazole & \ref{figureCelecoxibPyrazole}.13 & \ch{F} & \ch{CH_3} & \ch{F} & 3.2216 & 220.685948 \\ \hline
-        Pyrazole & \ref{figureCelecoxibPyrazole}.14 & \ch{Cl} & \ch{CH_3} & \ch{F} & 5.1623 & 231.70988 \\ \hline
-        Pyrazole & \ref{figureCelecoxibPyrazole}.15 & \ch{Br} & \ch{CH_3} & \ch{F} & 5.6163 & 235.929591 \\ \hline
-        Pyrazole & \ref{figureCelecoxibPyrazole}.16 & \ch{CH_3} & \ch{CH_3} & \ch{F} & -3.3079 & 149.258659 \\ \hline
-        Furan & \ref{figureCelecoxibFuran}.1 & \ch{CF_3} & \ch{H} &  & -0.9611 & 171.3118 \\ \hline
-        Furan & \ref{figureCelecoxibFuran}.2 & \ch{H} & \ch{H} &  & 0.193 & 189.723234 \\ \hline
-        Furan & \ref{figureCelecoxibFuran}.3 & \ch{F} & \ch{H} &  & -4.8383 & 133.666586 \\ \hline
-        Furan & \ref{figureCelecoxibFuran}.4 & \ch{Cl} & \ch{H} &  & -2.4267 & 158.679542 \\ \hline
-        Furan & \ref{figureCelecoxibFuran}.5 & \ch{Br} & \ch{H} &  & -3.4217 & 144.849203 \\ \hline
-        Furan & \ref{figureCelecoxibFuran}.6 & \ch{CH_3} & \ch{H} &  & -3.9711 & 139.974502 \\ \hline
-        Furan & \ref{figureCelecoxibFuran}.7 & \ch{CF_3} & \ch{F} &  & -5.4022 & 148.510406 \\ \hline
-        Furan & \ref{figureCelecoxibFuran}.8 & \ch{H} & \ch{F} &  & -6.55 & 122.352426 \\ \hline
-        Furan & \ref{figureCelecoxibFuran}.9 & \ch{F} & F &  & -0.1311 & 189.013485 \\ \hline
-        Furan & \ref{figureCelecoxibFuran}.10 & \ch{Cl} & \ch{F} &  & -5.8185 & 127.541229 \\ \hline
-        Furan & \ref{figureCelecoxibFuran}.11 & \ch{Br} & \ch{F} &  & 6.1474 & 241.164891 
+		Type & Identifier & $R_1$ & $R_2$ & $R_3$ & $\Delta$ G$_{binding}$ (Kcal/mol) & Predicted \gls{ic50} (nM) \\ \hline\hline
+		Pyrazole & \ref{figureCelecoxibPyrazole}.1 & \ch{CF_3} & \ch{CH_2CH_3}& \ch{H} & -4.3505 & 145 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.2 & \ch{CF_3} & \ch{CH_2CH_3}& \ch{F} & -3.619 & 160 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.3 & \ch{CF_3} & \ch{CH_3} & \ch{F} & -0.5452 & 192 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.4 & \ch{CF_3} & O\ch{CH_3} & \ch{H} & 9.9793 & 306 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.5 & \ch{CF_3} & O\ch{CH_3} & \ch{F} & 1.5591 & 238 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.6 & \ch{CF_3} & \ch{CH_3} & \ch{H} & -5.3292 & 142 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.8 & \ch{F} & \ch{CH_3} & \ch{H} & 5.0694 & 240 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.9 & \ch{Cl} & \ch{CH_3} & \ch{H} & -1.1579 & 171 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.10 & \ch{Br} & \ch{CH_3} & \ch{H} & 6.3225 & 247 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.11 & \ch{CH_3} & \ch{CH_3} & \ch{H} & 3.0677 & 215 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.12 & \ch{H} & \ch{CH_3} & \ch{F} & 1.0334 & 196 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.13 & \ch{F} & \ch{CH_3} & \ch{F} & 3.2216 & 220 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.14 & \ch{Cl} & \ch{CH_3} & \ch{F} & 5.1623 & 231 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.15 & \ch{Br} & \ch{CH_3} & \ch{F} & 5.6163 & 235 \\ \hline
+        Pyrazole & \ref{figureCelecoxibPyrazole}.16 & \ch{CH_3} & \ch{CH_3} & \ch{F} & -3.3079 & 149 \\ \hline
+        Furan & \ref{figureCelecoxibFuran}.1 & \ch{CF_3} & \ch{H} &  & -0.9611 & 171 \\ \hline
+        Furan & \ref{figureCelecoxibFuran}.2 & \ch{H} & \ch{H} &  & 0.193 & 189 \\ \hline
+        Furan & \ref{figureCelecoxibFuran}.3 & \ch{F} & \ch{H} &  & -4.8383 & 133 \\ \hline
+        Furan & \ref{figureCelecoxibFuran}.4 & \ch{Cl} & \ch{H} &  & -2.4267 & 158 \\ \hline
+        Furan & \ref{figureCelecoxibFuran}.5 & \ch{Br} & \ch{H} &  & -3.4217 & 144 \\ \hline
+        Furan & \ref{figureCelecoxibFuran}.6 & \ch{CH_3} & \ch{H} &  & -3.9711 & 139 \\ \hline
+        Furan & \ref{figureCelecoxibFuran}.7 & \ch{CF_3} & \ch{F} &  & -5.4022 & 148 \\ \hline
+        Furan & \ref{figureCelecoxibFuran}.8 & \ch{H} & \ch{F} &  & -6.55 & 122 \\ \hline
+        Furan & \ref{figureCelecoxibFuran}.9 & \ch{F} & F &  & -0.1311 & 189\\ \hline
+        Furan & \ref{figureCelecoxibFuran}.10 & \ch{Cl} & \ch{F} &  & -5.8185 & 127\\ \hline
+        Furan & \ref{figureCelecoxibFuran}.11 & \ch{Br} & \ch{F} &  & 6.1474 & 241
             \end{tabular}
 \end{table}
 
 \begin{table}[H]
-    \centering
+    \centering	
+	\caption{Results for the $\Delta$G$_{binding}$ and \gls{ic50}. The conditions and estatistics under which this computations have been done are stored in Table (\ref{TableConditionsMainResults}).}
+	\label{TableMainResults2}
 	\begin{tabular}{c|c|c|c|c|c|c}
-		Type & Identifier & $R_1$ & $R_2$ & $R_3$ & $\Delta$ G$_{binding}$ & \gls{ic50} \\ \hline\hline
-        Thiophene & \ref{figureCelecoxibThiophene}.1 & \ch{F} & \ch{H} &  & 1.2724 & 192.519195 \\ \hline
-        Thiophene & \ref{figureCelecoxibThiophene}.2 & \ch{H} & \ch{F} &  & -2.7842 & 152.750403 \\ \hline
-        Thiophene & \ref{figureCelecoxibThiophene}.3 & \ch{Cl} & \ch{F} &  & -5.7964 & 120.103107 \\ \hline
-        Pyrrole & \ref{figureCelecoxibPyrrole}.1 & \ch{CF_3} & \ch{CH_3} & \ch{H} & -3.5279 & 151.424098 \\ \hline
-        Pyrrole & \ref{figureCelecoxibPyrrole}.2 & \ch{Cl} & \ch{CH_3} & \ch{F} & -1.3499 & 164.211081 \\ \hline
-        Benzene & \ref{figureCelecoxibBenzene}.1 & \ch{CF_3} & \ch{CH_2CH_3}&  & -1.339 & 168.708238 \\ \hline
-        Benzene & \ref{figureCelecoxibBenzene}.2 & \ch{CF_3} & \ch{NCH_3COCH_3} &  & -1.9922 & 208.784609 \\ \hline
-        Benzene & \ref{figureCelecoxibBenzene}.3 & \ch{CF_3} & \ch{NHCH_3} &  & 4.8759 & 232.955871 \\ \hline
-        Benzene & \ref{figureCelecoxibBenzene}.4 & \ch{CF_3} & \ch{OCH_3} &  & -3.4432 & 155.416193 \\ \hline
-        Indole & \ref{figureCelecoxibIndole}.1 & \ch{H} &  &  & -9.7543 & 74.9840521 \\ \hline
-        Indole & \ref{figureCelecoxibIndole}.2 & \ch{F} &  &  & -6.3397 & 108.725159 \\ \hline
-        Indole & \ref{figureCelecoxibIndole}.3 &  &  &  & -5.532 & 111.153348 \\ \hline
-        TwoRings & \ref{figureCelecoxibTwoRings}.2 & \ch{NH} & O & \ch{H} & -2.2146 & 165.648426 \\ \hline
-        TwoRings & \ref{figureCelecoxibTwoRings}.3 & O & \ch{NH} & \ch{H} & -0.7334 & 178.354687 \\ \hline
-        TwoRings & \ref{figureCelecoxibTwoRings}.6 & \ch{NH} & O & \ch{CH_3} & 5.5592 & 235.15246 \\ \hline
-        TwoRings & \ref{figureCelecoxibTwoRings}.7 & O & \ch{NH} & \ch{CH_3} & -10.6712 & 77.7978863 \\ \hline
-        TwoRings & \ref{figureCelecoxibTwoRings}.8 & O & O & \ch{CH_3} & -3.5413 & 142.268104 
+		Type & Identifier & $R_1$ & $R_2$ & $R_3$ & $\Delta$ G$_{binding}$ (Kcal/mol) & Predicted \gls{ic50} (nM) \\ \hline\hline
+        Thiophene & \ref{figureCelecoxibThiophene}.1 & \ch{F} & \ch{H} &  & 1.2724 & 192\\ \hline
+        Thiophene & \ref{figureCelecoxibThiophene}.2 & \ch{H} & \ch{F} &  & -2.7842 & 152\\ \hline
+        Thiophene & \ref{figureCelecoxibThiophene}.3 & \ch{Cl} & \ch{F} &  & -5.7964 & 120\\ \hline
+        Pyrrole & \ref{figureCelecoxibPyrrole}.1 & \ch{CF_3} & \ch{CH_3} & \ch{H} & -3.5279 & 151\\ \hline
+        Pyrrole & \ref{figureCelecoxibPyrrole}.2 & \ch{Cl} & \ch{CH_3} & \ch{F} & -1.3499 & 164\\ \hline
+        Benzene & \ref{figureCelecoxibBenzene}.1 & \ch{CF_3} & \ch{CH_2CH_3}&  & -1.339 & 168\\\hline
+        Benzene & \ref{figureCelecoxibBenzene}.2 & \ch{CF_3} & \ch{NCH_3COCH_3} &  & -1.9922 & 208\\ \hline
+        Benzene & \ref{figureCelecoxibBenzene}.3 & \ch{CF_3} & \ch{NHCH_3} &  & 4.8759 & 232\\ \hline
+        Benzene & \ref{figureCelecoxibBenzene}.4 & \ch{CF_3} & \ch{OCH_3} &  & -3.4432 & 155\\ \hline
+        Indole & \ref{figureCelecoxibIndole}.1 & \ch{H} &  &  & -9.7543 & 74\\ \hline
+        Indole & \ref{figureCelecoxibIndole}.2 & \ch{F} &  &  & -6.3397 & 108\\ \hline
+        Indole & \ref{figureCelecoxibIndole}.3 &  &  &  & -5.532 & 111\\ \hline
+        TwoRings & \ref{figureCelecoxibTwoRings}.2 & \ch{NH} & O & \ch{H} & -2.2146 & 165\\ \hline
+        TwoRings & \ref{figureCelecoxibTwoRings}.3 & O & \ch{NH} & \ch{H} & -0.7334 & 178\\ \hline
+        TwoRings & \ref{figureCelecoxibTwoRings}.6 & \ch{NH} & O & \ch{CH_3} & 5.5592 & 235\\ \hline
+        TwoRings & \ref{figureCelecoxibTwoRings}.7 & O & \ch{NH} & \ch{CH_3} & -10.6712 & 77\\ \hline
+        TwoRings & \ref{figureCelecoxibTwoRings}.8 & O & O & \ch{CH_3} & -3.5413 & 142
     \end{tabular}
 \end{table}
+
+\begin{table}[H]
+    \centering	
+	\caption{Conditions and statistics for the computation of the results from tables (\ref{TableMainResults1}) and (\ref{TableMainResults2}).}
+	\label{TableConditionsMainResults}
+	\begin{tabular}{c|c}
+		NumberOfTrees            & 250\\\hline
+		Erased Percentatge       & 0.0\%\\\hline
+		Splitting proportion     & 10.0\% for testing \\\hline
+		minimumCorrelationFactor & 0.0\\\hline
+		Number of descriptors    & 3040\\\hline
+		Mean Squared Error       & 1202.70\\\hline
+		R-squared                & 0.89\\\hline
+		True Positive            & 994\\\hline
+		False Positive           & 8\\\hline
+		True Negative            & 1015\\\hline
+		False Negative           & 101\\\hline
+		True Positive Rate       & 0.91\\\hline
+		True Negative Rate       & 0.99\\\hline
+		ClassificationAcuracy    & 0.94\\\hline
+		MatthewsCorrelationFactor& 0.87
+    \end{tabular}
+\end{table}
+
 
 
 \end{document}

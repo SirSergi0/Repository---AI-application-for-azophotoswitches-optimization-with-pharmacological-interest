@@ -18,8 +18,8 @@ for i in range(7):
 
 plt.figure(figsize=(10, 7))
 plt.scatter(Prediction['Gbinding'],Prediction['Predictions'], color = 'purple')
-plt.xlabel('$\Delta G_{binding}$')
-plt.ylabel('Predicted $IC_{50}$')
+plt.xlabel('$\Delta G_{binding}$ (Kcal/mol)')
+plt.ylabel('Predicted $IC_{50}$ (nM)')
 # plt.xlim(-12,12)
 # plt.ylim(80,320)
 # plt.show()

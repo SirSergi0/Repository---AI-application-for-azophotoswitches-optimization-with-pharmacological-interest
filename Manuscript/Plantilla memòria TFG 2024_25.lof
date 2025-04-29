@@ -1,5 +1,7 @@
 \babel@toc {english}{}\relax 
 \contentsline {figure}{\numberline {1}{\ignorespaces Splitting and processing data's scheme.}}{9}{figure.caption.13}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Graphic of the azophotoswitches from appendix \ref {appendixAzophotoshiches} where the x-axis represents the $\Delta G_{binding}$ and the y-axis the computed \gls {ic50}.}}{10}{figure.caption.14}%
-\contentsline {figure}{Chemical graph of Celecoxib.}{13}{scheme.caption.17}%
-\contentsline {figure}{Chemical graph of Rofecoxib.}{14}{scheme.caption.19}%
+\contentsline {figure}{\numberline {2}{\ignorespaces \gls {ic50} values }}{11}{figure.caption.14}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Pearson correlation coefficient for each chemical descriptor.}}{12}{figure.caption.15}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Graphic of the azophotoswitches from Appendix \ref {appendixAzophotoshiches} where the x-axis represents the $\Delta G_{binding}$ and the y-axis the computed \gls {ic50}.}}{13}{figure.caption.16}%
+\contentsline {figure}{Chemical graph of Celecoxib.}{16}{scheme.caption.20}%
+\contentsline {figure}{Chemical graph of Rofecoxib.}{17}{scheme.caption.22}%
