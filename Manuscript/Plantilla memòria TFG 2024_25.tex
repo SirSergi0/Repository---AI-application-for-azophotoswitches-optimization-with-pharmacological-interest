@@ -19,6 +19,7 @@
 \usepackage{afterpage}
 \usepackage{lastpage}
 \usepackage{fancyhdr}
+\usepackage{forest}
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{hyperref}
@@ -265,9 +266,17 @@ Finally, the models are used to predict the IC$_{50}$ of 50 \emph{azophotoswitch
 \section{Introduction}
 The impact of \gls{ai} on science has been nothing short of a groundbreaking revolution, with few comparable precedents. The rapid advancements in \gls{ai} have transformed numerous scientific fields\cite{AlphaFold2BiologyAndMedicine}\cite{NationalLibraryOfMedicineGeneralArticle}, including computational chemistry. Today, one of the primary goals of computational chemistry is to predict the properties of unstudied substances while minimizing experimental costs. Traditional approaches in chemistry often rely on complex laboratory techniques, which, while effective, can be time-consuming, expensive, and resource-intensive. In contrast, computational chemistry offers a wide range of methods capable of predicting a molecule’s properties with reasonable accuracy. However, when \gls{ai} comes into play, predictions have demonstrated an almost surgical precision.
 
-Perhaps one of the most representative events showcasing the enormous impact of \gls{ai} on chemistry is the 2024 Nobel Prize in Chemistry. The winners, David Baker\cite{NobelPrizeBale}, along with Demis Hassabis and John Jumper\cite{NobelPrizeJumper}, were not traditionally trained chemists. Instead, their expertise lies in \gls{ai} algorithms and \gls{ml} methods applied to protein research. This milestone, among others, triggered a surge of chemistry researchers diving into the world of \gls{ai}, seeking applications for their respective fields. Today, the thrilling progress in computational chemistry has been further reinforced by these cutting-edge tools\cite{MachineLearningPaper5Lipoxygenase}, and the rapid pace of development keeps the scientific community eagerly anticipating future applications in fields such as medicine, materials science, and beyond. In this project we aim to apply the new AI and ML algorithms to our object of study, the \gls{ptgs2} also known as \gls{cox2}, a protein tightly linked to the onset of numerous cancers forms\cite{Cox2CancerReview}. 
+Perhaps one of the most representative events showcasing the enormous impact of \gls{ai} on chemistry is the 2024 Nobel Prize in Chemistry. The winners, David Baker\cite{NobelPrizeBale}, along with Demis Hassabis and John Jumper\cite{NobelPrizeJumper}, were not traditionally trained chemists. Instead, their expertise lies in \gls{ai} algorithms and \gls{ml} methods applied to protein research. This milestone, among others, triggered a surge of chemistry researchers diving into the world of \gls{ai}, seeking applications for their respective fields. Today, the thrilling progress in computational chemistry has been further reinforced by these cutting-edge tools\cite{MachineLearningPaper5Lipoxygenase}, and the rapid pace of development keeps the scientific community eagerly anticipating future applications in fields such as medicine, materials science, and beyond. In this project we aim to apply the new AI and ML algorithms to our object of study, the \gls{ptgs2} also known as \gls{cox2}, depicted in Figure (\ref{FigureCox2ChimeraX}), a protein tightly linked to the onset of numerous cancers forms\cite{Cox2CancerReview}. 
 
 Although significant advancements have been made, cancer still accounts for over 8 million deaths per year worldwide, and the scientific and medical communities remain far from achieving its complete eradication. Inflammation is one of the hallmarks of carcinogenesis, in fact, various cancer therapies target inflammation as a means of preventing and reducing cancer occurrences. When a tissue is damaged, inflammation protects the organism from infections caused by external pathogens, a key function of the immune system to prevent the presence of invaders in the body. During the inflammatory process, cells proliferate under the command of the immune system to replace the damaged cells of the affected tissue. However, if this cell reproduction continues beyond the healing of the damaged tissue, it can potentially lead to cancer, contradicting the initial healing purpose of the inflammatory process. In some cases, inflammation can become chronic, leading to tumor development and uncontrolled cell proliferation. As a result, a wide range of drug prototypes have been designed to suppress inflammation. However, many of these drugs have been linked to severe side effects, including immunosuppression, cardiovascular risks, and gastrointestinal complications. Consequently, the administration of these drugs is often contrindicative, and the search for a more effective and safer treatment remains ongoing. Plently of the research in this field is mainly focused on the pro-inflamatory enzyme \gls{cox2}, one of the main commanders in the inflammation process and responsable to convert the arachidonic acid to prostaglandin \ch{H_2} (Scheme (\ref{Cox2MainReaction})). Subsequently, a therapy based on the chemical inhibition of the \gls{cox2} with no side effects has been one of the research lines in cancer treatment leading to a considerable amount of experiments and data.
+\begin{figure}[t]
+	\centering
+	\includegraphics[width = \textwidth, trim={10cm 0cm 10cm 0cm}, clip]{GeneralSources/Cox2ChimeraX.jpg}
+	\caption{Structural representation of the \gls{cox2} generated by the ChimeraX software\cite{ChimeraX}.}
+	\label{FigureCox2ChimeraX}
+\end{figure}
+
+The increasing interest in \gls{cox2} inhibitors has granted the scientific community with an extensive database of molecular inhibition potentials for this protein. In this project, we focus on the Half Maximal Inhibitory Concentration (\gls{ic50}), a standard metric representing the concentration of a drug required to inhibit 50\% of a target protein’s activity. Related measures include \gls{ic90} and \gls{ic99}, which correspond to 90\% and 99\% inhibition, respectively. The lower the \gls{ic50} value of a molecule, the lower the concentration needed to inhibit \gls{cox2}, indicating higher efficiency. This factor is crucial in drug design, as a lower required dosage minimizes the presence of foreign substances in the body, thereby reducing the risk of adverse effects\footnote{Naturally, multiple other factors influence drug side effects.}.
 
 \begin{figure}[H]
 \captionsetup{type=scheme}
@@ -287,8 +296,6 @@ HO-[1](=[3]O)-[-1]-[1]-[-1]-[1]=[-1]-[-3]-[-1]=[-3]-[7]-[-3]=[7]-[-7]-[7]=[-7]-[
 \caption{Reaction catalysed by the COX-2 between arachidonic acid to prostaglandin H$_2$.}
 \label{Cox2MainReaction}
 \end{figure}
-
-The increasing interest in \gls{cox2} inhibitors has granted the scientific community with an extensive database of molecular inhibition potentials for this protein. In this project, we focus on the Half Maximal Inhibitory Concentration (\gls{ic50}), a standard metric representing the concentration of a drug required to inhibit 50\% of a target protein’s activity. Related measures include \gls{ic90} and \gls{ic99}, which correspond to 90\% and 99\% inhibition, respectively. The lower the \gls{ic50} value of a molecule, the lower the concentration needed to inhibit \gls{cox2}, indicating higher efficiency. This factor is crucial in drug design, as a lower required dosage minimizes the presence of foreign substances in the body, thereby reducing the risk of adverse effects\footnote{Naturally, multiple other factors influence drug side effects.}.
 
 Determining an experimental \gls{ic50} value can be both costly and time-consuming\footnote{Usually this parameter is computed throughout the Cheng Prusoff Equation (Def. (\ref{definitionChengPrusoff})) with experimental data.}. On the other hand, \gls{ai} provides an alternative by offering highly accurate predictions based on existing data, optimising research processes, and accelerating scientific discovery. In this scenario this project aims to implement artificial intelligence in computational chemistry, concretely, using \gls{ai}-based algorithms to predict a drug’s inhibition potential\cite{BookIC50} for a given protein with a relativelly good accuracy \footnote{The accuracy of the ML models is discussed on the Results and Discussion section (\ref{sectionResultsAndDiscussion}).}. To achieve this, we make use of the ChEMBL database\cite{ChemblDatabase}, a vast repository of bioactive molecules with drug-like properties. We extract all known molecular data with a documented inhibition potential for the target protein, creating a comprehensive dataset. The chemical descriptors of each molecule in the database are then computed using AlvaDesk\cite{MauriMolecularDescriptorsBook}\cite{AlvaDescSecondPaper} software. Around 5000 descriptors are calculated\cite{DescriptorsBook}, which comprehend from the elemental molecular weight to the complex equipotential electronic surface, providing critical information about each compound’s behaviour. The resulting dataset is subsequently used to train \gls{ai} models, enabling them to predict the inhibition potential of unknown compounds. Finally, we evaluate the reliability of each model by testing it against real experimental data. 
 
@@ -336,7 +343,7 @@ In conclusion, this study seeks to bridge the gap between Artificial Intelligenc
 \section{Methodology}\label{sectionMethodology}
 The source code is all stored in the \href{https://github.com/SirSergi0/Repository---AI-application-for-azophotoswitches-optimization-with-pharmacological-interest}{\emph{AI application for azophotoswitches optimization with pharmacological interest} GitHub repository}\cite{GitHub}.
 
-The target protein's ID is set at \emph{CHEMBL230} corresponding to the COX-2 ID in the ChEMBL database. Utilising \emph{requests} python package\cite{PythonPackageRequests} a query URL is sent asking for all molecules with a know $IC_{50}$ value (Def. \ref{definitionIC50}) with a limit of 1000 entries per request. The process is iterated until all data is extracted leading a total of 7979 molecules. Hence the datasheet is processed in pandas dataframes\cite{PythonPackagePandas} and encrypted into binary feather files to optimise reading-writting speed. By removing entries with the same canonical smiles a total of 5112 molecules remain. Among this entries well known drugs such as Celecoxib (Def. \ref{definitionCelecoxib}), Rofecoxib (Def. \ref{definitionRofecoxib}) or even Ibuprofen can be found. However the $IC_{50}$ molecules range is comprehended from $10^{-3}$ to $10^{8}$ nM, a counterproductive range for the AI training procedure. Since we are interested in testing azophotoswitches with presumably low \gls{ic50}, training \gls{ml} models with data of the order of $10^{8}$ or $10^{3}$ nM can be counterproductive since the model might misinterpret the data.\footnote{Typically the range of the azophotoswitches \gls{ic50} is arround the Celecoxib's \gls{ic50}, i.e. arround $120$ nM}. Consecutivelly, a hard-coded range is filtered discarding all molecules outside the given range, for the most part of the analysis this range is set at $[0,200]$ nM \footnote{this $IC_{50}$ working range is the standard in this kind of studies \cite{MachineLearningPaper5Lipoxygenase}.} which reduces the dataset to 1438 entries (i.e. molecules).
+The target protein's ID is set at \emph{CHEMBL230} corresponding to the COX-2 ID in the ChEMBL database\cite{ChemblDatabase}. Utilising \emph{requests} python package\cite{PythonPackageRequests} a query URL is sent asking for all molecules with a know $IC_{50}$ value (Def. \ref{definitionIC50}) with a limit of 1000 entries per request. The process is iterated until all data is extracted leading a total of 7979 molecules. Hence the datasheet is processed in pandas dataframes\cite{PythonPackagePandas} and encrypted into binary feather files to optimise reading-writting speed. By removing entries with the same canonical smiles a total of 5112 molecules remain. Among this entries well known drugs such as Celecoxib (Def. \ref{definitionCelecoxib}), Rofecoxib (Def. \ref{definitionRofecoxib}) or even Ibuprofen can be found. However the $IC_{50}$ molecules range is comprehended from $10^{-3}$ to $10^{8}$ nM, a counterproductive range for the AI training procedure. Since we are interested in testing azophotoswitches with presumably low \gls{ic50}, training \gls{ml} models with data of the order of $10^{8}$ or $10^{3}$ nM can be counterproductive since the model might misinterpret the data.\footnote{Typically the range of the azophotoswitches \gls{ic50} is arround the Celecoxib's \gls{ic50}, i.e. arround $120$ nM}. Consecutivelly, a hard-coded range is filtered discarding all molecules outside the given range, for the most part of the analysis this range is set at $[0,200]$ nM \footnote{this $IC_{50}$ working range is the standard in this kind of studies \cite{MachineLearningPaper5Lipoxygenase}.} which reduces the dataset to 1438 entries (i.e. molecules).
 
 With the AlvaDesk-python \cite{AlvaDescSecondPaper} facility, the chemical descriptors (i.e., the chemical fingerprint) of each molecule are computed, providing a total of $5800$ descriptors per molecule. Still, some chemical descriptor need from the presence of a certain atom, for instance a chemical descriptor related to presence of a metal in the molecule, or active gorup, for example chemical descriptor related to the presence of a carboxilic acid, or chemical descriptor related triple bound among other possiblities. The computation of this chemical descriptors appear as \emph{null values}. By deleting molecular descriptors with null values 2917 chemical descriptors remain. Here, the Pearson correlation coefficient (Def. (\ref{definitionPersonCoefficient})) between each chemical descriptor and the $IC_{50}$ value is computed, providing insight into the direct relationship between $IC_{50}$ and the descriptors. This relationship will be discussed in the Results and Discussion Section (\ref{sectionResultsAndDiscussion}).
 
@@ -349,29 +356,38 @@ Subsequently, each set of substances is randomly divided into two datasets: a \e
 \caption{Splitting and processing data's scheme.}
 \label{FigureDataSplittingDiagram}
 \end{figure}
-Afterward, a Random Forest algorithm is trained using the Sticky Learn \cite{PythonPackageStickitLearn} Python package, which is supported by Microsoft and Google among others. This algorithm generates a large number of random decision trees (determined by the hard-coded variable \emph{numberOfTrees}), which are trained with the training sets. Typically the more trees the model is trained with the best accuracy in the predictions, nevertheless the computational cost for each model training also increases with the number of trees. It is key to remark that the predictions' accuracy can not be arbitrarily improved by only increasing the number of trees of the \gls{rf} model. The predictions' accuracy is bonded to the data the model is trained with, thus if the data does not provide enough information about the insight of the protein, more accurate predictions can not be archived independently of the number of trees of the model. As a general criteria we can affirm that,
+Afterwards, a Random Forest (\gls{rf}) algorithm is trained using the Sticky Learn \cite{PythonPackageStickitLearn} Python package, which is supported by Microsoft and Google among others. Although the project’s primary focus is not the detailed workings of Machine Learning (\gls{ml}) algorithms but its applications in computational chemestry, it is natural to ponder the essence of what the machine is doing. The name “Random Forest” is directly tied to the analogy between a tree and a decision tree. \par
+
+As described in Definition (\ref{definitionDecisionTree}), the Random Forest algorithm generates a collection of random decision trees. The number of trees in the forest is a configurable parameter of the algorithm. More specifically, the Random Forest algorithm produces a set of decision trees, each trained on a random subset of the training data. The structure of each tree adjusts during training to make predictions that closely approximate the true target values. The final output of the Random Forest is typically an aggregate of the predictions from all the individual trees, such as a majority vote for classification tasks or an average for regression tasks. \par
+
+One notable characteristic of this method is its inherent randomness. Each Random Forest model is unique, even if configured with the same parameters and initialized under identical conditions. However, experimental evidence suggests that this randomness does not significantly impact the results. If two Random Forest algorithms are trained on the same dataset using identical parameters, their outputs will converge, even if the internal structures of their decision trees differ.
+
+The \gls{rf} algorithm generates a large number of random decision trees (determined by the hard-coded variable \emph{numberOfTrees}), which are trained with the training sets. Typically the more trees the model is trained with the best accuracy in the predictions, nevertheless the computational cost for each model training also increases with the number of trees. It is key to remark the predictions' accuracy can not be arbitrarily improved by only increasing the number of trees of the \gls{rf} model. The predictions' accuracy is bonded to the data the model is trained with, thus if the data does not provide enough information about the insight of the protein, more accurate predictions can not be archived independently of the number of trees of the model. As a general criteria we can affirm that,
 \begin{align*}
-	\uparrow\text{Data}\quad+\uparrow\text{Number of trees}\implies\uparrow\text{Predictions' accuracy}\\
-	\downarrow\text{Data}\quad+\downarrow\text{Number of trees}\implies\downarrow\text{Predictions' accuracy}
+	\uparrow\text{Data}\quad+\uparrow\text{Trees}\implies\uparrow\text{Predictions' accuracy}\\
+	\downarrow\text{Data}\quad+\downarrow\text{Trees}\implies\downarrow\text{Predictions' accuracy}
 \end{align*}
-but more data or more number of trees independently will not lead to better accuracy,
-\begin{align*}
-	\uparrow\text{Number of trees}\nrightarrow\uparrow\text{Predictions' accuracy}\\
-	\uparrow\text{Data}\nRightarrow \uparrow\text{Predictions' accuracy}
-\end{align*}
+but more data or more trees independently will not lead to better accuracy. Then, for the data we dispose, predictions with 500 trees are the same as the ones with $300$ trees.
 
 Later, these models are evaluated by predicting the $IC_{50}$ values of the \emph{testing sets}. Using the results, the \emph{True Positive Rate} (Def. \ref{definitionTruePositiveRate}), \emph{True Negative Rate} (Def. \ref{definitionTrueNegativeRate}), \emph{Classification Accuracy} (Def. \ref{definitionClassificationAccuracy}), and \emph{Matthews Correlation Coefficient} (Def. \ref{definitionMatthewsCorrelationCoeficient}) are computed. Based on these computational results, the variables \emph{percentageErased}, \emph{testSizeProportion}, and \emph{numberOfTrees} are manually adjusted to obtain the best results.
 
-Finally, the \gls{rf} algorithm with best statistics\footnote{The ruling criteria used to classify one model to have "better statistics" than other is discussed in section (\ref{sectionResultsAndDiscussion})} are used to predict the \gls{ic50} of the azophotoswitch prototipes classified in Appendix (\ref{appendixAzophotoshiches}). This procedure begins with the computation of the chemical descriptors with AlvaDesk software \cite{MauriMolecularDescriptorsBook}, then the pertinent chemical descriptor are erased in order to match the ones th
+Finally, the \gls{rf} model with best statistics\footnote{The ruling criteria used to classify one model to have "better statistics" than other is discussed in section (\ref{sectionResultsAndDiscussion})} are used to predict the \gls{ic50} of the azophotoswitch prototipes classified in Appendix (\ref{appendixAzophotoshiches}). This procedure begins with the computation of the chemical descriptors with AlvaDesk software \cite{MauriMolecularDescriptorsBook}, then the pertinent chemical descriptors are droped and remaining only the ones the algorithm is trained with. Then, by inputing the computed descriptors to the \gls{rf} model the predicted \gls{ic50} pop out as an outcome and are analyzed.
 
 \newpage
 \section{Results and Discussion}\label{sectionResultsAndDiscussion}
+
+In Figure (\ref{figureGraphicRecurrecyIC50}) we present the extracted \gls{ic50} data extracted from the ChEMBL database under the target ID \emph{CHEMBL230}. Figure (\ref{figureGraphicRecurrecyIC50}) clearly shows multiples of 10 are significantly overrepresented respect to other values. Additionally, by analyzing data from other proteins we can confirm this is not an exception but rather the norm. It looks like experimental chemists have a preference for multiples of 10, often rounding their results to the nearest value in this category. Consequently, an inherent error associated with these values will always be present, and we will have to deal with it.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = \textwidth, trim={0.85cm 0.3cm 1.5cm 1.35cm}, clip]{../Plots/DataGapRepresentationIC50percentageEresed15.0Gap_min_32Gap_max_53.pdf}
 	\caption{\gls{ic50} values }
 	\label{figureGraphicRecurrecyIC50}
 \end{figure}
+
+Once the chemical descriptors are computed, we proceed to calculate the Pearson correlation coefficients as defined in Definition (\ref{definitionPersonCoefficient}). The results are subsequently plotted in Figure (\ref{figureGraphicCorrelationFactor}). From the plot, we observe a “Gaussian bell” shape centered around zero, which aligns with our expectations. This suggests that there is no inherently preferred set of chemical descriptors for the protein, a finding that may initially seem at odds with the project’s goals.
+        
+However, our hypothesis states that \emph{there exists a combination (or combinations) of chemical descriptors that are directly correlated with the inhibition of the protein}. This observation does not contradict that statement. Intuitively, we believe that filtering out descriptors with the lowest  $r^2$  values might lead to improved results. This possibility will be explored in subsequent discussions.
 
 \begin{figure}[H]
 	\centering
@@ -380,10 +396,8 @@ Finally, the \gls{rf} algorithm with best statistics\footnote{The ruling criteri
 	\label{figureGraphicCorrelationFactor}
 \end{figure}
 
-
-
-
 In Figure (\ref{figureGraphicGbindingIC50}) we present the results for the predicted \gls{ic50} in terms of the $\Delta G_{binding}$ provided by the Physical Chemistry Unit of the UAB. The exact results are stored in Appendix \ref{appendixTableOfResults} in Tables (\ref{TableMainResults1}) and (\ref{TableMainResults2}), additionall the conditions under which the Random Forest (\gls{rf}) algorithm has been trained and the statistics analysis of its predictions is stored in Table (\ref{TableConditionsMainResults}).
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = \textwidth, trim={1.75cm 0.8cm 2.5cm 2cm}, clip]{../Plots/GbindingVSIC50.pdf}
@@ -392,6 +406,7 @@ In Figure (\ref{figureGraphicGbindingIC50}) we present the results for the predi
 \end{figure}
 
 Furthermore, we may also show the statistics and reliability of this results in Table (\ref{TableStatisitcsMainResults}).
+
 \begin{table}[H]
     \centering	
 	\caption{Statistics for the computation of the results from tables (\ref{TableMainResults1}) and (\ref{TableMainResults2}).}
@@ -404,11 +419,26 @@ Furthermore, we may also show the statistics and reliability of this results in 
     \end{tabular}
 \end{table}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth, trim={0cm 0cm 0cm 0cm}, clip]{GeneralSources/LastFrameDockingTwoRingsFiveMembers.jpg}
+	\caption{Structural ilustration of the molecule identied as \ref{figureCelecoxibTwoRings}.7 and \gls{cox2} docking generated by the ChimeraX software[15].}
+	\label{figureDockingBestResult}
+\end{figure}
 
 
-\section{Conclusions}
 \newpage
+\section{Conclusions}
 
+\newpage
+\section{Acknowledgements}
+I am grateful to Dr. Josep Maria Lluch, Dr. Miquel Moreno Ferrer and Dra. Àngels Gonzalez Lafont for allowing me to be one of his pupils and for presenting this project. I am also deeply grateful to PhD Alex Perez Sanchez and PhD Pedro Martínez Zaragoza for sharing their ideas and fruitful conversations
+
+I would like to acknowledge my mother and sister for their unconditional support, and my father for the values he taught me. Additionally, I would like to thank my friends Francisco Montaño, David Muñoz and Manel Martin for listening to my monologues about my excitement for the \gls{cox2} and azophotoswitches.
+
+Molecular graphics and analyses performed with UCSF ChimeraX, developed by the Resource for Biocomputing, Visualization, and Informatics at the University of California, San Francisco, with support from National Institutes of Health R01-GM129325 and the Office of Cyber Infrastructure and Computational Biology, National Institute of Allergy and Infectious Diseases.
+
+\newpage
 \section{Bibliography}
 \printbibliography[title = { \vspace{-1cm}}]
 \newpage
@@ -465,6 +495,20 @@ r_{xy}=\frac{\sum_{i=1}^n(x_i-\bar{x})(y_i-\bar{y})}{\sqrt{\sum_{i=1}^n(x_i-\bar
 \end{align}
 where $\bar{x}$ and $\bar{y}$ stand for the average value of ${x_i}_{i=1}^n$ and ${y_i}_{i=1}^n$ respectively. Note that $r_{xy}\in[-1,1]$. Therefore the sign of $r_{xy}$ is tightly related to the sign of alinear regression, more precisely if $x>0$, "$y$" generally\footnote{We would like to remark that the word "generally" stands for "the majority of the cases", since "generally" is commonly interpreted as a non-scientific/non-objective word} increases when "$x$" increases, as well as if $x<0$, "$y$" decreases when "$x$" increases.
 \end{definition}
+
+\begin{definition}\label{definitionDecisionTree}
+A decision tree is a classification algorithm based on a series of ordered \emph{if} statements. The algorithm begins at the top of the tree, where a question is posed to the data. Depending on the answer, the data follows different branches, each corresponding to a subsequent question. This process is repeated at each node until the data reaches the bottom of the tree, where the path it has followed determines the classification of the given data.
+
+This kind of algorithm is vividly present in the chemical landscape, for instance in the spectroscopy realm the determination of a molecule's symmetry group is provided by a decision tree such as Figure (\ref{figExScpectroDecisionTree}).
+\begin{figure}[H]
+\centering
+\includegraphics[width = 0.5\textwidth]{GeneralSources/Point_group_determination_flowchart_v2.png}
+\caption{Decision tree for determining the point group of a molecule}
+\label{figExScpectroDecisionTree}
+\end{figure}
+\end{definition}
+
+
 \begin{definition}\label{definitionTruePositiveRate}
 True Positive Rate: quantity related to a Machine Learning Model's sensitivity defined as:
 \begin{align}

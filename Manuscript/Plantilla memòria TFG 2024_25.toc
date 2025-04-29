@@ -3,9 +3,10 @@
 \contentsline {section}{\numberline {2}Introduction}{1}{section.2}%
 \contentsline {section}{\numberline {3}Objectives}{7}{section.3}%
 \contentsline {section}{\numberline {4}Methodology}{8}{section.4}%
-\contentsline {section}{\numberline {5}Results and Discussion}{11}{section.5}%
-\contentsline {section}{\numberline {6}Conclusions}{13}{section.6}%
-\contentsline {section}{\numberline {7}Bibliography}{14}{section.7}%
-\contentsline {section}{\numberline {A}Rellevant definitions}{16}{appendix.A}%
-\contentsline {section}{\numberline {B}Tables of azophotoswitches}{19}{appendix.B}%
-\contentsline {section}{\numberline {C}Table of results}{26}{appendix.C}%
+\contentsline {section}{\numberline {5}Results and Discussion}{12}{section.5}%
+\contentsline {section}{\numberline {6}Conclusions}{16}{section.6}%
+\contentsline {section}{\numberline {7}Acknowledgements}{17}{section.7}%
+\contentsline {section}{\numberline {8}Bibliography}{18}{section.8}%
+\contentsline {section}{\numberline {A}Rellevant definitions}{20}{appendix.A}%
+\contentsline {section}{\numberline {B}Tables of azophotoswitches}{23}{appendix.B}%
+\contentsline {section}{\numberline {C}Table of results}{31}{appendix.C}%

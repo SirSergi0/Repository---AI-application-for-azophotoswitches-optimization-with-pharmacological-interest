@@ -946,6 +946,69 @@
     \field{year}{2019}
   \endentry
 
+  \entry{ChimeraX}{article}{}
+    \name{author}{7}{}{%
+      {{hash=MEC}{%
+         family={Meng},
+         familyi={M\bibinitperiod},
+         given={Elaine\bibnamedelima C.},
+         giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=GTD}{%
+         family={Goddard},
+         familyi={G\bibinitperiod},
+         given={Thomas\bibnamedelima D.},
+         giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=PEF}{%
+         family={Pettersen},
+         familyi={P\bibinitperiod},
+         given={Eric\bibnamedelima F.},
+         giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=CGS}{%
+         family={Couch},
+         familyi={C\bibinitperiod},
+         given={Gregory\bibnamedelima S.},
+         giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=PZJ}{%
+         family={Pearson},
+         familyi={P\bibinitperiod},
+         given={Zachary\bibnamedelima J.},
+         giveni={Z\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MJH}{%
+         family={Morris},
+         familyi={M\bibinitperiod},
+         given={John\bibnamedelima H.},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=FTE}{%
+         family={Ferrin},
+         familyi={F\bibinitperiod},
+         given={Thomas\bibnamedelima E.},
+         giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MECGTDPEFCGSPZJMJHFTE1}
+    \strng{fullhash}{MECGTDPEFCGSPZJMJHFTE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1002/pro.4792
+    \endverb
+    \field{number}{11}
+    \field{pages}{e4792}
+    \field{title}{{UCSF ChimeraX: Tools for structure building and analysis}}
+    \verb{url}
+    \verb https://doi.org/10.1002/pro.4792
+    \endverb
+    \field{volume}{32}
+    \field{journaltitle}{Protein Science}
+    \field{year}{2023}
+  \endentry
+
   \entry{BookIC50}{incollection}{}
     \name{author}{1}{}{%
       {{hash=SDC}{%
