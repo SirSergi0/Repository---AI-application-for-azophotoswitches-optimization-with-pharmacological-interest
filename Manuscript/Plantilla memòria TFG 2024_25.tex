@@ -23,7 +23,9 @@
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{hyperref}
+\usepackage{pgfplots}
 \usepackage{xurl}
+\usepackage{pdflscape}
 %-----------------FIGURES AND TABLES----------------%
 \usepackage{array}
 %\usepackage{wrapfig}
@@ -64,7 +66,7 @@
 \newcommand\NomComplet{Sergio Castañeiras Morales}
 \newcommand\NIU{1598456}
 \newcommand\NomProfeA{Dr. Miquel Moreno Ferrer}
-\newcommand\NomProfeB{Dr. Àngels Gonzalez Lafont}
+\newcommand\NomProfeB{Dr. Àngels González Lafont}
 \newcommand\CodiTFG{TFG2425\_045}
 \newcommand\TitolTFG{AI Application for Azophotoswitches Optimization with Pharmacological Interest}
 \newcommand\NomCentre{Departament de Quimica } %cal posar un espai al final
@@ -206,6 +208,9 @@ Treball de fi de grau realitzat al \NomCentre i presentat a la\\ Facultat de Cia
     \textbf{Malcolm S. Forbes}
 \end{flushright}
 \vspace*{\fill} 
+\newpage
+\thispagestyle{empty}
+\mbox{} 
 \newpage
 
 \thispagestyle{afteres}
@@ -376,18 +381,21 @@ Finally, the \gls{rf} model with best statistics\footnote{The ruling criteria us
 \newpage
 \section{Results and Discussion}\label{sectionResultsAndDiscussion}
 
-In Figure (\ref{figureGraphicRecurrecyIC50}) we present the extracted \gls{ic50} data extracted from the ChEMBL database under the target ID \emph{CHEMBL230}. Figure (\ref{figureGraphicRecurrecyIC50}) clearly shows multiples of 10 are significantly overrepresented respect to other values. Additionally, by analyzing data from other proteins we can confirm this is not an exception but rather the norm. It looks like experimental chemists have a preference for multiples of 10, often rounding their results to the nearest value in this category. Consequently, an inherent error associated with these values will always be present, and we will have to deal with it.
+\subsection{Available data}
+In Figure (\ref{figureGraphicRecurrecyIC50}) we present the extracted \gls{ic50} data extracted from the ChEMBL database under the target ID \emph{CHEMBL230} for the interval $[0,200]$ nM. Figure (\ref{figureGraphicRecurrecyIC50}) clearly shows multiples of 10 are significantly overrepresented respect to other values. Additionally, by analyzing data from other proteins we can confirm this is not an exception but rather the norm. It looks like experimental chemists have a preference for multiples of 10, often rounding their results to the nearest value in this category. Consequently, an inherent error associated with these values will always be present, and we will have to deal with it. This observation will be one of the cornerstones of our ultimate results.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = \textwidth, trim={0.85cm 0.3cm 1.5cm 1.35cm}, clip]{../Plots/DataGapRepresentationIC50percentageEresed15.0Gap_min_32Gap_max_53.pdf}
-	\caption{\gls{ic50} values }
+	\caption{\gls{ic50} values from our dataset and generation of a 20\% gap.}
 	\label{figureGraphicRecurrecyIC50}
 \end{figure}
 
-Once the chemical descriptors are computed, we proceed to calculate the Pearson correlation coefficients as defined in Definition (\ref{definitionPersonCoefficient}). The results are subsequently plotted in Figure (\ref{figureGraphicCorrelationFactor}). From the plot, we observe a “Gaussian bell” shape centered around zero, which aligns with our expectations. This suggests that there is no inherently preferred set of chemical descriptors for the protein, a finding that may initially seem at odds with the project’s goals.
-        
-However, our hypothesis states that \emph{there exists a combination (or combinations) of chemical descriptors that are directly correlated with the inhibition of the protein}. This observation does not contradict that statement. Intuitively, we believe that filtering out descriptors with the lowest  $r^2$  values might lead to improved results. This possibility will be explored in subsequent discussions.
+Additionally in Figure (\ref{figureGraphicRecurrecyIC50}) we can also observe the procedure of the generation of a gap in the data. Giving a set of data the average \gls{ic50} is computed, for this case it is arround $47$ nM. Then, a percentage of the data is erased ruled by the \emph{percentageErased} hard-coded variable in a way that the average \gls{ic50} is located in the middle of the interval. In Figure (\ref{figureGraphicRecurrecyIC50}) all the data is presented in color blue + orange, then the gap is performed by the delation of the blue region centered around $47$ nM. For this case this gap comprehend the 20\% of the data.
+
+\subsection{Correlation of individual descriptors and \gls{ic50}}
+
+Afterwards the chemical descriptors are computed with AlvaDesk software. Hence, we proceed to calculate the Pearson Correlation Coefficients\footnote{The Pearson Correlation Coefficient is also denoted as $r^2$} as defined in Definition (\ref{definitionPersonCoefficient}) between the descriptors values and the \gls{ic50} of each molecule. The results are subsequently plotted in Figure (\ref{figureGraphicCorrelationFactor}). From the plot, we observe a‚ Gaussian bell shape centered around zero, which aligns with our expectations. This suggests that there is no inherently preferred set of chemical descriptors for the protein, a finding that may initially seem at odds with the project's goals.
 
 \begin{figure}[H]
 	\centering
@@ -396,11 +404,72 @@ However, our hypothesis states that \emph{there exists a combination (or combina
 	\label{figureGraphicCorrelationFactor}
 \end{figure}
 
+This results is entirely natural, if a preferred descriptors would exist the implementation of \gls{ai}s would not be necessary and major advancedments would already be archived. Still our hypothesis holds, since it states that \emph{there exists a combination (or combinations) of chemical descriptors that are directly correlated with the inhibition of the protein}. This observation does not contradict that statement. Intuitively, we may believe that filtering out descriptors with the lowest  $r^2$  values might lead to improved results. This possibility will be explored in subsequent discussions.
+
+
+\subsection{Pearson correlation factor and mean squared error}
+
+Once the models are generated, i.e. the pertinent variables are set up, predictions can been. Thus, we can compute the Pearson Correlation Factors (Def. (\ref{definitionPersonCoefficient})) and Mean Squared Error (Def. (\ref{definitionMeanSquaredError})) for the predictions versus the experimental \gls{ic50} data. In Figure (\ref{FigPlotErasedPercentageVSRSquare}) we present two plots of the Pearson Correlation Factors and Mean Squared Error in terms of the erased percentage.
+
+\begin{figure}[H]
+\begin{tikzpicture}
+\begin{axis}[
+    width=0.45\textwidth,
+    height=8cm,
+    xlabel={$\%_{\text{Erased}}$},
+    ylabel={$r^2$},
+    xmin=0, xmax=100,
+    ymin=0.94, ymax=1.0,
+    xtick={0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100},
+    ytick={0.9, 0.92, 0.94, 0.96, 0.98, 1.0},
+    legend pos=south east,
+    legend style={font=\small},
+    tick label style={font=\small},
+    label style={font=\small},
+]
+\addplot[
+    color=magenta,
+    mark=diamond*,
+    thick
+] table[x index=0, y index=1, col sep=space] {GeneralSources/ErasedPercentageVSRSquare.txt};
+\end{axis}
+\end{tikzpicture}
+\begin{tikzpicture}
+\begin{axis}[
+    width=0.45\textwidth,
+    height=8cm,
+    xlabel={$\%_{\text{Erased}}$},
+	ylabel={Mean Squared Error (nM$^2$)},
+    xmin=0, xmax=100,
+    ymin=0, ymax=200,
+    xtick={0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100},
+    legend pos=north east,
+    legend style={font=\small},
+    tick label style={font=\small},
+    label style={font=\small}
+]
+\addplot[
+    color=magenta,
+    mark=diamond*,
+    thick
+] table[x index=0, y index=1, col sep=space] {GeneralSources/ErasedPercentageVSMeanSquaredError.txt};
+\end{axis}
+\end{tikzpicture}
+\caption{Plots of $\%_{\text{Erased}}$ vs $r^2$ and $\%_{\text{Erased}}$ vs Mean Squared Error. For a maximum $IC_{50}$ = 200 nM and a minimum of 0 nM,  taking into account all the chemical descriptors, the 20.0\% of the remaining data is saved for testing and the  80.0\% for training. The training is done with 200 trees.}
+\label{FigPlotErasedPercentageVSRSquare}
+\end{figure}
+
+From Figure (\ref{figureGraphicRecurrecyIC50}), we know the data has an inherent precision problem, especially when approaching higher  $IC_{50}$  values, additionally we do not now the precision of some measurements. Since our working models do not account for the lack of precision in each molecule's data, the values of  $r^2$  and mean squared error are not expected to be exactly 1 and 0, respectively. In fact, some variance and uncertainty are inevitable. Therefore, discarding more than 50\% of our data would be a critical mistake, even if statistical measures suggest otherwise. However, these values still serve as a good reflection of our method's reliability up to a certain threshold.
+
+In this work, we will arbitrarily set this threshold at  $r^2 = 0.90$ . This hard-coded decision is purely conventional, as we need to establish a point beyond which  $r^2$  values become meaningless (i.e., obtaining  $r^2$  values above 0.90 is unnecessary, given that such variance is inherent to our data). The justification for this choice is that, in some areas of chemistry\footnote{Particularly in analytical chemistry} two data sets are generally considered correlated if their  $r^2$  value exceeds 0.90. However, it is important to emphasize that this convention is purely subjective and should not be regarded as an inviolable rule. The reliable statistics will come from the \emph{True Positive Rate} (Def. \ref{definitionTruePositiveRate}), \emph{True Negative Rate} (Def. \ref{definitionTrueNegativeRate}), \emph{Classification Accuracy} (Def. \ref{definitionClassificationAccuracy}), and \emph{Matthews Correlation Coefficient} (Def. \ref{definitionMatthewsCorrelationCoeficient}), the standard quantities for rating a \gls{ml} model.
+
+\subsection{Azophotoswitches analysis}
+
 In Figure (\ref{figureGraphicGbindingIC50}) we present the results for the predicted \gls{ic50} in terms of the $\Delta G_{binding}$ provided by the Physical Chemistry Unit of the UAB. The exact results are stored in Appendix \ref{appendixTableOfResults} in Tables (\ref{TableMainResults1}) and (\ref{TableMainResults2}), additionall the conditions under which the Random Forest (\gls{rf}) algorithm has been trained and the statistics analysis of its predictions is stored in Table (\ref{TableConditionsMainResults}).
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width = \textwidth, trim={1.75cm 0.8cm 2.5cm 2cm}, clip]{../Plots/GbindingVSIC50.pdf}
+	\includegraphics[width = 0.7\textwidth, trim={1.75cm 0.8cm 2.5cm 2cm}, clip]{../Plots/GbindingVSIC50.pdf}
 	\caption{Graphic of the azophotoswitches from Appendix \ref{appendixAzophotoshiches} where the x-axis represents the $\Delta G_{binding}$ and the y-axis the computed \gls{ic50}.}
 	\label{figureGraphicGbindingIC50}
 \end{figure}
@@ -413,11 +482,15 @@ Furthermore, we may also show the statistics and reliability of this results in 
 	\label{TableStatisitcsMainResults}
 	\begin{tabular}{c|c}
 		Mean Squared Error       & 1202.70\\\hline
-		R-squared                & 0.89\\\hline
+		$r^2$ 	                 & 0.90\\\hline
 		ClassificationAcuracy    & 0.94\\\hline
 		MatthewsCorrelationFactor& 0.87
     \end{tabular}
 \end{table}
+
+In Figure (\ref{figureGraphicGbindingIC50}) we can see a clear correlation between our initial intuition. Lower values of free eneregy (the most negative ones) correspond to low \gls{ic50} values i.e. highly active molecules
+
+\subsection{Azophotoswitches analysis}
 
 \begin{figure}[H]
 	\centering
@@ -427,12 +500,13 @@ Furthermore, we may also show the statistics and reliability of this results in 
 \end{figure}
 
 
+
 \newpage
 \section{Conclusions}
 
 \newpage
 \section{Acknowledgements}
-I am grateful to Dr. Josep Maria Lluch, Dr. Miquel Moreno Ferrer and Dra. Àngels Gonzalez Lafont for allowing me to be one of his pupils and for presenting this project. I am also deeply grateful to PhD Alex Perez Sanchez and PhD Pedro Martínez Zaragoza for sharing their ideas and fruitful conversations
+I am grateful to Dr. Josep Maria Lluch, Dr. Miquel Moreno Ferrer and Dra. Àngels González Lafont for allowing me to be one of his pupils and for presenting this project. I am also deeply grateful to PhD Álex Pérez Sánchez and PhD Pedro Martínez Zaragoza for sharing their ideas and fruitful conversations.
 
 I would like to acknowledge my mother and sister for their unconditional support, and my father for the values he taught me. Additionally, I would like to thank my friends Francisco Montaño, David Muñoz and Manel Martin for listening to my monologues about my excitement for the \gls{cox2} and azophotoswitches.
 
@@ -491,9 +565,17 @@ where $K_i$ is the binding affinity, $[S]$ is the substrate concentration, $K_m$
 \begin{definition}\label{definitionPersonCoefficient}
 Pearson correlation coefficient: Given set of pairs of data $\{(x_i,y_i)\}_{i=1}^n$ the pearson correlation factor $r_{xy}$ is defined as,
 \begin{align}
-r_{xy}=\frac{\sum_{i=1}^n(x_i-\bar{x})(y_i-\bar{y})}{\sqrt{\sum_{i=1}^n(x_i-\bar{x}^2)}\sqrt{\sum_{i=1}^n(y_i-\bar{y}^2)}},
+r_{xy}=\frac{\sum_{i=1}^n(x_i-\bar{x})(y_i-\bar{y})}{\sqrt{\sum_{i=1}^n(x_i-\bar{x})^2}\sqrt{\sum_{i=1}^n(y_i-\bar{y})^2}},
 \end{align}
 where $\bar{x}$ and $\bar{y}$ stand for the average value of ${x_i}_{i=1}^n$ and ${y_i}_{i=1}^n$ respectively. Note that $r_{xy}\in[-1,1]$. Therefore the sign of $r_{xy}$ is tightly related to the sign of alinear regression, more precisely if $x>0$, "$y$" generally\footnote{We would like to remark that the word "generally" stands for "the majority of the cases", since "generally" is commonly interpreted as a non-scientific/non-objective word} increases when "$x$" increases, as well as if $x<0$, "$y$" decreases when "$x$" increases.
+\end{definition}
+
+\begin{definition}\label{definitionMeanSquaredError}
+Mean Squared Error: Given set of pairs of data $\{(x_i,y_i)\}_{i=1}^n$ the Mean Squared Error is the quantity defined as,
+\begin{align}
+	MSE=\frac{1}{n}\sum_{i=1}^n(X_i-Y_i)^2
+\end{align}
+The name of this quantity is self-descriptive, since $X_i-Y_i$ is the error associated to the i-th prediction and the MSE is the mean of the squares of this erros.
 \end{definition}
 
 \begin{definition}\label{definitionDecisionTree}
@@ -834,7 +916,7 @@ Identifier & \ch{R_1} & \ch{R_2} & \ch{R_3} \\\hline\hline
 		minimumCorrelationFactor & 0.0\\\hline
 		Number of descriptors    & 3040\\\hline
 		Mean Squared Error       & 1202.70\\\hline
-		R-squared                & 0.89\\\hline
+		$r^2$	                 & 0.90\\\hline
 		True Positive            & 994\\\hline
 		False Positive           & 8\\\hline
 		True Negative            & 1015\\\hline
