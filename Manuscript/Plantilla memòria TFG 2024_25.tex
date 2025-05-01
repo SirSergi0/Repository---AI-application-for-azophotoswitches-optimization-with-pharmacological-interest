@@ -26,6 +26,7 @@
 \usepackage{pgfplots}
 \usepackage{xurl}
 \usepackage{pdflscape}
+\usepackage{overpic}
 %-----------------FIGURES AND TABLES----------------%
 \usepackage{array}
 %\usepackage{wrapfig}
@@ -302,7 +303,7 @@ HO-[1](=[3]O)-[-1]-[1]-[-1]-[1]=[-1]-[-3]-[-1]=[-3]-[7]-[-3]=[7]-[-7]-[7]=[-7]-[
 \label{Cox2MainReaction}
 \end{figure}
 
-Determining an experimental \gls{ic50} value can be both costly and time-consuming\footnote{Usually this parameter is computed throughout the Cheng Prusoff Equation (Def. (\ref{definitionChengPrusoff})) with experimental data.}. On the other hand, \gls{ai} provides an alternative by offering highly accurate predictions based on existing data, optimising research processes, and accelerating scientific discovery. In this scenario this project aims to implement artificial intelligence in computational chemistry, concretely, using \gls{ai}-based algorithms to predict a drug’s inhibition potential\cite{BookIC50} for a given protein with a relativelly good accuracy \footnote{The accuracy of the ML models is discussed on the Results and Discussion section (\ref{sectionResultsAndDiscussion}).}. To achieve this, we make use of the ChEMBL database\cite{ChemblDatabase}, a vast repository of bioactive molecules with drug-like properties. We extract all known molecular data with a documented inhibition potential for the target protein, creating a comprehensive dataset. The chemical descriptors of each molecule in the database are then computed using AlvaDesk\cite{MauriMolecularDescriptorsBook}\cite{AlvaDescSecondPaper} software. Around 5000 descriptors are calculated\cite{DescriptorsBook}, which comprehend from the elemental molecular weight to the complex equipotential electronic surface, providing critical information about each compound’s behaviour. The resulting dataset is subsequently used to train \gls{ai} models, enabling them to predict the inhibition potential of unknown compounds. Finally, we evaluate the reliability of each model by testing it against real experimental data. 
+Determining an experimental \gls{ic50} value can be both costly and time-consuming\footnote{Usually this parameter is computed throughout the Cheng Prusoff Equation (Def. (\ref{definitionChengPrusoff})) with experimental data.}. On the other hand, \gls{ai} provides an alternative by offering highly accurate predictions based on existing data, optimising research processes, and accelerating scientific discovery. In this scenario this project aims to implement artificial intelligence in computational chemistry, concretely, using \gls{ai}-based algorithms to predict a drug’s inhibition potential\cite{BookIC50} for a given protein with a relativelly good accuracy \footnote{The accuracy of the ML models is discussed on the Results and Discussion section (\ref{sectionResultsAndDiscussion}).}. To achieve this, we make use of the ChEMBL database\cite{ChemblDatabase}, a vast repository of bioactive molecules with drug-like properties. We extract all known molecular data with a documented inhibition potential for the target protein, creating a comprehensive dataset. The chemical descriptors (Def. (\ref{definitionChemicalDescriptors})) of each molecule in the database are then computed using AlvaDesk\cite{MauriMolecularDescriptorsBook}\cite{AlvaDescSecondPaper} software. Around 5000 descriptors are calculated\cite{DescriptorsBook}, which comprehend from the elemental molecular weight to the complex equipotential electronic surface, providing critical information about each compound’s behaviour. The resulting dataset is subsequently used to train \gls{ai} models, enabling them to predict the inhibition potential of unknown compounds. Finally, we evaluate the reliability of each model by testing it against real experimental data. 
 
 It is important to emphasise the central hypothesis of this project: \emph{There exists a combination (or combinations) of chemical descriptors that are directly correlated with the inhibition of the protein}. While this idea may seem fundamental, it remains unproven due to the complexity of molecular interactions and the vast number of possible descriptor combinations. Despite significant progress in computational chemistry, identifying the exact descriptors that govern inhibition potential has been a persistent challenge. The lack of an ultimate proof underscores the need for advanced computational techniques. By analysing large datasets, \gls{ai} can detect hidden correlations that may not be immediately apparent through traditional statistical methods.
 
@@ -386,7 +387,11 @@ In Figure (\ref{figureGraphicRecurrecyIC50}) we present the extracted \gls{ic50}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width = \textwidth, trim={0.85cm 0.3cm 1.5cm 1.35cm}, clip]{../Plots/DataGapRepresentationIC50percentageEresed15.0Gap_min_32Gap_max_53.pdf}
+		\begin{overpic}[width = \textwidth, trim={0.85cm 0.3cm 1.5cm 1.35cm}, clip]{../Plots/DataGapRepresentationIC50percentageEresed15.0Gap_min_32Gap_max_53.pdf}
+		\put(10,55){Highly active}
+		\put(30,55){Gap}
+		\put(55,55){Least active}
+	\end{overpic}
 	\caption{\gls{ic50} values from our dataset and generation of a 20\% gap.}
 	\label{figureGraphicRecurrecyIC50}
 \end{figure}
@@ -406,7 +411,6 @@ Afterwards the chemical descriptors are computed with AlvaDesk software. Hence, 
 
 This results is entirely natural, if a preferred descriptors would exist the implementation of \gls{ai}s would not be necessary and major advancedments would already be archived. Still our hypothesis holds, since it states that \emph{there exists a combination (or combinations) of chemical descriptors that are directly correlated with the inhibition of the protein}. This observation does not contradict that statement. Intuitively, we may believe that filtering out descriptors with the lowest  $r^2$  values might lead to improved results. This possibility will be explored in subsequent discussions.
 
-
 \subsection{Pearson correlation factor and mean squared error}
 
 Once the models are generated, i.e. the pertinent variables are set up, predictions can been. Thus, we can compute the Pearson Correlation Factors (Def. (\ref{definitionPersonCoefficient})) and Mean Squared Error (Def. (\ref{definitionMeanSquaredError})) for the predictions versus the experimental \gls{ic50} data. In Figure (\ref{FigPlotErasedPercentageVSRSquare}) we present two plots of the Pearson Correlation Factors and Mean Squared Error in terms of the erased percentage.
@@ -419,9 +423,8 @@ Once the models are generated, i.e. the pertinent variables are set up, predicti
     xlabel={$\%_{\text{Erased}}$},
     ylabel={$r^2$},
     xmin=0, xmax=100,
-    ymin=0.94, ymax=1.0,
+    ymin=0.75, ymax=1.0,
     xtick={0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100},
-    ytick={0.9, 0.92, 0.94, 0.96, 0.98, 1.0},
     legend pos=south east,
     legend style={font=\small},
     tick label style={font=\small},
@@ -474,7 +477,7 @@ In Figure (\ref{figureGraphicGbindingIC50}) we present the results for the predi
 	\label{figureGraphicGbindingIC50}
 \end{figure}
 
-Furthermore, we may also show the statistics and reliability of this results in Table (\ref{TableStatisitcsMainResults}).
+Furthermore, we may also show the statistics and reliability of this results in Table (\ref{TableStatisitcsMainResults}). In the statistics we can see how all values surpass 0.9. In particular the model is capable of predicting when a molecules is not a highly active inhibitor in the 99\% of the times, since the True Negative Rate (Def.(\ref{definitionTrueNegativeRate})) is 0.99. The classification accuracy (Def. \ref{definitionClassificationAccuracy}) and the Matthews Correlation Factors take values close to 1, remarking thes particular model as a quite reliabile \gls{rf} model.
 
 \begin{table}[H]
     \centering	
@@ -483,14 +486,41 @@ Furthermore, we may also show the statistics and reliability of this results in 
 	\begin{tabular}{c|c}
 		Mean Squared Error       & 1202.70\\\hline
 		$r^2$ 	                 & 0.90\\\hline
-		ClassificationAcuracy    & 0.94\\\hline
-		MatthewsCorrelationFactor& 0.87
+		True Positive            & 994\\\hline
+		False Positive           & 8\\\hline
+		True Negative            & 1015\\\hline
+		False Negative           & 101\\\hline
+		True Positive Rate       & 0.90\\\hline
+		True Negative Rate       & 0.99\\\hline
+		ClassificationAcuracy    & 0.95\\\hline
+		MatthewsCorrelationFactor& 0.90
     \end{tabular}
 \end{table}
 
-In Figure (\ref{figureGraphicGbindingIC50}) we can see a clear correlation between our initial intuition. Lower values of free eneregy (the most negative ones) correspond to low \gls{ic50} values i.e. highly active molecules
+At this stage, we must point out the model is unable to distinguish between the active and unactive configurations. This problem is not related cased by the model or the descriptors computation but the database the model is trained with. The lack of existence of -cis/-trans configurations in the ChEMBL database \cite{ChemblDatabase} makes it impossible for the model to know the -cis conformation to be different from the -trans conformation. In other words, the model is unable to generate information, if it is not told to distinguish between -cis and -trans configurations, then it will not distinguish between them. Therefore the model will also provide the \gls{ic50} predictions for the active configuration, i.e. the -cis configuration.
+Our hypothesis holds, since in Figure (\ref{figureGraphicGbindingIC50}) we can see a clearly a correlation between the \gls{ic50} and $\Delta G_{binding}$ matching with our initial intuition. Lower values of free eneregy (the most negative ones) correspond to low \gls{ic50} values i.e. highly active molecules.
+
+However, the hipothesis of the existence of a combination of chemical descriptors that is directly related with a molecule's inhibition power for a given protein seems correct. Although, finding this combination of chemical descriptors is not an easy task for a chemist. At first glace, we might hypothesize that since this combination must be encoded into the \gls{rf} models unencripting this models would help us to understand the insights of the \gls{cox2}\footnote{Or any other protein since the code is through to be applied to any protein with an entrance in the ChEMBL database\cite{ChemblDatabase}.}. 
+
+Still this procedure is almost impossible, since the nature of the \gls{rf} is similar to check weather a pasword is correct or not. In other words, computationally speaking, predicting a molecules \gls{ic50} as well as checking an username and a pasword is an easy task for the computer. Nevertheless, reathriving a password and highlight the chemical descriptors with higher dependecy on the \gls{ic50} is another story. 
+
+For instance, one could think making predictions of random molecules \gls{ic50} by varying one molecular descriptor and holding the resest constant could give us information on this dependecy\footnote{This would be a desencriptation by brute force.}. However, we encounter several unsortable incoherences in this procedure. For example, let us think we want to observe the dependecy of the \gls{ic50} on a molecules' average bond distance. Molecules that, at first, would not fit into the binding cavity of the \gls{cox2} could happend to fit after this streaching, but this molecules are not real, i.e. non-stable, lossing any chemical coherence. Additionaly there are some chemical descriptors that integers by nature, for istance the number of carbons in a molecule, but this procedure would point out the ideal number of carbons to be a good inhibitor is 25.5 carbons, and absurd outcome. Furthermore a set arbitrarly generated chemical descriptors it is not necessarily correlated to a molecule, in the majority of the cases there will not be any molecule to have the specified chemical descriptors, thus we would be trying to predict the \gls{ic50} of imaginary molecules.
+
+It is important to remark this observations does not deny the power of \gls{ai} for computational chemistry, but points out at some limitations of the technology.
 
 \subsection{Azophotoswitches analysis}
+
+After the predictions have been computed a docking has been performed of one of the most promising azophotoswitches. In particular the docking of the  \ref{figureCelecoxibTwoRings}.7 molecule depicted in Scheme (\ref{figureCelecoxibTwoRingsDoking}), this molecule has a computed $\Delta G_{binding}$ of 10.6712 Kcal/mol and a predicted \gls{ic50} of 77 nM. An image of the last frame of the docking procedure is provided in Figure (\ref{figureDockingBestResult}).
+\begin{figure}[H]
+\captionsetup{type=scheme}
+\centering
+\scalebox{0.7}{
+\chemfig[angle increment=30]{
+	H_2N-S(=[3]O)(=[9]O)-*6(-=-(-N=[-1.5]N-[-3]*5(=-O-*5(-N(-[-3]H)-(-)=(-*6(-=-(-)=-=))-=)--))=-=)
+}}
+\caption{Template for Celecoxib azo-derivatives highly active molecule.}
+\label{figureCelecoxibTwoRingsDoking}
+\end{figure}
 
 \begin{figure}[H]
 	\centering
@@ -498,11 +528,14 @@ In Figure (\ref{figureGraphicGbindingIC50}) we can see a clear correlation betwe
 	\caption{Structural ilustration of the molecule identied as \ref{figureCelecoxibTwoRings}.7 and \gls{cox2} docking generated by the ChimeraX software[15].}
 	\label{figureDockingBestResult}
 \end{figure}
-
-
+Hence we can see the fitting of the azophotoswitch in the -cis configuration inside the \gls{cox2} cavity. Although the -trans configuration has been seen to fit into the binding site\footnote{With few problems} it is impossible for this isomer to access to the binding site due to stereochemical problems, i.e. the -trans conformation colides with the outer layers of the \gls{cox2} and cannot access to the binding cavity. Still this molecule could interact with undesired proteins in both configurations (E)/(Z) which could lead to enormous side effects if it is administered as a drug, then further investigations must be done.
 
 \newpage
 \section{Conclusions}
+We have proved Artificial Intelligence's potential for computational and theorical chemistry. Furthermore, we have developed a totally functional Machine Learning software capable of predicting \gls{ic50} values for any protein in the ChEMBL database. Also the software is capable of generating the statistics for each \gls{ml} model generated defined by the hard-coded variables that define the data the model is trained with. Thus the user is capable of playing arround with the variables in order to obtain the best predictions possible. 
+
+Additionaly we have proved our intuition on the \gls{ic50} direct relationship with the provided $\Delta G_{binding}$ values to be correct. Furthermore, a docking of one of the most promising azophotoswitches as been performed matching our expectations and reinforcing the \gls{ai}'s potential.
+
 
 \newpage
 \section{Acknowledgements}
@@ -521,6 +554,10 @@ Molecular graphics and analyses performed with UCSF ChimeraX, developed by the R
 \section{Rellevant definitions}
 \begin{definition}\label{definitionIC50}
 $IC_{50}$: Half maximal inhibitory concentration assigned to the drug concentration required for a $50\%$ inhibition a protein. Other quantities such as $IC_{90}$ or $IC_{99}$ are also commonly used. However, $IC_{90}$ is generally approximated as 10 times the $IC_{50}$ concentration in virtue of experimental observations\cite{BookIC50}. For this project, we aim to identify substances with the lowest possible $IC_{50}$, as our goal is to minimize the presence of foreign substances in the living organism.
+\end{definition}
+
+\begin{definition}\label{definitionChemicalDescriptors}
+Molecular descriptor: "A molecular descriptor is the final result of a logical and mathematical procedure which transforms chemical information encoded within a symbolic representation of a molecule into a useful number or the result of some standardized experiment."\cite{DescriptorsBook}
 \end{definition}
 
 \begin{definition}\label{definitionCelecoxib}
@@ -916,15 +953,15 @@ Identifier & \ch{R_1} & \ch{R_2} & \ch{R_3} \\\hline\hline
 		minimumCorrelationFactor & 0.0\\\hline
 		Number of descriptors    & 3040\\\hline
 		Mean Squared Error       & 1202.70\\\hline
-		$r^2$	                 & 0.90\\\hline
+		$r^2$ 	                 & 0.90\\\hline
 		True Positive            & 994\\\hline
 		False Positive           & 8\\\hline
 		True Negative            & 1015\\\hline
 		False Negative           & 101\\\hline
-		True Positive Rate       & 0.91\\\hline
+		True Positive Rate       & 0.90\\\hline
 		True Negative Rate       & 0.99\\\hline
-		ClassificationAcuracy    & 0.94\\\hline
-		MatthewsCorrelationFactor& 0.87
+		ClassificationAcuracy    & 0.95\\\hline
+		MatthewsCorrelationFactor& 0.90
     \end{tabular}
 \end{table}
 

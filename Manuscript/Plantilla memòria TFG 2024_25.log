@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  30 APR 2025 17:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  1 MAY 2025 20:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1304,37 +1304,60 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/overpic/overpic.sty
+Package: overpic 2024/01/06 2.1 picture overlays (RN)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/eepic/epic.sty
+Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
+\@@multicnt=\count367
+\d@lta=\count368
+\@delta=\dimen294
+\@@delta=\dimen295
+\@gridcnt=\count369
+\@joinkind=\count370
+\@dotgap=\dimen296
+\@ddotgap=\dimen297
+\@x@diff=\count371
+\@y@diff=\count372
+\x@diff=\dimen298
+\y@diff=\dimen299
+\@dotbox=\box89
+\num@segments=\count373
+\num@segmentsi=\count374
+\@datafile=\read5
+)
+\OVP@box=\box90
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty
 Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen294
-\ar@mcellbox=\box89
-\extrarowheight=\dimen295
+\col@sep=\dimen300
+\ar@mcellbox=\box91
+\extrarowheight=\dimen301
 \NC@list=\toks68
 \extratabsurround=\skip67
 \backup@length=\skip68
-\ar@cellbox=\box90
+\ar@cellbox=\box92
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen296
-\captionmargin=\dimen297
-\caption@leftmargin=\dimen298
-\caption@rightmargin=\dimen299
-\caption@width=\dimen300
-\caption@indent=\dimen301
-\caption@parindent=\dimen302
-\caption@hangindent=\dimen303
+\caption@tempdima=\dimen302
+\captionmargin=\dimen303
+\caption@leftmargin=\dimen304
+\caption@rightmargin=\dimen305
+\caption@width=\dimen306
+\caption@indent=\dimen307
+\caption@parindent=\dimen308
+\caption@hangindent=\dimen309
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count367
-\c@continuedfloat=\count368
+\c@caption@flags=\count375
+\c@continuedfloat=\count376
 Package caption Info: hyperref package is loaded.
 )
 Package caption Info: Option `declare type' requires the `newfloat' package on 
-input line 33.
+input line 34.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/newfloat/newfloat.sty
 Package: newfloat 2023/10/01 v1.2 Defining new floating environments (AR)
@@ -1349,73 +1372,71 @@ Package newfloat Info: \Hy@org@chapter = macro:[#1]#2->\NR@gettitle {#1}\NR@cha
 pter [{#1}]{#2}.
 Package newfloat Info: \algocf@original@chapter = undefined.
 )
-Package newfloat Info: New float `scheme' with options `' on input line 33.
-\c@scheme=\count369
-\newfloat@ftype=\count370
-Package newfloat Info: float type `scheme'=8 on input line 33.
+Package newfloat Info: New float `scheme' with options `' on input line 34.
+\c@scheme=\count377
+\newfloat@ftype=\count378
+Package newfloat Info: float type `scheme'=8 on input line 34.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
-\TX@col@width=\dimen304
-\TX@old@table=\dimen305
-\TX@old@col=\dimen306
-\TX@target=\dimen307
-\TX@delta=\dimen308
-\TX@cols=\count371
+\TX@col@width=\dimen310
+\TX@old@table=\dimen311
+\TX@old@col=\dimen312
+\TX@target=\dimen313
+\TX@delta=\dimen314
+\TX@cols=\count379
 \TX@ftn=\toks69
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen309
-\lightrulewidth=\dimen310
-\cmidrulewidth=\dimen311
-\belowrulesep=\dimen312
-\belowbottomsep=\dimen313
-\aboverulesep=\dimen314
-\abovetopsep=\dimen315
-\cmidrulesep=\dimen316
-\cmidrulekern=\dimen317
-\defaultaddspace=\dimen318
-\@cmidla=\count372
-\@cmidlb=\count373
-\@aboverulesep=\dimen319
-\@belowrulesep=\dimen320
-\@thisruleclass=\count374
-\@lastruleclass=\count375
-\@thisrulewidth=\dimen321
+\heavyrulewidth=\dimen315
+\lightrulewidth=\dimen316
+\cmidrulewidth=\dimen317
+\belowrulesep=\dimen318
+\belowbottomsep=\dimen319
+\aboverulesep=\dimen320
+\abovetopsep=\dimen321
+\cmidrulesep=\dimen322
+\cmidrulekern=\dimen323
+\defaultaddspace=\dimen324
+\@cmidla=\count380
+\@cmidlb=\count381
+\@aboverulesep=\dimen325
+\@belowrulesep=\dimen326
+\@thisruleclass=\count382
+\@lastruleclass=\count383
+\@thisrulewidth=\dimen327
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen322
-\c@nlinenum=\count376
+\rotheadsize=\dimen328
+\c@nlinenum=\count384
 \TeXr@lab=\toks70
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
-\c@tracingmulticols=\count377
-\mult@box=\box91
-\multicol@leftmargin=\dimen323
-\c@unbalance=\count378
-\c@collectmore=\count379
-\doublecol@number=\count380
-\multicoltolerance=\count381
-\multicolpretolerance=\count382
-\full@width=\dimen324
-\page@free=\dimen325
-\premulticols=\dimen326
-\postmulticols=\dimen327
+\c@tracingmulticols=\count385
+\mult@box=\box93
+\multicol@leftmargin=\dimen329
+\c@unbalance=\count386
+\c@collectmore=\count387
+\doublecol@number=\count388
+\multicoltolerance=\count389
+\multicolpretolerance=\count390
+\full@width=\dimen330
+\page@free=\dimen331
+\premulticols=\dimen332
+\postmulticols=\dimen333
 \multicolsep=\skip69
 \multicolbaselineskip=\skip70
-\partial@page=\box92
-\last@line=\box93
-\mc@boxedresult=\box94
-\maxbalancingoverflow=\dimen328
-\mult@rightbox=\box95
-\mult@grightbox=\box96
-\mult@firstbox=\box97
-\mult@gfirstbox=\box98
-\@tempa=\box99
-\@tempa=\box100
+\partial@page=\box94
+\last@line=\box95
+\mc@boxedresult=\box96
+\maxbalancingoverflow=\dimen334
+\mult@rightbox=\box97
+\mult@grightbox=\box98
+\mult@firstbox=\box99
+\mult@gfirstbox=\box100
 \@tempa=\box101
 \@tempa=\box102
 \@tempa=\box103
@@ -1450,33 +1471,35 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \@tempa=\box132
 \@tempa=\box133
 \@tempa=\box134
-\c@minrows=\count383
-\c@columnbadness=\count384
-\c@finalcolumnbadness=\count385
-\last@try=\dimen329
-\multicolovershoot=\dimen330
-\multicolundershoot=\dimen331
-\mult@nat@firstbox=\box135
-\colbreak@box=\box136
-\mc@col@check@num=\count386
+\@tempa=\box135
+\@tempa=\box136
+\c@minrows=\count391
+\c@columnbadness=\count392
+\c@finalcolumnbadness=\count393
+\last@try=\dimen335
+\multicolovershoot=\dimen336
+\multicolundershoot=\dimen337
+\mult@nat@firstbox=\box137
+\colbreak@box=\box138
+\mc@col@check@num=\count394
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip71
-\multirow@cntb=\count387
+\multirow@cntb=\count395
 \multirow@dima=\skip72
-\bigstrutjot=\dimen332
+\bigstrutjot=\dimen338
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/multirow/bigstrut.sty
 Package: bigstrut 2021/03/15 v2.8 Provide larger struts in tabulars
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count388
+\c@float@type=\count396
 \float@exts=\toks71
-\float@box=\box137
+\float@box=\box139
 \@float@everytoks=\toks72
-\@floatcapt=\box138
+\@floatcapt=\box140
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/chemfig/chemfig.sty
 (/usr/local/texlive/2024/texmf-dist/tex/generic/chemfig/chemfig.tex
@@ -1486,25 +1509,25 @@ Package: simplekv 2023/10/02 v0.2c Simple keyval package (CT)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen333
-\pgfarrowlength=\dimen334
-\pgfarrowwidth=\dimen335
-\pgfarrowlinewidth=\dimen336
+\pgfarrowinset=\dimen339
+\pgfarrowlength=\dimen340
+\pgfarrowwidth=\dimen341
+\pgfarrowlinewidth=\dimen342
 )
-\CF_cnt_atomgroup=\count389
-\CF_cnt_group=\count390
-\CF_cnt_atom=\count391
-\CF_cnt_cycle=\count392
-\CF_cnt_cyclebonds=\count393
-\CF_cnt_compound=\count394
-\CF_dim=\dimen337
-\CF_turnangle=\dimen338
-\CF_arrowsize=\dimen339
-\CF_zero=\dimen340
-\CF_box=\box139
-\CF_boxstuff=\box140
-\CF_testbox=\box141
-\CF_chargebox=\box142
+\CF_cnt_atomgroup=\count397
+\CF_cnt_group=\count398
+\CF_cnt_atom=\count399
+\CF_cnt_cycle=\count400
+\CF_cnt_cyclebonds=\count401
+\CF_cnt_compound=\count402
+\CF_dim=\dimen343
+\CF_turnangle=\dimen344
+\CF_arrowsize=\dimen345
+\CF_zero=\dimen346
+\CF_box=\box141
+\CF_boxstuff=\box142
+\CF_testbox=\box143
+\CF_chargebox=\box144
 \CF_substtoks=\toks73
 )
 Package: chemfig 2023/12/28 v1.66 Draw molecule with an easy syntax (CT)
@@ -1520,18 +1543,18 @@ y
 (/usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate-20
 23-10-10.sty
 Package: xtemplate 2023-10-10 L3 Experimental prototype document functions
-\l__xtemplate_tmp_dim=\dimen341
-\l__xtemplate_tmp_int=\count395
+\l__xtemplate_tmp_dim=\dimen347
+\l__xtemplate_tmp_int=\count403
 \l__xtemplate_tmp_muskip=\muskip18
 \l__xtemplate_tmp_skip=\skip73
 ))
-\l__xfrac_slash_box=\box143
-\l__xfrac_tmp_box=\box144
-\l__xfrac_denominator_bot_sep_dim=\dimen342
-\l__xfrac_numerator_bot_sep_dim=\dimen343
-\l__xfrac_numerator_top_sep_dim=\dimen344
-\l__xfrac_slash_left_sep_dim=\dimen345
-\l__xfrac_slash_right_sep_dim=\dimen346
+\l__xfrac_slash_box=\box145
+\l__xfrac_tmp_box=\box146
+\l__xfrac_denominator_bot_sep_dim=\dimen348
+\l__xfrac_numerator_bot_sep_dim=\dimen349
+\l__xfrac_numerator_top_sep_dim=\dimen350
+\l__xfrac_slash_left_sep_dim=\dimen351
+\l__xfrac_slash_right_sep_dim=\dimen352
 \l__xfrac_slash_left_muskip=\muskip19
 \l__xfrac_slash_right_muskip=\muskip20
 
@@ -1547,51 +1570,51 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 )
 Package: chemformula 2022/01/23 v4.17 typeset chemical compounds and reactions 
 (CN)
-\l__chemformula_tmpa_dim=\dimen347
-\l__chemformula_tmpb_dim=\dimen348
-\l__chemformula_tmpc_dim=\dimen349
-\l__chemformula_tmpa_int=\count396
-\l__chemformula_tmpb_int=\count397
-\l__chemformula_tmpc_int=\count398
-\l__chemformula_tmpa_box=\box145
-\l__chemformula_tmpb_box=\box146
-\l__chemformula_arrow_length_dim=\dimen350
-\l__chemformula_arrow_label_height_dim=\dimen351
-\l__chemformula_arrow_label_offset_dim=\dimen352
-\l__chemformula_arrow_minimum_length_dim=\dimen353
-\l__chemformula_arrow_shortage_dim=\dimen354
-\l__chemformula_arrow_offset_dim=\dimen355
-\l__chemformula_arrow_yshift_dim=\dimen356
-\l__chemformula_radical_radius_dim=\dimen357
-\l__chemformula_radical_hshift_dim=\dimen358
-\l__chemformula_radical_vshift_dim=\dimen359
-\l__chemformula_radical_space_dim=\dimen360
-\l__chemformula_arrow_head_dim=\dimen361
-\l__chemformula_name_dim=\dimen362
-\l__chemformula_adduct_space_dim=\dimen363
-\l__chemformula_charge_shift_dim=\dimen364
-\l__chemformula_subscript_shift_dim=\dimen365
-\l__chemformula_superscript_shift_dim=\dimen366
-\l__chemformula_subscript_dim=\dimen367
-\l__chemformula_superscript_dim=\dimen368
-\l__chemformula_bond_dim=\dimen369
-\l__chemformula_bond_space_dim=\dimen370
-\l__chemformula_elspec_pair_distance_dim=\dimen371
-\l__chemformula_elspec_pair_line_length_dim=\dimen372
-\l__chemformula_elspec_pair_width_dim=\dimen373
-\l__chemformula_kroegervink_positive_radius_dim=\dimen374
-\l__chemformula_kroegervink_positive_hshift_dim=\dimen375
-\l__chemformula_kroegervink_positive_vshift_dim=\dimen376
-\l__chemformula_kroegervink_positive_space_dim=\dimen377
+\l__chemformula_tmpa_dim=\dimen353
+\l__chemformula_tmpb_dim=\dimen354
+\l__chemformula_tmpc_dim=\dimen355
+\l__chemformula_tmpa_int=\count404
+\l__chemformula_tmpb_int=\count405
+\l__chemformula_tmpc_int=\count406
+\l__chemformula_tmpa_box=\box147
+\l__chemformula_tmpb_box=\box148
+\l__chemformula_arrow_length_dim=\dimen356
+\l__chemformula_arrow_label_height_dim=\dimen357
+\l__chemformula_arrow_label_offset_dim=\dimen358
+\l__chemformula_arrow_minimum_length_dim=\dimen359
+\l__chemformula_arrow_shortage_dim=\dimen360
+\l__chemformula_arrow_offset_dim=\dimen361
+\l__chemformula_arrow_yshift_dim=\dimen362
+\l__chemformula_radical_radius_dim=\dimen363
+\l__chemformula_radical_hshift_dim=\dimen364
+\l__chemformula_radical_vshift_dim=\dimen365
+\l__chemformula_radical_space_dim=\dimen366
+\l__chemformula_arrow_head_dim=\dimen367
+\l__chemformula_name_dim=\dimen368
+\l__chemformula_adduct_space_dim=\dimen369
+\l__chemformula_charge_shift_dim=\dimen370
+\l__chemformula_subscript_shift_dim=\dimen371
+\l__chemformula_superscript_shift_dim=\dimen372
+\l__chemformula_subscript_dim=\dimen373
+\l__chemformula_superscript_dim=\dimen374
+\l__chemformula_bond_dim=\dimen375
+\l__chemformula_bond_space_dim=\dimen376
+\l__chemformula_elspec_pair_distance_dim=\dimen377
+\l__chemformula_elspec_pair_line_length_dim=\dimen378
+\l__chemformula_elspec_pair_width_dim=\dimen379
+\l__chemformula_kroegervink_positive_radius_dim=\dimen380
+\l__chemformula_kroegervink_positive_hshift_dim=\dimen381
+\l__chemformula_kroegervink_positive_vshift_dim=\dimen382
+\l__chemformula_kroegervink_positive_space_dim=\dimen383
 \l__chemformula_stoich_space_skip=\skip77
 \l__chemformula_math_space_skip=\skip78
 \l__chemformula_additions_symbol_space_skip=\skip79
-\l__chemformula_count_tokens_int=\count399
-\g__chemformula_lewis_int=\count400
-\l__chemformula_arrow_arg_i_box=\box147
-\l__chemformula_arrow_arg_ii_box=\box148
-\l__chemformula_superscript_box=\box149
-\l__chemformula_subscript_box=\box150
+\l__chemformula_count_tokens_int=\count407
+\g__chemformula_lewis_int=\count408
+\l__chemformula_arrow_arg_i_box=\box149
+\l__chemformula_arrow_arg_ii_box=\box150
+\l__chemformula_superscript_box=\box151
+\l__chemformula_subscript_box=\box152
 \l__chemformula_plus_space_skip=\skip80
 \l__chemformula_minus_space_skip=\skip81
 )
@@ -1600,54 +1623,54 @@ Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count401
+\lrq@indent=\count409
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count402
-\c@listtotal=\count403
-\c@listcount=\count404
-\c@liststart=\count405
-\c@liststop=\count406
-\c@citecount=\count407
-\c@citetotal=\count408
-\c@multicitecount=\count409
-\c@multicitetotal=\count410
-\c@instcount=\count411
-\c@maxnames=\count412
-\c@minnames=\count413
-\c@maxitems=\count414
-\c@minitems=\count415
-\c@citecounter=\count416
-\c@maxcitecounter=\count417
-\c@savedcitecounter=\count418
-\c@uniquelist=\count419
-\c@uniquename=\count420
-\c@refsection=\count421
-\c@refsegment=\count422
-\c@maxextratitle=\count423
-\c@maxextratitleyear=\count424
-\c@maxextraname=\count425
-\c@maxextradate=\count426
-\c@maxextraalpha=\count427
-\c@abbrvpenalty=\count428
-\c@highnamepenalty=\count429
-\c@lownamepenalty=\count430
-\c@maxparens=\count431
-\c@parenlevel=\count432
-\blx@tempcnta=\count433
-\blx@tempcntb=\count434
-\blx@tempcntc=\count435
-\c@blx@maxsection=\count436
-\blx@maxsegment@0=\count437
-\blx@notetype=\count438
-\blx@parenlevel@text=\count439
-\blx@parenlevel@foot=\count440
-\blx@sectionciteorder@0=\count441
-\blx@sectionciteorderinternal@0=\count442
-\blx@entrysetcounter=\count443
-\blx@biblioinstance=\count444
+\c@tabx@nest=\count410
+\c@listtotal=\count411
+\c@listcount=\count412
+\c@liststart=\count413
+\c@liststop=\count414
+\c@citecount=\count415
+\c@citetotal=\count416
+\c@multicitecount=\count417
+\c@multicitetotal=\count418
+\c@instcount=\count419
+\c@maxnames=\count420
+\c@minnames=\count421
+\c@maxitems=\count422
+\c@minitems=\count423
+\c@citecounter=\count424
+\c@maxcitecounter=\count425
+\c@savedcitecounter=\count426
+\c@uniquelist=\count427
+\c@uniquename=\count428
+\c@refsection=\count429
+\c@refsegment=\count430
+\c@maxextratitle=\count431
+\c@maxextratitleyear=\count432
+\c@maxextraname=\count433
+\c@maxextradate=\count434
+\c@maxextraalpha=\count435
+\c@abbrvpenalty=\count436
+\c@highnamepenalty=\count437
+\c@lownamepenalty=\count438
+\c@maxparens=\count439
+\c@parenlevel=\count440
+\blx@tempcnta=\count441
+\blx@tempcntb=\count442
+\blx@tempcntc=\count443
+\c@blx@maxsection=\count444
+\blx@maxsegment@0=\count445
+\blx@notetype=\count446
+\blx@parenlevel@text=\count447
+\blx@parenlevel@foot=\count448
+\blx@sectionciteorder@0=\count449
+\blx@sectionciteorderinternal@0=\count450
+\blx@entrysetcounter=\count451
+\blx@biblioinstance=\count452
 \labelnumberwidth=\skip82
 \labelalphawidth=\skip83
 \biblabelsep=\skip84
@@ -1656,12 +1679,12 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \bibinitsep=\skip87
 \bibparsep=\skip88
 \bibhang=\skip89
-\blx@bcfin=\read5
+\blx@bcfin=\read6
 \blx@bcfout=\write5
 \blx@langwohyphens=\language90
-\c@mincomprange=\count445
-\c@maxcomprange=\count446
-\c@mincompwidth=\count447
+\c@mincomprange=\count453
+\c@maxcomprange=\count454
+\c@mincompwidth=\count455
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1672,74 +1695,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'chem-acs.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count448
-\c@savedafterword=\count449
-\c@annotator=\count450
-\c@savedannotator=\count451
-\c@author=\count452
-\c@savedauthor=\count453
-\c@bookauthor=\count454
-\c@savedbookauthor=\count455
-\c@commentator=\count456
-\c@savedcommentator=\count457
-\c@editor=\count458
-\c@savededitor=\count459
-\c@editora=\count460
-\c@savededitora=\count461
-\c@editorb=\count462
-\c@savededitorb=\count463
-\c@editorc=\count464
-\c@savededitorc=\count465
-\c@foreword=\count466
-\c@savedforeword=\count467
-\c@holder=\count468
-\c@savedholder=\count469
-\c@introduction=\count470
-\c@savedintroduction=\count471
-\c@namea=\count472
-\c@savednamea=\count473
-\c@nameb=\count474
-\c@savednameb=\count475
-\c@namec=\count476
-\c@savednamec=\count477
-\c@translator=\count478
-\c@savedtranslator=\count479
-\c@shortauthor=\count480
-\c@savedshortauthor=\count481
-\c@shorteditor=\count482
-\c@savedshorteditor=\count483
-\c@labelname=\count484
-\c@savedlabelname=\count485
-\c@institution=\count486
-\c@savedinstitution=\count487
-\c@lista=\count488
-\c@savedlista=\count489
-\c@listb=\count490
-\c@savedlistb=\count491
-\c@listc=\count492
-\c@savedlistc=\count493
-\c@listd=\count494
-\c@savedlistd=\count495
-\c@liste=\count496
-\c@savedliste=\count497
-\c@listf=\count498
-\c@savedlistf=\count499
-\c@location=\count500
-\c@savedlocation=\count501
-\c@organization=\count502
-\c@savedorganization=\count503
-\c@origlocation=\count504
-\c@savedoriglocation=\count505
-\c@origpublisher=\count506
-\c@savedorigpublisher=\count507
-\c@publisher=\count508
-\c@savedpublisher=\count509
-\c@language=\count510
-\c@savedlanguage=\count511
-\c@origlanguage=\count512
-\c@savedoriglanguage=\count513
-\c@pageref=\count514
-\c@savedpageref=\count515
+\c@afterword=\count456
+\c@savedafterword=\count457
+\c@annotator=\count458
+\c@savedannotator=\count459
+\c@author=\count460
+\c@savedauthor=\count461
+\c@bookauthor=\count462
+\c@savedbookauthor=\count463
+\c@commentator=\count464
+\c@savedcommentator=\count465
+\c@editor=\count466
+\c@savededitor=\count467
+\c@editora=\count468
+\c@savededitora=\count469
+\c@editorb=\count470
+\c@savededitorb=\count471
+\c@editorc=\count472
+\c@savededitorc=\count473
+\c@foreword=\count474
+\c@savedforeword=\count475
+\c@holder=\count476
+\c@savedholder=\count477
+\c@introduction=\count478
+\c@savedintroduction=\count479
+\c@namea=\count480
+\c@savednamea=\count481
+\c@nameb=\count482
+\c@savednameb=\count483
+\c@namec=\count484
+\c@savednamec=\count485
+\c@translator=\count486
+\c@savedtranslator=\count487
+\c@shortauthor=\count488
+\c@savedshortauthor=\count489
+\c@shorteditor=\count490
+\c@savedshorteditor=\count491
+\c@labelname=\count492
+\c@savedlabelname=\count493
+\c@institution=\count494
+\c@savedinstitution=\count495
+\c@lista=\count496
+\c@savedlista=\count497
+\c@listb=\count498
+\c@savedlistb=\count499
+\c@listc=\count500
+\c@savedlistc=\count501
+\c@listd=\count502
+\c@savedlistd=\count503
+\c@liste=\count504
+\c@savedliste=\count505
+\c@listf=\count506
+\c@savedlistf=\count507
+\c@location=\count508
+\c@savedlocation=\count509
+\c@organization=\count510
+\c@savedorganization=\count511
+\c@origlocation=\count512
+\c@savedoriglocation=\count513
+\c@origpublisher=\count514
+\c@savedorigpublisher=\count515
+\c@publisher=\count516
+\c@savedpublisher=\count517
+\c@language=\count518
+\c@savedlanguage=\count519
+\c@origlanguage=\count520
+\c@savedoriglanguage=\count521
+\c@pageref=\count522
+\c@savedpageref=\count523
 \shorthandwidth=\skip90
 \shortjournalwidth=\skip91
 \shortserieswidth=\skip92
@@ -1775,19 +1798,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count516
-\c@textcitetotal=\count517
-\c@textcitemaxnames=\count518
-\c@biburlbigbreakpenalty=\count519
-\c@biburlbreakpenalty=\count520
-\c@biburlnumpenalty=\count521
-\c@biburlucpenalty=\count522
-\c@biburllcpenalty=\count523
+\c@textcitecount=\count524
+\c@textcitetotal=\count525
+\c@textcitemaxnames=\count526
+\c@biburlbigbreakpenalty=\count527
+\c@biburlbreakpenalty=\count528
+\c@biburlnumpenalty=\count529
+\c@biburlucpenalty=\count530
+\c@biburllcpenalty=\count531
 \biburlbigskip=\muskip21
 \biburlnumskip=\muskip22
 \biburlucskip=\muskip23
 \biburllcskip=\muskip24
-\c@smartand=\count524
+\c@smartand=\count532
 )
 Package biblatex Info: Trying to load bibliography style 'chem-acs'...
 Package biblatex Info: ... file 'chem-acs.bbx' found.
@@ -1809,8 +1832,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count525
-\c@bbx:relatedtotal=\count526
+\c@bbx:relatedcount=\count533
+\c@bbx:relatedtotal=\count534
 ))))
 Package biblatex Info: Trying to load citation style 'chem-acs'...
 Package biblatex Info: ... file 'chem-acs.cbx' found.
@@ -1822,10 +1845,10 @@ Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 File: numeric-comp.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count527
-\c@cbx@tempcntb=\count528
-\c@cbx@tempcntc=\count529
-\c@cbx@tempcntd=\count530
+\c@cbx@tempcnta=\count535
+\c@cbx@tempcntb=\count536
+\c@cbx@tempcntc=\count537
+\c@cbx@tempcntd=\count538
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -1856,12 +1879,12 @@ Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 ))
 (/usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
-\csq@reset=\count531
-\csq@gtype=\count532
-\csq@glevel=\count533
-\csq@qlevel=\count534
-\csq@maxlvl=\count535
-\csq@tshold=\count536
+\csq@reset=\count539
+\csq@gtype=\count540
+\csq@glevel=\count541
+\csq@qlevel=\count542
+\csq@maxlvl=\count543
+\csq@tshold=\count544
 \csq@ltx@everypar=\toks74
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.def
@@ -1873,12 +1896,12 @@ Package csquotes Info: ... configuration file loaded successfully.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 ))
-Package hyperref Info: Option `colorlinks' set `false' on input line 117.
-Package hyperref Info: Option `breaklinks' set `true' on input line 117.
+Package hyperref Info: Option `colorlinks' set `false' on input line 118.
+Package hyperref Info: Option `breaklinks' set `true' on input line 118.
 
 
 Package hyperref Warning: Unexpected value for option `hidelinks'
-(hyperref)                is ignored on input line 117.
+(hyperref)                is ignored on input line 118.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 Package: glossaries 2023/09/29 v4.53 (NLCT)
@@ -1891,7 +1914,7 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 \XKV@toks=\toks75
 \XKV@tempa@toks=\toks76
 )
-\XKV@depth=\count537
+\XKV@depth=\count545
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2024/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
@@ -1907,7 +1930,7 @@ Package: datatool-base 2019/09/27 v2.32 (NLCT)
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count538
+\c@su@anzahl=\count546
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/datatool/datatool-fp.sty
 Package: datatool-fp 2019/09/27 v2.32 (NLCT)
@@ -1918,19 +1941,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (/usr/local/texlive/2024/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count539
+\actioncount=\count547
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count540
-\FP@xia=\count541
-\FP@xib=\count542
-\FP@xfa=\count543
-\FP@xfb=\count544
-\FP@rega=\count545
-\FP@regb=\count546
-\FP@regs=\count547
-\FP@times=\count548
+\FP@xs=\count548
+\FP@xia=\count549
+\FP@xib=\count550
+\FP@xfa=\count551
+\FP@xfb=\count552
+\FP@rega=\count553
+\FP@regb=\count554
+\FP@regs=\count555
+\FP@times=\count556
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -1949,7 +1972,7 @@ Package: fp-pas 1994/08/29
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count549
+\FPseed=\count557
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -1961,14 +1984,14 @@ Package: fp-upn 1996/10/21
 Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks79
-\@dtl@tmpcount=\count550
+\@dtl@tmpcount=\count558
 \dtl@tmplength=\skip104
-\dtl@sortresult=\count551
-\@dtl@numgrpsepcount=\count552
-\@dtl@datatype=\count553
-\dtl@codeA=\count554
-\dtl@codeB=\count555
-\@dtl@foreach@level=\count556
+\dtl@sortresult=\count559
+\@dtl@numgrpsepcount=\count560
+\@dtl@datatype=\count561
+\dtl@codeA=\count562
+\dtl@codeB=\count563
+\@dtl@foreach@level=\count564
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/tracklang/tracklang.sty
 Package: tracklang 2022/12/13 v1.6.1 (NLCT) Track Languages
@@ -1981,7 +2004,7 @@ Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
 lish.ldf
 File: glossaries-english.ldf 2014/11/23 v1.0
 )
-\gls@level=\count557
+\gls@level=\count565
 \@gls@tmpb=\toks80
 \gls@tmplen=\skip105
 \glskeylisttok=\toks81
@@ -2007,17 +2030,17 @@ Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
 \LTright=\skip108
 \LTpre=\skip109
 \LTpost=\skip110
-\LTchunksize=\count558
-\LTcapwidth=\dimen378
-\LT@head=\box151
-\LT@firsthead=\box152
-\LT@foot=\box153
-\LT@lastfoot=\box154
-\LT@gbox=\box155
-\LT@cols=\count559
-\LT@rows=\count560
-\c@LT@tables=\count561
-\c@LT@chunks=\count562
+\LTchunksize=\count566
+\LTcapwidth=\dimen384
+\LT@head=\box153
+\LT@firsthead=\box154
+\LT@foot=\box155
+\LT@lastfoot=\box156
+\LT@gbox=\box157
+\LT@cols=\count567
+\LT@rows=\count568
+\c@LT@tables=\count569
+\c@LT@chunks=\count570
 \LT@p@ftn=\toks85
 )
 \glsdescwidth=\skip111
@@ -2028,21 +2051,21 @@ sty
 Package: glossary-super 2023/09/29 v4.53 (NLCT)
  (/usr/local/texlive/2024/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
-\c@tracingst=\count563
-\ST@wd=\dimen379
+\c@tracingst=\count571
+\ST@wd=\dimen385
 \ST@rightskip=\skip113
 \ST@leftskip=\skip114
 \ST@parfillskip=\skip115
-\ST@pageleft=\dimen380
-\ST@headht=\dimen381
-\ST@tailht=\dimen382
-\ST@pagesofar=\dimen383
-\ST@pboxht=\dimen384
-\ST@lineht=\dimen385
-\ST@prevht=\dimen386
-\ST@toadd=\dimen387
-\ST@dimen=\dimen388
-\ST@pbox=\box156
+\ST@pageleft=\dimen386
+\ST@headht=\dimen387
+\ST@tailht=\dimen388
+\ST@pagesofar=\dimen389
+\ST@pboxht=\dimen390
+\ST@lineht=\dimen391
+\ST@prevht=\dimen392
+\ST@toadd=\dimen393
+\ST@dimen=\dimen394
+\ST@pbox=\box158
 ))
 (/usr/local/texlive/2024/texmf-dist/tex/latex/glossaries/styles/glossary-tree.s
 ty
@@ -2053,45 +2076,45 @@ Package: glossary-tree 2023/09/29 v4.53 (NLCT)
 gged.sty
 Package: glossary-longragged 2023/09/29 v4.53 (NLCT)
 )
-\c@definition=\count564
+\c@definition=\count572
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
 LaTeX Font Info:    Trying to load font information for T1+phv on input line 14
-7.
+8.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 (./Plantilla memòria TFG 2024_25.aux)
 \openout1 = `"Plantilla memòria TFG 2024_25.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 147.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 148.
 LaTeX Font Info:    Trying to load font information for MDA+cmr on input line 1
-47.
+48.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/mathdesign/mdacmr.fd
 File: mdacmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2129,16 +2152,16 @@ LaTeX Font Info:    ... okay on input line 147.
 
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count565
-\scratchdimen=\dimen389
-\scratchbox=\box157
-\nofMPsegments=\count566
-\nofMParguments=\count567
+\scratchcounter=\count573
+\scratchdimen=\dimen395
+\scratchbox=\box159
+\nofMPsegments=\count574
+\nofMParguments=\count575
 \everyMPshowfont=\toks86
-\MPscratchCnt=\count568
-\MPscratchDim=\dimen390
-\MPnumerator=\count569
-\makeMPintoPDFobject=\count570
+\MPscratchCnt=\count576
+\MPscratchDim=\dimen396
+\MPnumerator=\count577
+\makeMPintoPDFobject=\count578
 \everyMPtoPDFconversion=\toks87
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -2149,7 +2172,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 147.
+Package hyperref Info: Link coloring OFF on input line 148.
 
 (./Plantilla memòria TFG 2024_25.out) (./Plantilla memòria TFG 2024_25.out)
 \@outlinefile=\write6
@@ -2160,7 +2183,7 @@ Package hyperref Info: Link coloring OFF on input line 147.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 147.
+ on input line 148.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
@@ -2203,8 +2226,8 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 147.
-Package biblatex Info: Reference segment=0 on input line 147.
+Package biblatex Info: Reference section=0 on input line 148.
+Package biblatex Info: Reference segment=0 on input line 148.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -2237,82 +2260,82 @@ Package biblatex Info: Reference segment=0 on input line 147.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<GeneralSources/Logo_uab.png, id=67, 932.51613pt x 350.1598pt>
+<GeneralSources/Logo_uab.png, id=71, 932.51613pt x 350.1598pt>
 File: GeneralSources/Logo_uab.png Graphic file (type png)
 <use GeneralSources/Logo_uab.png>
-Package pdftex.def Info: GeneralSources/Logo_uab.png  used on input line 156.
+Package pdftex.def Info: GeneralSources/Logo_uab.png  used on input line 157.
 (pdftex.def)             Requested size: 173.56198pt x 65.16858pt.
 LaTeX Font Info:    Trying to load font information for OT1+zavm on input line 
-164.
+165.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/arev/ot1zavm.fd
 File: ot1zavm.fd 2006/05/30 Fontinst v1.929 font definitions for OT1/zavm.
 )
 LaTeX Font Info:    Trying to load font information for OML+zavm on input line 
-164.
+165.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/arev/omlzavm.fd
 File: omlzavm.fd 2006/05/30 Fontinst v1.929 font definitions for OML/zavm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+zavm on input line 
-164.
+165.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/arev/omszavm.fd
 File: omszavm.fd 2006/05/30 Fontinst v1.929 font definitions for OMS/zavm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+mdbch on input line
- 164.
+ 165.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/mathdesign/mdbch/omxmdbch.fd
 File: omxmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OMX/mdbch.
 )
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 10.51207pt on input line 164.
+(Font)              scaled to size 10.51207pt on input line 165.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 164.
+(Font)              scaled to size 7.68005pt on input line 165.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 164.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 164
+(Font)              scaled to size 5.76004pt on input line 165.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 165
 .
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 164
+LaTeX Font Info:    Trying to load font information for U+msb on input line 165
 .
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for MDA+mdbch on input line
- 164.
+ 165.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/mathdesign/mdbch/mdamdbch.fd
 File: mdamdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDA/mdbch.
 )
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 10.51207pt on input line 164.
+(Font)              scaled to size 10.51207pt on input line 165.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 7.68005pt on input line 164.
+(Font)              scaled to size 7.68005pt on input line 165.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 5.76004pt on input line 164.
+(Font)              scaled to size 5.76004pt on input line 165.
 LaTeX Font Info:    Trying to load font information for U+zavm on input line 16
-4.
+5.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/arev/uzavm.fd
 File: uzavm.fd 2006/05/30 Fontinst v1.929 font definitions for U/zavm.
 )
 LaTeX Font Info:    Trying to load font information for U+esint on input line 1
-64.
+65.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
 \T1/phv/m/n/17.28 to-switches Op-ti-miza-tion
  []
 
 
-Overfull \hbox (7.26625pt too wide) in paragraph at lines 176--184
+Overfull \hbox (7.26625pt too wide) in paragraph at lines 177--185
  [][] 
  []
 
@@ -2325,26 +2348,26 @@ uab.png>] [1
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 207.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 208.
  [2] [3]
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 2
-19.
+20.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 223.
+(Font)              scaled to size 8.64006pt on input line 224.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 223.
+(Font)              scaled to size 6.72005pt on input line 224.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 223.
+(Font)              scaled to size 4.80003pt on input line 224.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 8.64006pt on input line 223.
+(Font)              scaled to size 8.64006pt on input line 224.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 6.72005pt on input line 223.
+(Font)              scaled to size 6.72005pt on input line 224.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 4.80003pt on input line 223.
+(Font)              scaled to size 4.80003pt on input line 224.
 
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2359,7 +2382,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.228 \newpage
+l.229 \newpage
                [1{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/arev/arevo
 t1.enc}]
 
@@ -2375,7 +2398,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.241 \newpage
+l.242 \newpage
                [2]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2390,7 +2413,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.III}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.254 \newpage
+l.255 \newpage
                [3] (./Plantilla memòria TFG 2024_25.toc)
 \tf@toc=\write7
 \openout7 = `"Plantilla memòria TFG 2024_25.toc"'.
@@ -2442,11 +2465,11 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [7]
-<GeneralSources/Cox2ChimeraX.jpg, id=291, 10750.1625pt x 5613.97375pt>
+<GeneralSources/Cox2ChimeraX.jpg, id=296, 10750.1625pt x 5613.97375pt>
 File: GeneralSources/Cox2ChimeraX.jpg Graphic file (type jpg)
 <use GeneralSources/Cox2ChimeraX.jpg>
-Package pdftex.def Info: GeneralSources/Cox2ChimeraX.jpg  used on input line 27
-9.
+Package pdftex.def Info: GeneralSources/Cox2ChimeraX.jpg  used on input line 28
+0.
 (pdftex.def)             Requested size: 452.9679pt x 249.7054pt.
 
 
@@ -2462,7 +2485,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.283 
+l.284 
        [1]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2474,7 +2497,11 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 [2 <./GeneralSources/Cox2ChimeraX.jpg>]
 Package hyperref Info: bookmark level for unknown scheme defaults to 0 on input
- line 301.
+ line 302.
+
+
+LaTeX Warning: Reference `definitionChemicalDescriptors' on page 3 undefined on
+ input line 306.
 
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2485,7 +2512,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [3]
-Overfull \hbox (4.65675pt too wide) in paragraph at lines 315--316
+Overfull \hbox (4.65675pt too wide) in paragraph at lines 316--317
 []\T1/phv/m/n/10.95 Currently, the phar-ma-co-log-i-cal ther-a-pies for the [][
 ]COX-2[] in-hi-bi-tion are based on [][]Non-Steroidal
  []
@@ -2535,11 +2562,11 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [8]
-<GeneralSources/DataSplittingDiagram.pdf, id=451, 692.59853pt x 355.3797pt>
+<GeneralSources/DataSplittingDiagram.pdf, id=456, 692.59853pt x 355.3797pt>
 File: GeneralSources/DataSplittingDiagram.pdf Graphic file (type pdf)
 <use GeneralSources/DataSplittingDiagram.pdf>
 Package pdftex.def Info: GeneralSources/DataSplittingDiagram.pdf  used on input
- line 360.
+ line 361.
 (pdftex.def)             Requested size: 452.9679pt x 232.42021pt.
 
 
@@ -2570,13 +2597,13 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 [11]
 <../Plots/DataGapRepresentationIC50percentageEresed15.0Gap_min_32Gap_max_53.pdf
-, id=512, 462.52798pt x 346.89601pt>
+, id=517, 462.52798pt x 346.89601pt>
 File: ../Plots/DataGapRepresentationIC50percentageEresed15.0Gap_min_32Gap_max_5
 3.pdf Graphic file (type pdf)
 <use ../Plots/DataGapRepresentationIC50percentageEresed15.0Gap_min_32Gap_max_53
 .pdf>
 Package pdftex.def Info: ../Plots/DataGapRepresentationIC50percentageEresed15.0
-Gap_min_32Gap_max_53.pdf  used on input line 389.
+Gap_min_32Gap_max_53.pdf  used on input line 390.
 (pdftex.def)             Requested size: 452.9679pt x 343.39597pt.
 
 
@@ -2590,21 +2617,21 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 [12 <../Plots/DataGapRepresentationIC50percentageEresed15.0Gap_min_32Gap_max_53
 .pdf>]
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 396.
+(Font)              scaled to size 11.52008pt on input line 401.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 11.52008pt on input line 396.
+(Font)              scaled to size 11.52008pt on input line 401.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gls' on input line 396.
+(hyperref)                removing `\gls' on input line 401.
 
 <../Plots/ChEMBL_ExtractorData_CHEMBL230_IC50_1000CorrelationFactors.pdf, id=57
-1, 462.52798pt x 346.89601pt>
+6, 462.52798pt x 346.89601pt>
 File: ../Plots/ChEMBL_ExtractorData_CHEMBL230_IC50_1000CorrelationFactors.pdf G
 raphic file (type pdf)
 <use ../Plots/ChEMBL_ExtractorData_CHEMBL230_IC50_1000CorrelationFactors.pdf>
 Package pdftex.def Info: ../Plots/ChEMBL_ExtractorData_CHEMBL230_IC50_1000Corre
-lationFactors.pdf  used on input line 402.
+lationFactors.pdf  used on input line 407.
 (pdftex.def)             Requested size: 452.9679pt x 337.34538pt.
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2617,13 +2644,13 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 [13 <../Plots/ChEMBL_ExtractorData_CHEMBL230_IC50_1000CorrelationFactors.pdf>]
 PGFPlots: reading {GeneralSources/ErasedPercentageVSRSquare.txt}
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 435.
+(Font)              scaled to size 9.60007pt on input line 438.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 7.29605pt on input line 435.
+(Font)              scaled to size 7.29605pt on input line 438.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 9.60007pt on input line 435.
+(Font)              scaled to size 9.60007pt on input line 438.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 7.29605pt on input line 435.
+(Font)              scaled to size 7.29605pt on input line 438.
 PGFPlots: reading {GeneralSources/ErasedPercentageVSMeanSquaredError.txt}
 
 
@@ -2635,10 +2662,10 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [14]
-<../Plots/GbindingVSIC50.pdf, id=643, 722.7pt x 505.89pt>
+<../Plots/GbindingVSIC50.pdf, id=648, 722.7pt x 505.89pt>
 File: ../Plots/GbindingVSIC50.pdf Graphic file (type pdf)
 <use ../Plots/GbindingVSIC50.pdf>
-Package pdftex.def Info: ../Plots/GbindingVSIC50.pdf  used on input line 472.
+Package pdftex.def Info: ../Plots/GbindingVSIC50.pdf  used on input line 475.
 (pdftex.def)             Requested size: 317.07614pt x 224.58296pt.
 
 
@@ -2650,13 +2677,31 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [15 <../Plots/GbindingVSIC50.pdf>]
-<GeneralSources/LastFrameDockingTwoRingsFiveMembers.jpg, id=705, 10750.1625pt x
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[16]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[17]
+<GeneralSources/LastFrameDockingTwoRingsFiveMembers.jpg, id=744, 10750.1625pt x
  5613.97375pt>
 File: GeneralSources/LastFrameDockingTwoRingsFiveMembers.jpg Graphic file (type
  jpg)
 <use GeneralSources/LastFrameDockingTwoRingsFiveMembers.jpg>
 Package pdftex.def Info: GeneralSources/LastFrameDockingTwoRingsFiveMembers.jpg
-  used on input line 497.
+  used on input line 527.
 (pdftex.def)             Requested size: 452.9679pt x 236.51341pt.
 
 
@@ -2667,30 +2712,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[16 <./GeneralSources/LastFrameDockingTwoRingsFiveMembers.jpg>]
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
-
-[17]
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
-
-[18]
-LaTeX Font Info:    Trying to load font information for T1+fvm on input line 51
-7.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/bera/t1fvm.fd
-File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
-)
+[18 <./GeneralSources/LastFrameDockingTwoRingsFiveMembers.jpg>]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2709,6 +2731,11 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [20]
+LaTeX Font Info:    Trying to load font information for T1+fvm on input line 55
+0.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/bera/t1fvm.fd
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2726,14 +2753,32 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[22{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/arev/arevoms.enc}]
-<GeneralSources/Point_group_determination_flowchart_v2.png, id=769, 641.39626pt
+[22]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[23]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[24{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/arev/arevoms.enc}]
+<GeneralSources/Point_group_determination_flowchart_v2.png, id=818, 641.39626pt
  x 901.86937pt>
 File: GeneralSources/Point_group_determination_flowchart_v2.png Graphic file (t
 ype png)
 <use GeneralSources/Point_group_determination_flowchart_v2.png>
 Package pdftex.def Info: GeneralSources/Point_group_determination_flowchart_v2.
-png  used on input line 587.
+png  used on input line 624.
 (pdftex.def)             Requested size: 226.48395pt x 318.45258pt.
 
 
@@ -2744,33 +2789,15 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[23 <./GeneralSources/Point_group_determination_flowchart_v2.png>]
+[25 <./GeneralSources/Point_group_determination_flowchart_v2.png>]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 620.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 657.
 
-Overfull \hbox (4.46593pt too wide) in paragraph at lines 619--621
-[][]\T1/phv/b/n/10.95 Definition 11. []\T1/phv/m/sl/10.95 Matthews Cor-re-la-ti
+Overfull \hbox (4.46593pt too wide) in paragraph at lines 656--658
+[][]\T1/phv/b/n/10.95 Definition 12. []\T1/phv/m/sl/10.95 Matthews Cor-re-la-ti
 on Co-ef-fi-cient: quan-tity re-lated to a Ma-chine Learn-ing Model's
  []
 
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
-
-[24]
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
-
-[25]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2825,10 +2852,6 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [31]
-Overfull \hbox (31.54541pt too wide) in paragraph at lines 886--906
- [][] 
- []
-
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2847,6 +2870,10 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [33]
+Overfull \hbox (31.54541pt too wide) in paragraph at lines 923--943
+ [][] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2855,7 +2882,25 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[34] 
+[34]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[35]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[36] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./Plantilla memòria TFG 2024_25.aux)
  ***********
@@ -2867,15 +2912,11 @@ L3 programming layer <2024-02-20>
 LaTeX Warning: There were undefined references.
 
 
-Package rerunfilecheck Warning: File `"Plantilla memòria TFG 2024_25".out' has
- changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: Checksums for `"Plantilla memòria TFG 2024_25".ou
-t':
-(rerunfilecheck)             Before: 7F0EAE40FAA9C1581425242AD3A06AA5;2336
-(rerunfilecheck)             After:  DBB044DB55F3D8AECA969FDBE4B2BF99;2522.
+Package rerunfilecheck Info: File `"Plantilla memòria TFG 2024_25".out' has no
+t changed.
+(rerunfilecheck)             Checksum: DBB044DB55F3D8AECA969FDBE4B2BF99;2522.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                "Plantilla memòria TFG 2024_25"
@@ -2887,10 +2928,10 @@ xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 64119 strings out of 474116
- 1488410 string characters out of 5743682
- 2435004 words of memory out of 5000000
- 85301 multiletter control sequences out of 15000+600000
+ 64305 strings out of 474116
+ 1491267 string characters out of 5743682
+ 2439785 words of memory out of 5000000
+ 85471 multiletter control sequences out of 15000+600000
  642311 words of font info for 187 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,16n,121p,2383b,3070s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2906,11 +2947,11 @@ b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-ch
 r7v.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/
 local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "Plantilla memòria TFG 2024_25.pdf" (45 pages, 10688154 byte
+Output written on "Plantilla memòria TFG 2024_25.pdf" (47 pages, 10697858 byte
 s).
 PDF statistics:
- 1040 PDF objects out of 1200 (max. 8388607)
- 826 compressed objects within 9 object streams
- 184 named destinations out of 1000 (max. 500000)
- 203 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1091 PDF objects out of 1200 (max. 8388607)
+ 875 compressed objects within 9 object streams
+ 192 named destinations out of 1000 (max. 500000)
+ 211 words of extra memory for PDF output out of 10000 (max. 10000000)
 
