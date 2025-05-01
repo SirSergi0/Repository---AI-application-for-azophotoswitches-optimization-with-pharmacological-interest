@@ -368,39 +368,43 @@ As described in Definition (\ref{definitionDecisionTree}), the Random Forest alg
 
 One notable characteristic of this method is its inherent randomness. Each Random Forest model is unique, even if configured with the same parameters and initialized under identical conditions. However, experimental evidence suggests that this randomness does not significantly impact the results. If two Random Forest algorithms are trained on the same dataset using identical parameters, their outputs will converge, even if the internal structures of their decision trees differ.
 
-The \gls{rf} algorithm generates a large number of random decision trees (determined by the hard-coded variable \emph{numberOfTrees}), which are trained with the training sets. Typically the more trees the model is trained with the best accuracy in the predictions, nevertheless the computational cost for each model training also increases with the number of trees. It is key to remark the predictions' accuracy can not be arbitrarily improved by only increasing the number of trees of the \gls{rf} model. The predictions' accuracy is bonded to the data the model is trained with, thus if the data does not provide enough information about the insight of the protein, more accurate predictions can not be archived independently of the number of trees of the model. As a general criteria we can affirm that,
+The \gls{rf} algorithm generates a large number of random decision trees (as defined by the hard-coded variable \emph{numberOfTrees}), which are trained on subsets of the training data. Typically, increasing the number of trees enhances the model’s predictive accuracy; however, this comes at the cost of greater computational complexity. Importantly, prediction accuracy cannot be arbitrarily improved simply by increasing the number of trees. The model’s performance is fundamentally limited by the quality and quantity of the training data. If the data lacks sufficient information about the underlying protein-related phenomena, higher accuracy cannot be achieved regardless of how many trees are used.
+
+In general, the relationship between data quality/quantity and the number of trees can be summarized as:
 \begin{align*}
-	\uparrow\text{Data}\quad+\uparrow\text{Trees}\implies\uparrow\text{Predictions' accuracy}\\
-	\downarrow\text{Data}\quad+\downarrow\text{Trees}\implies\downarrow\text{Predictions' accuracy}
+\uparrow\text{Data} + \uparrow\text{Trees} &\Rightarrow \uparrow\text{Prediction Accuracy} \\
+\downarrow\text{Data} + \downarrow\text{Trees} &\Rightarrow \downarrow\text{Prediction Accuracy}
 \end{align*}
-but more data or more trees independently will not lead to better accuracy. Then, for the data we dispose, predictions with 500 trees are the same as the ones with $300$ trees.
+However, increasing either component in isolation—more data or more trees—does not necessarily lead to better accuracy. For the available dataset in this work, we observed that training with 500 trees yields similar results to training with 300 trees.
 
-Later, these models are evaluated by predicting the $IC_{50}$ values of the \emph{testing sets}. Using the results, the \emph{True Positive Rate} (Def. \ref{definitionTruePositiveRate}), \emph{True Negative Rate} (Def. \ref{definitionTrueNegativeRate}), \emph{Classification Accuracy} (Def. \ref{definitionClassificationAccuracy}), and \emph{Matthews Correlation Coefficient} (Def. \ref{definitionMatthewsCorrelationCoeficient}) are computed. Based on these computational results, the variables \emph{percentageErased}, \emph{testSizeProportion}, and \emph{numberOfTrees} are manually adjusted to obtain the best results.
+Subsequently, these models are evaluated by predicting the $IC_{50}$ values of the \emph{testing sets}. Using the predictions, we compute the \emph{True Positive Rate} (Def. \ref{definitionTruePositiveRate}), \emph{True Negative Rate} (Def. \ref{definitionTrueNegativeRate}), \emph{Classification Accuracy} (Def. \ref{definitionClassificationAccuracy}), and \emph{Matthews Correlation Coefficient} (Def. \ref{definitionMatthewsCorrelationCoeficient}). Based on these metrics, the variables \emph{percentageErased}, \emph{testSizeProportion}, and \emph{numberOfTrees} are manually adjusted to optimize model performance.
 
-Finally, the \gls{rf} model with best statistics\footnote{The ruling criteria used to classify one model to have "better statistics" than other is discussed in section (\ref{sectionResultsAndDiscussion})} are used to predict the \gls{ic50} of the azophotoswitch prototipes classified in Appendix (\ref{appendixAzophotoshiches}). This procedure begins with the computation of the chemical descriptors with AlvaDesk software \cite{MauriMolecularDescriptorsBook}, then the pertinent chemical descriptors are droped and remaining only the ones the algorithm is trained with. Then, by inputing the computed descriptors to the \gls{rf} model the predicted \gls{ic50} pop out as an outcome and are analyzed.
+Finally, the \gls{rf} model with the best performance\footnote{The criteria for determining the model with “better statistics” is discussed in Section \ref{sectionPersonCorrelationFactor} since this term references \gls{ai} statistics rather than the usual statistics.} is used to predict the \gls{ic50} values of the azophotoswitch prototypes listed in Appendix \ref{appendixAzophotoshiches}. This process begins with computing the chemical descriptors using AlvaDesc software \cite{MauriMolecularDescriptorsBook}. Irrelevant descriptors are then removed, retaining only those used during training. By inputting the selected descriptors into the trained \gls{rf} model, the predicted \gls{ic50} values are obtained and subsequently analyzed.
+
+Finally a docking is performed using \textcolor{blue}{Add stuff}!
 
 \newpage
 \section{Results and Discussion}\label{sectionResultsAndDiscussion}
 
-\subsection{Available data}
-In Figure (\ref{figureGraphicRecurrecyIC50}) we present the extracted \gls{ic50} data extracted from the ChEMBL database under the target ID \emph{CHEMBL230} for the interval $[0,200]$ nM. Figure (\ref{figureGraphicRecurrecyIC50}) clearly shows multiples of 10 are significantly overrepresented respect to other values. Additionally, by analyzing data from other proteins we can confirm this is not an exception but rather the norm. It looks like experimental chemists have a preference for multiples of 10, often rounding their results to the nearest value in this category. Consequently, an inherent error associated with these values will always be present, and we will have to deal with it. This observation will be one of the cornerstones of our ultimate results.
+\subsection{Available Data}\label{sectionAvailableData}
+Figure (\ref{figureGraphicRecurrecyIC50}) presents the \gls{ic50} values extracted from the ChEMBL database under target ID \emph{CHEMBL230}, limited to the interval $[0, 200]$ nM. The figure clearly shows that multiples of 10 are significantly overrepresented compared to other values. Upon analyzing data from additional proteins, we observe that this pattern is not unique to this target but appears to be a general trend. This suggests that experimental chemists tend to round their results to the nearest multiple of 10, introducing a systematic bias. As a result, a certain degree of inherent error will always be present in the dataset, and this limitation must be acknowledged and accounted for in subsequent analyses. This observation forms a key foundation for our later results.
 
 \begin{figure}[H]
 	\centering
-		\begin{overpic}[width = \textwidth, trim={0.85cm 0.3cm 1.5cm 1.35cm}, clip]{../Plots/DataGapRepresentationIC50percentageEresed15.0Gap_min_32Gap_max_53.pdf}
+	\begin{overpic}[width=\textwidth, trim={0.85cm 0.3cm 1.5cm 1.35cm}, clip]{../Plots/DataGapRepresentationIC50percentageEresed15.0Gap_min_32Gap_max_53.pdf}
 		\put(10,55){Highly active}
 		\put(30,55){Gap}
 		\put(55,55){Least active}
 	\end{overpic}
-	\caption{\gls{ic50} values from our dataset and generation of a 20\% gap.}
+	\caption{\gls{ic50} values from our dataset and the creation of a 20\% gap.}
 	\label{figureGraphicRecurrecyIC50}
 \end{figure}
 
-Additionally in Figure (\ref{figureGraphicRecurrecyIC50}) we can also observe the procedure of the generation of a gap in the data. Giving a set of data the average \gls{ic50} is computed, for this case it is arround $47$ nM. Then, a percentage of the data is erased ruled by the \emph{percentageErased} hard-coded variable in a way that the average \gls{ic50} is located in the middle of the interval. In Figure (\ref{figureGraphicRecurrecyIC50}) all the data is presented in color blue + orange, then the gap is performed by the delation of the blue region centered around $47$ nM. For this case this gap comprehend the 20\% of the data.
+Figure (\ref{figureGraphicRecurrecyIC50}) also illustrates the process of generating a gap in the data. Given a dataset, the average \gls{ic50} is first computed—approximately 47 nM in this case. A proportion of the data, defined by the hard-coded variable \emph{percentageErased}, is then removed to create a gap centered around the average value. In the figure, the full dataset is represented in blue and orange, while the blue region, centered at 47 nM, has been deleted to introduce the gap. In this specific example, the gap accounts for 20\% of the total data.
 
-\subsection{Correlation of individual descriptors and \gls{ic50}}
+\subsection{Correlation of Individual Descriptors with \gls{ic50}}
 
-Afterwards the chemical descriptors are computed with AlvaDesk software. Hence, we proceed to calculate the Pearson Correlation Coefficients\footnote{The Pearson Correlation Coefficient is also denoted as $r^2$} as defined in Definition (\ref{definitionPersonCoefficient}) between the descriptors values and the \gls{ic50} of each molecule. The results are subsequently plotted in Figure (\ref{figureGraphicCorrelationFactor}). From the plot, we observe a‚ Gaussian bell shape centered around zero, which aligns with our expectations. This suggests that there is no inherently preferred set of chemical descriptors for the protein, a finding that may initially seem at odds with the project's goals.
+Next, chemical descriptors were calculated using the AlvaDesc software. Subsequently, we computed the Pearson Correlation Coefficients\footnote{The Pearson Correlation Coefficient is sometimes denoted as $r^2$, though strictly speaking $r^2$ refers to the coefficient of determination, which is the square of the correlation coefficient.} as defined in Definition (\ref{definitionPersonCoefficient}), measuring the linear relationship between each descriptor and the corresponding \gls{ic50} value for every molecule. The results are visualized in Figure (\ref{figureGraphicCorrelationFactor}).
 
 \begin{figure}[H]
 	\centering
@@ -409,11 +413,19 @@ Afterwards the chemical descriptors are computed with AlvaDesk software. Hence, 
 	\label{figureGraphicCorrelationFactor}
 \end{figure}
 
-This results is entirely natural, if a preferred descriptors would exist the implementation of \gls{ai}s would not be necessary and major advancedments would already be archived. Still our hypothesis holds, since it states that \emph{there exists a combination (or combinations) of chemical descriptors that are directly correlated with the inhibition of the protein}. This observation does not contradict that statement. Intuitively, we may believe that filtering out descriptors with the lowest  $r^2$  values might lead to improved results. This possibility will be explored in subsequent discussions.
+The distribution of correlation values resembles a Gaussian bell curve centered around zero, as expected. This suggests that there is no dominant or inherently preferred chemical descriptor strongly associated with \gls{ic50} variation for this protein. While this may seem to conflict with the project's objective, it actually reinforces the importance of using ensemble methods—such as \gls{rf}, which leverage the collective contribution of weak predictors.
 
-\subsection{Pearson correlation factor and mean squared error}
+This result is entirely expected. If a universally preferred descriptor existed, the use of \gls{ai} methods would be largely unnecessary, and significant advancements would likely have already been achieved through simpler statistical models. Nonetheless, our central hypothesis remains valid: \emph{there exists at least one combination of chemical descriptors that correlates directly with the inhibition of the target protein}. The observed distribution of correlation values does not contradict this hypothesis; rather, it highlights the need for models that can identify and exploit subtle multivariate relationships.
 
-Once the models are generated, i.e. the pertinent variables are set up, predictions can been. Thus, we can compute the Pearson Correlation Factors (Def. (\ref{definitionPersonCoefficient})) and Mean Squared Error (Def. (\ref{definitionMeanSquaredError})) for the predictions versus the experimental \gls{ic50} data. In Figure (\ref{FigPlotErasedPercentageVSRSquare}) we present two plots of the Pearson Correlation Factors and Mean Squared Error in terms of the erased percentage.
+It might be tempting to assume that discarding descriptors with the lowest $r^2$ values would improve model performance. This idea will be further explored in later sections.
+
+\subsection{Pearson Correlation Coefficient and Mean Squared Error}\label{sectionPersonCorrelationFactor}
+
+Once the models have been generated, i.e., once the relevant hyperparameters are set, we proceed with prediction. At this stage, we compute the Pearson Correlation Coefficient (Def. (\ref{definitionPersonCoefficient})) and the Mean Squared Error (Def. (\ref{definitionMeanSquaredError})) between the predicted and experimental \gls{ic50} values.
+
+Figure (\ref{FigPlotErasedPercentageVSRSquare}) presents two plots showing how both the Pearson Correlation Coefficient and the Mean Squared Error vary as a function of the erased percentage. These metrics provide insight into the model’s performance under different levels of data availability.
+
+From the discussion in Section \ref{sectionAvailableData}, we understand that the dataset suffers from inherent precision issues, particularly at higher $IC_{50}$ values. Additionally, the precision of several measurements remains unknown. Since our models do not incorporate uncertainty estimates for each individual data point, it is unrealistic to expect $r^2$ and mean squared error values of exactly 1 and 0, respectively. Some degree of variance is inevitable due to the nature of the data. As such, discarding more than 50\% of the dataset, regardless of what statistical metrics may suggest, would be a critical error, as it would lead to substantial information loss. Still, the computed values of $r^2$ and mean squared error remain useful indicators of the model's performance up to a certain threshold.
 
 \begin{figure}[H]
 \begin{tikzpicture}
@@ -462,22 +474,24 @@ Once the models are generated, i.e. the pertinent variables are set up, predicti
 \label{FigPlotErasedPercentageVSRSquare}
 \end{figure}
 
-From Figure (\ref{figureGraphicRecurrecyIC50}), we know the data has an inherent precision problem, especially when approaching higher  $IC_{50}$  values, additionally we do not now the precision of some measurements. Since our working models do not account for the lack of precision in each molecule's data, the values of  $r^2$  and mean squared error are not expected to be exactly 1 and 0, respectively. In fact, some variance and uncertainty are inevitable. Therefore, discarding more than 50\% of our data would be a critical mistake, even if statistical measures suggest otherwise. However, these values still serve as a good reflection of our method's reliability up to a certain threshold.
+In this work, we arbitrarily define this threshold at $r^2 = 0.90$. This hard-coded value is a conventional choice, established to determine the point beyond which further improvements in $r^2$ become statistically irrelevant, given the underlying noise in the data. This convention is loosely inspired by standards in analytical chemistry,\footnote{Particularly in analytical chemistry, two datasets are typically considered significantly correlated if their $r^2$ value exceeds 0.90.} where correlations above 0.90 are often deemed acceptable. However, it is important to emphasize that this threshold is subjective and should not be treated as an absolute rule.
 
-In this work, we will arbitrarily set this threshold at  $r^2 = 0.90$ . This hard-coded decision is purely conventional, as we need to establish a point beyond which  $r^2$  values become meaningless (i.e., obtaining  $r^2$  values above 0.90 is unnecessary, given that such variance is inherent to our data). The justification for this choice is that, in some areas of chemistry\footnote{Particularly in analytical chemistry} two data sets are generally considered correlated if their  $r^2$  value exceeds 0.90. However, it is important to emphasize that this convention is purely subjective and should not be regarded as an inviolable rule. The reliable statistics will come from the \emph{True Positive Rate} (Def. \ref{definitionTruePositiveRate}), \emph{True Negative Rate} (Def. \ref{definitionTrueNegativeRate}), \emph{Classification Accuracy} (Def. \ref{definitionClassificationAccuracy}), and \emph{Matthews Correlation Coefficient} (Def. \ref{definitionMatthewsCorrelationCoeficient}), the standard quantities for rating a \gls{ml} model.
+More reliable indicators of model performance are provided by the \emph{True Positive Rate} (Def. (\ref{definitionTruePositiveRate})), \emph{True Negative Rate} (Def. (\ref{definitionTrueNegativeRate})), \emph{Classification Accuracy} (Def. (\ref{definitionClassificationAccuracy})), and \emph{Matthews Correlation Coefficient} (Def. (\ref{definitionMatthewsCorrelationCoeficient})), the standard metrics used to evaluate the performance of a \gls{ml} model.
 
-\subsection{Azophotoswitches analysis}
+Moreover, we can hypothesize that creating a larger gap in the data facilitates the model’s ability to distinguish between highly active and weakly active inhibitors. This intuition is reflected in the boundary cases illustrated in Figure (\ref{FigPlotErasedPercentageVSRSquare}). As the erased percentage approaches 100\%, the $r^2$ value tends to zero and the mean squared error approaches one. This indicates that, in such extreme cases, the \gls{rf} model is able to classify only the most distinct molecules, those with \gls{ic50} values near the extremes of the interval. However, this is not a desirable scenario, as a significant portion of intermediate data is lost, limiting the model’s capacity to generalize across the full spectrum of inhibitor activity.
 
-In Figure (\ref{figureGraphicGbindingIC50}) we present the results for the predicted \gls{ic50} in terms of the $\Delta G_{binding}$ provided by the Physical Chemistry Unit of the UAB. The exact results are stored in Appendix \ref{appendixTableOfResults} in Tables (\ref{TableMainResults1}) and (\ref{TableMainResults2}), additionall the conditions under which the Random Forest (\gls{rf}) algorithm has been trained and the statistics analysis of its predictions is stored in Table (\ref{TableConditionsMainResults}).
+\subsection{Azophotoswitches Analysis}
+
+Figure \ref{figureGraphicGbindingIC50} shows the predicted \gls{ic50} values of azophotoswitch compounds as a function of their binding free energy ($\Delta G_{binding}$), as provided by the Physical Chemistry Unit of the UAB. Detailed prediction results can be found in Appendix \ref{appendixTableOfResults}, specifically in Tables \ref{TableMainResults1} and \ref{TableMainResults2}. The training conditions for the Random Forest (\gls{rf}) model, along with a comprehensive statistical analysis of its predictions, are presented in Table~\ref{TableConditionsMainResults}.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width = 0.7\textwidth, trim={1.75cm 0.8cm 2.5cm 2cm}, clip]{../Plots/GbindingVSIC50.pdf}
-	\caption{Graphic of the azophotoswitches from Appendix \ref{appendixAzophotoshiches} where the x-axis represents the $\Delta G_{binding}$ and the y-axis the computed \gls{ic50}.}
+	\includegraphics[width=0.7\textwidth, trim={1.75cm 0.8cm 2.5cm 2cm}, clip]{../Plots/GbindingVSIC50.pdf}
+	\caption{Predicted \gls{ic50} values for azophotoswitches from Appendix \ref{appendixAzophotoshiches}. The x-axis represents $\Delta G_{binding}$, and the y-axis represents the predicted \gls{ic50}.}
 	\label{figureGraphicGbindingIC50}
 \end{figure}
 
-Furthermore, we may also show the statistics and reliability of this results in Table (\ref{TableStatisitcsMainResults}). In the statistics we can see how all values surpass 0.9. In particular the model is capable of predicting when a molecules is not a highly active inhibitor in the 99\% of the times, since the True Negative Rate (Def.(\ref{definitionTrueNegativeRate})) is 0.99. The classification accuracy (Def. \ref{definitionClassificationAccuracy}) and the Matthews Correlation Factors take values close to 1, remarking thes particular model as a quite reliabile \gls{rf} model.
+Furthermore, the performance metrics for this prediction are summarized in Table (\ref{TableStatisitcsMainResults}). All key statistical indicators exceed the 0.90 threshold. Notably, the model achieves a \emph{True Negative Rate} of 0.99 (Def. (\ref{definitionTrueNegativeRate})), indicating that it correctly identifies non-active inhibitors 99\% of the time. The \emph{Classification Accuracy} (Def. (\ref{definitionClassificationAccuracy})) and \emph{Matthews Correlation Coefficient} both approach 1, reinforcing the reliability of this particular \gls{rf} model in distinguishing between active and inactive azophotoswitches.
 
 \begin{table}[H]
     \centering	
@@ -496,21 +510,23 @@ Furthermore, we may also show the statistics and reliability of this results in 
 		MatthewsCorrelationFactor& 0.90
     \end{tabular}
 \end{table}
+At this stage, it is important to note that the model is currently unable to distinguish between the active and inactive conformations of a molecule—specifically, between the \emph{cis} and \emph{trans} isomers. This limitation is not due to the model architecture or the way chemical descriptors are computed, but rather to a deficiency in the training data. The ChEMBL database \cite{ChemblDatabase} does not explicitly include \emph{cis}/\emph{trans} annotations for molecular configurations. Consequently, the model cannot learn to differentiate them if this distinction is not encoded in the dataset. As a result, the model provides \gls{ic50} predictions corresponding to the conformation it has implicitly learned, the more active configuration, which in our context is the \emph{cis} form.
 
-At this stage, we must point out the model is unable to distinguish between the active and unactive configurations. This problem is not related cased by the model or the descriptors computation but the database the model is trained with. The lack of existence of -cis/-trans configurations in the ChEMBL database \cite{ChemblDatabase} makes it impossible for the model to know the -cis conformation to be different from the -trans conformation. In other words, the model is unable to generate information, if it is not told to distinguish between -cis and -trans configurations, then it will not distinguish between them. Therefore the model will also provide the \gls{ic50} predictions for the active configuration, i.e. the -cis configuration.
-Our hypothesis holds, since in Figure (\ref{figureGraphicGbindingIC50}) we can see a clearly a correlation between the \gls{ic50} and $\Delta G_{binding}$ matching with our initial intuition. Lower values of free eneregy (the most negative ones) correspond to low \gls{ic50} values i.e. highly active molecules.
 
-However, the hipothesis of the existence of a combination of chemical descriptors that is directly related with a molecule's inhibition power for a given protein seems correct. Although, finding this combination of chemical descriptors is not an easy task for a chemist. At first glace, we might hypothesize that since this combination must be encoded into the \gls{rf} models unencripting this models would help us to understand the insights of the \gls{cox2}\footnote{Or any other protein since the code is through to be applied to any protein with an entrance in the ChEMBL database\cite{ChemblDatabase}.}. 
+Nevertheless, our hypothesis is supported. In Figure~\ref{figureGraphicGbindingIC50}, we observe a clear correlation between the predicted \gls{ic50} values and the corresponding binding free energies ($\Delta G_{binding}$), consistent with our initial intuition: molecules with more negative free energy values tend to exhibit lower \gls{ic50} values, and are therefore more active inhibitors.
 
-Still this procedure is almost impossible, since the nature of the \gls{rf} is similar to check weather a pasword is correct or not. In other words, computationally speaking, predicting a molecules \gls{ic50} as well as checking an username and a pasword is an easy task for the computer. Nevertheless, reathriving a password and highlight the chemical descriptors with higher dependecy on the \gls{ic50} is another story. 
+The broader hypothesis—that a combination of chemical descriptors exists which correlates directly with the inhibitory power of a molecule toward a specific protein—also appears to be valid. However, identifying this combination manually remains a significant challenge for chemists. At first glance, one might believe that since this information is encoded within the \gls{rf} models, analyzing or "decrypting" the models could reveal valuable biochemical insights into the binding behavior of \gls{cox2},\footnote{Or any other protein, since the method is designed to be generalizable to any protein entry available in the ChEMBL database \cite{ChemblDatabase}.} or similar targets.
 
-For instance, one could think making predictions of random molecules \gls{ic50} by varying one molecular descriptor and holding the resest constant could give us information on this dependecy\footnote{This would be a desencriptation by brute force.}. However, we encounter several unsortable incoherences in this procedure. For example, let us think we want to observe the dependecy of the \gls{ic50} on a molecules' average bond distance. Molecules that, at first, would not fit into the binding cavity of the \gls{cox2} could happend to fit after this streaching, but this molecules are not real, i.e. non-stable, lossing any chemical coherence. Additionaly there are some chemical descriptors that integers by nature, for istance the number of carbons in a molecule, but this procedure would point out the ideal number of carbons to be a good inhibitor is 25.5 carbons, and absurd outcome. Furthermore a set arbitrarly generated chemical descriptors it is not necessarily correlated to a molecule, in the majority of the cases there will not be any molecule to have the specified chemical descriptors, thus we would be trying to predict the \gls{ic50} of imaginary molecules.
+Yet this decryption process is computationally infeasible. The internal logic of a \gls{rf} model is akin to verifying a password: it can efficiently determine whether an input is valid (e.g., predict an \gls{ic50}), but reverse-engineering the logic—such as determining which chemical descriptors most strongly influence inhibition—is significantly more complex. In essence, it is easy for the model to make predictions, but very difficult to extract interpretable rules or patterns from its internal structure.
 
-It is important to remark this observations does not deny the power of \gls{ai} for computational chemistry, but points out at some limitations of the technology.
+One might consider a brute-force approach: varying one descriptor at a time while holding all others constant, and observing the effect on the predicted \gls{ic50}. However, this strategy quickly runs into chemical and conceptual limitations. For example, altering the average bond length of a molecule could make it unrealistically large or physically unstable—resulting in a structure that is chemically invalid. Similarly, descriptors that are inherently discrete, such as the number of carbon atoms, could yield nonsensical results. A model might indicate that 25.5 carbon atoms yields optimal inhibition, which is clearly an unphysical outcome. In addition, arbitrarily generated sets of descriptor values may not correspond to any real molecule, making the predictions scientifically meaningless.
 
-\subsection{Azophotoswitches analysis}
+It is important to emphasize that these limitations do not undermine the value of \gls{ai} in computational chemistry. Rather, they highlight the boundaries of current methods and the importance of careful dataset design, descriptor selection, and model interpretation.
 
-After the predictions have been computed a docking has been performed of one of the most promising azophotoswitches. In particular the docking of the  \ref{figureCelecoxibTwoRings}.7 molecule depicted in Scheme (\ref{figureCelecoxibTwoRingsDoking}), this molecule has a computed $\Delta G_{binding}$ of 10.6712 Kcal/mol and a predicted \gls{ic50} of 77 nM. An image of the last frame of the docking procedure is provided in Figure (\ref{figureDockingBestResult}).
+\subsection{Azophotoswitches Analysis}
+
+Following the prediction phase, molecular docking was performed on one of the most promising azophotoswitch candidates. Specifically, the molecule labeled \ref{figureCelecoxibTwoRings}.7 in Scheme(\ref{figureCelecoxibTwoRingsDoking}) was selected. This molecule exhibited a predicted $\Delta G_{binding}$ of $-10.6712$ kcal/mol and a \gls{ic50} prediction of 77 nM. An image of the final frame from the docking simulation is shown in Figure (\ref{figureDockingBestResult}).
+
 \begin{figure}[H]
 \captionsetup{type=scheme}
 \centering
@@ -528,28 +544,30 @@ After the predictions have been computed a docking has been performed of one of 
 	\caption{Structural ilustration of the molecule identied as \ref{figureCelecoxibTwoRings}.7 and \gls{cox2} docking generated by the ChimeraX software[15].}
 	\label{figureDockingBestResult}
 \end{figure}
-Hence we can see the fitting of the azophotoswitch in the -cis configuration inside the \gls{cox2} cavity. Although the -trans configuration has been seen to fit into the binding site\footnote{With few problems} it is impossible for this isomer to access to the binding site due to stereochemical problems, i.e. the -trans conformation colides with the outer layers of the \gls{cox2} and cannot access to the binding cavity. Still this molecule could interact with undesired proteins in both configurations (E)/(Z) which could lead to enormous side effects if it is administered as a drug, then further investigations must be done.
+We observe that the azophotoswitch in the \emph{cis} configuration fits well within the \gls{cox2} binding cavity. Although the \emph{trans} isomer can, in theory, occupy the binding site,\footnote{With minor steric hindrances.} it is unlikely to access it in practice due to stereochemical constraints. Specifically, the extended structure of the \emph{trans} configuration results in steric clashes with the outer regions of \gls{cox2}, preventing entry into the binding pocket.
+
+It is also important to note that the molecule, in both \emph{E}/\emph{Z} isomeric forms, could potentially interact with unintended proteins. Such off-target effects could lead to significant side effects if the compound is administered as a drug. Therefore, further investigation is needed to evaluate its selectivity and pharmacological safety.
 
 \newpage
 \section{Conclusions}
-We have proved Artificial Intelligence's potential for computational and theorical chemistry. Furthermore, we have developed a totally functional Machine Learning software capable of predicting \gls{ic50} values for any protein in the ChEMBL database. Also the software is capable of generating the statistics for each \gls{ml} model generated defined by the hard-coded variables that define the data the model is trained with. Thus the user is capable of playing arround with the variables in order to obtain the best predictions possible. 
 
-Additionaly we have proved our intuition on the \gls{ic50} direct relationship with the provided $\Delta G_{binding}$ values to be correct. Furthermore, a docking of one of the most promising azophotoswitches as been performed matching our expectations and reinforcing the \gls{ai}'s potential.
+In this work, we have demonstrated the potential of Artificial Intelligence in the fields of theoretical and computational chemistry. We developed a fully functional machine learning software capable of predicting \gls{ic50} values for any protein listed in the ChEMBL database. Moreover, the software automatically computes performance statistics for each \gls{ml} model based on a set of hard-coded parameters that define the training dataset. This flexibility enables users to experiment with different variable configurations to optimize predictive performance.
 
+Additionally, our results confirm the hypothesized correlation between predicted \gls{ic50} values and the experimentally or computationally derived binding free energy ($\Delta G_{binding}$). This relationship aligns with our chemical intuition and reinforces the validity of our methodology. To further validate our approach, we performed a molecular docking study of one of the most promising azophotoswitch candidates. The docking results were consistent with model predictions, providing additional support for the application of AI techniques in rational drug design.
+
+\newpage
+\section{Bibliography}
+\printbibliography[title = { \vspace{-1cm}}]
 
 \newpage
 \section{Acknowledgements}
-I am grateful to Dr. Josep Maria Lluch, Dr. Miquel Moreno Ferrer and Dra. Àngels González Lafont for allowing me to be one of his pupils and for presenting this project. I am also deeply grateful to PhD Álex Pérez Sánchez and PhD Pedro Martínez Zaragoza for sharing their ideas and fruitful conversations.
+I am grateful to Dr. Josep Maria Lluch, Dr. Miquel Moreno Ferrer and Dra. Àngels González Lafont for allowing me to be one of his pupils and for presenting this project. I am also deeply grateful to PhD Àlex Pérez Sánchez and PhD Pedro Martínez Zaragoza for sharing their ideas and fruitful conversations.
 
 I would like to acknowledge my mother and sister for their unconditional support, and my father for the values he taught me. Additionally, I would like to thank my friends Francisco Montaño, David Muñoz and Manel Martin for listening to my monologues about my excitement for the \gls{cox2} and azophotoswitches.
 
 Molecular graphics and analyses performed with UCSF ChimeraX, developed by the Resource for Biocomputing, Visualization, and Informatics at the University of California, San Francisco, with support from National Institutes of Health R01-GM129325 and the Office of Cyber Infrastructure and Computational Biology, National Institute of Allergy and Infectious Diseases.
 
 \newpage
-\section{Bibliography}
-\printbibliography[title = { \vspace{-1cm}}]
-\newpage
-
 \appendix
 \section{Rellevant definitions}
 \begin{definition}\label{definitionIC50}
