@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  1 MAY 2025 21:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  2 MAY 2025 15:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2562,7 +2562,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 File: GeneralSources/DataSplittingDiagram.pdf Graphic file (type pdf)
 <use GeneralSources/DataSplittingDiagram.pdf>
 Package pdftex.def Info: GeneralSources/DataSplittingDiagram.pdf  used on input
- line 361.
+ line 362.
 (pdftex.def)             Requested size: 452.9679pt x 232.42021pt.
 
 
@@ -2599,7 +2599,7 @@ File: ../Plots/DataGapRepresentationIC50percentageEresed15.0Gap_min_32Gap_max_5
 <use ../Plots/DataGapRepresentationIC50percentageEresed15.0Gap_min_32Gap_max_53
 .pdf>
 Package pdftex.def Info: ../Plots/DataGapRepresentationIC50percentageEresed15.0
-Gap_min_32Gap_max_53.pdf  used on input line 394.
+Gap_min_32Gap_max_53.pdf  used on input line 397.
 (pdftex.def)             Requested size: 452.9679pt x 343.39597pt.
 
 
@@ -2613,21 +2613,21 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 [12 <../Plots/DataGapRepresentationIC50percentageEresed15.0Gap_min_32Gap_max_53
 .pdf>]
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 405.
+(Font)              scaled to size 11.52008pt on input line 408.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 11.52008pt on input line 405.
+(Font)              scaled to size 11.52008pt on input line 408.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gls' on input line 405.
+(hyperref)                removing `\gls' on input line 408.
 
 <../Plots/ChEMBL_ExtractorData_CHEMBL230_IC50_1000CorrelationFactors.pdf, id=57
-6, 462.52798pt x 346.89601pt>
+7, 462.52798pt x 346.89601pt>
 File: ../Plots/ChEMBL_ExtractorData_CHEMBL230_IC50_1000CorrelationFactors.pdf G
 raphic file (type pdf)
 <use ../Plots/ChEMBL_ExtractorData_CHEMBL230_IC50_1000CorrelationFactors.pdf>
 Package pdftex.def Info: ../Plots/ChEMBL_ExtractorData_CHEMBL230_IC50_1000Corre
-lationFactors.pdf  used on input line 411.
+lationFactors.pdf  used on input line 414.
 (pdftex.def)             Requested size: 452.9679pt x 337.34538pt.
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2640,13 +2640,13 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 [13 <../Plots/ChEMBL_ExtractorData_CHEMBL230_IC50_1000CorrelationFactors.pdf>]
 PGFPlots: reading {GeneralSources/ErasedPercentageVSRSquare.txt}
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 450.
+(Font)              scaled to size 9.60007pt on input line 453.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 7.29605pt on input line 450.
+(Font)              scaled to size 7.29605pt on input line 453.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 9.60007pt on input line 450.
+(Font)              scaled to size 9.60007pt on input line 453.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 7.29605pt on input line 450.
+(Font)              scaled to size 7.29605pt on input line 453.
 PGFPlots: reading {GeneralSources/ErasedPercentageVSMeanSquaredError.txt}
 
 
@@ -2667,10 +2667,10 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [15]
-<../Plots/GbindingVSIC50.pdf, id=658, 722.7pt x 505.89pt>
+<../Plots/GbindingVSIC50.pdf, id=663, 722.7pt x 505.89pt>
 File: ../Plots/GbindingVSIC50.pdf Graphic file (type pdf)
 <use ../Plots/GbindingVSIC50.pdf>
-Package pdftex.def Info: ../Plots/GbindingVSIC50.pdf  used on input line 489.
+Package pdftex.def Info: ../Plots/GbindingVSIC50.pdf  used on input line 492.
 (pdftex.def)             Requested size: 317.07614pt x 224.58296pt.
 
 
@@ -2691,15 +2691,6 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [17]
-<GeneralSources/LastFrameDockingTwoRingsFiveMembers.jpg, id=744, 10750.1625pt x
- 5613.97375pt>
-File: GeneralSources/LastFrameDockingTwoRingsFiveMembers.jpg Graphic file (type
- jpg)
-<use GeneralSources/LastFrameDockingTwoRingsFiveMembers.jpg>
-Package pdftex.def Info: GeneralSources/LastFrameDockingTwoRingsFiveMembers.jpg
-  used on input line 543.
-(pdftex.def)             Requested size: 452.9679pt x 236.51341pt.
-
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2709,6 +2700,15 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [18]
+<GeneralSources/LastFrameDockingTwoRingsFiveMembers.jpg, id=758, 10750.1625pt x
+ 5613.97375pt>
+File: GeneralSources/LastFrameDockingTwoRingsFiveMembers.jpg Graphic file (type
+ jpg)
+<use GeneralSources/LastFrameDockingTwoRingsFiveMembers.jpg>
+Package pdftex.def Info: GeneralSources/LastFrameDockingTwoRingsFiveMembers.jpg
+  used on input line 546.
+(pdftex.def)             Requested size: 452.9679pt x 236.51341pt.
+
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2727,11 +2727,6 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [20]
-LaTeX Font Info:    Trying to load font information for T1+fvm on input line 56
-0.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/bera/t1fvm.fd
-File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
-)
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2741,6 +2736,11 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [21]
+LaTeX Font Info:    Trying to load font information for T1+fvm on input line 56
+5.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/bera/t1fvm.fd
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2776,14 +2776,23 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[25{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/arev/arevoms.enc}]
-<GeneralSources/Point_group_determination_flowchart_v2.png, id=821, 641.39626pt
+[25]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[26{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/arev/arevoms.enc}]
+<GeneralSources/Point_group_determination_flowchart_v2.png, id=838, 641.39626pt
  x 901.86937pt>
 File: GeneralSources/Point_group_determination_flowchart_v2.png Graphic file (t
 ype png)
 <use GeneralSources/Point_group_determination_flowchart_v2.png>
 Package pdftex.def Info: GeneralSources/Point_group_determination_flowchart_v2.
-png  used on input line 642.
+png  used on input line 647.
 (pdftex.def)             Requested size: 226.48395pt x 318.45258pt.
 
 
@@ -2794,24 +2803,15 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[26 <./GeneralSources/Point_group_determination_flowchart_v2.png>]
+[27 <./GeneralSources/Point_group_determination_flowchart_v2.png>]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 675.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 680.
 
-Overfull \hbox (4.46593pt too wide) in paragraph at lines 674--676
+Overfull \hbox (4.46593pt too wide) in paragraph at lines 679--681
 [][]\T1/phv/b/n/10.95 Definition 12. []\T1/phv/m/sl/10.95 Matthews Cor-re-la-ti
 on Co-ef-fi-cient: quan-tity re-lated to a Ma-chine Learn-ing Model's
  []
 
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
-
-[27]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2875,10 +2875,6 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [34]
-Overfull \hbox (31.54541pt too wide) in paragraph at lines 941--961
- [][] 
- []
-
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2888,6 +2884,10 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [35]
+Overfull \hbox (31.54541pt too wide) in paragraph at lines 946--966
+ [][] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2905,7 +2905,16 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[37] 
+[37]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[38] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./Plantilla memòria TFG 2024_25.aux)
  ***********
@@ -2915,9 +2924,6 @@ L3 programming layer <2024-02-20>
 
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `"Plantilla memòria TFG 2024_25".out' has no
 t changed.
@@ -2933,9 +2939,9 @@ xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 64307 strings out of 474116
- 1491316 string characters out of 5743682
- 2440882 words of memory out of 5000000
+ 64310 strings out of 474116
+ 1491347 string characters out of 5743682
+ 2441189 words of memory out of 5000000
  85473 multiletter control sequences out of 15000+600000
  642311 words of font info for 187 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2952,11 +2958,11 @@ b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-ch
 r7v.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/
 local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "Plantilla memòria TFG 2024_25.pdf" (48 pages, 10700497 byte
+Output written on "Plantilla memòria TFG 2024_25.pdf" (49 pages, 10702748 byte
 s).
 PDF statistics:
- 1093 PDF objects out of 1200 (max. 8388607)
- 875 compressed objects within 9 object streams
- 192 named destinations out of 1000 (max. 500000)
+ 1110 PDF objects out of 1200 (max. 8388607)
+ 891 compressed objects within 9 object streams
+ 195 named destinations out of 1000 (max. 500000)
  211 words of extra memory for PDF output out of 10000 (max. 10000000)
 

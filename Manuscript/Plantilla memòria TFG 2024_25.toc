@@ -9,9 +9,9 @@
 \contentsline {subsection}{\numberline {5.3}Pearson Correlation Coefficient and Mean Squared Error}{14}{subsection.5.3}%
 \contentsline {subsection}{\numberline {5.4}Azophotoswitches Analysis}{16}{subsection.5.4}%
 \contentsline {subsection}{\numberline {5.5}Azophotoswitches Analysis}{18}{subsection.5.5}%
-\contentsline {section}{\numberline {6}Conclusions}{20}{section.6}%
-\contentsline {section}{\numberline {7}Bibliography}{21}{section.7}%
-\contentsline {section}{\numberline {8}Acknowledgements}{23}{section.8}%
-\contentsline {section}{\numberline {A}Rellevant definitions}{24}{appendix.A}%
-\contentsline {section}{\numberline {B}Tables of azophotoswitches}{28}{appendix.B}%
-\contentsline {section}{\numberline {C}Table of results}{35}{appendix.C}%
+\contentsline {section}{\numberline {6}Conclusions}{21}{section.6}%
+\contentsline {section}{\numberline {7}Bibliography}{22}{section.7}%
+\contentsline {section}{\numberline {8}Acknowledgements}{24}{section.8}%
+\contentsline {section}{\numberline {A}Rellevant definitions}{25}{appendix.A}%
+\contentsline {section}{\numberline {B}Tables of azophotoswitches}{29}{appendix.B}%
+\contentsline {section}{\numberline {C}Table of results}{36}{appendix.C}%
