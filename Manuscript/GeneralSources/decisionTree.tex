@@ -1,0 +1,53 @@
+\documentclass{standalone}
+\usepackage[edges]{forest}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{shadows.blur,arrows.meta}
+
+\begin{document}
+
+\begin{forest}
+%for tree={
+%  grow=east,
+%  draw,
+%  rounded corners,
+%  text width=4.5cm,
+%  align=flush center,
+%  parent anchor=east,
+%  child anchor=west,
+%  edge={->, thick},
+%  l sep=10mm,
+%  s sep=10mm
+%}
+[Does the molecule have no symmetry elements other than $E$?
+  [Yes\\\textbf{Point group: } $C_1$]
+  [No
+    [Does the molecule have only a mirror plane?
+      [Yes\\\textbf{Point group: } $C_s$]
+      [No
+        [Does the molecule have only an inversion center?
+          [Yes\\\textbf{Point group: } $C_i$]
+          [No
+            [Does the molecule have a proper rotation axis $C_n$?
+              [No\\\textbf{Unclassified: recheck symmetry elements}]
+              [Yes
+                [Does it have $n$ vertical mirror planes ($\sigma_v$)?
+                  [Yes\\\textbf{Point group: } $C_{nv}$]
+                  [No
+                    [Does it have a horizontal mirror plane ($\sigma_h$)?
+                      [Yes\\\textbf{Point group: } $C_{nh}$]
+                      [No\\\textbf{Point group: } $C_n$]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+]
+\end{forest}
+
+\end{document}

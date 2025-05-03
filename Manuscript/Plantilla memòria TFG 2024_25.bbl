@@ -1303,5 +1303,57 @@
     \field{journaltitle}{Journal of Machine Learning Research}
     \field{year}{2011}
   \endentry
+
+  \entry{GoldReference}{article}{}
+    \name{author}{5}{}{%
+      {{hash=JG}{%
+         family={Jones},
+         familyi={J\bibinitperiod},
+         given={Gareth},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=WP}{%
+         family={Willett},
+         familyi={W\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GRC}{%
+         family={Glen},
+         familyi={G\bibinitperiod},
+         given={Robert\bibnamedelima C.},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=LAR}{%
+         family={Leach},
+         familyi={L\bibinitperiod},
+         given={Andrew\bibnamedelima R.},
+         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=TR}{%
+         family={Taylor},
+         familyi={T\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{JGWPGRCLARTR1}
+    \strng{fullhash}{JGWPGRCLARTR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1006/jmbi.1996.0897
+    \endverb
+    \field{number}{3}
+    \field{pages}{727\bibrangedash 748}
+    \field{title}{Development and Validation of a Genetic Algorithm for
+  Flexible Docking}
+    \field{volume}{267}
+    \field{journaltitle}{Journal of Molecular Biology}
+    \field{year}{1997}
+  \endentry
 \enddatalist
 \endinput

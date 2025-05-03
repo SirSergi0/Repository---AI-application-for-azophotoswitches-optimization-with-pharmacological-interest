@@ -15,6 +15,7 @@
 \usepackage[english]{babel}
 
 %-------------LINKS AND LOOKS-----------%
+\usepackage{siunitx}
 \usepackage{fullpage}
 \usepackage{afterpage}
 \usepackage{lastpage}
@@ -269,7 +270,7 @@ Finally, the models are used to predict the IC$_{50}$ of 50 \emph{azophotoswitch
 
 \setcounter{page}{1}
 \pagenumbering{arabic}
-\section{Introduction}
+\section{Introduction}\label{sectionIntroduction}
 The impact of \gls{ai} on science has been nothing short of a groundbreaking revolution, with few comparable precedents. The rapid advancements in \gls{ai} have transformed numerous scientific fields\cite{AlphaFold2BiologyAndMedicine}\cite{NationalLibraryOfMedicineGeneralArticle}, including computational chemistry. Today, one of the primary goals of computational chemistry is to predict the properties of unstudied substances while minimizing experimental costs. Traditional approaches in chemistry often rely on complex laboratory techniques, which, while effective, can be time-consuming, expensive, and resource-intensive. In contrast, computational chemistry offers a wide range of methods capable of predicting a molecule’s properties with reasonable accuracy. However, when \gls{ai} comes into play, predictions have demonstrated an almost surgical precision.
 
 Perhaps one of the most representative events showcasing the enormous impact of \gls{ai} on chemistry is the 2024 Nobel Prize in Chemistry. The winners, David Baker\cite{NobelPrizeBale}, along with Demis Hassabis and John Jumper\cite{NobelPrizeJumper}, were not traditionally trained chemists. Instead, their expertise lies in \gls{ai} algorithms and \gls{ml} methods applied to protein research. This milestone, among others, triggered a surge of chemistry researchers diving into the world of \gls{ai}, seeking applications for their respective fields. Today, the thrilling progress in computational chemistry has been further reinforced by these cutting-edge tools\cite{MachineLearningPaper5Lipoxygenase}, and the rapid pace of development keeps the scientific community eagerly anticipating future applications in fields such as medicine, materials science, and beyond. In this project we aim to apply the new AI and ML algorithms to our object of study, the \gls{ptgs2} also known as \gls{cox2}, depicted in Figure (\ref{FigureCox2ChimeraX}), a protein tightly linked to the onset of numerous cancers forms\cite{Cox2CancerReview}. 
@@ -339,11 +340,16 @@ Among the most promising drug candidates for \gls{cox2} inhibition are Celecoxib
 
 As an application of our \gls{ml}-based predictive models, we aim to estimate the \gls{ic50} values of azophotoswitch prototypes.\footnote{These values are predictions, as no experimental or simulated data are currently available.} We will then compare these predictions with the computed $\Delta G_{\text{binding}}$ values, as both metrics are indicative of inhibition efficacy. While a direct linear correlation is not expected, we hypothesize that lower \gls{ic50} values should correspond to lower (more negative) $\Delta G_{\text{binding}}$ values, reflecting stronger binding affinities. These relationships will be explored in detail in Section \ref{sectionResultsAndDiscussion}.
 
-In conclusion, this study seeks to bridge the gap between Artificial Intelligence and computational chemistry, demonstrating AI’s potential to revolutionize drug discovery and molecular research. Accurate predictions of inhibition potential could accelerate the development of new pharmaceuticals, reduce the need for costly laboratory experiments, and streamline the drug screening process. Furthermore, identifying key molecular descriptors linked to inhibition may provide valuable insights into chemical interactions, opening new directions for research in medicinal chemistry and bioinformatics.
+All in all, this project demonstrates the application of \gls{ai} in drug design, promoting its integration into chemical computations as an initial step prior to experimental investigations. Such tools can help avoid time-consuming and costly unproductive experiments, assisting both theoretical and experimental chemists by providing fast computational insights into molecular properties, thus offering valuable intuition before proceeding to laboratory work.
+
 \newpage
 \section{Objectives}
 
+This project aims to develop a fully functional software tool capable of accurately predicting a molecule’s inhibition potential (\gls{ic50}), leveraging existing data from the ChEMBL database \cite{ChemblDatabase}. The software is thoroughly documented and available in the GitHub repository: \href{https://github.com/SirSergi0/Repository—AI-application-for-azophotoswitches-optimization-with-pharmacological-interest}{\emph{AI Application for Azophotoswitches Optimization with Pharmacological Interest}} \cite{GitHub}.
 
+The project specifically focuses on the \gls{cox2} protein. Thanks to the availability of a large \gls{ic50} dataset for this target, the model’s predictive reliability can be effectively validated. The prediction process is powered by an \gls{ai} tool designed to deliver high-quality results, taking into account relevant molecular descriptors. The software also serves to cross-check computational results previously obtained by the Physical Chemistry Unit of the UAB \cite{UAB_ComputationalChemistry}. The application centers on azophotoswitches—molecules of particular pharmacological interest discussed in Section \ref{sectionIntroduction}. Additionally, a molecular docking study is performed on one of the most promising azophotoswitch candidates.
+
+In conclusion, this study seeks to bridge the gap between Artificial Intelligence and computational chemistry, demonstrating AI’s potential to revolutionize drug discovery and molecular research. Accurate predictions of inhibition potential could accelerate the development of new pharmaceuticals, reduce the need for costly laboratory experiments, and streamline the drug screening process. Furthermore, identifying key molecular descriptors linked to inhibition may provide valuable insights into chemical interactions, opening new directions for research in medicinal chemistry and bioinformatics.
 
 \newpage
 \section{Methodology}\label{sectionMethodology}
@@ -383,7 +389,8 @@ Subsequently, these models are evaluated by predicting the $IC_{50}$ values of t
 
 Finally, the \gls{rf} model with the best performance\footnote{The criteria for determining the model with “better statistics” is discussed in Section \ref{sectionPersonCorrelationFactor} since this term references \gls{ai} statistics rather than the usual statistics.} is used to predict the \gls{ic50} values of the azophotoswitch prototypes listed in Appendix \ref{appendixAzophotoshiches}. This process begins with computing the chemical descriptors using AlvaDesc software \cite{MauriMolecularDescriptorsBook}. Irrelevant descriptors are then removed, retaining only those used during training. By inputting the selected descriptors into the trained \gls{rf} model, the predicted \gls{ic50} values are obtained and subsequently analyzed.
 
-Finally a docking is performed using \textcolor{blue}{Add stuff}!
+Finally, a docking study was performed using GOLD2022 \cite{GoldReference}. This software employs a genetic algorithm, along with molecular modeling techniques, to predict the optimal binding pose of the ligand within the \gls{cox2} binding site. The genetic nature of the algorithm allows for a broad exploration of the conformational and positional space between the ligand and the protein. By evaluating and ranking ligand poses based on predicted interactions, such as hydrogen bonding, van der Waals forces, and metal coordination, unstable or energetically unfavorable conformations are discarded, resulting in a set of plausible, energetically stable binding orientations. The docking calculations were carried out within a 26 Å radius sphere centered at Arg513.
+
 
 \newpage
 \section{Results and Discussion}\label{sectionResultsAndDiscussion}
@@ -599,7 +606,6 @@ Rofecoxib: \footnote{UPAC name: 4-(4-methylsulfonylphenyl)-3-phenyl-5H-furan-2-o
 H_2N-[1]S(=[4]O)(=[-2]O)-[1]*6(-=-(-[1]N*5(-N=(-[-1](-[-4]F)(-[-2]F)-[1])-=(-[4.5]*6(-=-(-[4.5])=-=))-))=-=)
 }}
 \caption{Chemical graph of Celecoxib.}
-\addcontentsline{lof}{figure}{Chemical graph of Celecoxib.}
 \label{CelecoxibFigure}
 \end{figure}
 
@@ -611,7 +617,6 @@ H_2N-[1]S(=[4]O)(=[-2]O)-[1]*6(-=-(-[1]N*5(-N=(-[-1](-[-4]F)(-[-2]F)-[1])-=(-[4.
 -[-1]S(=[-4]O)(=[-2]O)-[1]*6(-=-(-[1]*5(--O-(=[2.25]O)-(-[4.5]*6(-=-=-=))=))=-=)
 }}
 \caption{Chemical graph of Rofecoxib.}
-\addcontentsline{lof}{figure}{Chemical graph of Rofecoxib.}
 \label{RofecoxibFigure}
 \end{figure}
 \begin{definition}\label{definitionChengPrusoff}
