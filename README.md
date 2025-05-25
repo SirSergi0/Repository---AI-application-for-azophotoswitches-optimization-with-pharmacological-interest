@@ -1,8 +1,13 @@
 # Repository: AI Application for Azophotoswitches Optimization with Pharmacological Interest
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0/)
 
 In this work, we propose the development of specialized software in the field of artificial intelligence (AI), designed specifically for the discovery and optimization of azophotoswitches. Azophotoswitches are molecules that can undergo reversible changes in structure and function in response to light, making them valuable in applications ranging from molecular devices to advanced materials and medical therapies.
 
 The proposed AI-driven software will leverage cutting-edge machine learning algorithms and data-driven techniques to facilitate the identification and prediction of new azophotoswitches with desired properties. By analyzing vast datasets of molecular structures, photochemical behaviors, and functional performance, the AI system aims to streamline the traditionally labor-intensive process of discovering these compounds. This approach will not only enhance the efficiency of the research but also expand the possibilities for designing azophotoswitches with novel functionalities, opening up new pathways in materials science and photopharmacology.
+
+## 📜 License
+
+This project is licensed under the **GNU General Public License v3.0**. You may copy, distribute, and modify the software as long as you track changes/dates in source files and license all derivative works under the same license.
 
 ## Comments and Features of the Project
 
