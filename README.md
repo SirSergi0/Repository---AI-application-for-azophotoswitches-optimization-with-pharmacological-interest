@@ -60,7 +60,10 @@ Comments will be added throughout the project's development. This list may not b
 - Directory that will contain all the predictions provided by the AI.
 
 ### Avogadro Frames
-- A directory storing the Avogadro files of the azophotoswitches. The main porpuse of this files is to obtain the SMILE of each azophotoswitch.
+- This directory contains the Avogadro files for the azophotoswitches. The primary purpose of these files is to obtain the SMILES representation of each azophotoswitch.
 
-### SMILE files 
-- A directory storing azophotoswitches SMILES. A script from the script directory takes this files and predict the $IC_{50}$ of each azophotoswitch.
+### SMILES Files
+- This directory stores the SMILES strings of the azophotoswitches. A script from the scripts directory uses these files to predict the $IC_{50}$ values for each azophotoswitch.
+
+### Machine Learning Models
+- This directory contains all the generated machine learning models. Each model is saved as a [pickle files](https://docs.python.org/3/library/pickle.html) named according to the variables used to create it. Alongside each pickle file is a corresponding text file with the same name, providing additional information about the model.
