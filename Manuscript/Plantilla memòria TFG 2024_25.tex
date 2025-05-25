@@ -155,7 +155,7 @@
 %	LOGO SECTION
 %----------------------------------------------------------------------------------------
 
-\includegraphics[width = 6.1cm]{GeneralSources/Logo_uab.png}\\[1.76cm] % Include a department/university logo - this will require the graphicx package
+\includegraphics[width = 6.1cm]{GeneralSources/Logo_uab.pdf}\\[1.76cm] % Include a department/university logo - this will require the graphicx package
 
 % TITLE SECTION
 %----------------------------------------------------------------------------------------
@@ -353,7 +353,7 @@ In conclusion, this study seeks to bridge the gap between Artificial Intelligenc
 
 \newpage
 \section{Methodology}\label{sectionMethodology}
-The source code is all stored in the \href{https://github.com/SirSergi0/Repository---AI-application-for-azophotoswitches-optimization-with-pharmacological-interest}{\emph{AI application for azophotoswitches optimization with pharmacological interest} GitHub repository}\cite{GitHub}.
+The source code is all stored in the \href{https://github.com/SirSergi0/Repository---AI-application-for-azophotoswitches-optimization-with-pharmacological-interest}{\emph{AI application for azophotoswitches optimization with pharmacological interest} GitHub repository}\cite{GitHub}. The consultace of this repository is highly recommended in order to comprehended the insights in the workflow of the project. By the time this project is presented, it remains as a open-source repository for the Computational Chemistry UAB unit \cite{UAB_ComputationalChemistry}.
 
 The target protein's ID is set at \emph{CHEMBL230} corresponding to the COX-2 ID in the ChEMBL database\cite{ChemblDatabase}. Utilising \emph{requests} python package\cite{PythonPackageRequests} a query URL is sent asking for all molecules with a know $IC_{50}$ value (Def. \ref{definitionIC50}) with a limit of 1000 entries per request. The process is iterated until all data is extracted leading a total of 7979 molecules. Hence the datasheet is processed in pandas dataframes\cite{PythonPackagePandas} and encrypted into binary feather files to optimise reading-writting speed. By removing entries with the same canonical smiles a total of 5112 molecules remain. Among this entries well known drugs such as Celecoxib (Def. \ref{definitionCelecoxib}), Rofecoxib (Def. \ref{definitionRofecoxib}) or even Ibuprofen can be found. However the $IC_{50}$ molecules range is comprehended from $10^{-3}$ to $10^{8}$ nM, a counterproductive range for the AI training procedure. Since we are interested in testing azophotoswitches with presumably low \gls{ic50}, training \gls{ml} models with data of the order of $10^{8}$ or $10^{3}$ nM can be counterproductive since the model might misinterpret the data.\footnote{Typically the range of the azophotoswitches \gls{ic50} is arround the Celecoxib's \gls{ic50}, i.e. arround $120$ nM}. Consecutivelly, a hard-coded range is filtered discarding all molecules outside the given range, for the most part of the analysis this range is set at $[0,300]$ nM \footnote{this $IC_{50}$ working range is the standard in this kind of studies \cite{MachineLearningPaper5Lipoxygenase}.} which reduces the dataset to 1438 entries, i.e. molecules.
 
@@ -992,7 +992,6 @@ Identifier & \ch{R_1} & \ch{R_2} & \ch{R_3} \\\hline\hline
 		MatthewsCorrelationFactor& 0.90
     \end{tabular}
 \end{table}
-
 
 
 \end{document}

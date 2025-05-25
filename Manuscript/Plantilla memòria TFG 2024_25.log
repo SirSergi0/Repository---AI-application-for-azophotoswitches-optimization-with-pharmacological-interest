@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  3 MAY 2025 19:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  20 MAY 2025 12:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2304,11 +2304,11 @@ Package biblatex Info: Reference segment=0 on input line 149.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<GeneralSources/Logo_uab.png, id=71, 932.51613pt x 350.1598pt>
-File: GeneralSources/Logo_uab.png Graphic file (type png)
-<use GeneralSources/Logo_uab.png>
-Package pdftex.def Info: GeneralSources/Logo_uab.png  used on input line 158.
-(pdftex.def)             Requested size: 173.56198pt x 65.16858pt.
+<GeneralSources/Logo_uab.pdf, id=71, 707.37277pt x 265.74281pt>
+File: GeneralSources/Logo_uab.pdf Graphic file (type pdf)
+<use GeneralSources/Logo_uab.pdf>
+Package pdftex.def Info: GeneralSources/Logo_uab.pdf  used on input line 158.
+(pdftex.def)             Requested size: 173.56198pt x 65.20284pt.
 LaTeX Font Info:    Trying to load font information for OT1+zavm on input line 
 166.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/arev/ot1zavm.fd
@@ -2388,7 +2388,7 @@ Overfull \hbox (7.26625pt too wide) in paragraph at lines 178--186
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc} <./GeneralSources/Logo_
-uab.png>] [1
+uab.pdf>] [1
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
@@ -2602,7 +2602,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [8]
-<GeneralSources/DataSplittingDiagram.pdf, id=466, 692.59853pt x 355.3797pt>
+<GeneralSources/DataSplittingDiagram.pdf, id=467, 692.59853pt x 355.3797pt>
 File: GeneralSources/DataSplittingDiagram.pdf Graphic file (type pdf)
 <use GeneralSources/DataSplittingDiagram.pdf>
 Package pdftex.def Info: GeneralSources/DataSplittingDiagram.pdf  used on input
@@ -2637,7 +2637,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 [11]
 <../Plots/DataGapRepresentationIC50percentageEresed15.0Gap_min_32Gap_max_53.pdf
-, id=529, 462.52798pt x 346.89601pt>
+, id=530, 462.52798pt x 346.89601pt>
 File: ../Plots/DataGapRepresentationIC50percentageEresed15.0Gap_min_32Gap_max_5
 3.pdf Graphic file (type pdf)
 <use ../Plots/DataGapRepresentationIC50percentageEresed15.0Gap_min_32Gap_max_53
@@ -2666,7 +2666,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\gls' on input line 415.
 
 <../Plots/ChEMBL_ExtractorData_CHEMBL230_IC50_1000CorrelationFactors.pdf, id=58
-8, 462.52798pt x 346.89601pt>
+9, 462.52798pt x 346.89601pt>
 File: ../Plots/ChEMBL_ExtractorData_CHEMBL230_IC50_1000CorrelationFactors.pdf G
 raphic file (type pdf)
 <use ../Plots/ChEMBL_ExtractorData_CHEMBL230_IC50_1000CorrelationFactors.pdf>
@@ -2711,7 +2711,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [15]
-<../Plots/GbindingVSIC50.pdf, id=673, 722.7pt x 505.89pt>
+<../Plots/GbindingVSIC50.pdf, id=674, 722.7pt x 505.89pt>
 File: ../Plots/GbindingVSIC50.pdf Graphic file (type pdf)
 <use ../Plots/GbindingVSIC50.pdf>
 Package pdftex.def Info: ../Plots/GbindingVSIC50.pdf  used on input line 499.
@@ -2744,7 +2744,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [18]
-<GeneralSources/LastFrameDockingTwoRingsFiveMembers.jpg, id=768, 10750.1625pt x
+<GeneralSources/LastFrameDockingTwoRingsFiveMembers.jpg, id=769, 10750.1625pt x
  5613.97375pt>
 File: GeneralSources/LastFrameDockingTwoRingsFiveMembers.jpg Graphic file (type
  jpg)
@@ -2830,7 +2830,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [26{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/arev/arevoms.enc}]
-<GeneralSources/Point_group_determination_flowchart_v2.png, id=850, 641.39626pt
+<GeneralSources/Point_group_determination_flowchart_v2.png, id=851, 641.39626pt
  x 901.86937pt>
 File: GeneralSources/Point_group_determination_flowchart_v2.png Graphic file (t
 ype png)
@@ -2984,7 +2984,7 @@ xml'.
  ) 
 Here is how much of TeX's memory you used:
  68012 strings out of 474116
- 1608373 string characters out of 5743682
+ 1608397 string characters out of 5743682
  2525058 words of memory out of 5000000
  89162 multiletter control sequences out of 15000+600000
  642311 words of font info for 187 fonts, out of 8000000 for 9000
@@ -3002,11 +3002,11 @@ b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-ch
 r7v.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/
 local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "Plantilla memòria TFG 2024_25.pdf" (49 pages, 10705175 byte
+Output written on "Plantilla memòria TFG 2024_25.pdf" (49 pages, 10666523 byte
 s).
 PDF statistics:
- 1123 PDF objects out of 1200 (max. 8388607)
- 903 compressed objects within 10 object streams
+ 1125 PDF objects out of 1200 (max. 8388607)
+ 906 compressed objects within 10 object streams
  196 named destinations out of 1000 (max. 500000)
  211 words of extra memory for PDF output out of 10000 (max. 10000000)
 
