@@ -1,11 +1,13 @@
 # Repository: AI Application for Azophotoswitches Optimization with Pharmacological Interest
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.txt)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.txt) [![Creator: MolBioMed](https://webs.uab.cat/molbiomed/wp-content/uploads/sites/355/2023/03/logo_psi_redim.png)](https://webs.uab.cat/molbiomed/en/)
 
 In this work, we propose the development of specialized software in the field of artificial intelligence (AI), designed specifically for the discovery and optimization of azophotoswitches. Azophotoswitches are molecules that can undergo reversible changes in structure and function in response to light, making them valuable in applications ranging from molecular devices to advanced materials and medical therapies.
 
 The proposed AI-driven software will leverage cutting-edge machine learning algorithms and data-driven techniques to facilitate the identification and prediction of new azophotoswitches with desired properties. By analyzing vast datasets of molecular structures, photochemical behaviors, and functional performance, the AI system aims to streamline the traditionally labor-intensive process of discovering these compounds. This approach will not only enhance the efficiency of the research but also expand the possibilities for designing azophotoswitches with novel functionalities, opening up new pathways in materials science and photopharmacology.
 
-## 📜 License
+## License and Creator
+
+This project is crated by [Sergio Castañerias Morales](mailto:sergiocastaneirasmorales@gmail.com) under the supervision of the research group [MolBioMed](https://webs.uab.cat/molbiomed/en/).
 
 This project is licensed under the **GNU General Public License v3.0**. You may copy, distribute, and modify the software as long as you track changes/dates in source files and license all derivative works under the same license.
 
@@ -56,3 +58,9 @@ Comments will be added throughout the project's development. This list may not b
 
 ### Predictions
 - Directory that will contain all the predictions provided by the AI.
+
+### Avogadro Frames
+- A directory storing the Avogadro files of the azophotoswitches. The main porpuse of this files is to obtain the SMILE of each azophotoswitch.
+
+### SMILE files 
+- A directory storing azophotoswitches SMILES. A script from the script directory takes this files and predict the $IC_{50}$ of each azophotoswitch.
