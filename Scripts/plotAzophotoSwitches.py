@@ -16,10 +16,12 @@ Prediction = Prediction.drop('Unnamed: 8', axis=1)
 for i in range(7):
     Prediction = Prediction.drop(52-i, axis=0)
 
+Fontisze = 16
+
 plt.figure(figsize=(10, 7))
 plt.scatter(Prediction['Gbinding'],Prediction['Predictions'], color = 'purple')
-plt.xlabel('$\Delta G_{binding}$ (Kcal/mol)')
-plt.ylabel('Predicted $IC_{50}$ (nM)')
+plt.xlabel('$\Delta G_{binding}$ (Kcal/mol)', fontsize=Fontisze)
+plt.ylabel('Predicted $IC_{50}$ (nM)', fontsize=Fontisze)
 # plt.xlim(-12,12)
 # plt.ylim(80,320)
 # plt.show()

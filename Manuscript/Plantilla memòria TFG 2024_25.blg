@@ -1,6 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2024)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: Plantilla memòria TFG 2024_25.aux
+The top-level auxiliary file: Plantilla memòria TFG 2024_25.aux
 The style file: biblatex.bst
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
@@ -17,7 +17,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: Plantilla_memòria_TFG_2024_25-blx.bib
+Database file #1: Plantilla_memòria_TFG_2024_25-blx.bib
 Database file #2: references.bib
 Biblatex version: 3.19
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
@@ -42,45 +42,45 @@ Too many commas in name 1 of "Department of Pharmacology, All India Institute of
 while executing---line 2815 of file biblatex.bst
 Too many commas in name 1 of "Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND." for entry NationalLibraryOfMedicineGeneralArticle
 while executing---line 2815 of file biblatex.bst
-You've used 24 entries,
+You've used 25 entries,
             6399 wiz_defined-function locations,
-            1414 strings with 23254 characters,
-and the built_in function-call counts, 336001 in all, are:
-= -- 30652
-> -- 3966
-< -- 897
-+ -- 11715
-- -- 1866
-* -- 23467
-:= -- 42435
+            1421 strings with 23442 characters,
+and the built_in function-call counts, 340187 in all, are:
+= -- 30914
+> -- 4048
+< -- 917
++ -- 11809
+- -- 1883
+* -- 23736
+:= -- 42827
 add.period$ -- 0
-call.type$ -- 24
-change.case$ -- 573
-chr.to.int$ -- 74
-cite$ -- 46
-duplicate$ -- 34517
-empty$ -- 27125
-format.name$ -- 2574
-if$ -- 65037
+call.type$ -- 25
+change.case$ -- 581
+chr.to.int$ -- 80
+cite$ -- 48
+duplicate$ -- 35019
+empty$ -- 27544
+format.name$ -- 2622
+if$ -- 65906
 int.to.chr$ -- 0
-int.to.str$ -- 58
+int.to.str$ -- 60
 missing$ -- 0
-newline$ -- 1248
-num.names$ -- 1303
-pop$ -- 9910
+newline$ -- 1268
+num.names$ -- 1341
+pop$ -- 10238
 preamble$ -- 1
-purify$ -- 868
+purify$ -- 879
 quote$ -- 0
-skip$ -- 5458
+skip$ -- 5606
 stack$ -- 0
-substring$ -- 59712
-swap$ -- 4727
-text.length$ -- 645
+substring$ -- 60099
+swap$ -- 4860
+text.length$ -- 664
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 804
+type$ -- 838
 warning$ -- 0
-while$ -- 5073
+while$ -- 5129
 width$ -- 0
-write$ -- 1225
+write$ -- 1244
 (There were 10 error messages)

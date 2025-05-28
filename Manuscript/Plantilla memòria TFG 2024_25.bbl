@@ -1104,27 +1104,6 @@
     \field{year}{2003}
   \endentry
 
-  \entry{nsaidDefinition}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=DOE}{%
-         family={Dictionary},
-         familyi={D\bibinitperiod},
-         given={Oxford\bibnamedelima English},
-         giveni={O\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{DOE1}
-    \strng{fullhash}{DOE1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{howpublished}{Online}
-    \field{title}{Non-Steroidal Anti-Inflammatory Drug}
-    \verb{url}
-    \verb https://web.archive.org/web/20220205104155/https://www.lexico.com/def
-    \verb inition/non-steroidal_anti-inflammatory_drug
-    \endverb
-  \endentry
-
   \entry{GitHub}{misc}{}
     \name{author}{1}{}{%
       {{hash=MSC}{%
@@ -1138,12 +1117,29 @@
     \strng{fullhash}{MSC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+  \field{howpublished}{\url{https://github.com/SirSergi0/Repository---AI-application-for-azophotoswitches-optimization-with-pharmacological-interest}}
     \field{title}{AI Application for Azophotoswitches Optimization with
   Pharmacological Interest}
-    \verb{url}
-    \verb https://github.com/SirSergi0/Repository---AI-application-for-azophoto
-    \verb switches-optimization-with-pharmacological-interest
-    \endverb
+    \field{year}{2025}
+  \endentry
+
+  \entry{molbiomed}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=GMR}{%
+         family={Group},
+         familyi={G\bibinitperiod},
+         given={MolBioMed\bibnamedelima Research},
+         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GMR1}
+    \strng{fullhash}{GMR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://webs.uab.cat/molbiomed/en/}}
+    \field{note}{Accessed: 2025-05-28}
+    \field{title}{MolBioMed | Molecular Biomedicine – Computational Modelling
+  for Inflammation Research}
     \field{year}{2025}
   \endentry
 
@@ -1354,6 +1350,32 @@
     \field{volume}{267}
     \field{journaltitle}{Journal of Molecular Biology}
     \field{year}{1997}
+  \endentry
+
+  \entry{smiles}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WD}{%
+         family={Weininger},
+         familyi={W\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WD1}
+    \strng{fullhash}{WD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1021/ci00057a005
+    \endverb
+    \field{number}{1}
+    \field{pages}{31\bibrangedash 36}
+    \field{title}{{SMILES, a chemical language and information system. 1.
+  Introduction to methodology and encoding rules}}
+    \field{volume}{28}
+    \field{journaltitle}{Journal of Chemical Information and Computer Sciences}
+    \field{month}{02}
+    \field{year}{1988}
   \endentry
 \enddatalist
 \endinput

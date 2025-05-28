@@ -12,6 +12,7 @@
 \contentsline {section}{\numberline {6}Conclusions}{21}{section.6}%
 \contentsline {section}{\numberline {7}Bibliography}{22}{section.7}%
 \contentsline {section}{\numberline {8}Acknowledgements}{24}{section.8}%
-\contentsline {section}{\numberline {A}Rellevant definitions}{25}{appendix.A}%
-\contentsline {section}{\numberline {B}Tables of azophotoswitches}{29}{appendix.B}%
-\contentsline {section}{\numberline {C}Table of results}{36}{appendix.C}%
+\contentsline {section}{Appendices}{26}{section*.24}%
+\contentsline {section}{\numberline {A}Rellevant definitions}{26}{appendix.A}%
+\contentsline {section}{\numberline {B}Tables of azophotoswitches}{30}{appendix.B}%
+\contentsline {section}{\numberline {C}Tables of results}{35}{appendix.C}%

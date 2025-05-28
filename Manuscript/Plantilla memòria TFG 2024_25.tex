@@ -138,6 +138,8 @@
 \newacronym{fp}{FP}{False Posive}
 \newacronym{tn}{TN}{True Negative}
 \newacronym{fn}{FN}{False Negative}
+\newglossaryentry{smiles}{name={SMILES},description={\mbox{Simplified Molecular Input Line Entry System}}}
+%!TEX encoding = UTF-8 Unicode\newacronym{smiles}{SMILES}{Simplified Molecular Input Line Entry System}
 
 \glsaddall[types=\acronymtype] % to add all the acronyms, cited or not in the text
 
@@ -247,7 +249,7 @@ Artificial intelligence is emerging as one of the revolutions of the 21st centur
 
 The \emph{prostaglandin-endoperoxide synthase 2} (PTGS2), also known as COX-2, is a protein that, under normal circumstances, tends to remain inactive \cite{Cox2Location}, except for its expression during inflammatory processes. Likewise, the failure to return to low expression levels after inflammation has been linked to the onset of various forms of cancer \cite{DefinitionCOX2CancerDictionary}. This fact has made COX-2 the subject of numerous scientific investigations \cite{Cox2InhibitorsReview}, making it an ideal starting point for the development of \emph{Machine Learning} algorithms, as it provides a large amount of data for training models and validating results.
 
-The main objective of the project is to develop software capable of generating AIs that can predict the 50\% inhibition concentration (IC$_{50}$) for COX-2\footnote{In reality, the software works for any protein with an entry in the ChEMBL database \cite{ChemblDatabase}, although the study focuses on COX-2.} with the highest possible accuracy. To achieve this, all known molecular data with an established inhibition potential for COX-2 are extracted. After a user-configurable filtering process, 5,900 chemical descriptors are calculated for each entry using the AlvaDesk software \cite{MauriMolecularDescriptorsBook}\cite{AlvaDescSecondPaper}. Subsequently, part of the data is used to train \emph{Random Forest} (RF) models \cite{MachineLearningRandomForest}, while the rest is reserved to validate the accuracy of the predictions.
+The main objective of the project is to develop software capable of generating AIs that can predict the 50\% inhibition concentration (IC$_{50}$) for COX-2\footnote{Actually, the software works for any protein with an entry in the ChEMBL database \cite{ChemblDatabase}, although the study focuses on COX-2.} with the highest possible accuracy. To achieve this, all known molecular data with an established inhibition potential for COX-2 are extracted. After a user-configurable filtering process, 5,900 chemical descriptors are calculated for each entry using the AlvaDesk software \cite{MauriMolecularDescriptorsBook}\cite{AlvaDescSecondPaper}. Subsequently, part of the data is used to train \emph{Random Forest} (RF) models \cite{MachineLearningRandomForest}, while the rest is reserved to validate the accuracy of the predictions.
 
 It is important to highlight the main hypothesis that underpins this process and the project as a whole: \emph{There exists a combination (or multiple combinations) of chemical descriptors that are directly related to the inhibition potential of the protein}. While this statement may seem intuitive, the computational cost associated with it is immense. Nevertheless, the accuracy of the model predictions supports the validity of this hypothesis, although it remains a conjecture due to the lack of definitive proof.
 
@@ -275,7 +277,7 @@ The impact of \gls{ai} on science has been nothing short of a groundbreaking rev
 
 Perhaps one of the most representative events showcasing the enormous impact of \gls{ai} on chemistry is the 2024 Nobel Prize in Chemistry. The winners, David Baker\cite{NobelPrizeBale}, along with Demis Hassabis and John Jumper\cite{NobelPrizeJumper}, were not traditionally trained chemists. Instead, their expertise lies in \gls{ai} algorithms and \gls{ml} methods applied to protein research. This milestone, among others, triggered a surge of chemistry researchers diving into the world of \gls{ai}, seeking applications for their respective fields. Today, the thrilling progress in computational chemistry has been further reinforced by these cutting-edge tools\cite{MachineLearningPaper5Lipoxygenase}, and the rapid pace of development keeps the scientific community eagerly anticipating future applications in fields such as medicine, materials science, and beyond. In this project we aim to apply the new AI and ML algorithms to our object of study, the \gls{ptgs2} also known as \gls{cox2}, depicted in Figure (\ref{FigureCox2ChimeraX}), a protein tightly linked to the onset of numerous cancers forms\cite{Cox2CancerReview}. 
 
-Although significant advancements have been made, cancer still accounts for over 8 million deaths per year worldwide, and the scientific and medical communities remain far from achieving its complete eradication. Inflammation is one of the hallmarks of carcinogenesis, in fact, various cancer therapies target inflammation as a means of preventing and reducing cancer occurrences. When a tissue is damaged, inflammation protects the organism from infections caused by external pathogens, a key function of the immune system to prevent the presence of invaders in the body. During the inflammatory process, cells proliferate under the command of the immune system to replace the damaged cells of the affected tissue. However, if this cell reproduction continues beyond the healing of the damaged tissue, it can potentially lead to cancer, contradicting the initial healing purpose of the inflammatory process. In some cases, inflammation can become chronic, leading to tumor development and uncontrolled cell proliferation. As a result, a wide range of drug prototypes have been designed to suppress inflammation. However, many of these drugs have been linked to severe side effects, including immunosuppression, cardiovascular risks, and gastrointestinal complications. Consequently, the administration of these drugs is often contrindicative, and the search for a more effective and safer treatment remains ongoing. Plently of the research in this field is mainly focused on the pro-inflamatory enzyme \gls{cox2}, one of the main commanders in the inflammation process and responsable to convert the arachidonic acid to prostaglandin \ch{H_2} (Scheme (\ref{Cox2MainReaction})). Subsequently, a therapy based on the chemical inhibition of the \gls{cox2} with no side effects has been one of the research lines in cancer treatment leading to a considerable amount of experiments and data.
+Although significant advancements have been made, cancer still accounts for over 8 million deaths per year worldwide, and the scientific and medical communities remain far from achieving its complete eradication. Inflammation is one of the hallmarks of carcinogenesis, in fact, various cancer therapies target inflammation as a means of preventing and reducing cancer occurrences. When a tissue is damaged, inflammation protects the organism from infections caused by external pathogens, a key function of the immune system to prevent the presence of invaders in the body. During the inflammatory process, cells proliferate under the command of the immune system to replace the damaged cells of the affected tissue. However, if this cell reproduction continues beyond the healing of the damaged tissue, it can potentially lead to cancer, contradicting the initial healing purpose of the inflammatory process. In some cases, inflammation can become chronic, leading to tumour development and uncontrolled cell proliferation. As a result, a wide range of drug prototypes have been designed to suppress inflammation. However, many of these drugs have been linked to severe side effects, including immunosuppression, cardiovascular risks, and gastrointestinal complications. Consequently, the administration of these drugs is often contraindicative, and the search for a more effective and safer treatment remains ongoing. Plenty of the research in this field is mainly focused on the pro-inflamatory enzyme \gls{cox2}, one of the main commanders in the inflammation process and responsible to convert the arachidonic acid to prostaglandin \ch{H_2} (Scheme (\ref{Cox2MainReaction})). Subsequently, a therapy based on the chemical inhibition of the \gls{cox2} with no side effects has been one of the research lines in cancer treatment leading to a considerable amount of experiments and data.
 \begin{figure}[t]
 	\centering
 	\includegraphics[width = \textwidth, trim={10cm 0cm 10cm 0cm}, clip]{GeneralSources/Cox2ChimeraX.jpg}
@@ -304,7 +306,7 @@ HO-[1](=[3]O)-[-1]-[1]-[-1]-[1]=[-1]-[-3]-[-1]=[-3]-[7]-[-3]=[7]-[-7]-[7]=[-7]-[
 \label{Cox2MainReaction}
 \end{figure}
 
-Determining an experimental \gls{ic50} value can be both costly and time-consuming\footnote{Usually this parameter is computed throughout the Cheng Prusoff Equation (Def. (\ref{definitionChengPrusoff})) with experimental data.}. On the other hand, \gls{ai} provides an alternative by offering highly accurate predictions based on existing data, optimising research processes, and accelerating scientific discovery. In this scenario this project aims to implement artificial intelligence in computational chemistry, concretely, using \gls{ai}-based algorithms to predict a drug’s inhibition potential\cite{BookIC50} for a given protein with a relativelly good accuracy \footnote{The accuracy of the ML models is discussed on the Results and Discussion section (\ref{sectionResultsAndDiscussion}).}. To achieve this, we make use of the ChEMBL database\cite{ChemblDatabase}, a vast repository of bioactive molecules with drug-like properties. We extract all known molecular data with a documented inhibition potential for the target protein, creating a comprehensive dataset. The chemical descriptors (Def. (\ref{definitionChemicalDescriptors})) of each molecule in the database are then computed using AlvaDesk\cite{MauriMolecularDescriptorsBook}\cite{AlvaDescSecondPaper} software. Around 5000 descriptors are calculated\cite{DescriptorsBook}, which comprehend from the elemental molecular weight to the complex equipotential electronic surface, providing critical information about each compound’s behaviour. The resulting dataset is subsequently used to train \gls{ai} models, enabling them to predict the inhibition potential of unknown compounds. Finally, we evaluate the reliability of each model by testing it against real experimental data. 
+Determining an experimental \gls{ic50} value can be both costly and time-consuming\footnote{Usually this parameter is computed throughout the Cheng Prusoff Equation (Definition (\ref{definitionChengPrusoff})) with experimental data.}. On the other hand, \gls{ai} provides an alternative by offering highly accurate predictions based on existing data, optimising research processes, and accelerating scientific discovery. In this scenario this project aims to implement artificial intelligence in computational chemistry, concretely, using \gls{ai}-based algorithms to predict a drug’s inhibition potential\cite{BookIC50} for a given protein with a relativelly good accuracy \footnote{The accuracy of the ML models is discussed on the Results and Discussion section (\ref{sectionResultsAndDiscussion}).}. To achieve this, we make use of the ChEMBL database\cite{ChemblDatabase}, a vast repository of bioactive molecules with drug-like properties. We extract all known molecular data with a documented inhibition potential for the target protein, creating a comprehensive dataset. The chemical descriptors (Definition (\ref{definitionChemicalDescriptors})) \footnote{All the definitions are stored in the Appendix (\ref{appendixRellevantDefinitions}) \emph{Relevant definitions}. We recommend its consultance for further information.}  of each molecule in the database are then computed using AlvaDesk\cite{MauriMolecularDescriptorsBook}\cite{AlvaDescSecondPaper} software. Around 5000 descriptors are calculated\cite{DescriptorsBook}, which comprehend from the elemental molecular weight to the complex equipotential electronic surface, providing critical information about each compound’s behaviour. The resulting dataset is subsequently used to train \gls{ai} models, enabling them to predict the inhibition potential of unknown compounds. Finally, we evaluate the reliability of each model by testing it against real experimental data. 
 
 It is important to emphasise the central hypothesis of this project: \emph{There exists a combination (or combinations) of chemical descriptors that are directly correlated with the inhibition of the protein}. While this idea may seem fundamental, it remains unproven due to the complexity of molecular interactions and the vast number of possible descriptor combinations. Despite significant progress in computational chemistry, identifying the exact descriptors that govern inhibition potential has been a persistent challenge. The lack of an ultimate proof underscores the need for advanced computational techniques. By analysing large datasets, \gls{ai} can detect hidden correlations that may not be immediately apparent through traditional statistical methods.
 
@@ -314,9 +316,9 @@ Moreover, the choice of the Random Forest (\gls{rf}) algorithm is motivated by t
 
 By applying \gls{ai} models to \gls{cox2}, we assess their compatibility with the latest research findings\cite{Cox2InhibitorsReview}, demonstrating \gls{ai}’s potential as a powerful tool in computational chemistry research. Our approach not only validates \gls{ai}’s effectiveness in predicting inhibition potential but also provides insights into the underlying molecular mechanisms governing \gls{cox2} interactions. Additionaly, this study aims to bridge the gap between \gls{ai} and computational chemistry, reinforcing the \gls{ai}’s potential to revolutionise drug discovery and molecular research. The ability to predict inhibition potential with high accuracy can accelerate the development of new pharmaceuticals, reduce reliance on costly laboratory experiments, and contribute to a more efficient drug screening process. Furthermore, identifying key molecular descriptors correlated with inhibition could lead to a deeper understanding of chemical interactions, opening new avenues for research in medicinal chemistry and bioinformatics.
 
-Currently, the pharmacological therapies for the \gls{cox2} inhibition are based on \gls{nsaid}\cite{nsaidDefinition} such as the popular ibuprofen or aspirin. However they have proved to be related to cardiovascular diseases and are contraindicated for people with more than 50 years or people with gastrointestinal problems, among others. Still some alternative therapies related with \gls{nsaid}s are being explored, in particular, one of the most revolutionary ideas is the application of azophotoswitches in drug design.
+Currently, the pharmacological therapies for the \gls{cox2} inhibition are based on \gls{nsaid}\cite{DefinitionCOX2CancerDictionary} such as the popular ibuprofen or aspirin. However they have proved to be related to cardiovascular diseases and are contraindicated for people with more than 50 years or people with gastrointestinal problems, among others. Still some alternative therapies related with \gls{nsaid}s are being explored, in particular, one of the most revolutionary ideas is the application of azophotoswitches in drug design.
 
-We define a molecule as an azophotoswitch if it contains an azo bond (\ch{N=N}) that is sensitive to configurational transformations upon photo-excitation. For instance, let us consider the case of (E/Z)-N,1-diphenylmethanimine,
+We define a molecule as a \emph{photoswitch} if it contains a bond that undergoes a configurational transformation upon photoexcitation. In particular, we take \emph{azophotoswitches} as a class of photoswitches in which the photo-sensitive bond responsible for isomerization is an azo group (i.e. \ch{N=N}). Azophotoswitches represent the most common and widely studied type of photoswitches due to their robust and tunable photochemical properties. For instance, consider the case of \emph{(cis/trans)-N,1-diphenylmethanimine},
 \begin{figure}[H]
 \captionsetup{type=scheme}
 \centering
@@ -329,10 +331,10 @@ We define a molecule as an azophotoswitch if it contains an azo bond (\ch{N=N}) 
 	N(-[-4]*6(-=-=-=))=[0]N-[-2]*6(-=-=-=)
 	}}
 \schemestop
-	\caption{(E/Z)-N,1-diphenylmethanimine conversion as an example of an azophotoswitch.}
+	\caption{(cis/trans)-N,1-diphenylmethanimine conversion as an example of an azophotoswitch.}
 \label{AzophotoswitchExampleFigure}
 \end{figure}
-The photo-induced E/Z isomerization leads to distinct bioactivities for each configuration. This variation arises from the stereochemical constraints required for a molecule to bind to a target protein. Typically, a protein’s binding site has a specific shape, and only molecules whose conformation matches this shape can interact effectively. In the context of an azophotoswitch, one isomer may fit precisely into the binding pocket, leading to strong interactions, while the other may not. Accordingly, we refer to the isomer that interacts most effectively with the protein as the active configuration, and the other as the inactive configuration.\footnote{In the context of this project, interaction refers to inhibition of the protein’s activity.} \footnote{Generally, the trans-isomer is considered the active configuration, while the cis-isomer is considered inactive. However, exceptions exist.}
+The photo-induced cis/trans isomerization leads to distinct bioactivities for each configuration. This variation arises from the stereochemical constraints required for a molecule to bind to a target protein. Typically, a protein’s binding site has a specific shape, and only molecules whose conformation matches this shape can interact effectively. In the context of an azophotoswitch, one isomer may fit precisely into the binding pocket, leading to strong interactions, while the other may not. Accordingly, we refer to the isomer that interacts most effectively with the protein as the active configuration, and the other as the inactive configuration.\footnote{In the context of this project, interaction refers to inhibition of the protein’s activity.} \footnote{Generally, the trans-isomer is considered the active configuration, while the cis-isomer is considered inactive. However, exceptions exist.}
 
 The primary application of azophotoswitches in drug design is the administration of the inactive isomer, which is assumed to be non-toxic to the organism. Later, the active configuration is generated through selective photo-excitation at the target site. This strategy minimizes drug activity in unintended tissues, thereby reducing side effects. As a result, higher dosages may be administered safely by localizing the therapeutic effect to the desired area. These therapies are still in the experimental stage and remain primarily within research and development.
 
@@ -347,19 +349,19 @@ All in all, this project demonstrates the application of \gls{ai} in drug design
 
 This project aims to develop a fully functional software tool capable of accurately predicting a molecule’s inhibition potential (\gls{ic50}), leveraging existing data from the ChEMBL database \cite{ChemblDatabase}. The software is thoroughly documented and available in the GitHub repository: \href{https://github.com/SirSergi0/Repository—AI-application-for-azophotoswitches-optimization-with-pharmacological-interest}{\emph{AI Application for Azophotoswitches Optimization with Pharmacological Interest}} \cite{GitHub}.
 
-The project specifically focuses on the \gls{cox2} protein. Thanks to the availability of a large \gls{ic50} dataset for this target, the model’s predictive reliability can be effectively validated. The prediction process is powered by an \gls{ai} tool designed to deliver high-quality results, taking into account relevant molecular descriptors. The software also serves to cross-check computational results previously obtained by the Physical Chemistry Unit of the UAB \cite{UAB_ComputationalChemistry}. The application centers on azophotoswitches—molecules of particular pharmacological interest discussed in Section \ref{sectionIntroduction}. Additionally, a molecular docking study is performed on one of the most promising azophotoswitch candidates.
+The project specifically focuses on the \gls{cox2} protein. Thanks to the availability of a large \gls{ic50} dataset for this target, the model’s predictive reliability can be effectively validated. The prediction process is powered by an \gls{ai} tool designed to deliver high-quality results, taking into account relevant molecular descriptors. The software also serves to cross-check computational results previously obtained by the Physical Chemistry Unit of the UAB \cite{UAB_ComputationalChemistry}. The application centers on azophotoswitches, molecules of particular pharmacological interest as discussed in Section \ref{sectionIntroduction}. Additionally, a molecular docking study is performed on one of the most promising azophotoswitch candidates.
 
 In conclusion, this study seeks to bridge the gap between Artificial Intelligence and computational chemistry, demonstrating AI’s potential to revolutionize drug discovery and molecular research. Accurate predictions of inhibition potential could accelerate the development of new pharmaceuticals, reduce the need for costly laboratory experiments, and streamline the drug screening process. Furthermore, identifying key molecular descriptors linked to inhibition may provide valuable insights into chemical interactions, opening new directions for research in medicinal chemistry and bioinformatics.
 
 \newpage
 \section{Methodology}\label{sectionMethodology}
-The source code is all stored in the \href{https://github.com/SirSergi0/Repository---AI-application-for-azophotoswitches-optimization-with-pharmacological-interest}{\emph{AI application for azophotoswitches optimization with pharmacological interest} GitHub repository}\cite{GitHub}. The consultace of this repository is highly recommended in order to comprehended the insights in the workflow of the project. By the time this project is presented, it remains as a open-source repository for the Computational Chemistry UAB unit \cite{UAB_ComputationalChemistry}.
+The source code is entirely stored in the \href{https://github.com/SirSergi0/Repository---AI-application-for-azophotoswitches-optimization-with-pharmacological-interest}{\emph{AI application for azophotoswitches optimization with pharmacological interest} GitHub repository}\cite{GitHub} and it has been entirely written by Sergio Castañeiras Morales for this project. The consultace of this repository is highly recommended in order to comprehended the insights and the workflow of the project. By the time this project is presented, it remains as an open-source repository of the MolBioMed research group \cite{molbiomed}.
 
-The target protein's ID is set at \emph{CHEMBL230} corresponding to the COX-2 ID in the ChEMBL database\cite{ChemblDatabase}. Utilising \emph{requests} python package\cite{PythonPackageRequests} a query URL is sent asking for all molecules with a know $IC_{50}$ value (Def. \ref{definitionIC50}) with a limit of 1000 entries per request. The process is iterated until all data is extracted leading a total of 7979 molecules. Hence the datasheet is processed in pandas dataframes\cite{PythonPackagePandas} and encrypted into binary feather files to optimise reading-writting speed. By removing entries with the same canonical smiles a total of 5112 molecules remain. Among this entries well known drugs such as Celecoxib (Def. \ref{definitionCelecoxib}), Rofecoxib (Def. \ref{definitionRofecoxib}) or even Ibuprofen can be found. However the $IC_{50}$ molecules range is comprehended from $10^{-3}$ to $10^{8}$ nM, a counterproductive range for the AI training procedure. Since we are interested in testing azophotoswitches with presumably low \gls{ic50}, training \gls{ml} models with data of the order of $10^{8}$ or $10^{3}$ nM can be counterproductive since the model might misinterpret the data.\footnote{Typically the range of the azophotoswitches \gls{ic50} is arround the Celecoxib's \gls{ic50}, i.e. arround $120$ nM}. Consecutivelly, a hard-coded range is filtered discarding all molecules outside the given range, for the most part of the analysis this range is set at $[0,300]$ nM \footnote{this $IC_{50}$ working range is the standard in this kind of studies \cite{MachineLearningPaper5Lipoxygenase}.} which reduces the dataset to 1438 entries, i.e. molecules.
+The target protein's ID is set at \emph{CHEMBL230} corresponding to the COX-2 ID in the ChEMBL database\cite{ChemblDatabase}. Utilising \emph{requests} python package\cite{PythonPackageRequests} a query URL is sent asking for all molecules with a know $IC_{50}$ value (Definition \ref{definitionIC50}) with a limit of 1000 entries per request. The process is iterated until all data is extracted leading a total of 7979 molecules. Hence the datasheet is processed in pandas dataframes\cite{PythonPackagePandas} and encrypted into binary feather files to optimise reading-writting speed. By removing entries with the same canonical \gls{smiles} (Definition \ref{definitionSMILES})  a total of 5112 molecules remain. Among this entries well known drugs such as Celecoxib (Definition \ref{definitionCelecoxib}), Rofecoxib (Definition \ref{definitionRofecoxib}) or even Ibuprofen can be found. However the $IC_{50}$ molecules range is comprehended from $10^{-3}$ to $10^{8}$ nM, a counterproductive range for the AI training procedure. Since we are interested in testing azophotoswitches with presumably low \gls{ic50}, training \gls{ml} models with data of the order of $10^{8}$ or $10^{3}$ nM can be counterproductive since the model might misinterpret the data.\footnote{Typically the range of the azophotoswitches \gls{ic50} is arround the Celecoxib's \gls{ic50}, i.e. arround $120$ nM}. Consecutivelly, a hard-coded range is filtered discarding all molecules outside the given range, for the most part of the analysis this range is set at $[0,300]$ nM \footnote{this $IC_{50}$ working range is the standard in this kind of studies \cite{MachineLearningPaper5Lipoxygenase}.} which reduces the dataset to 1438 entries, i.e. molecules.
 
-With the AlvaDesk-python \cite{AlvaDescSecondPaper} facility, the chemical descriptors (i.e., the chemical fingerprint) of each molecule are computed, providing a total of $5800$ descriptors per molecule. Still, some chemical descriptor need from the presence of a certain atom, for instance a chemical descriptor related to presence of a metal in the molecule, or active gorup, for example chemical descriptor related to the presence of a carboxilic acid, or chemical descriptor related triple bound among other possiblities. The computation of this chemical descriptors appear as \emph{null values}. By deleting molecular descriptors with null values 2917 chemical descriptors remain. Here, the Pearson correlation coefficient (Def. \ref{definitionPersonCoefficient}) between each chemical descriptor and the $IC_{50}$ value is computed, providing insight into the direct relationship between $IC_{50}$ and the descriptors. This relationship will be discussed in the Results and Discussion Section (\ref{sectionResultsAndDiscussion}).
+With the AlvaDesk-python \cite{AlvaDescSecondPaper} facility, the chemical descriptors (i.e., the chemical fingerprint) of each molecule are computed, providing a total of $5800$ descriptors per molecule. Still, some chemical descriptor need from the presence of a certain atom, for instance a chemical descriptor related to the presence of a metal in the molecule, or active gorup, for example chemical descriptor related to the presence of a carboxilic acid, or chemical descriptor related triple bound among other possiblities. The computation of this chemical descriptors appear as \emph{null values}. By deleting molecular descriptors with null values 2917 chemical descriptors remain. Here, the Pearson correlation coefficient (Definition \ref{definitionPersonCoefficient}) between each chemical descriptor and the $IC_{50}$ value is computed, providing insight into the direct relationship between $IC_{50}$ and the descriptors. This relationship will be discussed in the Results and Discussion Section (\ref{sectionResultsAndDiscussion}).
 
-At this stage, the average $IC_{50}$ is calculated, and the neighborhood size corresponding to the percentage defined by the hard-coded variable \emph{percentageErased} is removed. This allows us to distinguish between \emph{highly active molecules} and \emph{least active molecules}, those with lower and higher $IC_{50}$ values, respectively. By doing so, it is possible to compute the classification accuracy statistics of the model from the cluster association of each prediction. Thus we can compare each prediction of each molecules to experimental data, i.e. the model predicts a molecule to be highly active molecule to a highly active molecule this will be denoted as a \gls{tp}. Similarly we can define a \gls{tn}, \gls{fp} and \gls{fn} . This procedure is an standard for evaluating a \gls{ml} model realiability. 
+At this stage, the average $IC_{50}$ is calculated, and the neighborhood size corresponding to the percentage defined by the hard-coded variable \emph{percentageErased} is removed. This allows us to distinguish between \emph{highly active molecules} and \emph{least active molecules}, those with lower and higher $IC_{50}$ values, respectively. By doing so, it is possible to compute the classification accuracy statistics of the model from the cluster association of each prediction. Thus we can compare each prediction of each molecules with experimental data. For instance, for an experimentally proved highly active molecule if the model predicts this molecule to be highly active (has a low \gls{ic50} precition) we consider this as \gls{tp}. Similarly we define a \gls{tn}, \gls{fp} and \gls{fn} . This procedure is an standard for evaluating a \gls{ml} model realiability. 
 
 Subsequently, each set of substances is randomly divided into two datasets: a \emph{training set} for training the \gls{rf} algorithm and a \emph{testing set} for testing the statistics and realiability of the \gls{rf} model, following the proportion specified by the hard-coded variable \emph{testSizeProportion}. This procedure is illustrated in Figure (\ref{FigureDataSplittingDiagram}).
 
@@ -372,24 +374,24 @@ Subsequently, each set of substances is randomly divided into two datasets: a \e
 
 Afterwards, a Random Forest (\gls{rf}) algorithm is trained using the Sticky Learn \cite{PythonPackageStickitLearn} Python package, which is supported by Microsoft and Google among others. Although the project’s primary focus is not the detailed workings of Machine Learning (\gls{ml}) algorithms but its applications in computational chemestry, it is natural to ponder the essence of what the machine is doing. The name “Random Forest” is directly tied to the analogy between a tree and a decision tree. \par
 
-As described in definition (\ref{definitionDecisionTree}), the Random Forest algorithm generates a collection of random decision trees. The number of trees in the forest is a configurable parameter of the algorithm. More specifically, the Random Forest algorithm produces a set of decision trees, each trained on a random subset of the training data. The structure of each tree adjusts during training to make predictions that closely approximate the true target values. The final output of the Random Forest is typically an aggregate of the predictions from all the individual trees, such as a majority vote for classification tasks or an average for regression tasks. \par
+As described in Definition (\ref{definitionDecisionTree}), the Random Forest algorithm generates a collection of random decision trees. The number of trees in the forest is a configurable parameter of the algorithm. More specifically, the Random Forest algorithm produces a set of decision trees, each trained on a random subset of the training data. The structure of each tree adjusts during training to make predictions that closely approximate the true target values. The final output of the Random Forest is typically an aggregate of the predictions from all the individual trees, such as a majority vote for classification tasks or an average for regression tasks. \par
 
 One notable characteristic of this method is its inherent randomness. Each Random Forest model is unique, even if configured with the same parameters and initialized under identical conditions. However, experimental evidence suggests this randomness does not significantly impact the results. If two Random Forest algorithms are trained on the same dataset using identical parameters, their outputs will converge, even if the internal structures of their decision trees differ.
 
-The \gls{rf} algorithm generates a large number of random decision trees (as defined by the hard-coded variable \emph{numberOfTrees}), which are trained on subsets of the training data. Typically, increasing the number of trees enhances the model’s predictive accuracy, however, this comes at the cost of greater computational complexity. Importantly, prediction accuracy cannot be arbitrarily improved simply by increasing the number of trees. The model’s performance is fundamentally limited by the quality and quantity of the training data. If the data lacks from information about the underlying protein-related phenomena, higher accuracy cannot be achieved regardless of how many trees are used.
+The \gls{rf} algorithm generates a large number of random decision trees (as defined by the hard-coded variable \emph{numberOfTrees}), which are trained on subsets of the training data. Typically, increasing the number of trees enhances the model’s predictive accuracy. However, this comes at the cost of greater computational complexity. Importantly, prediction accuracy cannot be arbitrarily improved simply by increasing the number of trees. The model’s performance is fundamentally limited by the quality and quantity of the training data. If the data lacks from information about the underlying protein-related phenomena, higher accuracy cannot be achieved regardless of how many trees are used.
 
 In general, the relationship between data quality/quantity and the number of trees can be summarized as the following
 \begin{align*}
 \uparrow\text{Data} + \uparrow\text{Trees} &\Rightarrow \uparrow\text{Prediction Accuracy} \\
 \downarrow\text{Data} + \downarrow\text{Trees} &\Rightarrow \downarrow\text{Prediction Accuracy}
 \end{align*}
-However, increasing either component in isolation, i.e. add more data or more trees, does not necessarily lead to better accuracy. For the available dataset in this work, we observed training with 500 trees yields similar results to training with 300 trees.
+However, increasing either component in isolation, i.e. adding more data or more trees, does not necessarily lead to better accuracy. For the available dataset in this work, we observed training with 500 trees yields similar results respect the ones obtained by training with 300 trees.
 
-Subsequently, these models are evaluated by predicting the $IC_{50}$ values of the \emph{testing sets}. Using the predictions, we compute the \emph{True Positive Rate} (Def. \ref{definitionTruePositiveRate}), \emph{True Negative Rate} (Def. \ref{definitionTrueNegativeRate}), \emph{Classification Accuracy} (Def. \ref{definitionClassificationAccuracy}), and \emph{Matthews Correlation Coefficient} (Def. \ref{definitionMatthewsCorrelationCoeficient}). Based on these metrics, the variables \emph{percentageErased}, \emph{testSizeProportion}, and \emph{numberOfTrees} are manually adjusted to optimize model performance.
+Subsequently, these models are evaluated by predicting the $IC_{50}$ values of the \emph{testing sets}. Using the predictions, we compute the \emph{True Positive Rate} (Definition \ref{definitionTruePositiveRate}), \emph{True Negative Rate} (Definition \ref{definitionTrueNegativeRate}), \emph{Classification Accuracy} (Definition \ref{definitionClassificationAccuracy}), and \emph{Matthews Correlation Coefficient} (Definition \ref{definitionMatthewsCorrelationCoeficient}). Based on these metrics, the variables \emph{percentageErased}, \emph{testSizeProportion}, and \emph{numberOfTrees} are manually adjusted to optimize model performance.
 
-Finally, the \gls{rf} model with the best performance\footnote{The criteria for determining the model with “better statistics” is discussed in Section \ref{sectionPersonCorrelationFactor} since this term references \gls{ai} statistics rather than the usual statistics.} is used to predict the \gls{ic50} values of the azophotoswitch prototypes listed in Appendix \ref{appendixAzophotoshiches}. This process begins with computing the chemical descriptors using AlvaDesc software \cite{MauriMolecularDescriptorsBook}. Irrelevant descriptors are then removed, retaining only those used during training. By inputting the selected descriptors into the trained \gls{rf} model, the predicted \gls{ic50} values are obtained and subsequently analyzed.
+Finally, the \gls{rf} model with the best performance\footnote{The criteria for determining the model with “better statistics” is discussed in Section \ref{sectionPersonCorrelationFactor} since this term references \gls{ai} statistics rather than the usual statistics.} is used to predict the \gls{ic50} values of the azophotoswitch prototypes listed in Appendix \ref{appendixAzophotoshiches}. This process begins with computing the chemical descriptors using AlvaDesc software \cite{MauriMolecularDescriptorsBook}. Irrelevant descriptors are then removed, retaining only those used during training. By introducing the selected descriptors into the trained \gls{rf} model, the predicted \gls{ic50} values are obtained and subsequently analyzed.
 
-Finally, a docking study was performed using GOLD2022 \cite{GoldReference}. This software employs a genetic algorithm, along with molecular modeling techniques, to predict the optimal binding pose of the ligand within the \gls{cox2} binding site. The genetic nature of the algorithm allows for a broad exploration of the conformational and positional space between the ligand and the protein. By evaluating and ranking ligand poses based on predicted interactions, such as hydrogen bonding, van der Waals forces, and metal coordination, unstable or energetically unfavorable conformations are discarded, resulting in a set of plausible, energetically stable binding orientations. The docking calculations were carried out within a 26 Å radius sphere centered at Arg513.
+Finally, a docking study was performed using GOLD2022 \cite{GoldReference}. This software employs a genetic algorithm, along with molecular modeling techniques, to predict the optimal binding pose of the ligand within the \gls{cox2} binding site. The genetic nature of the algorithm allows for a broad exploration of the conformational and positional space between the ligand and the protein. By evaluating and ranking ligand interactions, such as hydrogen bonding, van der Waals forces, and metal coordination, unstable or energetically unfavorable conformations are discarded, resulting in a set of plausible, energetically stable binding orientations. The docking calculations were carried out within a 26 Å radius sphere centered at Arg513.
 
 
 \newpage
@@ -431,7 +433,7 @@ It might be tempting to assume that discarding descriptors with the lowest $r^2$
 
 \subsection{Pearson Correlation Coefficient and Mean Squared Error}\label{sectionPersonCorrelationFactor}
 
-Once the models have been generated, i.e., once the relevant hyperparameters are set, we proceed with generating predictions. At this stage, we compute the Pearson Correlation Coefficient (Def. (\ref{definitionPersonCoefficient})) and the Mean Squared Error (Def. (\ref{definitionMeanSquaredError})) between the predicted and experimental \gls{ic50} values.
+Once the models have been generated, i.e., once the relevant hyperparameters are set, we proceed with generating predictions. At this stage, we compute the Pearson Correlation Coefficient (Definition (\ref{definitionPersonCoefficient})) and the Mean Squared Error (Definition (\ref{definitionMeanSquaredError})) between the predicted and experimental \gls{ic50} values.
 
 Figure (\ref{FigPlotErasedPercentageVSRSquare}) presents two plots showing how both the Pearson Correlation Coefficient and the Mean Squared Error vary as a function of the erased percentage. These metrics provide insight into the model’s performance under different levels of data availability.
 
@@ -488,7 +490,7 @@ In this work, we arbitrarily define this threshold at $r^2 = 0.90$. This hard-co
 
 Moreover, we can hypothesize creating a larger gap in the data facilitates the model’s ability to distinguish between highly active and weakly active inhibitors. This intuition is reflected in the boundary cases illustrated in Figure (\ref{FigPlotErasedPercentageVSRSquare}). As the erased percentage approaches 100\%, the $r^2$ value tends to zero and the mean squared error approaches one. This indicates that, in such extreme cases, the \gls{rf} model is able to classify only the most distinct molecules, those with \gls{ic50} values near the extremes of the interval. However, this is not a desirable scenario, as a significant portion of intermediate data is lost, limiting the model’s capacity to generalize across the full spectrum of inhibitor activity.
 
-More reliable indicators of model's performance are provided by the \emph{True Positive Rate} (Def. \ref{definitionTruePositiveRate}), \emph{True Negative Rate} (Def. \ref{definitionTrueNegativeRate}), \emph{Classification Accuracy} (Def. \ref{definitionClassificationAccuracy}), and \emph{Matthews Correlation Coefficient} (Def. \ref{definitionMatthewsCorrelationCoeficient}), the standard metrics used to evaluate the performance of a \gls{ml} model. Generally speaking, we define a method A to have "better statisitcs" than other method B if the computed quantities: \emph{True Positive Rate}, \emph{True Negative Rate}, \emph{Classification Accuracy}, and \emph{Matthews Correlation Coefficient}, for A take higher values than the same quantities for B.\footnote{Since all quantities are highly bounded by 1 we might also affirm, the closer to 1 the statistics values are the more reliable the method is.} Specifically, if this procedure for the method A and B lead to incoherences, i.e. some statistics of A are better than B while other are worst, we take the Matthews Correlation Factor as the most reliable statistical outcome.\footnote{This is the usual procedure in the analysis of \gls{ml} predictions\cite{MachineLearningPaper5Lipoxygenase}.}
+More reliable indicators of model's performance are provided by the \emph{True Positive Rate} (Definition \ref{definitionTruePositiveRate}), \emph{True Negative Rate} (Definition \ref{definitionTrueNegativeRate}), \emph{Classification Accuracy} (Definition \ref{definitionClassificationAccuracy}), and \emph{Matthews Correlation Coefficient} (Definition \ref{definitionMatthewsCorrelationCoeficient}), the standard metrics used to evaluate the performance of a \gls{ml} model. Generally speaking, we define a method A to have "better statisitcs" than other method B if the computed quantities: \emph{True Positive Rate}, \emph{True Negative Rate}, \emph{Classification Accuracy}, and \emph{Matthews Correlation Coefficient}, for A take higher values than the same quantities for B.\footnote{Since all quantities are highly bounded by 1 we might also affirm, the closer to 1 the statistics values are the more reliable the method is.} Specifically, if this procedure for the method A and B lead to incoherences, i.e. some statistics of A are better than B while other are worst, we take the Matthews Correlation Factor as the most reliable statistical outcome.\footnote{This is the usual procedure in the analysis of \gls{ml} predictions\cite{MachineLearningPaper5Lipoxygenase}.}
 
 \subsection{Azophotoswitches Analysis}
 
@@ -496,16 +498,16 @@ Figure \ref{figureGraphicGbindingIC50} shows the predicted \gls{ic50} values of 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth, trim={1.75cm 0.8cm 2.5cm 2cm}, clip]{../Plots/GbindingVSIC50.pdf}
+	\includegraphics[width=0.7\textwidth, trim={1.5cm 0.6cm 2.4cm 2cm}, clip]{../Plots/GbindingVSIC50.pdf}
 	\caption{Predicted \gls{ic50} values for azophotoswitches from Appendix \ref{appendixAzophotoshiches}. The x-axis represents $\Delta G_{binding}$, and the y-axis represents the predicted \gls{ic50}.}
 	\label{figureGraphicGbindingIC50}
 \end{figure}
 
-Furthermore, the performance metrics for this prediction are summarized in Table (\ref{TableStatisitcsMainResults}). All key statistical indicators exceed the 0.90 threshold. Notably, the model achieves a \emph{True Negative Rate} of 0.99 (Def. (\ref{definitionTrueNegativeRate})), indicating that it correctly identifies non-active inhibitors 99\% of the time. The \emph{Classification Accuracy} (Def. (\ref{definitionClassificationAccuracy})) and \emph{Matthews Correlation Coefficient} both approach 1, reinforcing the reliability of this particular \gls{rf} model in distinguishing between active and inactive azophotoswitches.
+Furthermore, the performance metrics of the \gls{rf} model for this predictions are summarized in Table (\ref{TableStatisitcsMainResults}) that yield the results of Tables (\ref{TableMainResults1}) and (\ref{TableMainResults2}) from the appendix (\ref{appendixTableOfResults}) \emph{Tables of results}. All key statistical indicators exceed the 0.90 threshold. Notably, the model achieves a \emph{True Negative Rate} of 0.99 (Definition (\ref{definitionTrueNegativeRate})), indicating that it correctly identifies non-active inhibitors 99\% of the time. The \emph{Classification Accuracy} (Definition (\ref{definitionClassificationAccuracy})) and \emph{Matthews Correlation Coefficient} both approach 1, reinforcing the reliability of this particular \gls{rf} model in distinguishing between active and inactive azophotoswitches.
 
 \begin{table}[H]
     \centering	
-	\caption{Statistics for the computation of the results from tables (\ref{TableMainResults1}) and (\ref{TableMainResults2}).}
+	\caption{Conditions and statistics for the machine's learning models in the computation of the \gls{ic50} from Tables (\ref{TableMainResults1}) and (\ref{TableMainResults2}).}
 	\label{TableStatisitcsMainResults}
 	\begin{tabular}{c|c}
 		Mean Squared Error       & 1202.70\\\hline
@@ -520,7 +522,7 @@ Furthermore, the performance metrics for this prediction are summarized in Table
 		MatthewsCorrelationFactor& 0.90
     \end{tabular}
 \end{table}
-At this stage, it is important to note that the model is currently unable to distinguish between the active and inactive conformations of a molecule, i.e, between the \emph{cis} and \emph{trans} isomers. This limitation is not due to the model architecture or the way chemical descriptors are computed, but rather to a deficiency in the training data. The ChEMBL database \cite{ChemblDatabase} does not explicitly include \emph{cis}/\emph{trans} comparable molecular configurations. In other words, if (Z)/(E) isomerization appears we can only find one of the two conformations in the database, typically the one with higher inhibition potential. Consequently, the model cannot learn to differentiate them since this distinction is not encoded in the dataset. As a result, the model provides \gls{ic50} predictions corresponding to the conformation it has implicitly learned, the more active configuration, which in our context is the \emph{cis} form.
+At this stage, it is important to note that the model is currently unable to distinguish between the active and inactive conformations of a molecule, i.e, between the \emph{cis} and \emph{trans} isomers. This limitation is not due to the model architecture or the way chemical descriptors are computed, but rather to a deficiency in the training data. The ChEMBL database \cite{ChemblDatabase} does not explicitly include \emph{cis}/\emph{trans} comparable molecular configurations. In other words, if cis/trans isomerization appears we can only find one of the two conformations in the database, typically the one with higher inhibition potential. Consequently, the model cannot learn to differentiate them since this distinction is not encoded in the dataset. As a result, the model provides \gls{ic50} predictions corresponding to the conformation it has implicitly learned, the more active configuration, which in our context is the \emph{cis} form.
 
 
 Nevertheless, our hypothesis is supported. In Figure~\ref{figureGraphicGbindingIC50}, we observe a clear correlation between the predicted \gls{ic50} values and the corresponding binding free energies ($\Delta G_{binding}$), consistent with our initial intuition that molecules with more negative free energy values tend to exhibit lower \gls{ic50} values, and are, therefore, more active inhibitors.
@@ -531,11 +533,11 @@ Yet this decryption process is computationally infeasible. The internal logic of
 
 One might consider a brute-force approach, varying one descriptor at a time while holding all others constant, and observing the effect on the predicted \gls{ic50}. However, this strategy quickly runs into chemical contradictions and incoherences. For example, altering the average bond length of a molecule could make it unrealistically large or physically unstable, resulting in a structure that is chemically invalid although this hypothetic molecule might perfectly fit in the \gls{cox2} binding site. Similarly, descriptors that are inherently discrete, such as the number of carbon atoms, could yield nonsensical results. A model might indicate that 25.5 carbon atoms yields optimal inhibition, which is clearly an unphysical outcome. In addition, arbitrarily generated sets of descriptor values may not correspond to any real molecule, making the predictions scientifically meaningless.
 
-It is important to emphasize these limitations do not undermine the value of \gls{ai} in computational chemistry. Rather, they highlight the boundaries of current methods and the importance of careful dataset design, descriptor selection, model interpretation and understanding the machine's workflow.
+It is important to emphasize that these limitations do not undermine the value of \gls{ai} in computational chemistry. Rather, they highlight the boundaries of current methods and the importance of careful dataset design, descriptor selection, model interpretation and understanding the machine's workflow.
 
 \subsection{Azophotoswitches Analysis}
 
-Following the prediction phase, molecular docking was performed on one of the most promising azophotoswitch candidates. Specifically, the molecule labeled \ref{figureCelecoxibTwoRings}.7 in Scheme(\ref{figureCelecoxibTwoRingsDoking}) was selected. This molecule exhibited a predicted $\Delta G_{binding}$ of $-10.6712$ kcal/mol and a \gls{ic50} prediction of 77 nM. An image of the final frame from the docking simulation is shown in Figure (\ref{figureDockingBestResult}).
+Following the prediction phase, molecular docking is performed on one of the most promising azophotoswitch candidates. Specifically, we select the molecule labeled as "\emph{\ref{figureCelecoxibTwoRings}.7}" in appendix \ref{appendixAzophotoshiches} \emph{Tables of azophotoswitches}, which is depicted in Scheme(\ref{figureCelecoxibTwoRingsDoking}). This molecule exhibited a predicted $\Delta G_{binding}$ of $-10.6712$ kcal/mol and a \gls{ic50} prediction of 77 nM. An image of the final frame from the docking simulation is shown in Figure (\ref{figureDockingBestResult}).
 
 \begin{figure}[H]
 \captionsetup{type=scheme}
@@ -556,7 +558,7 @@ Following the prediction phase, molecular docking was performed on one of the mo
 \end{figure}
 We observe the azophotoswitch in the \emph{cis} configuration happens to fit well within the \gls{cox2} binding cavity. Although the \emph{trans} isomer can, in theory, occupy the binding site,\footnote{With minor steric hindrances.} it is unlikely to access it in practice due to stereochemical constraints. Specifically, the extended structure of the \emph{trans} configuration results in steric clashes with the outer regions of \gls{cox2}, preventing entry into the binding pocket.
 
-It is also important to note the molecule, in both \emph{E}/\emph{Z} isomeric forms, could potentially interact with unintended proteins. Such off-target effects could lead to significant side effects if the compound is administered as a drug. Therefore, further investigation is needed to evaluate its selectivity and pharmacological safety.
+It is also important to note that the molecule, in both cis/trans isomeric forms, could potentially interact with unintended proteins. Such off-target effects could lead to significant side effects if the compound is administered as a drug. Therefore, further investigation is needed to evaluate its selectivity and pharmacological safety.
 
 \newpage
 \section{Conclusions}
@@ -573,15 +575,21 @@ Additionally, our results confirm the hypothesized correlation between predicted
 
 \newpage
 \section{Acknowledgements}
-I am grateful to Dr. Josep Maria Lluch, Dr. Miquel Moreno Ferrer and Dra. Àngels González Lafont for allowing me to be one of his pupils and for presenting this project. I am also deeply grateful to PhD Àlex Pérez Sánchez and PhD Pedro Martínez Zaragoza for sharing their ideas and fruitful conversations.
+I am grateful to Dr. Josep Maria Lluch, Dr. Miquel Moreno Ferrer and Dra. Àngels González Lafont for allowing me to be one of thei pupils and for presenting this project. I am also deeply grateful to PhD Àlex Pérez Sánchez and PhD Pedro Martínez Zaragoza for sharing their ideas and fruitful conversations.
 
 I would like to acknowledge my mother and sister for their unconditional support, and my father for the values he taught me. Additionally, I would like to thank my friends Francisco Montaño, David Muñoz and Manel Martin for listening to my monologues about my excitement for the \gls{cox2} and azophotoswitches.
 
-Molecular graphics and analyses performed with UCSF ChimeraX, developed by the Resource for Biocomputing, Visualization, and Informatics at the University of California, San Francisco, with support from National Institutes of Health R01-GM129325 and the Office of Cyber Infrastructure and Computational Biology, National Institute of Allergy and Infectious Diseases.
+Molecular graphics and analyses were performed with UCSF ChimeraX, developed by the Resource for Biocomputing, Visualization, and Informatics at the University of California, San Francisco, with support from National Institutes of Health R01-GM129325 and the Office of Cyber Infrastructure and Computational Biology, National Institute of Allergy and Infectious Diseases.
+
 
 \newpage
+\thispagestyle{empty}
+\mbox{} 
+\newpage
 \appendix
-\section{Rellevant definitions}
+\section*{\huge Appendices}
+\addcontentsline{toc}{section}{Appendices}
+\section{Rellevant definitions}\label{appendixRellevantDefinitions}
 \begin{definition}\label{definitionIC50}
 $IC_{50}$: Half maximal inhibitory concentration assigned to the drug concentration required for a $50\%$ inhibition a protein. Other quantities such as $IC_{90}$ or $IC_{99}$ are also commonly used. However, $IC_{90}$ is generally approximated as 10 times the $IC_{50}$ concentration in virtue of experimental observations\cite{BookIC50}. For this project, we aim to identify substances with the lowest possible $IC_{50}$, as our goal is to minimize the presence of foreign substances in the living organism.
 \end{definition}
@@ -632,7 +640,7 @@ Pearson correlation coefficient: Given set of pairs of data $\{(x_i,y_i)\}_{i=1}
 \begin{align}
 r_{xy}=\frac{\sum_{i=1}^n(x_i-\bar{x})(y_i-\bar{y})}{\sqrt{\sum_{i=1}^n(x_i-\bar{x})^2}\sqrt{\sum_{i=1}^n(y_i-\bar{y})^2}},
 \end{align}
-where $\bar{x}$ and $\bar{y}$ stand for the average value of ${x_i}_{i=1}^n$ and ${y_i}_{i=1}^n$ respectively. Note that $r_{xy}\in[-1,1]$. Therefore the sign of $r_{xy}$ is tightly related to the sign of alinear regression, more precisely if $x>0$, "$y$" generally\footnote{We would like to remark that the word "generally" stands for "the majority of the cases", since "generally" is commonly interpreted as a non-scientific/non-objective word} increases when "$x$" increases, as well as if $x<0$, "$y$" decreases when "$x$" increases.
+where $\bar{x}$ and $\bar{y}$ stand for the average value of ${x_i}_{i=1}^n$ and ${y_i}_{i=1}^n$ respectively. Note that $r_{xy}\in[-1,1]$. Therefore the sign of $r_{xy}$ is tightly related to the sign of a linear regression. More precisely if $x>0$, "$y$" generally\footnote{We would like to remark that the word "generally" stands for "the majority of the cases", since "generally" is commonly interpreted as a non-scientific/non-objective word} increases when "$x$" increases, as well as if $x<0$, "$y$" decreases when "$x$" increases.
 \end{definition}
 
 \begin{definition}\label{definitionMeanSquaredError}
@@ -640,13 +648,13 @@ Mean Squared Error: Given set of pairs of data $\{(x_i,y_i)\}_{i=1}^n$ the Mean 
 \begin{align}
 	MSE=\frac{1}{n}\sum_{i=1}^n(X_i-Y_i)^2
 \end{align}
-The name of this quantity is self-descriptive, since $X_i-Y_i$ is the error associated to the i-th prediction and the MSE is the mean of the squares of this erros.
+The name of this quantity is self-descriptive, since $X_i-Y_i$ is the error associated to the i-th prediction and the MSE is the mean of the squares of this error.
 \end{definition}
 
 \begin{definition}\label{definitionDecisionTree}
-A decision tree is a classification algorithm based on a series of ordered \emph{if} statements. The algorithm begins at the top of the tree, where a question is posed to the data. Depending on the answer, the data follows different branches, each corresponding to a subsequent question. This process is repeated at each node until the data reaches the bottom of the tree, where the path it has followed determines the classification of the given data.
+A decision tree is a classification algorithm based on a series of ordered "\texttt{if}" statements. The algorithm begins at the top of the tree, where a question is posed to the data. Depending on the answer, the data follows different branches, each corresponding to a subsequent question. This process is repeated at each node until the data reaches the bottom of the tree, where the path it has followed determines the classification of the given data.
 
-This kind of algorithm is vividly present in the chemical landscape, for instance in the spectroscopy realm the determination of a molecule's symmetry group is provided by a decision tree such as Figure (\ref{figExScpectroDecisionTree}).
+This kind of algorithm is vividly present in the chemical landscape, for instance in the spectroscopy realm the determination of a molecule's symmetry group is provided by a decision tree depicted in Figure (\ref{figExScpectroDecisionTree}).
 \begin{figure}[H]
 \centering
 \includegraphics[width = 0.5\textwidth]{GeneralSources/Point_group_determination_flowchart_v2.png}
@@ -655,6 +663,9 @@ This kind of algorithm is vividly present in the chemical landscape, for instanc
 \end{figure}
 \end{definition}
 
+\begin{definition}\label{definitionSMILES}
+Canonical Simplified Molecular Input Line Entry System (SMILES): A text-based notation that encodes a molecule’s structure as a linear string, containing all the essential information needed to reconstruct its 3D representation \cite{smiles}. SMILES files typically use the extensions \texttt{.smi} or \texttt{.smiles}.
+\end{definition}
 
 \begin{definition}\label{definitionTruePositiveRate}
 True Positive Rate: quantity related to a Machine Learning Model's sensitivity defined as:
@@ -727,22 +738,22 @@ Identifier & \ch{R_1} & \ch{R_2} & \ch{R_3} \\\hline\hline
 \ref{figureCelecoxibPyrazole}.16 & \ch{CH_3} & \ch{CH_3}  & \ch{F}
 \end{tabular}
 \end{table}
-\begin{figure}[H]
-\captionsetup{type=scheme}
-\centering
-\scalebox{0.8}{
-\chemname{\chemfig[angle increment=30]{
-H_2N-S(=[3]O)(=[9]O)-*6(-=-(-N*5(-N=(-CF_3)-(-[:45]N=[3]N-[:135]*6(-=-(--[3])=N-=))=-))=-=)
-}}{Pyridine derivative}}
-\par
-\vspace{0.5cm}
-\scalebox{0.8}{
-\chemname{\chemfig[angle increment=30]{
-H_3C-S(=[3]O)(=[9]O)-*6(-=-(-N*5(-N=(-CF_3)-(-[:45]N=[3]N-[:135]*6(-=-(-)=N-=))=-))=-=)
-}}{\ch{SO_2CH_3} group derivative}}
-\caption{Scheme for Celecoxib azo-derivatives based on pyridine and \ch{SO_2CH_3} groups.}
-\label{tableCelecoxibPyridine}
-\end{figure}
+%\begin{figure}[H]
+%\captionsetup{type=scheme}
+%\centering
+%\scalebox{0.8}{
+%\chemname{\chemfig[angle increment=30]{
+%H_2N-S(=[3]O)(=[9]O)-*6(-=-(-N*5(-N=(-CF_3)-(-[:45]N=[3]N-[:135]*6(-=-(--[3])=N-=))=-))=-=)
+%}}{Pyridine derivative}}
+%\par
+%\vspace{0.5cm}
+%\scalebox{0.8}{
+%\chemname{\chemfig[angle increment=30]{
+%H_3C-S(=[3]O)(=[9]O)-*6(-=-(-N*5(-N=(-CF_3)-(-[:45]N=[3]N-[:135]*6(-=-(-)=N-=))=-))=-=)
+%}}{\ch{SO_2CH_3} group derivative}}
+%\caption{Scheme for Celecoxib azo-derivatives based on pyridine and \ch{SO_2CH_3} groups.}
+%\label{tableCelecoxibPyridine}
+%\end{figure}
 
 \begin{figure}[H]
 \captionsetup{type=scheme}
@@ -878,6 +889,7 @@ Identifier & \ch{R_1}  \\\hline\hline
 H_2N-S(=[3]O)(=[9]O)-*6(-=-(-N=[-1.5]N-[-3]*5(=-\chembelow{N}{H}-*6(-=-(-)=(-*6(-=-(-)=-=))-=)--))=-=)
 }}
 \caption{Template for Celecoxib azo-derivatives with indole ring as a heterocycle.}
+\label{figureCelecoxibIndole2}
 \end{figure}
 
 \begin{figure}[H]
@@ -908,7 +920,10 @@ Identifier & \ch{R_1} & \ch{R_2} & \ch{R_3} \\\hline\hline
 \end{tabular}
 \end{table}
 
-\section{Table of results}\label{appendixTableOfResults}
+\section{Tables of results}\label{appendixTableOfResults}
+
+Notice some molecules data do not appear in Table \ref{TableMainResults1}. This is due to inconclusives results of the $\Delta G_{binding}$ conputations. 
+
 \begin{table}[H]
     \centering
 	\caption{Results for the $\Delta$G$_{binding}$ and \gls{ic50}. The conditions and estatistics under which this computations have been done are stored in Table (\ref{TableConditionsMainResults}).}
@@ -961,7 +976,7 @@ Identifier & \ch{R_1} & \ch{R_2} & \ch{R_3} \\\hline\hline
         Benzene & \ref{figureCelecoxibBenzene}.4 & \ch{CF_3} & \ch{OCH_3} &  & -3.4432 & 155\\ \hline
         Indole & \ref{figureCelecoxibIndole}.1 & \ch{H} &  &  & -9.7543 & 74\\ \hline
         Indole & \ref{figureCelecoxibIndole}.2 & \ch{F} &  &  & -6.3397 & 108\\ \hline
-        Indole & \ref{figureCelecoxibIndole}.3 &  &  &  & -5.532 & 111\\ \hline
+        Indole & \ref{figureCelecoxibIndole2} &  &  &  & -5.532 & 111\\ \hline
         TwoRings & \ref{figureCelecoxibTwoRings}.2 & \ch{NH} & O & \ch{H} & -2.2146 & 165\\ \hline
         TwoRings & \ref{figureCelecoxibTwoRings}.3 & O & \ch{NH} & \ch{H} & -0.7334 & 178\\ \hline
         TwoRings & \ref{figureCelecoxibTwoRings}.6 & \ch{NH} & O & \ch{CH_3} & 5.5592 & 235\\ \hline
@@ -972,7 +987,7 @@ Identifier & \ch{R_1} & \ch{R_2} & \ch{R_3} \\\hline\hline
 
 \begin{table}[H]
     \centering	
-	\caption{Conditions and statistics for the computation of the results from tables (\ref{TableMainResults1}) and (\ref{TableMainResults2}).}
+	\caption{Conditions and statistics for the machine's learning models for the computation of the \gls{ic50} from Tables (\ref{TableMainResults1}) and (\ref{TableMainResults2}).}
 	\label{TableConditionsMainResults}
 	\begin{tabular}{c|c}
 		NumberOfTrees            & 250\\\hline

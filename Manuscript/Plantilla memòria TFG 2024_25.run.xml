@@ -44,11 +44,11 @@
   <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>"Plantilla memòria TFG 2024_25".aux</file>
-      <file>Plantilla_memòria_TFG_2024_25-blx.bib</file>
+      <file>"Plantilla memòria TFG 2024_25".aux</file>
+      <file>Plantilla_memòria_TFG_2024_25-blx.bib</file>
     </provides>
     <requires type="dynamic">
-      <file>"Plantilla memòria TFG 2024_25".bbl</file>
+      <file>"Plantilla memòria TFG 2024_25".bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -70,20 +70,20 @@
     <cmdline>
       <binary>bibtex</binary>
       <option>-min-crossrefs 2</option>
-      <infile>"Plantilla memòria TFG 2024_25"</infile>
+      <infile>"Plantilla memòria TFG 2024_25"</infile>
     </cmdline>
     <input>
-      <file>"Plantilla memòria TFG 2024_25".aux</file>
+      <file>"Plantilla memòria TFG 2024_25".aux</file>
     </input>
     <output>
-      <file>"Plantilla memòria TFG 2024_25".bbl</file>
+      <file>"Plantilla memòria TFG 2024_25".bbl</file>
     </output>
     <provides type="dynamic">
-      <file>"Plantilla memòria TFG 2024_25".bbl</file>
+      <file>"Plantilla memòria TFG 2024_25".bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>"Plantilla memòria TFG 2024_25".aux</file>
-      <file>Plantilla_memòria_TFG_2024_25-blx.bib</file>
+      <file>"Plantilla memòria TFG 2024_25".aux</file>
+      <file>Plantilla_memòria_TFG_2024_25-blx.bib</file>
     </requires>
     <requires type="editable">
       <file>references.bib</file>
