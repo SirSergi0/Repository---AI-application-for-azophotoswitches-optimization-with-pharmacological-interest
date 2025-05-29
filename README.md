@@ -1,6 +1,9 @@
 # Repository: AI Application for Azophotoswitches Optimization with Pharmacological Interest
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.txt) [![Creator: MolBioMed](https://webs.uab.cat/molbiomed/wp-content/uploads/sites/355/2023/03/logo_psi_redim.png)](https://webs.uab.cat/molbiomed/en/) [10.5281/ZENODO.15546443](https://doi.org/10.5281/ZENODO.15546443)[0009-0007-7784-5537](https://orcid.org/0009-0007-7784-5537)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.txt) 
+[![DOI](https://zenodo.org/badge/744140153.svg)](https://doi.org/10.5281/ZENODO.15546443)
+[![ORCID](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0009-0007-7784-5537)
 
+[![Creator: MolBioMed](https://webs.uab.cat/molbiomed/wp-content/uploads/sites/355/2023/03/logo_psi_redim.png)](https://webs.uab.cat/molbiomed/en/) 
 
 In this work, we propose the development of specialized software in the field of artificial intelligence (AI), designed specifically for the discovery and optimization of azophotoswitches. Azophotoswitches are molecules that can undergo reversible changes in structure and function in response to light, making them valuable in applications ranging from molecular devices to advanced materials and medical therapies.
 
