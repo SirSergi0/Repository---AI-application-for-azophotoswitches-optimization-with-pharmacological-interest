@@ -1104,22 +1104,52 @@
     \field{year}{2003}
   \endentry
 
-  \entry{GitHub}{misc}{}
+  \entry{GitHub}{software}{}
     \name{author}{1}{}{%
-      {{hash=MSC}{%
-         family={Morales},
-         familyi={M\bibinitperiod},
-         given={Sergio\bibnamedelima Castaneiras},
-         giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+      {{hash=CMS}{%
+         family={Castaneiras\bibnamedelima Morales},
+         familyi={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+         given={Sergio},
+         giveni={S\bibinitperiod},
       }}%
     }
-    \strng{namehash}{MSC1}
-    \strng{fullhash}{MSC1}
+    \list{publisher}{1}{%
+      {GitHub}%
+    }
+    \strng{namehash}{CMS1}
+    \strng{fullhash}{CMS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
   \field{howpublished}{\url{https://github.com/SirSergi0/Repository---AI-application-for-azophotoswitches-optimization-with-pharmacological-interest}}
     \field{title}{AI Application for Azophotoswitches Optimization with
   Pharmacological Interest}
+    \field{year}{2025}
+  \endentry
+
+  \entry{azophotoswitches2025}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CMS}{%
+         family={Castañeiras\bibnamedelima Morales},
+         familyi={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+         given={Sergio},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Zenodo}%
+    }
+    \strng{namehash}{CMS2}
+    \strng{fullhash}{CMS2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.5281/zenodo.15546442
+    \endverb
+    \field{title}{AI Application for Azophotoswitches Optimization with
+  Pharmacological Interest}
+    \verb{url}
+    \verb https://doi.org/10.5281/zenodo.15546442
+    \endverb
     \field{year}{2025}
   \endentry
 

@@ -17,7 +17,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: Plantilla_memòria_TFG_2024_25-blx.bib
+Database file #1: Plantilla_memòria_TFG_2024_25-blx.bib
 Database file #2: references.bib
 Biblatex version: 3.19
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
@@ -42,45 +42,45 @@ Too many commas in name 1 of "Department of Pharmacology, All India Institute of
 while executing---line 2815 of file biblatex.bst
 Too many commas in name 1 of "Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND.; Department of Pharmacology, All India Institute of Medical Sciences, Patna, IND." for entry NationalLibraryOfMedicineGeneralArticle
 while executing---line 2815 of file biblatex.bst
-You've used 25 entries,
+You've used 26 entries,
             6399 wiz_defined-function locations,
-            1421 strings with 23442 characters,
-and the built_in function-call counts, 340187 in all, are:
-= -- 30914
-> -- 4048
-< -- 917
-+ -- 11809
-- -- 1883
-* -- 23736
-:= -- 42827
+            1426 strings with 23558 characters,
+and the built_in function-call counts, 346199 in all, are:
+= -- 31377
+> -- 4144
+< -- 945
++ -- 11917
+- -- 1910
+* -- 24145
+:= -- 43399
 add.period$ -- 0
-call.type$ -- 25
-change.case$ -- 581
+call.type$ -- 26
+change.case$ -- 602
 chr.to.int$ -- 80
-cite$ -- 48
-duplicate$ -- 35019
-empty$ -- 27544
-format.name$ -- 2622
-if$ -- 65906
+cite$ -- 50
+duplicate$ -- 35562
+empty$ -- 28142
+format.name$ -- 2678
+if$ -- 67204
 int.to.chr$ -- 0
-int.to.str$ -- 60
+int.to.str$ -- 66
 missing$ -- 0
-newline$ -- 1268
-num.names$ -- 1341
-pop$ -- 10238
+newline$ -- 1297
+num.names$ -- 1403
+pop$ -- 10573
 preamble$ -- 1
-purify$ -- 879
+purify$ -- 903
 quote$ -- 0
-skip$ -- 5606
+skip$ -- 5801
 stack$ -- 0
-substring$ -- 60099
-swap$ -- 4860
-text.length$ -- 664
+substring$ -- 60980
+swap$ -- 4983
+text.length$ -- 681
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 838
+type$ -- 872
 warning$ -- 0
-while$ -- 5129
+while$ -- 5185
 width$ -- 0
-write$ -- 1244
+write$ -- 1272
 (There were 10 error messages)

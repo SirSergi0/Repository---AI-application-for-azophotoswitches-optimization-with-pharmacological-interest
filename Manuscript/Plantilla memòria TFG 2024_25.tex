@@ -1,7 +1,7 @@
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 %----------FONT AND GEOMETRY DEFINITION----------%
-\usepackage[a4paper, hmargin=3.0cm, vmargin=3.0cm]{geometry}
+\usepackage[a4paper, top=3.0cm, bottom=3.0cm, left = 3.0cm, right = 3.0cm]{geometry}
 \voffset = -0.75cm
 \usepackage{arev}
 \usepackage{helvet}
@@ -11,6 +11,7 @@
 %---------SPACING----------%
 \usepackage{setspace}
 \setstretch{1.5}
+\usepackage[table]{xcolor}
 
 \usepackage[english]{babel}
 
@@ -347,7 +348,7 @@ All in all, this project demonstrates the application of \gls{ai} in drug design
 \newpage
 \section{Objectives}
 
-This project aims to develop a fully functional software tool capable of accurately predicting a molecule’s inhibition potential (\gls{ic50}), leveraging existing data from the ChEMBL database \cite{ChemblDatabase}. The software is thoroughly documented and available in the GitHub repository: \href{https://github.com/SirSergi0/Repository—AI-application-for-azophotoswitches-optimization-with-pharmacological-interest}{\emph{AI Application for Azophotoswitches Optimization with Pharmacological Interest}} \cite{GitHub}.
+This project aims to develop a fully functional software tool capable of accurately predicting a molecule’s inhibition potential (\gls{ic50}), leveraging existing data from the ChEMBL database \cite{ChemblDatabase}. The software is thoroughly documented and available in the GitHub repository: \href{https://github.com/SirSergi0/Repository—AI-application-for-azophotoswitches-optimization-with-pharmacological-interest}{\emph{AI Application for Azophotoswitches Optimization with Pharmacological Interest}} \cite{GitHub}\cite{azophotoswitches2025}.
 
 The project specifically focuses on the \gls{cox2} protein. Thanks to the availability of a large \gls{ic50} dataset for this target, the model’s predictive reliability can be effectively validated. The prediction process is powered by an \gls{ai} tool designed to deliver high-quality results, taking into account relevant molecular descriptors. The software also serves to cross-check computational results previously obtained by the Physical Chemistry Unit of the UAB \cite{UAB_ComputationalChemistry}. The application centers on azophotoswitches, molecules of particular pharmacological interest as discussed in Section \ref{sectionIntroduction}. Additionally, a molecular docking study is performed on one of the most promising azophotoswitch candidates.
 
@@ -355,7 +356,7 @@ In conclusion, this study seeks to bridge the gap between Artificial Intelligenc
 
 \newpage
 \section{Methodology}\label{sectionMethodology}
-The source code is entirely stored in the \href{https://github.com/SirSergi0/Repository---AI-application-for-azophotoswitches-optimization-with-pharmacological-interest}{\emph{AI application for azophotoswitches optimization with pharmacological interest} GitHub repository}\cite{GitHub} and it has been entirely written by Sergio Castañeiras Morales for this project. The consultace of this repository is highly recommended in order to comprehended the insights and the workflow of the project. By the time this project is presented, it remains as an open-source repository of the MolBioMed research group \cite{molbiomed}.
+The source code is entirely stored in the \href{https://github.com/SirSergi0/Repository---AI-application-for-azophotoswitches-optimization-with-pharmacological-interest}{\emph{AI application for azophotoswitches optimization with pharmacological interest} GitHub repository}\cite{GitHub} and it has been entirely written by Sergio Castañeiras Morales for this project\cite{azophotoswitches2025}. The consultace of this repository is highly recommended in order to comprehended the insights and the workflow of the project. By the time this project is presented, it remains as an open-source repository of the MolBioMed research group \cite{molbiomed}.
 
 The target protein's ID is set at \emph{CHEMBL230} corresponding to the COX-2 ID in the ChEMBL database\cite{ChemblDatabase}. Utilising \emph{requests} python package\cite{PythonPackageRequests} a query URL is sent asking for all molecules with a know $IC_{50}$ value (Definition \ref{definitionIC50}) with a limit of 1000 entries per request. The process is iterated until all data is extracted leading a total of 7979 molecules. Hence the datasheet is processed in pandas dataframes\cite{PythonPackagePandas} and encrypted into binary feather files to optimise reading-writting speed. By removing entries with the same canonical \gls{smiles} (Definition \ref{definitionSMILES})  a total of 5112 molecules remain. Among this entries well known drugs such as Celecoxib (Definition \ref{definitionCelecoxib}), Rofecoxib (Definition \ref{definitionRofecoxib}) or even Ibuprofen can be found. However the $IC_{50}$ molecules range is comprehended from $10^{-3}$ to $10^{8}$ nM, a counterproductive range for the AI training procedure. Since we are interested in testing azophotoswitches with presumably low \gls{ic50}, training \gls{ml} models with data of the order of $10^{8}$ or $10^{3}$ nM can be counterproductive since the model might misinterpret the data.\footnote{Typically the range of the azophotoswitches \gls{ic50} is arround the Celecoxib's \gls{ic50}, i.e. arround $120$ nM}. Consecutivelly, a hard-coded range is filtered discarding all molecules outside the given range, for the most part of the analysis this range is set at $[0,300]$ nM \footnote{this $IC_{50}$ working range is the standard in this kind of studies \cite{MachineLearningPaper5Lipoxygenase}.} which reduces the dataset to 1438 entries, i.e. molecules.
 
@@ -505,23 +506,49 @@ Figure \ref{figureGraphicGbindingIC50} shows the predicted \gls{ic50} values of 
 
 Furthermore, the performance metrics of the \gls{rf} model for this predictions are summarized in Table (\ref{TableStatisitcsMainResults}) that yield the results of Tables (\ref{TableMainResults1}) and (\ref{TableMainResults2}) from the appendix (\ref{appendixTableOfResults}) \emph{Tables of results}. All key statistical indicators exceed the 0.90 threshold. Notably, the model achieves a \emph{True Negative Rate} of 0.99 (Definition (\ref{definitionTrueNegativeRate})), indicating that it correctly identifies non-active inhibitors 99\% of the time. The \emph{Classification Accuracy} (Definition (\ref{definitionClassificationAccuracy})) and \emph{Matthews Correlation Coefficient} both approach 1, reinforcing the reliability of this particular \gls{rf} model in distinguishing between active and inactive azophotoswitches.
 
+%\begin{table}[H]
+%    \centering	
+%	\caption{Conditions and statistics for the machine's learning models in the computation of the \gls{ic50} from Tables (\ref{TableMainResults1}) and (\ref{TableMainResults2}).}
+%	\label{TableStatisitcsMainResults}
+%	\begin{tabular}{c|c}
+%		Mean Squared Error       & 1202.70\\\hline
+%		$r^2$ 	                 & 0.90\\\hline
+%		True Positive            & 994\\\hline
+%		False Positive           & 8\\\hline
+%		True Negative            & 1015\\\hline
+%		False Negative           & 101\\\hline
+%		True Positive Rate       & 0.90\\\hline
+%		True Negative Rate       & 0.99\\\hline
+%		ClassificationAcuracy    & 0.95\\\hline
+%		MatthewsCorrelationFactor& 0.90
+%    \end{tabular}
+%\end{table}
+
 \begin{table}[H]
-    \centering	
-	\caption{Conditions and statistics for the machine's learning models in the computation of the \gls{ic50} from Tables (\ref{TableMainResults1}) and (\ref{TableMainResults2}).}
-	\label{TableStatisitcsMainResults}
-	\begin{tabular}{c|c}
-		Mean Squared Error       & 1202.70\\\hline
-		$r^2$ 	                 & 0.90\\\hline
-		True Positive            & 994\\\hline
-		False Positive           & 8\\\hline
-		True Negative            & 1015\\\hline
-		False Negative           & 101\\\hline
-		True Positive Rate       & 0.90\\\hline
-		True Negative Rate       & 0.99\\\hline
-		ClassificationAcuracy    & 0.95\\\hline
-		MatthewsCorrelationFactor& 0.90
+    \centering
+    \caption{Conditions and statistics for the machine's learning models in the computation of the \gls{ic50} from Tables~\ref{TableMainResults1} and~\ref{TableMainResults2}.}
+    \label{TableStatisitcsMainResults}
+    \setlength{\tabcolsep}{12pt}
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{|>{\columncolor{gray!20}}c||c|}
+        \hline
+        \rowcolor{gray!20}
+        \textbf{Metric} & \textbf{Value} \\
+        \hline\hline
+        Mean Squared Error        & 1202.70 \\
+        $r^2$                     & 0.90 \\
+        True Positive             & 994 \\
+        False Positive            & 8 \\
+        True Negative             & 1015 \\
+        False Negative            & 101 \\
+        True Positive Rate        & 0.90 \\
+        True Negative Rate        & 0.99 \\
+        Classification Accuracy   & 0.95 \\
+        Matthews Correlation Coefficient & 0.90 \\
+        \hline
     \end{tabular}
 \end{table}
+
 At this stage, it is important to note that the model is currently unable to distinguish between the active and inactive conformations of a molecule, i.e, between the \emph{cis} and \emph{trans} isomers. This limitation is not due to the model architecture or the way chemical descriptors are computed, but rather to a deficiency in the training data. The ChEMBL database \cite{ChemblDatabase} does not explicitly include \emph{cis}/\emph{trans} comparable molecular configurations. In other words, if cis/trans isomerization appears we can only find one of the two conformations in the database, typically the one with higher inhibition potential. Consequently, the model cannot learn to differentiate them since this distinction is not encoded in the dataset. As a result, the model provides \gls{ic50} predictions corresponding to the conformation it has implicitly learned, the more active configuration, which in our context is the \emph{cis} form.
 
 
@@ -718,7 +745,9 @@ H_2N-S(=[3]O)(=[9]O)-*6(-=-(-N*5(-N=(-R_1)-(-[:45]N=[3]N-[:135]*6(-=-(-R_2)=(-R_
 \centering
 \caption{Table of potential photoswitches derivated from Celecoxib's azo-derivates with pyrazole as heterocycle}
 \label{tableCelecoxibPyrazole}
-\begin{tabular}{c||c|c|c}
+\begin{tabular}{|>{\columncolor{gray!20}}c||c|c|c|}
+        \hline
+        \rowcolor{gray!20}
 Identifier & \ch{R_1} & \ch{R_2} & \ch{R_3} \\\hline\hline
 \ref{figureCelecoxibPyrazole}.1 & \ch{CF_3} & \ch{CH_2CH_3}  & \ch{H}\\\hline
 \ref{figureCelecoxibPyrazole}.2 & \ch{CF_3} & \ch{CH_2CH_3}  & \ch{F}\\\hline
@@ -735,7 +764,7 @@ Identifier & \ch{R_1} & \ch{R_2} & \ch{R_3} \\\hline\hline
 \ref{figureCelecoxibPyrazole}.13 & \ch{F} & \ch{CH_3}  & \ch{F}\\\hline
 \ref{figureCelecoxibPyrazole}.14 & \ch{Cl} & \ch{CH_3}  & \ch{F}\\\hline
 \ref{figureCelecoxibPyrazole}.15 & \ch{Br} & \ch{CH_3}  & \ch{F}\\\hline
-\ref{figureCelecoxibPyrazole}.16 & \ch{CH_3} & \ch{CH_3}  & \ch{F}
+\ref{figureCelecoxibPyrazole}.16 & \ch{CH_3} & \ch{CH_3}  & \ch{F}\\\hline
 \end{tabular}
 \end{table}
 %\begin{figure}[H]
@@ -770,7 +799,9 @@ H_2N-S(=[3]O)(=[9]O)-*6(-=-(-*5(-O-(-R_1)=(-[:45]N=[3]N-[:135]*6(-=-(-R_2)=(-)-=
 \centering
 \caption{Table of potential photoswitches derivated from Celecoxib's azo-derivates with furan as heterocycle.}
 \label{tableCelecoxibFuran}
-\begin{tabular}{c||c|c}
+\begin{tabular}{|>{\columncolor{gray!20}}c||c|c|}
+\hline
+\rowcolor{gray!20}
 Identifier & \ch{R_1} & \ch{R_2} \\\hline\hline
 \ref{figureCelecoxibFuran}.1 & \ch{CF_3} & \ch{H} \\\hline
 \ref{figureCelecoxibFuran}.2 & \ch{H} & \ch{H} \\\hline
@@ -783,7 +814,7 @@ Identifier & \ch{R_1} & \ch{R_2} \\\hline\hline
 \ref{figureCelecoxibFuran}.9 & \ch{F} & \ch{F} \\\hline
 \ref{figureCelecoxibFuran}.10 & \ch{Cl} & \ch{F} \\\hline
 \ref{figureCelecoxibFuran}.11 & \ch{Br} & \ch{F} \\\hline
-\ref{figureCelecoxibFuran}.12 & \ch{CH_3} & \ch{F}
+\ref{figureCelecoxibFuran}.12 & \ch{CH_3} & \ch{F}\\\hline
 \end{tabular}
 \end{table}
 
@@ -802,11 +833,13 @@ H_2N-S(=[3]O)(=[9]O)-*6(-=-(-*5(-S-(-R_1)=(-[:45]N=[3]N-[:135]*6(-=-(-R_2)=(-)-=
 \centering
 \caption{Table of potential photoswitches derivated from Celecoxib's azo-derivates with thiophene as heterocycle.}
 \label{tableCelecoxibThiophene}
-\begin{tabular}{c||c|c}
+\begin{tabular}{|>{\columncolor{gray!20}}c||c|c|}
+\hline
+\rowcolor{gray!20}
 Identifier & \ch{R_1} & \ch{R_2} \\\hline\hline
 \ref{figureCelecoxibThiophene}.1 & \ch{F} & \ch{H} \\\hline
 \ref{figureCelecoxibThiophene}.2 & \ch{H} & \ch{F} \\\hline
-\ref{figureCelecoxibThiophene}.3 & \ch{Cl} & \ch{F} 
+\ref{figureCelecoxibThiophene}.3 & \ch{Cl} & \ch{F} \\\hline
 \end{tabular}
 \end{table}
 
@@ -826,10 +859,12 @@ H_2N-S(=[3]O)(=[9]O)-*6(-=-(-*5(-\chembelow{N}{H}-(-R_1)=(-[:45]N=[3]N-[:135]*6(
 \centering
 \caption{Table of potential photoswitches derivated from Celecoxib's azo-derivates with pyrrole as heterocycle.}
 \label{tableCelecoxibPyrrole}
-\begin{tabular}{c||c|c|c}
+\begin{tabular}{|>{\columncolor{gray!20}}c||c|c|c|}
+\hline
+\rowcolor{gray!20}
 Identifier & \ch{R_1} & \ch{R_2} & \ch{R_3} \\\hline\hline
 \ref{figureCelecoxibPyrrole}.1 & \ch{CF_3} & \ch{CH_3} & \ch{H} \\\hline
-\ref{figureCelecoxibPyrrole}.2 & \ch{Cl} & \ch{CH_3} & \ch{F} 
+\ref{figureCelecoxibPyrrole}.2 & \ch{Cl} & \ch{CH_3} & \ch{F} \\\hline
 \end{tabular}
 \end{table}
 
@@ -848,13 +883,15 @@ H_2N-S(=[3]O)(=[9]O)-*6(-=-(-*6(-=(-R_1)-(-N=[2]N-[4]*6(-=-(-R_2)=-=))=-=))=-=)
 \centering
 \caption{Table of potential photoswitches derivated from Celecoxib azo-derivatives with benzene in place of the original heterocycle.}
 \label{tableCelecoxibBenzene}
-\begin{tabular}{c||c|c}
+\begin{tabular}{|>{\columncolor{gray!20}}c||c|c|}
+\hline
+\rowcolor{gray!20}
 Identifier & \ch{R_1} & \ch{R_2} \\\hline\hline
 \ref{figureCelecoxibBenzene}.1 & \ch{CF_3} & \ch{CH_2CH_3} \\\hline
 \ref{figureCelecoxibBenzene}.2 & \ch{CF_3} & \ch{NCH_3COCH_3} \\\hline
 \ref{figureCelecoxibBenzene}.3 & \ch{CF_3} & \ch{NHCH_3} \\\hline
 \ref{figureCelecoxibBenzene}.4 & \ch{CF_3} & \ch{OCH_3} \\\hline
-\ref{figureCelecoxibBenzene}.5 & \ch{Cl} & \ch{CH_3} 
+\ref{figureCelecoxibBenzene}.5 & \ch{Cl} & \ch{CH_3} \\\hline
 \end{tabular}
 \end{table}
 
@@ -874,10 +911,12 @@ H_2N-S(=[3]O)(=[9]O)-*6(-=-(-*5(-\chembelow{N}{H}-*6(-=-(-)=(-[3]N=[4.5]N-[6]*6(
 \centering
 \caption{Table of potential photoswitches derivated from Celecoxib azo-derivatives with indole ring as a heterocycle.}
 \label{tableCelecoxibIndole}
-\begin{tabular}{c||c}
+\begin{tabular}{|>{\columncolor{gray!20}}c||c|}
+\hline
+\rowcolor{gray!20}
 Identifier & \ch{R_1}  \\\hline\hline
 \ref{figureCelecoxibIndole}.1 & \ch{H} \\\hline
-\ref{figureCelecoxibIndole}.2 & \ch{F} 
+\ref{figureCelecoxibIndole}.2 & \ch{F} \\\hline
 \end{tabular}
 \end{table}
 
@@ -907,7 +946,9 @@ H_2N-S(=[3]O)(=[9]O)-*6(-=-(-N=[-1.5]N-[-3]*5(=-R_1-*5(-R_2-(-)=(-*6(-=-(-R_3)=-
 \centering
 \caption{Table of potential photoswitches derivated from Celecoxib azo-derivatives with two rings of five members joint as a heterocycle.}
 \label{tableCelecoxibTwoRings}
-\begin{tabular}{c||c|c|c}
+\begin{tabular}{|>{\columncolor{gray!20}}c||c|c|c|}
+\hline
+\rowcolor{gray!20}
 Identifier & \ch{R_1} & \ch{R_2} & \ch{R_3} \\\hline\hline
 \ref{figureCelecoxibTwoRings}.1 & \ch{NH} & \ch{NH} & \ch{H} \\\hline
 \ref{figureCelecoxibTwoRings}.2 & \ch{NH} & \ch{O} & \ch{H} \\\hline
@@ -916,10 +957,11 @@ Identifier & \ch{R_1} & \ch{R_2} & \ch{R_3} \\\hline\hline
 \ref{figureCelecoxibTwoRings}.5 & \ch{NH} & \ch{NH} & \ch{CH_3} \\\hline
 \ref{figureCelecoxibTwoRings}.6 & \ch{NH} & \ch{O} & \ch{CH_3} \\\hline
 \ref{figureCelecoxibTwoRings}.7 & \ch{O} & \ch{NH} & \ch{CH_3} \\\hline
-\ref{figureCelecoxibTwoRings}.8 & \ch{O} & \ch{O} & \ch{CH_3}
+\ref{figureCelecoxibTwoRings}.8 & \ch{O} & \ch{O} & \ch{CH_3}\\\hline
 \end{tabular}
 \end{table}
 
+\newpage
 \section{Tables of results}\label{appendixTableOfResults}
 
 Notice some molecules data do not appear in Table \ref{TableMainResults1}. This is due to inconclusives results of the $\Delta G_{binding}$ conputations. 
@@ -928,7 +970,9 @@ Notice some molecules data do not appear in Table \ref{TableMainResults1}. This 
     \centering
 	\caption{Results for the $\Delta$G$_{binding}$ and \gls{ic50}. The conditions and estatistics under which this computations have been done are stored in Table (\ref{TableConditionsMainResults}).}
 	\label{TableMainResults1}
-	\begin{tabular}{c|c|c|c|c|c|c}
+	\begin{tabular}{|>{\columncolor{gray!20}}c|c|c|c|c|c|c|}
+	\hline
+\rowcolor{gray!20}
 		Type & Identifier & $R_1$ & $R_2$ & $R_3$ & $\Delta$ G$_{binding}$ (Kcal/mol) & Predicted \gls{ic50} (nM) \\ \hline\hline
 		Pyrazole & \ref{figureCelecoxibPyrazole}.1 & \ch{CF_3} & \ch{CH_2CH_3}& \ch{H} & -4.3505 & 145 \\ \hline
         Pyrazole & \ref{figureCelecoxibPyrazole}.2 & \ch{CF_3} & \ch{CH_2CH_3}& \ch{F} & -3.619 & 160 \\ \hline
@@ -955,7 +999,7 @@ Notice some molecules data do not appear in Table \ref{TableMainResults1}. This 
         Furan & \ref{figureCelecoxibFuran}.8 & \ch{H} & \ch{F} &  & -6.55 & 122 \\ \hline
         Furan & \ref{figureCelecoxibFuran}.9 & \ch{F} & F &  & -0.1311 & 189\\ \hline
         Furan & \ref{figureCelecoxibFuran}.10 & \ch{Cl} & \ch{F} &  & -5.8185 & 127\\ \hline
-        Furan & \ref{figureCelecoxibFuran}.11 & \ch{Br} & \ch{F} &  & 6.1474 & 241
+        Furan & \ref{figureCelecoxibFuran}.11 & \ch{Br} & \ch{F} &  & 6.1474 & 241\\ \hline
             \end{tabular}
 \end{table}
 
@@ -963,8 +1007,10 @@ Notice some molecules data do not appear in Table \ref{TableMainResults1}. This 
     \centering	
 	\caption{Results for the $\Delta$G$_{binding}$ and \gls{ic50}. The conditions and estatistics under which this computations have been done are stored in Table (\ref{TableConditionsMainResults}).}
 	\label{TableMainResults2}
-	\begin{tabular}{c|c|c|c|c|c|c}
-		Type & Identifier & $R_1$ & $R_2$ & $R_3$ & $\Delta$ G$_{binding}$ (Kcal/mol) & Predicted \gls{ic50} (nM) \\ \hline\hline
+	\begin{tabular}{|>{\columncolor{gray!20}}c|c|c|c|c|c|c|}
+	\hline
+\rowcolor{gray!20}		
+Type & Identifier & $R_1$ & $R_2$ & $R_3$ & $\Delta$ G$_{binding}$ (Kcal/mol) & Predicted \gls{ic50} (nM) \\ \hline\hline
         Thiophene & \ref{figureCelecoxibThiophene}.1 & \ch{F} & \ch{H} &  & 1.2724 & 192\\ \hline
         Thiophene & \ref{figureCelecoxibThiophene}.2 & \ch{H} & \ch{F} &  & -2.7842 & 152\\ \hline
         Thiophene & \ref{figureCelecoxibThiophene}.3 & \ch{Cl} & \ch{F} &  & -5.7964 & 120\\ \hline
@@ -981,7 +1027,7 @@ Notice some molecules data do not appear in Table \ref{TableMainResults1}. This 
         TwoRings & \ref{figureCelecoxibTwoRings}.3 & O & \ch{NH} & \ch{H} & -0.7334 & 178\\ \hline
         TwoRings & \ref{figureCelecoxibTwoRings}.6 & \ch{NH} & O & \ch{CH_3} & 5.5592 & 235\\ \hline
         TwoRings & \ref{figureCelecoxibTwoRings}.7 & O & \ch{NH} & \ch{CH_3} & -10.6712 & 77\\ \hline
-        TwoRings & \ref{figureCelecoxibTwoRings}.8 & O & O & \ch{CH_3} & -3.5413 & 142
+        TwoRings & \ref{figureCelecoxibTwoRings}.8 & O & O & \ch{CH_3} & -3.5413 & 142 \\\hline
     \end{tabular}
 \end{table}
 
@@ -989,7 +1035,10 @@ Notice some molecules data do not appear in Table \ref{TableMainResults1}. This 
     \centering	
 	\caption{Conditions and statistics for the machine's learning models for the computation of the \gls{ic50} from Tables (\ref{TableMainResults1}) and (\ref{TableMainResults2}).}
 	\label{TableConditionsMainResults}
-	\begin{tabular}{c|c}
+	\begin{tabular}{|>{\columncolor{gray!20}}c|c|}
+	\hline
+\rowcolor{gray!20}
+		\textbf{Metric}			& \textbf{Value} \\\hline\hline
 		NumberOfTrees            & 250\\\hline
 		Erased Percentatge       & 0.0\%\\\hline
 		Splitting proportion     & 10.0\% for testing \\\hline
@@ -1004,7 +1053,7 @@ Notice some molecules data do not appear in Table \ref{TableMainResults1}. This 
 		True Positive Rate       & 0.90\\\hline
 		True Negative Rate       & 0.99\\\hline
 		ClassificationAcuracy    & 0.95\\\hline
-		MatthewsCorrelationFactor& 0.90
+		MatthewsCorrelationFactor& 0.90\\\hline
     \end{tabular}
 \end{table}
 
