@@ -382,24 +382,23 @@
     \field{year}{2001}
   \endentry
 
-  \entry{UAB_ComputationalChemistry}{misc}{}
+  \entry{molbiomed}{misc}{}
     \name{author}{1}{}{%
-      {{hash=C}{%
-         family={{Computational Chemistry Department}},
-         familyi={C\bibinitperiod},
+      {{hash=GMR}{%
+         family={Group},
+         familyi={G\bibinitperiod},
+         given={MolBioMed\bibnamedelima Research},
+         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
       }}%
     }
-    \strng{namehash}{C1}
-    \strng{fullhash}{C1}
+    \strng{namehash}{GMR1}
+    \strng{fullhash}{GMR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{howpublished}{Website of the Computational Chemistry Department,
-  UAB}
-    \field{title}{Computational Chemistry Department, Universitat Autònoma de
-  Barcelona}
-    \verb{url}
-    \verb https://www.uab.cat/
-    \endverb
+    \field{howpublished}{\url{https://webs.uab.cat/molbiomed/en/}}
+    \field{note}{Accessed: 2025-05-28}
+    \field{title}{MolBioMed | Molecular Biomedicine – Computational Modelling
+  for Inflammation Research}
     \field{year}{2025}
   \endentry
 
@@ -1150,26 +1149,6 @@
     \verb{url}
     \verb https://doi.org/10.5281/zenodo.15546442
     \endverb
-    \field{year}{2025}
-  \endentry
-
-  \entry{molbiomed}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=GMR}{%
-         family={Group},
-         familyi={G\bibinitperiod},
-         given={MolBioMed\bibnamedelima Research},
-         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{GMR1}
-    \strng{fullhash}{GMR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{howpublished}{\url{https://webs.uab.cat/molbiomed/en/}}
-    \field{note}{Accessed: 2025-05-28}
-    \field{title}{MolBioMed | Molecular Biomedicine – Computational Modelling
-  for Inflammation Research}
     \field{year}{2025}
   \endentry
 

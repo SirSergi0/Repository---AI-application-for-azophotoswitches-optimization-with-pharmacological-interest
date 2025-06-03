@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  2 JUN 2025 15:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.17)  3 JUN 2025 16:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1401,7 +1401,7 @@ Package caption Info: Standard document class detected.
 Package caption Info: hyperref package is loaded.
 )
 Package caption Info: Option `declare type' requires the `newfloat' package on 
-input line 36.
+input line 37.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/newfloat/newfloat.sty
 Package: newfloat 2023/10/01 v1.2 Defining new floating environments (AR)
@@ -1416,10 +1416,10 @@ Package newfloat Info: \Hy@org@chapter = macro:[#1]#2->\NR@gettitle {#1}\NR@cha
 pter [{#1}]{#2}.
 Package newfloat Info: \algocf@original@chapter = undefined.
 )
-Package newfloat Info: New float `scheme' with options `' on input line 36.
+Package newfloat Info: New float `scheme' with options `' on input line 37.
 \c@scheme=\count392
 \newfloat@ftype=\count393
-Package newfloat Info: float type `scheme'=8 on input line 36.
+Package newfloat Info: float type `scheme'=8 on input line 37.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
@@ -1940,12 +1940,12 @@ Package csquotes Info: ... configuration file loaded successfully.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 ))
-Package hyperref Info: Option `colorlinks' set `false' on input line 120.
-Package hyperref Info: Option `breaklinks' set `true' on input line 120.
+Package hyperref Info: Option `colorlinks' set `false' on input line 121.
+Package hyperref Info: Option `breaklinks' set `true' on input line 121.
 
 
 Package hyperref Warning: Unexpected value for option `hidelinks'
-(hyperref)                is ignored on input line 120.
+(hyperref)                is ignored on input line 121.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 Package: glossaries 2023/09/29 v4.53 (NLCT)
@@ -2126,39 +2126,39 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
 LaTeX Font Info:    Trying to load font information for T1+phv on input line 15
-2.
+3.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 (./Plantilla memòria TFG 2024_25.aux)
 \openout1 = `"Plantilla memòria TFG 2024_25.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 152.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 153.
 LaTeX Font Info:    Trying to load font information for MDA+cmr on input line 1
-52.
+53.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/mathdesign/mdacmr.fd
 File: mdacmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2222,8 +2222,8 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 152.
-Package hyperref Info: Link coloring OFF on input line 152.
+or `english'. on input line 153.
+Package hyperref Info: Link coloring OFF on input line 153.
  (./Plantilla memòria TFG 2024_25.out)
 (./Plantilla memòria TFG 2024_25.out)
 \@outlinefile=\write6
@@ -2234,7 +2234,7 @@ Package hyperref Info: Link coloring OFF on input line 152.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 152.
+ on input line 153.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
@@ -2277,8 +2277,8 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 152.
-Package biblatex Info: Reference segment=0 on input line 152.
+Package biblatex Info: Reference section=0 on input line 153.
+Package biblatex Info: Reference segment=0 on input line 153.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -2314,79 +2314,79 @@ Package biblatex Info: Reference segment=0 on input line 152.
 <GeneralSources/Logo_uab.pdf, id=75, 707.37277pt x 265.74281pt>
 File: GeneralSources/Logo_uab.pdf Graphic file (type pdf)
 <use GeneralSources/Logo_uab.pdf>
-Package pdftex.def Info: GeneralSources/Logo_uab.pdf  used on input line 161.
+Package pdftex.def Info: GeneralSources/Logo_uab.pdf  used on input line 162.
 (pdftex.def)             Requested size: 173.56198pt x 65.20284pt.
 LaTeX Font Info:    Trying to load font information for OT1+zavm on input line 
-169.
+170.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/arev/ot1zavm.fd
 File: ot1zavm.fd 2006/05/30 Fontinst v1.929 font definitions for OT1/zavm.
 )
 LaTeX Font Info:    Trying to load font information for OML+zavm on input line 
-169.
+170.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/arev/omlzavm.fd
 File: omlzavm.fd 2006/05/30 Fontinst v1.929 font definitions for OML/zavm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+zavm on input line 
-169.
+170.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/arev/omszavm.fd
 File: omszavm.fd 2006/05/30 Fontinst v1.929 font definitions for OMS/zavm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+mdbch on input line
- 169.
+ 170.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/mathdesign/mdbch/omxmdbch.fd
 File: omxmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OMX/mdbch.
 )
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 10.51207pt on input line 169.
+(Font)              scaled to size 10.51207pt on input line 170.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 169.
+(Font)              scaled to size 7.68005pt on input line 170.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 169.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 169
+(Font)              scaled to size 5.76004pt on input line 170.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 170
 .
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 169
+LaTeX Font Info:    Trying to load font information for U+msb on input line 170
 .
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for MDA+mdbch on input line
- 169.
+ 170.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/mathdesign/mdbch/mdamdbch.fd
 File: mdamdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDA/mdbch.
 )
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 10.51207pt on input line 169.
+(Font)              scaled to size 10.51207pt on input line 170.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 7.68005pt on input line 169.
+(Font)              scaled to size 7.68005pt on input line 170.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 5.76004pt on input line 169.
-LaTeX Font Info:    Trying to load font information for U+zavm on input line 16
-9.
+(Font)              scaled to size 5.76004pt on input line 170.
+LaTeX Font Info:    Trying to load font information for U+zavm on input line 17
+0.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/arev/uzavm.fd
 File: uzavm.fd 2006/05/30 Fontinst v1.929 font definitions for U/zavm.
 )
 LaTeX Font Info:    Trying to load font information for U+esint on input line 1
-69.
+70.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
 \T1/phv/m/n/17.28 to-switches Op-ti-miza-tion
  []
 
 
-Overfull \hbox (7.26625pt too wide) in paragraph at lines 181--189
+Overfull \hbox (7.26625pt too wide) in paragraph at lines 182--190
  [][] 
  []
 
@@ -2399,26 +2399,26 @@ uab.pdf>] [1
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 212.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 213.
  [2] [3]
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 2
-24.
+25.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 228.
+(Font)              scaled to size 8.64006pt on input line 229.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 6.72005pt on input line 228.
+(Font)              scaled to size 6.72005pt on input line 229.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 228.
+(Font)              scaled to size 4.80003pt on input line 229.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 8.64006pt on input line 228.
+(Font)              scaled to size 8.64006pt on input line 229.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 6.72005pt on input line 228.
+(Font)              scaled to size 6.72005pt on input line 229.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 4.80003pt on input line 228.
+(Font)              scaled to size 4.80003pt on input line 229.
 
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2433,7 +2433,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.233 \newpage
+l.234 \newpage
                [1{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/arev/arevo
 t1.enc}]
 
@@ -2449,7 +2449,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.246 \newpage
+l.247 \newpage
                [2]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2464,7 +2464,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.III}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.259 \newpage
+l.260 \newpage
                [3] (./Plantilla memòria TFG 2024_25.toc)
 \tf@toc=\write7
 \openout7 = `"Plantilla memòria TFG 2024_25.toc"'.
@@ -2481,7 +2481,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 [4]
 Using TeX to sort glossary entries---this may take a while
 
-Overfull \hbox (4.61525pt too wide) in paragraph at lines 268--268
+Overfull \hbox (4.61525pt too wide) in paragraph at lines 269--269
 [][]\T1/phv/m/n/10.95 .| 
  []
 
@@ -2521,11 +2521,11 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [7]
-<GeneralSources/Cox2ChimeraX.jpg, id=302, 10750.1625pt x 5613.97375pt>
+<GeneralSources/Cox2ChimeraX.jpg, id=337, 10750.1625pt x 5613.97375pt>
 File: GeneralSources/Cox2ChimeraX.jpg Graphic file (type jpg)
 <use GeneralSources/Cox2ChimeraX.jpg>
 Package pdftex.def Info: GeneralSources/Cox2ChimeraX.jpg  used on input line 28
-4.
+5.
 (pdftex.def)             Requested size: 452.9679pt x 249.7054pt.
 
 
@@ -2541,7 +2541,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.288 
+l.289 
        [1]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2553,9 +2553,9 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 [2 <./GeneralSources/Cox2ChimeraX.jpg>]
 Package hyperref Info: bookmark level for unknown scheme defaults to 0 on input
- line 306.
+ line 307.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 310.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 311.
 
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2566,7 +2566,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [3]
-Overfull \hbox (4.65675pt too wide) in paragraph at lines 320--321
+Overfull \hbox (4.65675pt too wide) in paragraph at lines 321--322
 []\T1/phv/m/n/10.95 Currently, the phar-ma-co-log-i-cal ther-a-pies for the [][
 ]COX-2[] in-hi-bi-tion are based on [][]Non-Steroidal
  []
@@ -2616,11 +2616,11 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [8]
-<GeneralSources/DataSplittingDiagram.pdf, id=489, 692.59853pt x 355.3797pt>
+<GeneralSources/DataSplittingDiagram.pdf, id=541, 692.59853pt x 355.3797pt>
 File: GeneralSources/DataSplittingDiagram.pdf Graphic file (type pdf)
 <use GeneralSources/DataSplittingDiagram.pdf>
 Package pdftex.def Info: GeneralSources/DataSplittingDiagram.pdf  used on input
- line 371.
+ line 383.
 (pdftex.def)             Requested size: 452.9679pt x 232.42021pt.
 
 
@@ -2651,13 +2651,13 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 [11]
 <../Plots/DataGapRepresentationIC50percentageEresed15.0Gap_min_32Gap_max_53.pdf
-, id=552, 462.52798pt x 346.89601pt>
+, id=608, 462.52798pt x 346.89601pt>
 File: ../Plots/DataGapRepresentationIC50percentageEresed15.0Gap_min_32Gap_max_5
 3.pdf Graphic file (type pdf)
 <use ../Plots/DataGapRepresentationIC50percentageEresed15.0Gap_min_32Gap_max_53
 .pdf>
 Package pdftex.def Info: ../Plots/DataGapRepresentationIC50percentageEresed15.0
-Gap_min_32Gap_max_53.pdf  used on input line 407.
+Gap_min_32Gap_max_53.pdf  used on input line 420.
 (pdftex.def)             Requested size: 452.9679pt x 343.39597pt.
 
 
@@ -2671,21 +2671,27 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 [12 <../Plots/DataGapRepresentationIC50percentageEresed15.0Gap_min_32Gap_max_53
 .pdf>]
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 418.
+(Font)              scaled to size 11.52008pt on input line 431.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 11.52008pt on input line 418.
+(Font)              scaled to size 11.52008pt on input line 431.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gls' on input line 418.
+(hyperref)                removing `\gls' on input line 431.
 
-<../Plots/ChEMBL_ExtractorData_CHEMBL230_IC50_1000CorrelationFactors.pdf, id=61
-0, 462.52798pt x 346.89601pt>
+
+Overfull \hbox (1.74045pt too wide) in paragraph at lines 433--434
+ \T1/phv/m/n/10.95 Af-ter-wards, chem-i-cal de-scrip-tors are cal-cu-lated us-i
+ng the Al-vaDesc soft-ware. Sub-se-quently,
+ []
+
+<../Plots/ChEMBL_ExtractorData_CHEMBL230_IC50_1000CorrelationFactors.pdf, id=66
+6, 462.52798pt x 346.89601pt>
 File: ../Plots/ChEMBL_ExtractorData_CHEMBL230_IC50_1000CorrelationFactors.pdf G
 raphic file (type pdf)
 <use ../Plots/ChEMBL_ExtractorData_CHEMBL230_IC50_1000CorrelationFactors.pdf>
 Package pdftex.def Info: ../Plots/ChEMBL_ExtractorData_CHEMBL230_IC50_1000Corre
-lationFactors.pdf  used on input line 424.
+lationFactors.pdf  used on input line 437.
 (pdftex.def)             Requested size: 452.9679pt x 337.34538pt.
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2698,13 +2704,13 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 [13 <../Plots/ChEMBL_ExtractorData_CHEMBL230_IC50_1000CorrelationFactors.pdf>]
 PGFPlots: reading {GeneralSources/ErasedPercentageVSRSquare.txt}
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 463.
+(Font)              scaled to size 9.60007pt on input line 476.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 7.29605pt on input line 463.
+(Font)              scaled to size 7.29605pt on input line 476.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 9.60007pt on input line 463.
+(Font)              scaled to size 9.60007pt on input line 476.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 7.29605pt on input line 463.
+(Font)              scaled to size 7.29605pt on input line 476.
 PGFPlots: reading {GeneralSources/ErasedPercentageVSMeanSquaredError.txt}
 
 
@@ -2725,10 +2731,10 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [15]
-<../Plots/GbindingVSIC50.pdf, id=695, 722.7pt x 505.89pt>
+<../Plots/GbindingVSIC50.pdf, id=755, 722.7pt x 505.89pt>
 File: ../Plots/GbindingVSIC50.pdf Graphic file (type pdf)
 <use ../Plots/GbindingVSIC50.pdf>
-Package pdftex.def Info: ../Plots/GbindingVSIC50.pdf  used on input line 502.
+Package pdftex.def Info: ../Plots/GbindingVSIC50.pdf  used on input line 515.
 (pdftex.def)             Requested size: 317.07614pt x 223.87093pt.
 
 
@@ -2758,13 +2764,13 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [18]
-<GeneralSources/LastFrameDockingTwoRingsFiveMembers.jpg, id=796, 10750.1625pt x
+<GeneralSources/LastFrameDockingTwoRingsFiveMembers.jpg, id=858, 10750.1625pt x
  5613.97375pt>
 File: GeneralSources/LastFrameDockingTwoRingsFiveMembers.jpg Graphic file (type
  jpg)
 <use GeneralSources/LastFrameDockingTwoRingsFiveMembers.jpg>
 Package pdftex.def Info: GeneralSources/LastFrameDockingTwoRingsFiveMembers.jpg
-  used on input line 582.
+  used on input line 595.
 (pdftex.def)             Requested size: 452.9679pt x 236.51341pt.
 
 
@@ -2794,12 +2800,12 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [21]
-LaTeX Font Info:    Trying to load font information for T1+fvm on input line 60
-1.
+LaTeX Font Info:    Trying to load font information for T1+fvm on input line 61
+4.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
-Overfull \hbox (22.10748pt too wide) in paragraph at lines 601--601
+Overfull \hbox (22.10748pt too wide) in paragraph at lines 614--614
 \T1/fvm/m/n/10.95 application -[] for -[] azophotoswitches -[] optimization -[]
  with -[] pharmacological -[]
  []
@@ -2840,24 +2846,15 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [26]
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
-
-[27{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/arev/arevoms.enc}]
 LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <10.95> not available
-(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 682.
-<GeneralSources/Point_group_determination_flowchart_v2.png, id=889, 641.39626pt
+(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 695.
+<GeneralSources/Point_group_determination_flowchart_v2.png, id=948, 641.39626pt
  x 901.86937pt>
 File: GeneralSources/Point_group_determination_flowchart_v2.png Graphic file (t
 ype png)
 <use GeneralSources/Point_group_determination_flowchart_v2.png>
 Package pdftex.def Info: GeneralSources/Point_group_determination_flowchart_v2.
-png  used on input line 687.
+png  used on input line 700.
 (pdftex.def)             Requested size: 226.48395pt x 318.45258pt.
 
 
@@ -2868,11 +2865,20 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
+[27{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/arev/arevoms.enc}]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
 [28 <./GeneralSources/Point_group_determination_flowchart_v2.png>]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 723.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 736.
 
-Overfull \hbox (4.46593pt too wide) in paragraph at lines 722--724
+Overfull \hbox (4.46593pt too wide) in paragraph at lines 735--737
 [][]\T1/phv/b/n/10.95 Definition 13. []\T1/phv/m/sl/10.95 Matthews Cor-re-la-ti
 on Co-ef-fi-cient: quan-tity re-lated to a Ma-chine Learn-ing Model's
  []
@@ -2940,6 +2946,10 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [35]
+Overfull \hbox (32.34529pt too wide) in paragraph at lines 1025--1049
+ [][] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2949,10 +2959,6 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
 [36]
-Overfull \hbox (32.34529pt too wide) in paragraph at lines 1010--1032
- [][] 
- []
-
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2970,16 +2976,7 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
 
-[38]
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
-
-[39] 
+[38] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./Plantilla memòria TFG 2024_25.aux)
  ***********
@@ -2992,7 +2989,7 @@ LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `"Plantilla memòria TFG 2024_25".out' has n
 ot changed.
-(rerunfilecheck)             Checksum: E42908A90A79C3ABABDC186F4C405132;2653.
+(rerunfilecheck)             Checksum: 56995439E813CBBA35EC0F56A2AF1469;2555.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                "Plantilla memòria TFG 2024_25"
@@ -3004,13 +3001,13 @@ Package logreq Info: Writing requests to '"Plantilla memòria TFG 2024_25".run
 
  ) 
 Here is how much of TeX's memory you used:
- 68144 strings out of 474116
- 1610672 string characters out of 5743682
- 2531995 words of memory out of 5000000
- 89280 multiletter control sequences out of 15000+600000
+ 68140 strings out of 474116
+ 1610442 string characters out of 5743682
+ 2535718 words of memory out of 5000000
+ 89277 multiletter control sequences out of 15000+600000
  648712 words of font info for 193 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,16n,121p,2384b,3070s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,16n,121p,2384b,3067s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/arev/ArevSans-Oblique.
 pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/arev/ArevSans-Roman.
 pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
@@ -3024,11 +3021,11 @@ ve/2024/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chb7t.pfb></usr/local
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/
 local/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/t
 exlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "Plantilla memòria TFG 2024_25.pdf" (50 pages, 10673086 byt
+Output written on "Plantilla memòria TFG 2024_25.pdf" (49 pages, 10676666 byt
 es).
 PDF statistics:
- 1171 PDF objects out of 1200 (max. 8388607)
- 947 compressed objects within 10 object streams
- 201 named destinations out of 1000 (max. 500000)
+ 1236 PDF objects out of 1440 (max. 8388607)
+ 1010 compressed objects within 11 object streams
+ 200 named destinations out of 1000 (max. 500000)
  219 words of extra memory for PDF output out of 10000 (max. 10000000)
 
