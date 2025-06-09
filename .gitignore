@@ -1,8 +1,17 @@
 *.aux
+*.bbl
+*.bcf
+*.bib
+*.blg
+*.DS_Store
+*.doc
 *.lof
 *.log
 *.lot
 *.out
 *.run.xml
 *.synctex.gz
+*.tex
 *.toc
+Manuscript/GeneralSources
+Notes/GeneralSources
