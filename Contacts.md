@@ -8,9 +8,5 @@
 Àngels Gonzàlez Lafont: [angels.gonzalez@uab.cat](mailto:angels.gonzalez@uab.cat)
 
 Miquel Moreno Ferrer: [miquel.moreno@uab.cat](mailto:miquel.moreno@uab.cat)
-## IFAE:
-Javier Rico: [rico@ifae.es](mailto:rico@ifae.es)
-
-Francesco Montagno Bozzone: [francesco.montagno@autonoma.cat](mailto:francesco.montagno@autonoma.cat) 
 ## Me:
 Sergio Castañeiras Morales: [1598456@uab.cat](mailto:1598456@uab.cat)
